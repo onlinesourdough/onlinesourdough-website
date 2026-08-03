@@ -1,83 +1,65 @@
 # Architecture
 
-This app uses the SaaS template as an architecture menu, scaled down for a public landing page.
+## Product shape
 
-## Product Shape
+`onlinesourdough` is one static public Application built with TypeScript,
+React, Vite, and TanStack Router. Existing ownership and a working system are
+more valuable than replacing the stack.
 
-`onlinesourdough` is a landing/content site. It currently needs:
+The deployable unit is the `dist/` directory produced by `npm run build` and
+uploaded by GitHub Actions to GitHub Pages. `public/CNAME` assigns
+`onlinesourdough.com` as the production root.
 
-- React UI
-- routed pages for `/` and `/about`
-- static site data
-- one browser-read public stats contract for `public/stats.json`
-- GitHub Pages deployment
+## Responsibilities
 
-It intentionally skips:
-
-- auth and sessions
-- Stripe, billing, subscriptions, and paid access
-- databases, repositories, D1, migrations, and queues
-- server functions, webhooks, and Worker deployment
-- product analytics beyond whatever static hosting provides
-
-## Boundaries
-
-```txt
+```text
 src/
-|-- adapters/
-|   `-- http/
-|-- components/
-|   `-- layout/
-|-- config/
-|-- features/
-|   `-- landing/
-|       |-- components/
-|       `-- hooks/
-|-- hooks/
-|-- routes/
-|-- services/
-|-- router.tsx
-`-- styles.css
-shared/
-`-- contracts/
-tests/
-docs/
+├── components/layout/       shared shell and shell interactions
+├── config/                  public copy, destinations, SEO, asset manifest
+├── features/landing/        landing and About page compositions
+├── hooks/                   cross-page browser behavior
+├── routes/                  thin route and metadata wiring
+├── router.tsx               route tree
+└── styles.css               approved tokens and responsive presentation
+public/
+├── assets/                  selected runtime art, logo, and fonts
+├── CNAME                    custom-domain authority
+├── robots.txt
+└── sitemap.xml
+scripts/
+└── prepare-pages.mjs        direct route and fallback preparation
 ```
 
-Responsibilities:
+`src/config/site-data.ts` is the one editable source for public copy, links,
+SEO values, and runtime asset paths. Components own rendering and interaction;
+route files own route metadata wiring only.
 
-- `src/routes/`: thin TanStack Router route entrypoints.
-- `src/components/layout/`: reusable shell, header, and footer.
-- `src/features/landing/`: landing-page and about-page UI.
-- `src/config/`: static product copy, SEO defaults, links, and offer definitions.
-- `src/hooks/`: cross-feature browser behavior such as theme and metadata updates.
-- `src/services/`: pure product workflow logic.
-- `src/adapters/`: browser or vendor-facing implementation details.
-- `shared/contracts/`: framework-free data contracts that cross a boundary.
-- `tests/`: focused unit tests for contracts and services.
+## Interfaces and trust boundaries
 
-## Current Dynamic Boundary
+- The browser interface is public and contains no privileged state.
+- Offer and ecosystem destinations are ordinary external links or `mailto:`.
+- Static assets are same-origin files under `/assets/`.
+- GitHub Actions has read access to repository contents and the Pages
+  permissions required for deployment. No runtime credential crosses into the
+  browser bundle.
 
-The only dynamic boundary is `public/stats.json`.
+External destinations own their content and availability. A failed external
+destination must not prevent this site from rendering.
 
-The browser path is:
+## Deliberate non-goals
 
-```txt
-LandingPage
--> useSubscriberBadges
--> fetchStatsContract
--> parseStatsContract
--> buildSubscriberBadges
-```
+The application does not own auth, sessions, payments, a database, server
+functions, webhooks, queues, analytics, customer data, or a separate
+observability platform. GitHub's workflow and Pages status plus public browser
+smoke tests are proportionate operational evidence for this static site.
 
-The YouTube API key is only used by `scripts/update-stats.mjs` during build/deploy. It is not shipped to the browser.
+## Routing and assets
 
-## Adding Capabilities
+TanStack Router owns `/` and `/about`. The build script copies the SPA shell to
+`dist/about/index.html` so direct requests work on Pages, and to `dist/404.html`
+for unknown-path fallback. Canonical metadata is replaced for the direct About
+document.
 
-Add a new layer only when the product owns that responsibility:
-
-- Add `shared/contracts` or `shared/schemas` for forms, APIs, webhooks, imports, or vendor payloads.
-- Add `src/services` for workflow logic, branching, or reusable product decisions.
-- Add `src/adapters` for external services, provider APIs, analytics, or platform bindings.
-- Add repositories and migrations only if the app starts owning persistent domain data.
-- Add auth, Stripe, Resend, or analytics only when a real workflow requires them.
+Root-relative public paths are required by the production custom-domain
+context. Development and production preview checks must therefore confirm
+`/assets/...` responses rather than depending on a local filesystem path.

@@ -4,28 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Runtime metadata is owned by route components and applied by React. These are static fallbacks. -->
-    <title>onlinesourdough | IT, software, and business architecture</title>
+    <title>onlinesourdough: Same bake. Different deliveries.</title>
     <meta
       name="description"
-      content="onlinesourdough helps shape the culture before AI becomes the only one that understands what keeps the bake alive."
+      content="Business development and software meet to create positive bandwidth: more time to work on the business, not inside it."
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#f8f2e8" />
     <link rel="canonical" href="https://onlinesourdough.com/" />
-    <meta property="og:title" content="onlinesourdough | Same bake. Different deliveries." />
+    <meta property="og:title" content="onlinesourdough: Same bake. Different deliveries." />
     <meta
       property="og:description"
-      content="A practical menu for content, resources, direct access, and project work around software people can understand and AI can safely extend."
+      content="Content, resources, direct guidance, and complete delivery for business development, software, and responsible AI-first work."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://onlinesourdough.com/" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="onlinesourdough | IT, software, and business architecture" />
+    <meta name="twitter:title" content="onlinesourdough: Same bake. Different deliveries." />
     <meta
       name="twitter:description"
-      content="onlinesourdough helps shape the culture before AI becomes the only one that understands what keeps the bake alive."
+      content="Business development and software meet to create positive bandwidth: more time to work on the business, not inside it."
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/onlinesourdough-mark-large-pixel-v3.svg" />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("onlinesourdough-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            document.documentElement.dataset.theme = savedTheme;
+          }
+        } catch {}
+
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+        const navigation = performance.getEntriesByType("navigation")[0];
+        const isReload = navigation?.type === "reload" || performance.navigation?.type === 1;
+        if (!isReload) return;
+
+        try {
+          const cleanUrl = new URL(window.location.href);
+          cleanUrl.hash = "";
+          history.replaceState(history.state, "", cleanUrl.href);
+        } catch {}
+
+        const resetScroll = () => window.scrollTo(0, 0);
+        resetScroll();
+        window.addEventListener("DOMContentLoaded", resetScroll, { once: true });
+        window.addEventListener("load", resetScroll, { once: true });
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

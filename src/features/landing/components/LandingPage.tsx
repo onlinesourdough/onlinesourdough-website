@@ -1,15 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { siteData, type Offer } from "../../../config/site-data";
-import { useSubscriberBadges } from "../hooks/use-subscriber-badges";
+import { siteData } from "../../../config/site-data";
 import { OfferCard } from "./OfferCard";
-import { OfferModal } from "./OfferModal";
 
 export function LandingPage() {
-  const { page } = siteData;
-  const offers: Offer[] = siteData.offers;
-  const [selectedOffer, setSelectedOffer] = useState<Offer | null>(null);
-  const subscriberBadges = useSubscriberBadges(offers);
+  const { page, offers } = siteData;
+  const primaryOffers = offers.slice(0, 2);
+  const secondaryOffers = offers.slice(2);
 
   return (
     <>
@@ -18,33 +14,36 @@ export function LandingPage() {
         <p>{page.hero.description}</p>
       </section>
 
-      <section className="menu-grid" aria-label={page.menu.ariaLabel}>
-        <div className="menu-label">{page.menu.label}</div>
-        {offers.map((offer) => (
-          <OfferCard
-            key={offer.title}
-            offer={offer}
-            subscriberBadge={subscriberBadges[offer.title]}
-            onSelect={setSelectedOffer}
-          />
-        ))}
+      <section className="menu-grid" id="menu" aria-label={page.menu.ariaLabel}>
+        <div className="menu-stage menu-stage-primary">
+          <div className="menu-label">{page.menu.label}</div>
+          <div className="menu-row menu-row-primary">
+            {primaryOffers.map((offer) => (
+              <OfferCard key={offer.number} offer={offer} />
+            ))}
+          </div>
+        </div>
+
+        <div className="menu-stage menu-stage-secondary">
+          <div className="menu-row menu-row-secondary">
+            {secondaryOffers.map((offer) => (
+              <OfferCard key={offer.number} offer={offer} />
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section className="manifesto" aria-labelledby="manifesto-title">
-        <div>
-          <h2 id="manifesto-title">{page.manifesto.title}</h2>
-        </div>
+      <section className="manifesto" id="about" aria-labelledby="manifesto-title">
+        <h2 id="manifesto-title">{page.manifesto.title}</h2>
         <div className="manifesto-copy">
           {page.manifesto.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
-          <Link className="text-cta" to="/about">
-            {page.manifesto.cta.label}
+          <Link className="manifesto-link" to="/about">
+            {page.manifesto.cta} <span aria-hidden="true">→</span>
           </Link>
         </div>
       </section>
-
-      {selectedOffer ? <OfferModal offer={selectedOffer} onClose={() => setSelectedOffer(null)} /> : null}
     </>
   );
 }
