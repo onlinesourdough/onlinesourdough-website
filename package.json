@@ -8,10 +8,10 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prebuild": "node scripts/update-stats.mjs",
-    "build": "npm run typecheck && vite build && node scripts/prepare-pages.mjs",
+    "build": "npm run typecheck && vite build && node scripts/prepare-pages.mjs && node scripts/verify-build.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "update:stats": "node scripts/update-stats.mjs"
+    "security:check": "npm audit --audit-level=high",
+    "check": "npm run test && npm run build && npm run security:check"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.170.16",

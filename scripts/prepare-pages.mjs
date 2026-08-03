@@ -9,9 +9,8 @@ const notFoundPath = fileURLToPath(new URL("404.html", distUrl));
 const noJekyllPath = fileURLToPath(new URL(".nojekyll", distUrl));
 
 const aboutMetadata = {
-  title: "About onlinesourdough | onlinesourdough",
-  description:
-    "onlinesourdough is my way of explaining how software, business, and AI should work together through structure, care, and technical ownership.",
+  title: "About onlinesourdough",
+  description: "Why onlinesourdough connects business development, software, and AI.",
   url: "https://onlinesourdough.com/about/",
 };
 

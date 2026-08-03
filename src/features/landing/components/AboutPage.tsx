@@ -1,30 +1,35 @@
-import { Link } from "@tanstack/react-router";
 import { siteData } from "../../../config/site-data";
 
 export function AboutPage() {
   const { about } = siteData.page;
 
   return (
-    <article className="about-page">
+    <>
       <section className="about-hero" aria-labelledby="about-title">
+        <p>{about.eyebrow}</p>
         <h1 id="about-title">{about.title}</h1>
         <p>{about.description}</p>
       </section>
 
       <div className="about-sections">
-        {about.sections.map((section) => (
+        {about.sections.map((section, index) => (
           <section className="about-section" key={section.title}>
-            <h2>{section.title}</h2>
-            {section.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <header className="about-heading">
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h2>{section.title}</h2>
+            </header>
+            <div className="about-copy">
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
           </section>
         ))}
       </div>
 
-      <Link className="text-cta" to="/">
-        Back to menu
-      </Link>
-    </article>
+      <a className="back-link" href="/#menu">
+        {about.backLabel} <span aria-hidden="true">→</span>
+      </a>
+    </>
   );
 }

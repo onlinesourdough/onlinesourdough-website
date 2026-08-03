@@ -7,7 +7,11 @@ export function useTheme(storageKey: string) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    window.localStorage.setItem(storageKey, theme);
+    try {
+      window.localStorage.setItem(storageKey, theme);
+    } catch {
+      // Theme switching still works when storage is unavailable.
+    }
   }, [theme, storageKey]);
 
   return {
@@ -19,7 +23,12 @@ export function useTheme(storageKey: string) {
 function getInitialTheme(storageKey: string): Theme {
   if (typeof window === "undefined") return "light";
 
-  const savedTheme = window.localStorage.getItem(storageKey);
+  let savedTheme: string | null = null;
+  try {
+    savedTheme = window.localStorage.getItem(storageKey);
+  } catch {
+    // Fall back to the system preference when storage is unavailable.
+  }
   if (savedTheme === "dark" || savedTheme === "light") return savedTheme;
 
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";

@@ -1,37 +1,33 @@
 import { type Offer } from "../../../config/site-data";
-import { SourdoughIcon } from "./SourdoughIcon";
 
 type OfferCardProps = {
   offer: Offer;
-  subscriberBadge?: string;
-  onSelect: (offer: Offer) => void;
 };
 
-export function OfferCard({ offer, subscriberBadge, onSelect }: OfferCardProps) {
-  const content = (
-    <>
-      <SourdoughIcon type={offer.icon} />
-      <span className="offer-title">{offer.title}</span>
-      <span className="offer-description">{offer.description}</span>
-      <span className="offer-cta">
-        <span>{offer.cta}</span>
-        {subscriberBadge ? <span className="offer-cta-badge">{subscriberBadge}</span> : null}
-        {offer.icon === "proofing" ? <img className="offer-cta-slack" src="/icons/slack-mark.svg" alt="" /> : null}
-      </span>
-    </>
-  );
-
-  if (offer.external) {
-    return (
-      <a className="offer-card offer-card-external" href={offer.href} target="_blank" rel="noopener noreferrer">
-        {content}
-      </a>
-    );
-  }
-
+export function OfferCard({ offer }: OfferCardProps) {
   return (
-    <button className="offer-card" type="button" onClick={() => onSelect(offer)}>
-      {content}
-    </button>
+    <a className="offer-card" href={offer.href}>
+      <span className="book-stage">
+        <span className="book">
+          <span className="book-head">
+            <span className="book-number">{offer.number}</span>
+            <span>{offer.status}</span>
+          </span>
+          <span className="book-title">{offer.title}</span>
+          <span className="offer-description">{offer.description}</span>
+          <span className="book-rule" />
+          <span className="book-image">
+            <img src={offer.image.src} alt={offer.image.alt} />
+          </span>
+        </span>
+        <span className="book-sleeve" aria-hidden="true" />
+      </span>
+      <span className="offer-cta">
+        {offer.cta}
+        <span className="offer-arrow" aria-hidden="true">
+          →
+        </span>
+      </span>
+    </a>
   );
 }

@@ -11,19 +11,17 @@ export const aboutRoute = createRoute({
 });
 
 function AboutRoute() {
-  const { brand, page, seo } = siteData;
-  const title = `About onlinesourdough | ${brand}`;
-  const description = page.about.description;
+  const { seo } = siteData;
 
   usePageMetadata({
-    title,
-    description,
+    title: "About onlinesourdough",
+    description: seo.aboutDescription,
     url: `${seo.siteUrl}/about/`,
     themeColor: seo.themeColor,
   });
 
   return (
-    <main id="top" className="main-panel main-panel-about">
+    <main id="top" className="about-page">
       <AboutPage />
     </main>
   );

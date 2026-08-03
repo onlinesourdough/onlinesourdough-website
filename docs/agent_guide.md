@@ -1,30 +1,28 @@
-# Agent Guide
+# Working Guide
 
-Use `/Users/gustavanderson/Downloads/saas-template` as the source template, then apply only the capabilities this landing page needs.
+The root `AGENTS.md` defines the project lifecycle and required evidence.
 
-## Working Order
+## Working order
 
-1. Read `README.md`.
-2. Read `docs/architecture.md`.
-3. Read `docs/delivery.md`.
-4. Keep routes thin and put UI in `src/features/landing/components`.
-5. Keep external/browser data boundaries behind `shared/contracts`, `src/adapters`, and `src/services`.
-6. Do not add auth, billing, databases, migrations, queues, dashboards, or paid-access logic unless the product explicitly needs them.
-7. Run typecheck, tests, and build before finishing.
+1. Read `AGENTS.md` and `README.md`.
+2. Read `docs/architecture.md` and `docs/delivery.md`.
+3. Treat `src/config/site-data.ts` as the editable public content and asset
+   source.
+4. Keep routes thin and keep shared shell behavior in
+   `src/components/layout/`.
+5. Preserve GitHub Pages, `public/CNAME`, direct `/about` output, and
+   root-relative public assets.
+6. Use Spec, Build, Review, and Ship checkpoints for material work.
+7. Run all required checks and browser evidence before finishing.
 
-## Current Checks
+## Review focus
 
-```bash
-npm run typecheck
-npm run test
-npm run build
-```
-
-## Review Checklist
-
-- Route files only wire metadata/layout to feature components.
-- Components do not import provider SDKs or Node-only code.
-- `shared/` has no React, Vite, browser, or vendor imports.
-- External JSON is parsed at the contract boundary.
-- Services are pure enough to unit test.
-- Deployment remains GitHub Pages unless infrastructure changes deliberately.
+- The approved landing and About compositions remain intact.
+- Header, Offers switcher, theme, and footer stay shared across routes.
+- Menu options preserve direct, keyboard-accessible destinations.
+- Mobile keeps natural scrolling and has no horizontal overflow.
+- Reduced-motion users are not forced through movement.
+- Runtime code loads only selected assets from `public/assets/`.
+- No external workspace path or local machine dependency is required at
+  runtime or in CI.
+- Deployment remains reproducible from the committed lockfile and workflow.
