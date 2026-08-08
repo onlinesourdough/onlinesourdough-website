@@ -401,6 +401,13 @@ html[data-theme="dark"] .site-header .os-mark,
   column-gap: 28px;
 }
 
+@media (min-width: 621px) {
+  .menu-row {
+    max-width: 808px;
+    margin-inline: auto;
+  }
+}
+
 .menu-row-secondary {
   margin-top: 30px;
 }
