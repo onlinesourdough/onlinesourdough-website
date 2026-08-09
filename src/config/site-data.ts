@@ -29,13 +29,15 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "onlinesourdough: Same bake. Different deliveries.",
+    title: "Build a business that depends less on you. | onlinesourdough",
     description:
-      "Business development and software meet to create positive bandwidth: more time to work on the business, not inside it.",
-    aboutDescription: "Why onlinesourdough connects business development, software, and AI.",
-    ogTitle: "onlinesourdough: Same bake. Different deliveries.",
+      "Software and AI are normal ingredients in a modern business. The work starts with understanding where time, capacity, and decisions are getting stuck.",
+    aboutTitle: "A practical method for modern business. | onlinesourdough",
+    aboutDescription:
+      "onlinesourdough is my way of explaining how business, software, and AI should work together.",
+    ogTitle: "Build a business that depends less on you. | onlinesourdough",
     ogDescription:
-      "Content, resources, direct guidance, and complete delivery for business development, software, and responsible AI-first work.",
+      "onlinesourdough is a practical method for finding the current constraint and changing it through the smallest useful intervention.",
   },
   navigation: {
     offers: "Offers",
@@ -46,7 +48,7 @@ export const siteData = {
     {
       label: "DONE FOR YOU",
       title: "Arc'IT AI",
-      description: "Business understanding carried into working software.",
+      description: "A defined business capability, designed, built, and handed over.",
       action: "Explore offer ↗",
       href: "https://arcitai.com",
       current: false,
@@ -54,7 +56,8 @@ export const siteData = {
     {
       label: "DIY + DONE WITH YOU",
       title: "onlinesourdough",
-      description: "Learn the method, use the resources, or build with direct guidance.",
+      description:
+        "Learn the method, use the resources, or work through your current constraint with direct guidance.",
       action: "Current offer",
       href: "/",
       current: true,
@@ -62,55 +65,79 @@ export const siteData = {
   ] satisfies StudioOffer[],
   page: {
     hero: {
-      title: "Same bake. Different deliveries.",
-      description:
-        "Today, almost anyone can start building software with AI. That opens new possibilities, but it also makes it easy to create complexity, technical debt, and systems nobody knows how to own. Here, business development and software meet to decide what should exist and how it should work. The goal is positive bandwidth: more time to work on the business, not inside it.",
+      title: "Build a business that depends less on you.",
+      paragraphs: [
+        "Software and AI are normal ingredients in a modern business. The work starts with understanding where time, capacity, and decisions are getting stuck.",
+        "onlinesourdough is a practical method for finding that constraint and changing it through the smallest useful intervention.",
+        "That might be a clearer decision, a better process, software, automation, or an AI agent.",
+        "The goal is Business Freedom: more control over your time, capacity, and direction, with systems you can understand and own.",
+      ],
     },
     menu: {
-      label: "Menu",
+      label: "SAME BAKE / DIFFERENT DELIVERIES",
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      title: "The supermarket mix is fine. Until the business runs on the bake.",
+      title: "The business is the recipe. AI is the starter.",
       cta: "About the method",
       paragraphs: [
-        "A “supermarket mix” is a template, ready-made tool, or vibe-coded first version. It gets something in the oven quickly, but it does not create the architecture, documentation, monitoring, or ownership the business needs.",
-        "AI-first means starting with the business and its constraint, then using software and AI to remove work that should not depend on you. Positive bandwidth is the result: the system keeps moving without pulling you back into daily operation. Otherwise the shortcut becomes technical debt and another operation to run.",
+        "A sourdough starter is useful, adaptable, and slightly needy.",
+        "It is not the finished loaf. It becomes valuable when it is fed well, understood, and used in the right recipe.",
+        "AI works in much the same way.",
+        "Give it real business context, a bounded job, clear guardrails, and honest feedback, and it can support people, keep workflows moving, and handle recurring work that should not depend on the founder.",
+        "The working setup becomes more useful as its context, routines, tools, and feedback improve. Software gives that capability a reliable place to work.",
+        "Without structure and ownership, AI may still produce something impressive. A bubbling demo is not the same as a capability the business can rely on.",
+        "When technology is part of the answer, it should be documented, monitored, recoverable, and clearly owned.",
+        "The result should create more business bandwidth than it consumes.",
       ],
     },
     about: {
       eyebrow: "ABOUT / THE METHOD",
-      title: "About onlinesourdough",
-      description:
-        "onlinesourdough is my way of explaining how I think software, business, and AI should work together. It started with sourdough, because the best systems are not only fast to make. They need structure, care, and people who understand what keeps them alive.",
+      title: "A practical method for modern business.",
+      paragraphs: [
+        "onlinesourdough is my way of explaining how business, software, and AI should work together.",
+        "The method starts with the business: its current constraint, the people and processes involved, and the outcome that needs to change. Only then do we decide whether software, automation, or AI belongs in the solution.",
+        "The name comes from sourdough.",
+        "A starter can become part of many different recipes. It can also become more useful over time, but only when it receives the right inputs and someone understands how to care for it.",
+        "That is how I think about AI inside a business.",
+        "The working capability can improve as its business context, routines, tools, and feedback improve. That does not happen by itself. It still needs direction, boundaries, and clear ownership.",
+        "The goal is Business Freedom: more control over time, capacity, and direction.",
+      ],
       sections: [
         {
-          title: "From demo to production",
+          title: "Find the current constraint",
           paragraphs: [
-            "AI can help you build something useful very quickly. That is a good thing. The problem is not speed, and it is not AI-generated code by itself.",
-            "The problem starts when a quick demo turns into production, customers need to use it, and the business has to rely on it. Then the work around the code matters: architecture, documentation, monitoring, security, handover, and someone taking technical ownership.",
+            "Every founder-led business has work that depends too much on the founder or a few key people.",
+            "The constraint may sit in the offer, the way the business operates, or the way demand is created and converted.",
+            "We start by understanding that work, its owner, and the outcome that needs to change.",
+            "Only then do we decide whether anything should be built.",
           ],
         },
         {
-          title: "Why sourdough",
+          title: "Make the smallest useful change",
           paragraphs: [
-            "I love sourdough, but I cannot really bake it. My girlfriend can. I learn a lot from her every time we end up talking about what makes it work: ingredients, timing, structure, feel, and patience.",
-            "That became the picture behind onlinesourdough. A supermarket mix can be useful, but it is not the same as understanding the bake. Software is similar. A tool can get you started, but the result still needs judgment, structure, and care.",
+            "Once the constraint is clear, we look at what can be eliminated, automated, or delegated.",
+            "The answer might be a decision, a simpler process, a workflow, an integration, software, or an AI agent.",
+            "The aim is to close one useful feedback loop and measure the result before adding more.",
+            "Fast progress matters, but only when the business can keep understanding and owning what changes.",
           ],
         },
         {
-          title: "Where the brands meet",
+          title: "Give AI a real job",
           paragraphs: [
-            "gustavonline is my personal brand. It is where I share content, ideas, and the way I think about IT, software, AI, and business.",
-            "arcitai is my IT architecture consultancy. That is the business side: helping companies design, build, review, and maintain software that has to work in the real world.",
-            "onlinesourdough sits between the two. It is the simple language I use to explain the method, the services, and where AI fits when software becomes part of a business.",
+            "AI becomes more useful when it has business context, a bounded responsibility, clear guardrails, and a way to show whether the work is complete.",
+            "It can support a person, run a watched workflow, or handle a recurring outcome as the evidence allows.",
+            "This is where context engineering, agent workflows, and good software architecture meet.",
+            "The technical work matters because the business has to trust the result, recover when something fails, and know who owns what.",
           ],
         },
         {
-          title: "The point",
+          title: "Build for freedom and ownership",
           paragraphs: [
-            "AI does not replace you, your responsibility, or the need to understand what you are building. It can help you work faster, think better, and become more productive, but it still needs direction.",
-            "The goal is to make complex technology simple enough to use responsibly. Not just code that runs, but software people can understand, decisions the business can stand behind, and a codebase AI can safely help extend.",
+            "When software is the right intervention, code that runs is only the beginning.",
+            "The capability also needs the right architecture, documentation, security, monitoring, recovery, and handover for its real level of risk.",
+            "Business Freedom does not mean maximum automation. It means gaining more control without creating another system that pulls the founder back into daily operation.",
+            "That is the same method whether you apply it yourself through Resources, work through it together in the Inner Circle, or have a Complete Bake delivered by Arc'IT AI.",
           ],
         },
       ],
@@ -121,7 +148,7 @@ export const siteData = {
     {
       number: "01",
       title: "Content",
-      description: "Ideas and recipes for connecting business and software.",
+      description: "Ideas, experiments, and real examples for connecting business, software, and AI.",
       cta: "Explore content",
       status: "Open now",
       href: "https://www.youtube.com/@gustavonline",
@@ -133,7 +160,8 @@ export const siteData = {
     {
       number: "02",
       title: "Resources",
-      description: "Practical guides, patterns, and tools to use in your own business.",
+      description:
+        "Practical blueprints, patterns, and reusable ingredients for applying the method to your own business.",
       cta: "Open library",
       status: "Open now",
       href: "https://resources.onlinesourdough.com",
@@ -145,7 +173,8 @@ export const siteData = {
     {
       number: "03",
       title: "Inner Circle",
-      description: "Direct access, pair programming, and reviews while we build together.",
+      description:
+        "Direct guidance, decisions, and reviews while we work through your current constraint together.",
       cta: "Work together",
       status: "Limited availability",
       href: "mailto:hello@arcitai.com?subject=onlinesourdough%20-%20Inner%20Circle",
@@ -158,7 +187,7 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "The system built, documented, and handed over, so you can work on the business instead of inside it.",
+        "A defined business capability designed, built, documented, and handed over around an outcome your business can own.",
       cta: "Start a project",
       status: "By request",
       href: "https://arcitai.com",
