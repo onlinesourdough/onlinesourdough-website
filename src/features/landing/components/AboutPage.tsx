@@ -8,7 +8,11 @@ export function AboutPage() {
       <section className="about-hero" aria-labelledby="about-title">
         <p>{about.eyebrow}</p>
         <h1 id="about-title">{about.title}</h1>
-        <p>{about.description}</p>
+        <div className="about-intro">
+          {about.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
       </section>
 
       <div className="about-sections">

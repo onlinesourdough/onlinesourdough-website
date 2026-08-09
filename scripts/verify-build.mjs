@@ -30,7 +30,7 @@ const [indexHtml, aboutHtml, cname] = await Promise.all([
 assertIncludes(indexHtml, '<link rel="canonical" href="https://onlinesourdough.com/"');
 assertIncludes(indexHtml, 'href="/assets/onlinesourdough-mark-large-pixel-v3.svg"');
 assertIncludes(aboutHtml, '<link rel="canonical" href="https://onlinesourdough.com/about/"');
-assertIncludes(aboutHtml, "<title>About onlinesourdough</title>");
+assertIncludes(aboutHtml, "<title>A practical method for modern business. | onlinesourdough</title>");
 
 if (indexHtml.includes("/src/main.tsx")) {
   throw new Error("Production HTML still references the Vite source entrypoint.");

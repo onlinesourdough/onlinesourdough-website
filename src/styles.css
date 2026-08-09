@@ -364,12 +364,20 @@ html[data-theme="dark"] .site-header .os-mark,
   letter-spacing: -0.026em;
 }
 
-.hero p {
+.hero-copy {
   max-width: 740px;
   margin: 22px auto 0;
+}
+
+.hero-copy p {
+  margin: 0;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.62;
+}
+
+.hero-copy p + p {
+  margin-top: 14px;
 }
 
 .menu-grid {
@@ -689,12 +697,20 @@ html[data-theme="dark"] .site-header .os-mark,
   text-wrap: balance;
 }
 
-.about-hero > p:last-child {
+.about-intro {
   max-width: 720px;
   margin: 0 auto;
   color: var(--muted);
   font-size: 17px;
   line-height: 1.68;
+}
+
+.about-intro p {
+  margin: 0;
+}
+
+.about-intro p + p {
+  margin-top: 17px;
 }
 
 .about-section {

@@ -14,10 +14,12 @@ function AboutRoute() {
   const { seo } = siteData;
 
   usePageMetadata({
-    title: "About onlinesourdough",
+    title: seo.aboutTitle,
     description: seo.aboutDescription,
     url: `${seo.siteUrl}/about/`,
     themeColor: seo.themeColor,
+    ogTitle: seo.aboutTitle,
+    ogDescription: seo.aboutDescription,
   });
 
   return (
