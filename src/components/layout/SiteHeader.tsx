@@ -76,7 +76,7 @@ export function SiteHeader() {
         onClick={toggleTheme}
         aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
       >
-        <span aria-hidden="true">◐</span>
+        <span className="theme-toggle-icon" aria-hidden="true" />
       </button>
     </header>
   );

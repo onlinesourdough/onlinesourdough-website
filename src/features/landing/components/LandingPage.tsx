@@ -12,9 +12,7 @@ export function LandingPage() {
       <section className="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">{page.hero.title}</h1>
         <div className="hero-copy">
-          {page.hero.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          <p>{page.hero.description}</p>
         </div>
       </section>
 

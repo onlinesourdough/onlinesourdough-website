@@ -29,15 +29,15 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Build a business that depends less on you. | onlinesourdough",
+    title: "Give AI a real job in your business. | onlinesourdough",
     description:
-      "Software and AI are normal ingredients in a modern business. The work starts with understanding where time, capacity, and decisions are getting stuck.",
+      "A practical method for finding where time, capacity, or decisions are getting stuck, then giving AI a bounded job the business can understand and own.",
     aboutTitle: "A practical method for modern business. | onlinesourdough",
     aboutDescription:
       "onlinesourdough is my way of explaining how business, software, and AI should work together.",
-    ogTitle: "Build a business that depends less on you. | onlinesourdough",
+    ogTitle: "Give AI a real job in your business. | onlinesourdough",
     ogDescription:
-      "onlinesourdough is a practical method for finding the current constraint and changing it through the smallest useful intervention.",
+      "onlinesourdough is a practical method for finding the current constraint and giving AI a bounded job with clear ownership.",
   },
   navigation: {
     offers: "Offers",
@@ -65,13 +65,9 @@ export const siteData = {
   ] satisfies StudioOffer[],
   page: {
     hero: {
-      title: "Build a business that depends less on you.",
-      paragraphs: [
-        "Software and AI are normal ingredients in a modern business. The work starts with understanding where time, capacity, and decisions are getting stuck.",
-        "onlinesourdough is a practical method for finding that constraint and changing it through the smallest useful intervention.",
-        "That might be a clearer decision, a better process, software, automation, or an AI agent.",
-        "The goal is Business Freedom: more control over your time, capacity, and direction, with systems you can understand and own.",
-      ],
+      title: "Give AI a real job in your business.",
+      description:
+        "The method starts with the business: find where time, capacity, or decisions are getting stuck, then give AI a bounded job with the context, guardrails, and ownership to make it useful.",
     },
     menu: {
       label: "SAME BAKE / DIFFERENT DELIVERIES",
@@ -95,49 +91,37 @@ export const siteData = {
       eyebrow: "ABOUT / THE METHOD",
       title: "A practical method for modern business.",
       paragraphs: [
-        "onlinesourdough is my way of explaining how business, software, and AI should work together.",
-        "The method starts with the business: its current constraint, the people and processes involved, and the outcome that needs to change. Only then do we decide whether software, automation, or AI belongs in the solution.",
-        "The name comes from sourdough.",
-        "A starter can become part of many different recipes. It can also become more useful over time, but only when it receives the right inputs and someone understands how to care for it.",
-        "That is how I think about AI inside a business.",
-        "The working capability can improve as its business context, routines, tools, and feedback improve. That does not happen by itself. It still needs direction, boundaries, and clear ownership.",
-        "The goal is Business Freedom: more control over time, capacity, and direction.",
+        "onlinesourdough is my way of explaining how business, software, and AI should work together. The method starts with the business: its current constraint, the people and processes involved, and the outcome that needs to change. Only then do we decide whether software, automation, or AI belongs in the solution.",
+        "The name comes from sourdough. A starter can become part of many different recipes. It can also become more useful over time, but only when it receives the right inputs and someone understands how to care for it. That is how I think about AI inside a business.",
+        "The working capability can improve as its business context, routines, tools, and feedback improve. That does not happen by itself. It still needs direction, boundaries, and clear ownership. The goal is Business Freedom: more control over time, capacity, and direction.",
       ],
       sections: [
         {
           title: "Find the current constraint",
           paragraphs: [
-            "Every founder-led business has work that depends too much on the founder or a few key people.",
-            "The constraint may sit in the offer, the way the business operates, or the way demand is created and converted.",
-            "We start by understanding that work, its owner, and the outcome that needs to change.",
-            "Only then do we decide whether anything should be built.",
+            "Every founder-led business has work that depends too much on the founder or a few key people. The constraint may sit in the offer, the way the business operates, or the way demand is created and converted.",
+            "We start by understanding that work, its owner, and the outcome that needs to change. Only then do we decide whether anything should be built.",
           ],
         },
         {
           title: "Make the smallest useful change",
           paragraphs: [
-            "Once the constraint is clear, we look at what can be eliminated, automated, or delegated.",
-            "The answer might be a decision, a simpler process, a workflow, an integration, software, or an AI agent.",
-            "The aim is to close one useful feedback loop and measure the result before adding more.",
-            "Fast progress matters, but only when the business can keep understanding and owning what changes.",
+            "Once the constraint is clear, we look at what can be eliminated, automated, or delegated. The answer might be a decision, a simpler process, a workflow, an integration, software, or an AI agent.",
+            "The aim is to close one useful feedback loop and measure the result before adding more. Fast progress matters, but only when the business can keep understanding and owning what changes.",
           ],
         },
         {
           title: "Give AI a real job",
           paragraphs: [
-            "AI becomes more useful when it has business context, a bounded responsibility, clear guardrails, and a way to show whether the work is complete.",
-            "It can support a person, run a watched workflow, or handle a recurring outcome as the evidence allows.",
-            "This is where context engineering, agent workflows, and good software architecture meet.",
-            "The technical work matters because the business has to trust the result, recover when something fails, and know who owns what.",
+            "AI becomes more useful when it has business context, a bounded responsibility, clear guardrails, and a way to show whether the work is complete. It can support a person, run a watched workflow, or handle a recurring outcome as the evidence allows.",
+            "This is where context engineering, agent workflows, and good software architecture meet. The technical work matters because the business has to trust the result, recover when something fails, and know who owns what.",
           ],
         },
         {
           title: "Build for freedom and ownership",
           paragraphs: [
-            "When software is the right intervention, code that runs is only the beginning.",
-            "The capability also needs the right architecture, documentation, security, monitoring, recovery, and handover for its real level of risk.",
-            "Business Freedom does not mean maximum automation. It means gaining more control without creating another system that pulls the founder back into daily operation.",
-            "That is the same method whether you apply it yourself through Resources, work through it together in the Inner Circle, or have a Complete Bake delivered by Arc'IT AI.",
+            "When software is the right intervention, code that runs is only the beginning. The capability also needs the right architecture, documentation, security, monitoring, recovery, and handover for its real level of risk.",
+            "Business Freedom does not mean maximum automation. It means gaining more control without creating another system that pulls the founder back into daily operation. That is the same method whether you apply it yourself through Resources, work through it together in the Inner Circle, or have a Complete Bake delivered by Arc'IT AI.",
           ],
         },
       ],
