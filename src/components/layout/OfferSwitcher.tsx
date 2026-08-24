@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { siteData } from "../../config/site-data";
+import { getExternalLinkAttributes } from "../link-attributes";
 
 type OfferSwitcherProps = {
   currentHref: string;
@@ -66,20 +67,25 @@ export function OfferSwitcher({ currentHref }: OfferSwitcherProps) {
       </button>
       <div ref={menuRef} className="studio-menu" id="studio-menu" aria-hidden={!isOpen}>
         <div className="studio-paths">
-          {siteData.studioOffers.map((offer) => (
-            <a
-              className={`studio-path${offer.current ? " current" : ""}`}
-              href={offer.current ? currentHref : offer.href}
-              aria-current={offer.current ? "page" : undefined}
-              key={offer.title}
-              onClick={() => setIsOpen(false)}
-            >
-              <span className="path-number">{offer.label}</span>
-              <strong>{offer.title}</strong>
-              <small>{offer.description}</small>
-              <span className="path-action">{offer.action}</span>
-            </a>
-          ))}
+          {siteData.studioOffers.map((offer) => {
+            const href = offer.current ? currentHref : offer.href;
+
+            return (
+              <a
+                className={`studio-path${offer.current ? " current" : ""}`}
+                href={href}
+                {...getExternalLinkAttributes(href)}
+                aria-current={offer.current ? "page" : undefined}
+                key={offer.title}
+                onClick={() => setIsOpen(false)}
+              >
+                <span className="path-number">{offer.label}</span>
+                <strong>{offer.title}</strong>
+                <small>{offer.description}</small>
+                <span className="path-action">{offer.action}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </>

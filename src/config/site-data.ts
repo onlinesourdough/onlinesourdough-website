@@ -159,7 +159,7 @@ export const siteData = {
         "Find and solve the business problem with Gustav close to the decisions and the work. Relevant Resources may be part of the work when useful.",
       cta: "Work together",
       status: "DWY",
-      href: "mailto:hello@arcitai.com?subject=onlinesourdough%20-%20The%20Fermentary",
+      href: "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
       image: {
         src: "/assets/inner-circle-lofi-v3-transparent.png",
         alt: "Pixel-art shared worktable with coffee and a slice of sourdough",

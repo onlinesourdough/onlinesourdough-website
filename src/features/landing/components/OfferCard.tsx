@@ -1,4 +1,5 @@
 import { type Offer } from "../../../config/site-data";
+import { getExternalLinkAttributes } from "../../../components/link-attributes";
 
 type OfferCardProps = {
   offer: Offer;
@@ -6,7 +7,7 @@ type OfferCardProps = {
 
 export function OfferCard({ offer }: OfferCardProps) {
   return (
-    <a className="offer-card" href={offer.href}>
+    <a className="offer-card" href={offer.href} {...getExternalLinkAttributes(offer.href)}>
       <span className="book-stage">
         <span className="book">
           <span className="book-head">

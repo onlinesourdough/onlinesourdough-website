@@ -1,5 +1,6 @@
 import { useRouterState } from "@tanstack/react-router";
 import { siteData } from "../../config/site-data";
+import { getExternalLinkAttributes } from "../link-attributes";
 
 export function SiteFooter() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
@@ -17,7 +18,7 @@ export function SiteFooter() {
           <span>{footer.copyright}</span>
           <nav className="footer-links" aria-label="Ecosystem links">
             {footer.links.map((link) => (
-              <a href={link.href} key={link.href}>
+              <a href={link.href} {...getExternalLinkAttributes(link.href)} key={link.href}>
                 {link.label}
               </a>
             ))}

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { getExternalLinkAttributes } from "../src/components/link-attributes";
 import { siteData } from "../src/config/site-data";
 
 describe("approved public site data", () => {
@@ -114,7 +115,30 @@ describe("approved public site data", () => {
   it("keeps the shared offer switcher and production destinations explicit", () => {
     expect(siteData.studioOffers.map((offer) => offer.title)).toEqual(["Arc'IT AI", "onlinesourdough"]);
     expect(siteData.studioOffers.find((offer) => offer.current)?.href).toBe("/");
+    expect(siteData.offers.find((offer) => offer.title === "The Fermentary")?.href).toBe(
+      "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
+    );
     expect(siteData.offers.at(-1)?.href).toBe("https://arcitai.com");
+  });
+
+  it("opens every configured external HTTP(S) destination safely", () => {
+    const externalHrefs = [
+      ...siteData.offers.map((offer) => offer.href),
+      ...siteData.studioOffers.filter((offer) => !offer.current).map((offer) => offer.href),
+      ...siteData.footer.links.map((link) => link.href),
+    ];
+
+    for (const href of externalHrefs) {
+      expect(href).toMatch(/^https?:\/\//i);
+      expect(getExternalLinkAttributes(href)).toEqual({
+        target: "_blank",
+        rel: "noopener noreferrer",
+      });
+    }
+
+    for (const href of ["#menu", "/about", "/#menu", "/"]) {
+      expect(getExternalLinkAttributes(href)).toEqual({});
+    }
   });
 
   it("contains no machine-local paths or customer-facing em dashes", () => {
