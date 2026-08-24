@@ -29,15 +29,15 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Give AI a real job in your business. | onlinesourdough",
+    title: "Build the business you want to run. | onlinesourdough",
     description:
-      "A practical method for finding where time, capacity, or decisions are getting stuck, then giving AI a bounded job the business can understand and own.",
-    aboutTitle: "A practical method for modern business. | onlinesourdough",
+      "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
+    aboutTitle: "The onlinesourdough Method | onlinesourdough",
     aboutDescription:
-      "onlinesourdough is my way of explaining how business, software, and AI should work together.",
-    ogTitle: "Give AI a real job in your business. | onlinesourdough",
+      "The onlinesourdough Method helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
+    ogTitle: "Build the business you want to run. | onlinesourdough",
     ogDescription:
-      "onlinesourdough is a practical method for finding the current constraint and giving AI a bounded job with clear ownership.",
+      "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
   },
   navigation: {
     offers: "Offers",
@@ -57,7 +57,7 @@ export const siteData = {
       label: "DIY + DONE WITH YOU",
       title: "onlinesourdough",
       description:
-        "Learn the method, use the resources, or work through your current constraint with direct guidance.",
+        "Use the onlinesourdough Method through Resources, or work through the current problem with direct guidance.",
       action: "Current offer",
       href: "/",
       current: true,
@@ -65,35 +65,33 @@ export const siteData = {
   ] satisfies StudioOffer[],
   page: {
     hero: {
-      title: "Give AI a real job in your business.",
+      title: "Build the business you want to run.",
       description:
-        "The method starts with the business: find where time, capacity, or decisions are getting stuck, then give AI a bounded job with the context, guardrails, and ownership to make it useful.",
+        "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own. Use the resources, work through it with me, or have the solution delivered.",
     },
     menu: {
       label: "SAME BAKE / DIFFERENT DELIVERIES",
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      title: "The business is the recipe. AI is the starter.",
+      title: "From business problem to working solution.",
       cta: "About the method",
       paragraphs: [
-        "A sourdough starter is useful, adaptable, and slightly needy.",
-        "It is not the finished loaf. It becomes valuable when it is fed well, understood, and used in the right recipe.",
-        "AI works in much the same way.",
-        "Give it real business context, a bounded job, clear guardrails, and honest feedback, and it can support people, keep workflows moving, and handle recurring work that should not depend on the founder.",
-        "The working setup becomes more useful as its context, routines, tools, and feedback improve. Software gives that capability a reliable place to work.",
-        "Without structure and ownership, AI may still produce something impressive. A bubbling demo is not the same as a capability the business can rely on.",
-        "When technology is part of the answer, it should be documented, monitored, recoverable, and clearly owned.",
-        "The result should create more business bandwidth than it consumes.",
+        "Every business has work that takes too much time, costs too much, leads to mistakes, or makes the next step harder than it should be.",
+        "onlinesourdough helps you make that problem clear, choose the smallest useful change, and turn it into something that works.",
+        "Sometimes the answer is a simpler process. Sometimes it is automation, an AI agent, a connection between existing tools, or software. The right solution depends on the business.",
+        "When something needs to be built, it should be understandable, maintainable, and owned by the business.",
+        "AIOS gives the work a home on your computer. It brings together your business context and the way you work with AI, agents, automation, software, and documentation, so you and your tools do not start from scratch every time.",
+        "The goal is more control over time, costs, capacity, and direction.",
       ],
     },
     about: {
-      eyebrow: "ABOUT / THE METHOD",
-      title: "A practical method for modern business.",
+      eyebrow: "ABOUT / THE ONLINESOURDOUGH METHOD",
+      title: "The onlinesourdough Method",
       paragraphs: [
-        "onlinesourdough is my way of explaining how business, software, and AI should work together. The method starts with the business: its current constraint, the people and processes involved, and the outcome that needs to change. Only then do we decide whether software, automation, or AI belongs in the solution.",
-        "The name comes from sourdough. A starter can become part of many different recipes. It can also become more useful over time, but only when it receives the right inputs and someone understands how to care for it. That is how I think about AI inside a business.",
-        "The working capability can improve as its business context, routines, tools, and feedback improve. That does not happen by itself. It still needs direction, boundaries, and clear ownership. The goal is Business Freedom: more control over time, capacity, and direction.",
+        "onlinesourdough is the shared method for turning real business problems into better processes, useful AI, automation, or software you can understand and own. The work starts with the business: its current constraint, the people and processes involved, and the outcome that needs to change.",
+        "AIOS gives the work a home on your computer. It brings together your business context and the way you work with AI, agents, automation, software, and documentation, so you and your tools do not start from scratch every time.",
+        "Business Freedom is the outcome: more control over time, costs, capacity, and direction. The method can be used through Resources, The Fermentary, or Complete Bake depending on how much support the work needs.",
       ],
       sections: [
         {
@@ -111,17 +109,17 @@ export const siteData = {
           ],
         },
         {
-          title: "Give AI a real job",
+          title: "Use AI where it helps",
           paragraphs: [
             "AI becomes more useful when it has business context, a bounded responsibility, clear guardrails, and a way to show whether the work is complete. It can support a person, run a watched workflow, or handle a recurring outcome as the evidence allows.",
-            "This is where context engineering, agent workflows, and good software architecture meet. The technical work matters because the business has to trust the result, recover when something fails, and know who owns what.",
+            "The right answer may be a process, automation, agent, integration, or software. Whatever is built should be understandable, maintainable, and owned by the business.",
           ],
         },
         {
           title: "Build for freedom and ownership",
           paragraphs: [
-            "When software is the right intervention, code that runs is only the beginning. The capability also needs the right architecture, documentation, security, monitoring, recovery, and handover for its real level of risk.",
-            "Business Freedom does not mean maximum automation. It means gaining more control without creating another system that pulls the founder back into daily operation. That is the same method whether you apply it yourself through Resources, work through it together in the Inner Circle, or have a Complete Bake delivered by Arc'IT AI.",
+            "When software is the right intervention, it is only part of the work. The result needs to be documented, maintainable, recoverable, and handed over in a way the business can own.",
+            "Business Freedom does not mean maximum automation. It means gaining more control without creating another system that pulls the founder back into daily operation. The same method is available through Resources (DIY), The Fermentary (DWY), or Complete Bake (DFY), with relevant Resources included in the higher-touch paths when useful.",
           ],
         },
       ],
@@ -134,7 +132,7 @@ export const siteData = {
       title: "Content",
       description: "Ideas, experiments, and real examples for connecting business, software, and AI.",
       cta: "Explore content",
-      status: "Open now",
+      status: "Public",
       href: "https://www.youtube.com/@gustavonline",
       image: {
         src: "/assets/content-lofi-v3-transparent.png",
@@ -145,9 +143,9 @@ export const siteData = {
       number: "02",
       title: "Resources",
       description:
-        "Practical blueprints, patterns, and reusable ingredients for applying the method to your own business.",
+        "A guided modular system inside a calm resource library for finding the problem and building the solution yourself.",
       cta: "Open library",
-      status: "Open now",
+      status: "DIY",
       href: "https://resources.onlinesourdough.com",
       image: {
         src: "/assets/resources-lofi-v3-transparent.png",
@@ -156,12 +154,12 @@ export const siteData = {
     },
     {
       number: "03",
-      title: "Inner Circle",
+      title: "The Fermentary",
       description:
-        "Direct guidance, decisions, and reviews while we work through your current constraint together.",
+        "Find and solve the business problem with Gustav close to the decisions and the work. Relevant Resources may be part of the work when useful.",
       cta: "Work together",
-      status: "Limited availability",
-      href: "mailto:hello@arcitai.com?subject=onlinesourdough%20-%20Inner%20Circle",
+      status: "DWY",
+      href: "mailto:hello@arcitai.com?subject=onlinesourdough%20-%20The%20Fermentary",
       image: {
         src: "/assets/inner-circle-lofi-v3-transparent.png",
         alt: "Pixel-art shared worktable with coffee and a slice of sourdough",
@@ -171,9 +169,9 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "A defined business capability designed, built, documented, and handed over around an outcome your business can own.",
+        "Gustav takes responsibility for the agreed solution and handover. Relevant Resources may be part of the work when useful.",
       cta: "Start a project",
-      status: "By request",
+      status: "DFY",
       href: "https://arcitai.com",
       image: {
         src: "/assets/complete-bake-lofi-v3-transparent.png",

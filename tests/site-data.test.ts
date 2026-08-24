@@ -6,16 +6,94 @@ describe("approved public site data", () => {
     expect(
       siteData.offers.map(({ number, title, cta, status }) => ({ number, title, cta, status })),
     ).toEqual([
-      { number: "01", title: "Content", cta: "Explore content", status: "Open now" },
-      { number: "02", title: "Resources", cta: "Open library", status: "Open now" },
+      { number: "01", title: "Content", cta: "Explore content", status: "Public" },
+      { number: "02", title: "Resources", cta: "Open library", status: "DIY" },
       {
         number: "03",
-        title: "Inner Circle",
+        title: "The Fermentary",
         cta: "Work together",
-        status: "Limited availability",
+        status: "DWY",
       },
-      { number: "04", title: "Complete Bake", cta: "Start a project", status: "By request" },
+      { number: "04", title: "Complete Bake", cta: "Start a project", status: "DFY" },
     ]);
+  });
+
+  it("protects the approved hero, SEO, and six-paragraph method copy", () => {
+    const title = "Build the business you want to run.";
+    const description =
+      "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.";
+
+    expect(siteData.page.hero.title).toBe(title);
+    expect(siteData.page.hero.description).toBe(
+      `${description} Use the resources, work through it with me, or have the solution delivered.`,
+    );
+    expect(siteData.seo.title).toBe(`${title} | onlinesourdough`);
+    expect(siteData.seo.description).toBe(description);
+    expect(siteData.seo.ogTitle).toBe(`${title} | onlinesourdough`);
+    expect(siteData.seo.ogDescription).toBe(description);
+    expect(siteData.page.manifesto.title).toBe("From business problem to working solution.");
+    expect(siteData.page.manifesto.paragraphs).toEqual([
+      "Every business has work that takes too much time, costs too much, leads to mistakes, or makes the next step harder than it should be.",
+      "onlinesourdough helps you make that problem clear, choose the smallest useful change, and turn it into something that works.",
+      "Sometimes the answer is a simpler process. Sometimes it is automation, an AI agent, a connection between existing tools, or software. The right solution depends on the business.",
+      "When something needs to be built, it should be understandable, maintainable, and owned by the business.",
+      "AIOS gives the work a home on your computer. It brings together your business context and the way you work with AI, agents, automation, software, and documentation, so you and your tools do not start from scratch every time.",
+      "The goal is more control over time, costs, capacity, and direction.",
+    ]);
+  });
+
+  it("keeps the About model and higher-touch Resources language canonical", () => {
+    expect(siteData.seo.aboutTitle).toBe("The onlinesourdough Method | onlinesourdough");
+    expect(siteData.seo.aboutDescription).toBe(
+      "The onlinesourdough Method helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
+    );
+    expect(siteData.page.about.title).toBe("The onlinesourdough Method");
+    expect(siteData.page.about.paragraphs.join(" ")).toContain("AIOS gives the work a home on your computer");
+    expect(siteData.page.about.sections.at(2)?.title).toBe("Use AI where it helps");
+    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("Resources (DIY)");
+    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("The Fermentary (DWY)");
+    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("Complete Bake (DFY)");
+    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("relevant Resources");
+    expect(siteData.studioOffers.find((offer) => offer.current)?.description).toBe(
+      "Use the onlinesourdough Method through Resources, or work through the current problem with direct guidance.",
+    );
+  });
+
+  it("excludes retired labels and unsupported commercial or delivery claims", () => {
+    const publicCopy = JSON.stringify({
+      seo: siteData.seo,
+      page: siteData.page,
+      offers: siteData.offers.map(({ number, title, description, cta, status, href }) => ({
+        number,
+        title,
+        description,
+        cta,
+        status,
+        href,
+      })),
+      studioOffers: siteData.studioOffers,
+    }).toLowerCase();
+
+    for (const retiredLabel of [
+      "inner circle",
+      "business freedom ecosystem",
+      "ai workspace",
+      "blueprint",
+      "guided bake",
+      "course",
+      "classroom",
+      "ebook",
+      "template library",
+      "slack",
+      "3 month",
+      "6 month",
+      "12 month",
+      "open now",
+      "limited availability",
+      "by request",
+    ]) {
+      expect(publicCopy).not.toContain(retiredLabel);
+    }
   });
 
   it("loads only selected root-relative design assets", () => {
