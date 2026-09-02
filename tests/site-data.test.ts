@@ -121,11 +121,23 @@ describe("approved public site data", () => {
     expect(siteData.offers.at(-1)?.href).toBe("https://arcitai.com");
   });
 
+  it("configures the accessible GitHub footer destination safely", () => {
+    expect(siteData.footer.github).toEqual({
+      label: "GitHub",
+      href: "https://github.com/onlinesourdough",
+    });
+    expect(getExternalLinkAttributes(siteData.footer.github.href)).toEqual({
+      target: "_blank",
+      rel: "noopener noreferrer",
+    });
+  });
+
   it("opens every configured external HTTP(S) destination safely", () => {
     const externalHrefs = [
       ...siteData.offers.map((offer) => offer.href),
       ...siteData.studioOffers.filter((offer) => !offer.current).map((offer) => offer.href),
       ...siteData.footer.links.map((link) => link.href),
+      siteData.footer.github.href,
     ];
 
     for (const href of externalHrefs) {

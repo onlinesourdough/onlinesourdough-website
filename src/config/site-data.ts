@@ -181,6 +181,10 @@ export const siteData = {
   ] satisfies Offer[],
   footer: {
     copyright: "© 2026 onlinesourdough",
+    github: {
+      label: "GitHub",
+      href: "https://github.com/onlinesourdough",
+    },
     links: [
       {
         label: "gustavonline ↗",

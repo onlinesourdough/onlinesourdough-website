@@ -832,8 +832,22 @@ html[data-theme="dark"] .site-header .os-mark,
 
 .footer-links {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 18px;
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-icon-link svg {
+  width: 15px;
+  height: 15px;
 }
 
 .footer-links a:hover,
