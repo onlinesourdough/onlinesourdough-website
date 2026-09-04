@@ -1,7 +1,5 @@
-import { createHash } from "node:crypto";
 import { access, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
-import { agentWorkReviewPin } from "./agent-work-review-pin-config.mjs";
 
 const distUrl = new URL("../dist/", import.meta.url);
 const expectedFiles = [
@@ -26,11 +24,11 @@ const expectedFiles = [
 
 await Promise.all(expectedFiles.map((path) => access(fileURLToPath(new URL(path, distUrl)))));
 
-const [indexHtml, aboutHtml, reviewHtml, runbook, sitemap, cname] = await Promise.all([
+const [indexHtml, aboutHtml, reviewHtml, reviewPointer, sitemap, cname] = await Promise.all([
   readFile(new URL("index.html", distUrl), "utf8"),
   readFile(new URL("about/index.html", distUrl), "utf8"),
   readFile(new URL("agent-work-review/index.html", distUrl), "utf8"),
-  readFile(new URL("agent-work-review.md", distUrl)),
+  readFile(new URL("agent-work-review.md", distUrl), "utf8"),
   readFile(new URL("sitemap.xml", distUrl), "utf8"),
   readFile(new URL("CNAME", distUrl), "utf8"),
 ]);
@@ -41,16 +39,17 @@ assertIncludes(aboutHtml, '<link rel="canonical" href="https://onlinesourdough.c
 assertIncludes(aboutHtml, "<title>The onlinesourdough Method | onlinesourdough</title>");
 assertIncludes(
   reviewHtml,
-  '<link rel="canonical" href="https://onlinesourdough.com/agent-work-review/"',
+  '<link rel="canonical" href="https://resources.onlinesourdough.com/agent-work-review"',
 );
-assertIncludes(reviewHtml, "<title>Agent Work Review | onlinesourdough</title>");
-assertIncludes(sitemap, "https://onlinesourdough.com/agent-work-review/");
-assertIncludes(sitemap, "https://onlinesourdough.com/agent-work-review.md");
-
-const runbookHash = createHash("sha256").update(runbook).digest("hex");
-if (runbookHash !== agentWorkReviewPin.sha256) {
-  throw new Error(`Unexpected published Agent Work Review hash: ${runbookHash}`);
-}
+assertIncludes(reviewHtml, "<title>Agent Work Review has moved | onlinesourdough</title>");
+assertIncludes(
+  reviewHtml,
+  '<meta http-equiv="refresh" content="0;url=https://resources.onlinesourdough.com/agent-work-review">',
+);
+assertIncludes(reviewPointer, "https://resources.onlinesourdough.com/agent-work-review.md");
+assertExcludes(reviewPointer, "# Agent Work Review runbook");
+assertExcludes(sitemap, "https://onlinesourdough.com/agent-work-review/");
+assertExcludes(sitemap, "https://onlinesourdough.com/agent-work-review.md");
 
 if (indexHtml.includes("/src/main.tsx")) {
   throw new Error("Production HTML still references the Vite source entrypoint.");
@@ -65,5 +64,11 @@ console.log(`Verified ${expectedFiles.length} GitHub Pages build artifacts.`);
 function assertIncludes(value, expected) {
   if (!value.includes(expected)) {
     throw new Error(`Build output did not include ${JSON.stringify(expected)}.`);
+  }
+}
+
+function assertExcludes(value, unexpected) {
+  if (value.includes(unexpected)) {
+    throw new Error(`Build output unexpectedly included ${JSON.stringify(unexpected)}.`);
   }
 }
