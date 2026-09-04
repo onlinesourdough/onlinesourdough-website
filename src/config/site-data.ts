@@ -35,6 +35,9 @@ export const siteData = {
     aboutTitle: "The onlinesourdough Method | onlinesourdough",
     aboutDescription:
       "The onlinesourdough Method helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
+    agentWorkReviewTitle: "Agent Work Review | onlinesourdough",
+    agentWorkReviewDescription:
+      "Run a private, local review of how you work with agents, organized around the four stages of the onlinesourdough Method.",
     ogTitle: "Build the business you want to run. | onlinesourdough",
     ogDescription:
       "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
@@ -124,6 +127,83 @@ export const siteData = {
         },
       ],
       backLabel: "Back to menu",
+    },
+    agentWorkReview: {
+      eyebrow: "FREE RESOURCE / LOCAL AGENT REVIEW",
+      title: "See how you work with agents.",
+      intro: [
+        "Agent Work Review is a local review of how you work with agents: the decisions you make, the controls your system supplies, the opportunities you miss, and the evidence that is available.",
+        "It produces a useful local result first. Nothing is uploaded, analyzed by this website, or sent anywhere automatically.",
+      ],
+      runbook: {
+        label: "COPY + RUN LOCALLY",
+        title: "Start the review in your agent harness",
+        description:
+          "Paste this instruction into Codex or another coding or agent harness that can read the web and inspect its own local session history.",
+        instruction:
+          "Read https://onlinesourdough.com/agent-work-review.md and follow it to review how I work with agents in this harness. Keep the review and its results local. Do not transmit or share anything.",
+        copyLabel: "Copy instruction",
+        copiedLabel: "Instruction copied",
+        copyFailedLabel: "Select and copy the instruction",
+        openLabel: "Open the Markdown runbook",
+        href: "/agent-work-review.md",
+        compatibility:
+          "A harness needs access to the runbook and its own local history to perform the review. If yours cannot read the URL, open the Markdown and provide it through the harness's supported local-file workflow.",
+      },
+      method: {
+        title: "Four stages, not one score",
+        description:
+          "Results follow the four onlinesourdough Method stages. They stay separated so a single score cannot hide where your working practice is strong, missing, or simply unobservable.",
+        stages: [
+          "Understand your business",
+          "Choose what to change",
+          "Build the solution",
+          "Launch and run it",
+        ],
+      },
+      evidence: {
+        title: "What the review separates",
+        description:
+          "The review attributes what happened carefully instead of treating every good result as the same kind of evidence.",
+        categories: [
+          {
+            title: "Owner-led practice",
+            description: "A behavior you deliberately invoked, strengthened, or enforced.",
+          },
+          {
+            title: "System-led control",
+            description: "A guardrail supplied by your harness, repository, skill, policy, or template.",
+          },
+          {
+            title: "Missing opportunity",
+            description: "A real chance to use a practice existed, but the practice was absent.",
+          },
+          {
+            title: "Unavailable evidence",
+            description: "The history or proof needed to assess a practice was not available.",
+          },
+          {
+            title: "Independent verification",
+            description: "A separate artifact, check, replay, or acceptance event supports the result.",
+          },
+        ],
+      },
+      privacy: {
+        title: "Local first. Sharing only by exact permission.",
+        paragraphs: [
+          "This website is a static publishing surface. It does not collect, receive, upload, analyze, or store your session history or generated reports.",
+          "The runbook keeps the review local. Any later sharing requires your exact, explicit permission for the specific content and destination at the moment of sharing.",
+        ],
+      },
+      next: {
+        title: "Use the result if it is useful",
+        description:
+          "The free local result comes first. Afterward, you can explore Resources on your own or start a conversation about the most useful next change.",
+        resourcesLabel: "Explore Resources ↗",
+        resourcesHref: "https://resources.onlinesourdough.com",
+        conversationLabel: "Start a conversation ↗",
+        conversationHref: "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
+      },
     },
   },
   offers: [

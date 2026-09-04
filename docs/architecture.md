@@ -16,18 +16,20 @@ uploaded by GitHub Actions to GitHub Pages. `public/CNAME` assigns
 src/
 ├── components/layout/       shared shell and shell interactions
 ├── config/                  public copy, destinations, SEO, asset manifest
-├── features/landing/        landing and About page compositions
+├── features/                landing, About, and Agent Work Review compositions
 ├── hooks/                   cross-page browser behavior
 ├── routes/                  thin route and metadata wiring
 ├── router.tsx               route tree
 └── styles.css               approved tokens and responsive presentation
 public/
 ├── assets/                  selected runtime art, logo, and fonts
+├── agent-work-review.md     exact pinned canonical runbook bytes
 ├── CNAME                    custom-domain authority
 ├── robots.txt
 └── sitemap.xml
 scripts/
-└── prepare-pages.mjs        direct route and fallback preparation
+├── agent-work-review-pin*.mjs source pin, local check, and explicit sync
+└── prepare-pages.mjs         direct route and fallback preparation
 ```
 
 `src/config/site-data.ts` is the one editable source for public copy, links,
@@ -46,6 +48,14 @@ route files own route metadata wiring only.
 External destinations own their content and availability. A failed external
 destination must not prevent this site from rendering.
 
+The Agent Work Review page is discovery and instruction only. Its copy action
+writes one public instruction to the visitor's local clipboard. The site never
+reads session history or reports and has no form, submission destination,
+analytics, upload, storage, or server function. The review flow has no runtime
+dependency on the canonical repository or a submission service.
+The canonical Agent Work Review repository owns the runbook; this site owns
+only the pinned publication entry points.
+
 ## Deliberate non-goals
 
 The application does not own auth, sessions, payments, a database, server
@@ -55,10 +65,12 @@ smoke tests are proportionate operational evidence for this static site.
 
 ## Routing and assets
 
-TanStack Router owns `/` and `/about`. The build script copies the SPA shell to
-`dist/about/index.html` so direct requests work on Pages, and to `dist/404.html`
-for unknown-path fallback. Canonical metadata is replaced for the direct About
-document.
+TanStack Router owns `/`, `/about`, and `/agent-work-review`. The build script
+copies the SPA shell to `dist/about/index.html` and
+`dist/agent-work-review/index.html` so direct requests work on Pages, and to
+`dist/404.html` for unknown-path fallback. Canonical metadata is replaced for
+each direct HTML document. Vite copies `public/agent-work-review.md` directly
+to the production root; its local SHA-256 check has no network dependency.
 
 Root-relative public paths are required by the production custom-domain
 context. Development and production preview checks must therefore confirm

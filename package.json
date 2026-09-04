@@ -8,7 +8,10 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",
-    "build": "npm run typecheck && vite build && node scripts/prepare-pages.mjs && node scripts/verify-build.mjs",
+    "agent-work-review:check": "node scripts/agent-work-review-pin.mjs",
+    "agent-work-review:verify-source": "node scripts/agent-work-review-pin.mjs --source",
+    "agent-work-review:sync": "node scripts/agent-work-review-pin.mjs --sync",
+    "build": "npm run typecheck && npm run agent-work-review:check && vite build && node scripts/prepare-pages.mjs && node scripts/verify-build.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "security:check": "npm audit --audit-level=high",
     "check": "npm run test && npm run build && npm run security:check"

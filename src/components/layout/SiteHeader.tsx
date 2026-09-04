@@ -7,6 +7,7 @@ import { OfferSwitcher } from "./OfferSwitcher";
 export function SiteHeader() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const isHome = pathname === "/";
+  const isAbout = pathname === "/about" || pathname === "/about/";
   const [activeSection, setActiveSection] = useState("");
   const { brand, assets, navigation, themeStorageKey } = siteData;
   const { theme, toggleTheme } = useTheme(themeStorageKey);
@@ -65,7 +66,15 @@ export function SiteHeader() {
         <a
           className="menu-shortcut menu-shortcut-about"
           href={isHome ? "#about" : "/about"}
-          aria-current={isHome ? (activeSection === "about" ? "location" : undefined) : "page"}
+          aria-current={
+            isHome
+              ? activeSection === "about"
+                ? "location"
+                : undefined
+              : isAbout
+                ? "page"
+                : undefined
+          }
         >
           {navigation.about}
         </a>
