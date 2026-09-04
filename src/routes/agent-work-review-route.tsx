@@ -1,6 +1,6 @@
 import { createRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { siteData } from "../config/site-data";
-import { AgentWorkReviewPage } from "../features/agent-work-review/components/AgentWorkReviewPage";
 import { usePageMetadata } from "../hooks/use-page-metadata";
 import { rootRoute } from "./root-route";
 
@@ -11,20 +11,32 @@ export const agentWorkReviewRoute = createRoute({
 });
 
 function AgentWorkReviewRoute() {
-  const { seo } = siteData;
+  const { agentWorkReview } = siteData.redirects;
 
   usePageMetadata({
-    title: seo.agentWorkReviewTitle,
-    description: seo.agentWorkReviewDescription,
-    url: `${seo.siteUrl}/agent-work-review/`,
-    themeColor: seo.themeColor,
-    ogTitle: seo.agentWorkReviewTitle,
-    ogDescription: seo.agentWorkReviewDescription,
+    title: agentWorkReview.title,
+    description: agentWorkReview.description,
+    url: agentWorkReview.destination,
+    themeColor: siteData.seo.themeColor,
   });
 
+  useEffect(() => {
+    window.location.replace(agentWorkReview.destination);
+  }, [agentWorkReview.destination]);
+
   return (
-    <main id="top" className="review-page">
-      <AgentWorkReviewPage />
+    <main id="top" className="about-page">
+      <section className="about-hero" aria-labelledby="agent-work-review-moved-title">
+        <p>{agentWorkReview.eyebrow}</p>
+        <h1 id="agent-work-review-moved-title">{agentWorkReview.heading}</h1>
+        <p>{agentWorkReview.body}</p>
+        <a
+          className="back-link"
+          href={agentWorkReview.destination}
+        >
+          {agentWorkReview.linkLabel}
+        </a>
+      </section>
     </main>
   );
 }
