@@ -1,0 +1,23 @@
+[
+  {
+    "key": "main-combined",
+    "file": "main-combined-full.png",
+    "width": 1400,
+    "height": 2559,
+    "sha256": "82106a7cf9947e0fe1586c09e8d6da6ba98776785cb8e27b4c4a5f4bb53bd123"
+  },
+  {
+    "key": "resources-flow",
+    "file": "resources-flow-full.png",
+    "width": 1400,
+    "height": 2397,
+    "sha256": "6290ca2f22be7e48415af79ae61ce341d19762fc04bcb303988d7d5fd2b09b5e"
+  },
+  {
+    "key": "resources-vsl",
+    "file": "resources-vsl-full.png",
+    "width": 1400,
+    "height": 2131,
+    "sha256": "3c7941feb2b8f4cbc3f1c635c08338453cfe5b8dc18b3b4f5810f506bb021d2d"
+  }
+]

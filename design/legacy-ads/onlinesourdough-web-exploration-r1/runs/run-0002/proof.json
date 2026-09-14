@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "technical and visual verification of exploratory artifact; owner design decision pending",
+  "design_sha256": "48b3c9098af8735aea7a7063731b850e314c70884de5bcbddf2b313396cd0271",
+  "editable_nodes": 1798,
+  "top_level_boards": 5,
+  "companions": [
+    {
+      "path": "openpencil/onlinesourdough-design-map-r1.op",
+      "sha256": "e28c79d2acaa2d55729a7f17c9fdb645bbd6cc0a4fca304adc1842ee892b50ac"
+    },
+    {
+      "path": "index.html",
+      "sha256": "712a3a4755732d79c67c93cf1e7039342c1ce90f0086ba315383babad1362281"
+    },
+    {
+      "path": "openpencil/exports-final/01-00 · Designkort — nu → inspiration → muligheder.png",
+      "sha256": "77dd1f0ea757b3fd5c40452d96facc7d5b63e75dfed8f80c1cb9bc957afa54e5",
+      "width": 4880,
+      "height": 3080
+    },
+    {
+      "path": "openpencil/exports-final/02-A · Det levende menukort.png",
+      "sha256": "c48f4ea3903f432b764d0d23d7c1d7e59fad7bc2b69db5e4e0b224c930709359",
+      "width": 4880,
+      "height": 3260
+    },
+    {
+      "path": "openpencil/exports-final/03-B · Gør tilbuddene lettere at vælge.png",
+      "sha256": "7d703b44d78ff29a2f623222011a597b59c1c66ef6750db7f64f8c53bb895cf1",
+      "width": 4880,
+      "height": 3260
+    },
+    {
+      "path": "openpencil/exports-final/04-C · Vis arbejdet som et system.png",
+      "sha256": "3a91c5cd54c6d2f6adc46adad603647027ddfbcc87b3489eb57f23b37122cf4b",
+      "width": 4880,
+      "height": 3260
+    },
+    {
+      "path": "openpencil/exports-final/05-04 · Motion + mobil — storyboard og beslutninger.png",
+      "sha256": "13fce7c7f98f85eddaba4d0a6e05ccc197ced76edead4bf6c8d06792afe915e0",
+      "width": 4880,
+      "height": 3180
+    }
+  ],
+  "native_version": "0.8.4",
+  "native_vsix_sha256": "7ce6cde22f7e8584de2faca0279f6d74438675291c2547a7d99230fc0e629342",
+  "source_preserved": true,
+  "seed_sha256": "eb5d3f112b137d1c96ffe0cd2ad2932308d61dc3ccaa927e0eda22809a7de8d6",
+  "saved_via": "verified native CLI save_document to private working_document",
+  "reopened_via": "fresh workbench native file start, then supervised built-in browser",
+  "live_canvas_observed": true,
+  "language_observed": "English editor chrome",
+  "browser_url": "http://127.0.0.1:57432/",
+  "checks": [
+    "DESIGN.md lint: 0 errors, 0 warnings",
+    "npm run check: PASS",
+    "OpenPencil check: PASS; 1798 nodes, exact source/export hashes, CanvasKit aliases identical",
+    "All five final PNG boards visually inspected (unchanged board hashes retained between exports)",
+    "Static artifact index: all five images loaded, visible skip-link focus, no overflow at observed browser width 609px"
+  ],
+  "limitations": [
+    "No receiving website implementation or deployment",
+    "Motion and mobile website states are storyboards, not tested runtime behaviors",
+    "Current-state sites are simplified native reconstructions",
+    "Gustav has not selected or approved a direction",
+    "Viewport override requested 390px; browser reported 609px, so no exact-390px browser claim",
+    "Font fidelity is limited by the native OpenPencil renderer"
+  ],
+  "review_mode": "owner",
+  "review_owner": "Gustav Anderson",
+  "review_status": "waiting-owner",
+  "receiver_acceptance": "not-requested"
+}

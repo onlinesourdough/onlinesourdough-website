@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "width": 390,
+    "height": 844,
+    "overflow": false
+  },
+  "curveBefore": {
+    "overflow": false,
+    "revealed": false,
+    "sidebar": false,
+    "width": 390
+  },
+  "curveVisible": {
+    "labels": "flex",
+    "overflow": false,
+    "pause": "paused",
+    "revealed": true
+  },
+  "focus": {
+    "outline": "solid",
+    "outlineWidth": "2px",
+    "text": "Find your starting point ↓"
+  }
+}

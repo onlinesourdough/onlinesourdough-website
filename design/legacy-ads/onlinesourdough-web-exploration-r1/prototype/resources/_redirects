@@ -1,0 +1,4 @@
+/account /access 301
+/tasks /inbox 301
+/favicon.ico /favicon.svg 302
+/* /index.html 200

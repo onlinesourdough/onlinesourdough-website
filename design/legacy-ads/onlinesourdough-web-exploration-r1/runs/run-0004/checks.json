@@ -1,0 +1,83 @@
+{
+  "selected_format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "workspace/designs/onlinesourdough-web-exploration-r1/BRIEF.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/DESIGN.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/REVIEW.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/README.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/index.html",
+      "workspace/designs/onlinesourdough-web-exploration-r1/state/active.json",
+      "workspace/designs/onlinesourdough-web-exploration-r1/state/workbench.json",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/FounderSignature.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/DesignAddition.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/SiteFooter.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/App.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/ParticleFlow.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/SiteHeader.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/LandingPage.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/HeroField.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/ResourcesGrowth.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/design-addition.css",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/HomePage.tsx"
+    ],
+    "exit_code": 0,
+    "output": "Checking formatting...\nAll matched files use Prettier code style!\n"
+  },
+  "design_lint": {
+    "command": [
+      "node",
+      "node_modules/@google/design.md/dist/index.js",
+      "lint",
+      "--format",
+      "json",
+      "workspace/designs/onlinesourdough-web-exploration-r1/DESIGN.md"
+    ],
+    "exit_code": 0,
+    "output": "{\n  \"findings\": [\n    {\n      \"severity\": \"info\",\n      \"message\": \"Design system defines 7 colors, 3 typography scales, 2 rounding levels, 5 spacing tokens.\"\n    }\n  ],\n  \"summary\": {\n    \"errors\": 0,\n    \"warnings\": 0,\n    \"infos\": 1\n  }\n}\n"
+  },
+  "repository_contract": {
+    "command": [
+      "node",
+      "workspace/engine/checks.mjs"
+    ],
+    "exit_code": 1,
+    "output": "FAIL: ADS checks\n- workspace/designs/pixelroute-r1/index.html is missing\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Receiving outcome\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Source/reference rights, provenance, and licensing\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Ownership boundary\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Review owner\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Receiver acceptance\n- workspace/designs/pixelroute-r1/BRIEF.md lacks an exact independent or owner Review mode\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker ## Portable direction and ownership\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker This `DESIGN.md` is the canonical\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Scope and non-goals:**\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Review, revision, and acceptance:**\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Known limitations:**\n- cannot read workspace/designs/pixelroute-r1/index.html: ENOENT: no such file or directory, open '/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/pixelroute-r1/index.html'\n- workspace/designs/pixelroute-r1/index.html lacks <main\n- workspace/designs/pixelroute-r1/index.html lacks viewport\n- workspace/designs/pixelroute-r1/index.html lacks skip-link\n- workspace/designs/pixelroute-r1/index.html lacks :focus-visible\n- workspace/designs/pixelroute-r1/index.html lacks reduced-motion behavior\n- cannot read workspace/designs/pixelroute-r1/index.html: ENOENT: no such file or directory, open '/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/pixelroute-r1/index.html'\n- workspace/designs/index.html does not list pixelroute-r1\n- workspace/designs/README.md does not mention pixelroute-r1\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks previous_run_relation\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks failure\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks recovery\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 has a relation without a predecessor\n"
+  },
+  "native_binding": {
+    "exit_code": 0,
+    "output": {
+      "schema": "ADS-OPENPENCIL-WORKBENCH/1",
+      "status": "PASS",
+      "version": "0.8.4",
+      "origin": "http://127.0.0.1:50356",
+      "url": "http://127.0.0.1:50356/",
+      "document": {
+        "path": "/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/onlinesourdough-design-map-r4c-final.op",
+        "nodes": 142,
+        "sha256": "b53d376c8784258b43fc2200a51d29e4f489d01de213303c45cc14603175b55c"
+      },
+      "export": {
+        "path": "/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/exports-r4c-final/04-Main - 02 Logo.png",
+        "sha256": "11630f86eecdc2b55095edb431339877a88f5faee70adfa0bdaf81e3e9576120"
+      },
+      "canvasKit": {
+        "canonical": "/canvaskit/*",
+        "compatibility": "/pkg/canvaskit/*",
+        "identical": true
+      },
+      "browser_opening": "harness-owned",
+      "locale": {
+        "value": "en-US",
+        "mechanism": "upstream browser settings seed on a fresh loopback origin",
+        "served": true
+      },
+      "language": {
+        "default": "en-US",
+        "preference": "openpencil-rust-web-settings::<profile>",
+        "policy": "seed-when-absent"
+      }
+    }
+  }
+}

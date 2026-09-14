@@ -1,0 +1,50 @@
+[
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 0,
+    "file": "main-dough-part0.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 360,
+    "file": "main-dough-part1.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 720,
+    "file": "main-dough-part2.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1080,
+    "file": "main-dough-part3.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1440,
+    "file": "main-dough-part4.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1577,
+    "file": "main-dough-part5.jpg"
+  }
+]

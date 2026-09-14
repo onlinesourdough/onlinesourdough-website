@@ -1,0 +1,60 @@
+{
+  "type": "Observed browser UI and DOM readback",
+  "main": {
+    "variant": "combined",
+    "living_character_present": true,
+    "flow_pinned_after_click": true,
+    "persistent_particle_elements": 96,
+    "about_link_opened": "http://127.0.0.1:53671/about",
+    "founder_link": "https://gustavonline.com",
+    "founder_avatar": "/assets/gustav-github.png",
+    "sound_returned_to_off": true
+  },
+  "resources": {
+    "video_first_no_visible_hero_or_hero_cta": true,
+    "video_duration": 6,
+    "video_reached_time": 6,
+    "video_ended": true,
+    "start_here_link_opened": "http://127.0.0.1:53672/collection/explore/start-here",
+    "curve_states": [
+      {
+        "selection": "ChatGPT",
+        "end_y": 278
+      },
+      {
+        "selection": "AIOS",
+        "end_y": 34,
+        "pressed_buttons": 1
+      },
+      {
+        "hover": "Skills",
+        "end_y": 247.5,
+        "persists_on_leave": true
+      },
+      {
+        "keyboard_shift_tab": "Orchestration"
+      },
+      {
+        "reduced_motion": "ChatGPT",
+        "end_y": 278,
+        "stable": true
+      }
+    ]
+  },
+  "mobile": {
+    "main_390": {
+      "frame_width": 390,
+      "scroll_width": 390,
+      "height": 2339
+    },
+    "resources_vsl_320": {
+      "frame_width": 320,
+      "scroll_width": 320,
+      "height": 2438,
+      "stage_labels": "readable vertical list"
+    },
+    "resources_vsl_390_top": "video first; folders follow"
+  },
+  "capture_method": "Actual in-app browser captures in a local fixed-width iframe harness. Native AX screenshots are cropped to the observed iframe width and assembled using recorded scroll offsets. A temporary viewport-emulation rendering mismatch was bypassed by this ordinary browser layout. Capture mode freezes motion and uses the existing video poster.",
+  "hardware_audio": "Not listened to; r4 browser audio graph evidence remains applicable because HeroField behavior is unchanged."
+}

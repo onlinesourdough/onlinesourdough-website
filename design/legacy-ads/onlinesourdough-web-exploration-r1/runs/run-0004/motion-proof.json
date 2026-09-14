@@ -1,0 +1,27 @@
+{
+  "pausedHashes": [
+    "3ea19369583bcddd4be8a03867564fd38e23af547d93888614895f6fbffb0807",
+    "3ea19369583bcddd4be8a03867564fd38e23af547d93888614895f6fbffb0807"
+  ],
+  "pauseStable": true,
+  "reduced": [
+    {
+      "eyes": "glyph-cutout",
+      "kind": "mark",
+      "motion": "still",
+      "omitted": "47"
+    },
+    {
+      "eyes": "glyph-cutout",
+      "kind": "dough",
+      "motion": "still",
+      "omitted": "73"
+    },
+    {
+      "eyes": "glyph-cutout",
+      "kind": "starter",
+      "motion": "still",
+      "omitted": "66"
+    }
+  ]
+}

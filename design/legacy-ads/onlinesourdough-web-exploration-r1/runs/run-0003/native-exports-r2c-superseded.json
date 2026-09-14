@@ -1,0 +1,58 @@
+{
+  "method": "verified-native-cli:export_frames",
+  "source": "openpencil/onlinesourdough-design-map-r2c.op",
+  "sha256": "6478e182f48f5c4e429de598ca293eff4ac01204b83dcaca51f9f4c853c155fd",
+  "nodes": 88,
+  "roots": 8,
+  "exports": [
+    {
+      "path": "openpencil/exports-r2c/01-COLLECTION 1 - onlinesourdough.com.png",
+      "width": 9040,
+      "height": 340,
+      "sha256": "a7d229ee215c2bdbe521ac2daa30063eab04b605dd3502f588a43ad39c0b1706"
+    },
+    {
+      "path": "openpencil/exports-r2c/02-onlinesourdough.com - 00 \u00b7 Original fra kodebasen.png",
+      "width": 2800,
+      "height": 4646,
+      "sha256": "d81eae0dc3823c21d926ef0eed89063eecdf27a0355029cfad1d47a365048f20"
+    },
+    {
+      "path": "openpencil/exports-r2c/03-onlinesourdough.com - 01 \u00b7 Metode og tube.png",
+      "width": 2800,
+      "height": 4948,
+      "sha256": "cd989e72b80518507a6d7f14dd1321debc9ca4ecdbaf7a4b216dcf04ab2cf91d"
+    },
+    {
+      "path": "openpencil/exports-r2c/04-onlinesourdough.com - 02 \u00b7 Levende hero.png",
+      "width": 2800,
+      "height": 5094,
+      "sha256": "e6d915aa73f8ce93c70417d73b6a0ecc873bb99713b142eb96c6cf23ac09a3ea"
+    },
+    {
+      "path": "openpencil/exports-r2c/05-COLLECTION 2 - resources.onlinesourdough.com.png",
+      "width": 9040,
+      "height": 340,
+      "sha256": "e1c779e69554d78bde04715a9309e69bfe6143f57db7fbb415053c11ee2521d2"
+    },
+    {
+      "path": "openpencil/exports-r2c/06-resources.onlinesourdough.com - 00 \u00b7 Original fra kodebasen.png",
+      "width": 2800,
+      "height": 3750,
+      "sha256": "be5a7fee54d3539389c0c8faa1ca21082395988d296d881837cac07e22dc8e49"
+    },
+    {
+      "path": "openpencil/exports-r2c/07-resources.onlinesourdough.com - 01 \u00b7 Fra AI assistant til business freedom.png",
+      "width": 2800,
+      "height": 4994,
+      "sha256": "4c3fcb415111a9e06a8434fdda20971e2a1c66df572b7200a253b12b6b5bd8a0"
+    },
+    {
+      "path": "openpencil/exports-r2c/08-resources.onlinesourdough.com - 02 \u00b7 Levende hero.png",
+      "width": 2800,
+      "height": 4180,
+      "sha256": "6f25bec429db8a7c1a797381794a3424329725820b4ea74f3a0b59d74455799e"
+    }
+  ],
+  "source_unchanged_after_export": true
+}

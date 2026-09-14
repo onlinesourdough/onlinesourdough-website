@@ -1,0 +1,7629 @@
+{
+  "type": "frame",
+  "name": "B · Gør tilbuddene lettere at vælge",
+  "x": 0,
+  "y": 3540,
+  "width": 2440,
+  "height": 1630,
+  "layout": "none",
+  "clipContent": true,
+  "fill": [
+    {
+      "type": "solid",
+      "color": "#F6F2E9"
+    }
+  ],
+  "children": [
+    {
+      "type": "text",
+      "name": "ONLINESOURDOUGH / DESIGN EXPLORATION / B",
+      "content": "ONLINESOURDOUGH / DESIGN EXPLORATION / B",
+      "x": 64,
+      "y": 38,
+      "width": 750,
+      "height": 24.56,
+      "fontFamily": "IBM Plex Mono",
+      "fontSize": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#8C492B"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Gør tilbuddene lettere at vælge",
+      "content": "Gør tilbuddene lettere at vælge",
+      "x": 64,
+      "y": 74,
+      "width": 2150,
+      "height": 68.72,
+      "fontFamily": "Inter",
+      "fontSize": 44,
+      "fontWeight": 600,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#29251F"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Et tydeligere tilbudsrum på hovedsiden. Resources forbliver et sted at",
+      "content": "Et tydeligere tilbudsrum på hovedsiden. Resources forbliver et sted at lære og arbejde — med hjælp som en separat mulighed.",
+      "x": 66,
+      "y": 137,
+      "width": 2200,
+      "height": 34.22,
+      "fontFamily": "Inter",
+      "fontSize": 19,
+      "fontWeight": 400,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#686259"
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "name": "Rule",
+      "x": 64,
+      "y": 187,
+      "width": 2312,
+      "height": 1,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#D8D0C2"
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "text",
+      "name": "ONLINESOURDOUGH.COM / VÆLG EN VEJ TIL HJÆLP",
+      "content": "ONLINESOURDOUGH.COM / VÆLG EN VEJ TIL HJÆLP",
+      "x": 64,
+      "y": 215,
+      "width": 1108,
+      "height": 24.56,
+      "fontFamily": "IBM Plex Mono",
+      "fontSize": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#8C492B"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "RESOURCES.ONLINESOURDOUGH.COM / BRUG METODEN SELV",
+      "content": "RESOURCES.ONLINESOURDOUGH.COM / BRUG METODEN SELV",
+      "x": 1268,
+      "y": 215,
+      "width": 1108,
+      "height": 24.56,
+      "fontFamily": "IBM Plex Mono",
+      "fontSize": 12,
+      "fontWeight": 500,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#8C492B"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "name": "B · main website",
+      "x": 64,
+      "y": 250,
+      "width": 1108,
+      "height": 1230,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#FFFCF5"
+        }
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 0,
+          "y": 0,
+          "width": 1108,
+          "height": 56,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#F6F2E9"
+            }
+          ],
+          "cornerRadius": 0,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 42,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 45,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 42,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 45,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 48,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 42,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 45,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 48,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 51,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 42,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 45,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 48,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 51,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 42,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 45,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 48,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "text",
+              "name": "onlinesourdough",
+              "content": "onlinesourdough",
+              "x": 68,
+              "y": 17,
+              "width": 300,
+              "height": 32.839999999999996,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Ways to work       Method       Resources ↗",
+              "content": "Ways to work       Method       Resources ↗",
+              "x": 638,
+              "y": 20,
+              "width": 438,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 0,
+              "y": 55,
+              "width": 1108,
+              "height": 1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "FROM BUSINESS PROBLEM TO WORKING SOLUTION",
+          "content": "FROM BUSINESS PROBLEM TO WORKING SOLUTION",
+          "x": 48,
+          "y": 112,
+          "width": 750,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Make room for better work.",
+          "content": "Make room for\nbetter work.",
+          "x": 48,
+          "y": 157,
+          "width": 650,
+          "height": 184.64,
+          "fontFamily": "Inter",
+          "fontSize": 64,
+          "fontWeight": 600,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Useful AI, better processes and software you can own. Start with the b",
+          "content": "Useful AI, better processes and software you can own.\nStart with the business problem. Choose the help you need.",
+          "x": 48,
+          "y": 329,
+          "width": 750,
+          "height": 57.67999999999999,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 48,
+          "y": 416,
+          "width": 312,
+          "height": 48,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 4,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "text",
+              "name": "Find the right starting point ↓",
+              "content": "Find the right starting point ↓",
+              "x": 18,
+              "y": 13,
+              "width": 280,
+              "height": 28.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": 600,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#FFFCF5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 182,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 182,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 182,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 182,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 182,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 190,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 190,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 190,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 190,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 198,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 198,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 198,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 198,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 206,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 206,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 206,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 206,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 206,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 214,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 214,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 214,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 214,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 214,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 222,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 222,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 222,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 222,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 222,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 222,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 222,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 222,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 748,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 230,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 230,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 230,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 238,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 238,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 900,
+          "y": 238,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 748,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 246,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 246,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 900,
+          "y": 246,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 748,
+          "y": 254,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 254,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 254,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 254,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 254,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 254,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 254,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 900,
+          "y": 254,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 262,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 262,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 756,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 270,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 270,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 270,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 892,
+          "y": 270,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 764,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 278,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 278,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 278,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 876,
+          "y": 278,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 884,
+          "y": 278,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 772,
+          "y": 286,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 286,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 286,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 286,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 286,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 780,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 788,
+          "y": 294,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 796,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 812,
+          "y": 294,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 294,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 852,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 860,
+          "y": 294,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 868,
+          "y": 294,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 804,
+          "y": 302,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 820,
+          "y": 302,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 828,
+          "y": 302,
+          "width": 5,
+          "height": 5,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 836,
+          "y": 302,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 844,
+          "y": 302,
+          "width": 3,
+          "height": 3,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 912,
+          "y": 239,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 935.0,
+          "y": 199,
+          "width": 2,
+          "height": 40,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 935.0,
+          "y": 199,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 966,
+          "y": 194,
+          "width": 8,
+          "height": 8,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "CONTEXT",
+          "content": "CONTEXT",
+          "x": 984,
+          "y": 188,
+          "width": 124,
+          "height": 24,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 11,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 912,
+          "y": 239,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 935.0,
+          "y": 239,
+          "width": 2,
+          "height": 24,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 935.0,
+          "y": 263,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 966,
+          "y": 258,
+          "width": 8,
+          "height": 8,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "WORK",
+          "content": "WORK",
+          "x": 984,
+          "y": 252,
+          "width": 124,
+          "height": 24,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 11,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 912,
+          "y": 239,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 935.0,
+          "y": 239,
+          "width": 2,
+          "height": 88,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 935.0,
+          "y": 327,
+          "width": 23.0,
+          "height": 2,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 966,
+          "y": 322,
+          "width": 8,
+          "height": 8,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#526B49"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "REVIEW",
+          "content": "REVIEW",
+          "x": 984,
+          "y": 316,
+          "width": 124,
+          "height": 24,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 11,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "WAYS TO WORK TOGETHER",
+          "content": "WAYS TO WORK TOGETHER",
+          "x": 48,
+          "y": 530,
+          "width": 750,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 48,
+          "y": 575,
+          "width": 1012,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 52,
+          "y": 612,
+          "width": 10,
+          "height": 10,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Talk through one problem",
+          "content": "Talk through one problem",
+          "x": 90,
+          "y": 598,
+          "width": 712,
+          "height": 43.879999999999995,
+          "fontFamily": "Inter",
+          "fontSize": 26,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A focused starting point with Gustav.",
+          "content": "A focused starting point with Gustav.",
+          "x": 90,
+          "y": 645,
+          "width": 920,
+          "height": 31.459999999999997,
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "DWY / THE FERMENTARY",
+          "content": "DWY / THE FERMENTARY",
+          "x": 824,
+          "y": 609,
+          "width": 232,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 48,
+          "y": 707,
+          "width": 1012,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 52,
+          "y": 744,
+          "width": 10,
+          "height": 10,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Work on it with your team",
+          "content": "Work on it with your team",
+          "x": 90,
+          "y": 730,
+          "width": 712,
+          "height": 43.879999999999995,
+          "fontFamily": "Inter",
+          "fontSize": 26,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A workshop around the work you actually do.",
+          "content": "A workshop around the work you actually do.",
+          "x": 90,
+          "y": 777,
+          "width": 920,
+          "height": 31.459999999999997,
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "DWY / THE FERMENTARY",
+          "content": "DWY / THE FERMENTARY",
+          "x": 824,
+          "y": 741,
+          "width": 232,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 48,
+          "y": 839,
+          "width": 1012,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "ellipse",
+          "name": "Process node",
+          "x": 52,
+          "y": 876,
+          "width": 10,
+          "height": 10,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#526B49"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Have the solution delivered",
+          "content": "Have the solution delivered",
+          "x": 90,
+          "y": 862,
+          "width": 712,
+          "height": 43.879999999999995,
+          "fontFamily": "Inter",
+          "fontSize": 26,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "An agreed scope, a working solution, a handover.",
+          "content": "An agreed scope, a working solution, a handover.",
+          "x": 90,
+          "y": 909,
+          "width": 920,
+          "height": 31.459999999999997,
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "DFY / COMPLETE BAKE",
+          "content": "DFY / COMPLETE BAKE",
+          "x": 824,
+          "y": 873,
+          "width": 232,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 48,
+          "y": 994,
+          "width": 1012,
+          "height": 145,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#F6F2E9"
+            }
+          ],
+          "cornerRadius": 0,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "text",
+              "name": "Prefer to build it yourself?",
+              "content": "Prefer to build it yourself?",
+              "x": 22,
+              "y": 24,
+              "width": 875,
+              "height": 43.879999999999995,
+              "fontFamily": "Inter",
+              "fontSize": 26,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Start with Resources. Follow the method and use the open-source tools.",
+              "content": "Start with Resources. Follow the method and use the open-source tools.",
+              "x": 22,
+              "y": 73,
+              "width": 919,
+              "height": 31.459999999999997,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Open the library ↗",
+              "content": "Open the library ↗",
+              "x": 778,
+              "y": 110,
+              "width": 234,
+              "height": 28.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Public ideas and experiments → gustavonline",
+          "content": "Public ideas and experiments → gustavonline",
+          "x": 48,
+          "y": 1173,
+          "width": 980,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        }
+      ],
+      "stroke": {
+        "thickness": 1,
+        "fill": [
+          {
+            "type": "solid",
+            "color": "#D8D0C2"
+          }
+        ],
+        "align": "inside"
+      }
+    },
+    {
+      "type": "frame",
+      "name": "B · Resources / collapsed rail",
+      "x": 1268,
+      "y": 250,
+      "width": 1108,
+      "height": 1230,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#FFFCF5"
+        }
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 0,
+          "y": 0,
+          "width": 1108,
+          "height": 56,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#F6F2E9"
+            }
+          ],
+          "cornerRadius": 0,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 21,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 27,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 20,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 18,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 21,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 27,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 23,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 15,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 18,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 21,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 27,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 26,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 15,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 18,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 27,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 36,
+              "y": 29,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 18,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 21,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 27,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 30,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 33,
+              "y": 32,
+              "width": 2.4,
+              "height": 2.4,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "text",
+              "name": "Open library",
+              "content": "Open library",
+              "x": 78,
+              "y": 19,
+              "width": 130,
+              "height": 25.939999999999998,
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "RESOURCES / HOME",
+              "content": "RESOURCES / HOME",
+              "x": 258,
+              "y": 20,
+              "width": 300,
+              "height": 24,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 11,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Search     Account",
+              "content": "Search     Account",
+              "x": 908,
+              "y": 19,
+              "width": 180,
+              "height": 24.56,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 0,
+              "y": 55,
+              "width": 1108,
+              "height": 1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 0,
+          "y": 56,
+          "width": 56,
+          "height": 1174,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#F6F2E9"
+            }
+          ],
+          "cornerRadius": 0,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 28,
+              "width": 16,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 34,
+              "width": 12,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 84,
+              "width": 16,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 90,
+              "width": 12,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 140,
+              "width": 16,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 20,
+              "y": 146,
+              "width": 12,
+              "height": 2,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ],
+              "cornerRadius": 0
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Surface",
+          "x": 55,
+          "y": 0,
+          "width": 1,
+          "height": 1230,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "A PRACTICAL HOME FOR YOUR AI WORK",
+          "content": "A PRACTICAL HOME FOR YOUR AI WORK",
+          "x": 104,
+          "y": 113,
+          "width": 750,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Give AI real work. Keep the system yours.",
+          "content": "Give AI real work.\nKeep the system yours.",
+          "x": 104,
+          "y": 163,
+          "width": 680,
+          "height": 146.0,
+          "fontFamily": "Inter",
+          "fontSize": 50,
+          "fontWeight": 600,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Hero · original pixel workflow",
+          "x": 806,
+          "y": 178,
+          "width": 250,
+          "height": 174,
+          "layout": "none",
+          "clipContent": true,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#FFFCF5"
+            }
+          ],
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 23.56,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 23.56,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 23.56,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 23.56,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 23.56,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 28.52,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 28.52,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 28.52,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 28.52,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 33.48,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 33.48,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 33.48,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 33.48,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 38.44,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 38.44,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 38.44,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 38.44,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 38.44,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 43.4,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 43.4,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 43.4,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 43.4,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 48.36,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 48.36,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 48.36,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 48.36,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 48.36,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 48.36,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 48.36,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 48.36,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 4.96,
+              "y": 53.32,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 53.32,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 53.32,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 53.32,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 53.32,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 53.32,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 53.32,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 99.2,
+              "y": 53.32,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 4.96,
+              "y": 58.28,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 58.28,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 99.2,
+              "y": 58.28,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 4.96,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 63.24,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 63.24,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 63.24,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 68.2,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 68.2,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 68.2,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 68.2,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 68.2,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 68.2,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 68.2,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 99.2,
+              "y": 68.2,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 73.16,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 73.16,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 73.16,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 73.16,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 73.16,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 73.16,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 73.16,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 73.16,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 9.92,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 78.12,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 78.12,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 94.24,
+              "y": 78.12,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 14.879999999999999,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 83.08,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 83.08,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 83.08,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 83.08,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 89.28,
+              "y": 83.08,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 19.84,
+              "y": 88.04,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 29.759999999999998,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 88.04,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 88.04,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 79.36,
+              "y": 88.04,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 84.32,
+              "y": 88.04,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 24.8,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 34.72,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 93.0,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 59.519999999999996,
+              "y": 93.0,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 69.44,
+              "y": 93.0,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 74.4,
+              "y": 93.0,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 39.68,
+              "y": 97.96,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 44.64,
+              "y": 97.96,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 49.6,
+              "y": 97.96,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 54.56,
+              "y": 97.96,
+              "width": 3.1,
+              "height": 3.1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 64.48,
+              "y": 97.96,
+              "width": 1.8599999999999999,
+              "height": 1.8599999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 106.64,
+              "y": 58.9,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 120.9,
+              "y": 34.1,
+              "width": 1.24,
+              "height": 24.8,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 120.9,
+              "y": 34.1,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 140.12,
+              "y": 31.0,
+              "width": 4.96,
+              "height": 4.96,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "CONTEXT",
+              "content": "CONTEXT",
+              "x": 151.28,
+              "y": 27.28,
+              "width": 76.88,
+              "height": 14.879999999999999,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 6.82,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 106.64,
+              "y": 58.9,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 120.9,
+              "y": 58.9,
+              "width": 1.24,
+              "height": 14.879999999999999,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 120.9,
+              "y": 73.78,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 140.12,
+              "y": 70.67999999999999,
+              "width": 4.96,
+              "height": 4.96,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "WORK",
+              "content": "WORK",
+              "x": 151.28,
+              "y": 66.96,
+              "width": 76.88,
+              "height": 14.879999999999999,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 6.82,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 106.64,
+              "y": 58.9,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Surface",
+              "x": 120.9,
+              "y": 58.9,
+              "width": 1.24,
+              "height": 54.56,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 120.9,
+              "y": 113.46,
+              "width": 14.26,
+              "height": 1.24,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 140.12,
+              "y": 110.36,
+              "width": 4.96,
+              "height": 4.96,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#526B49"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "REVIEW",
+              "content": "REVIEW",
+              "x": 151.28,
+              "y": 106.64,
+              "width": 76.88,
+              "height": 14.879999999999999,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 6.82,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "A method, open-source tools and examples. Start with one problem. Make",
+          "content": "A method, open-source tools and examples.\nStart with one problem. Make the next step useful.",
+          "x": 104,
+          "y": 303,
+          "width": 850,
+          "height": 57.67999999999999,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 104,
+          "y": 386,
+          "width": 177,
+          "height": 48,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ],
+          "cornerRadius": 4,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "text",
+              "name": "Start Here →",
+              "content": "Start Here →",
+              "x": 18,
+              "y": 13,
+              "width": 145,
+              "height": 28.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": 600,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#FFFCF5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Browse the library ↓",
+          "content": "Browse the library ↓",
+          "x": 306,
+          "y": 402,
+          "width": 330,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Surface",
+          "x": 104,
+          "y": 495,
+          "width": 908,
+          "height": 205,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#F6F2E9"
+            }
+          ],
+          "cornerRadius": 8,
+          "layout": "none",
+          "clipContent": false,
+          "children": [
+            {
+              "type": "text",
+              "name": "ONE REAL PROBLEM → A WORKING SOLUTION",
+              "content": "ONE REAL PROBLEM → A WORKING SOLUTION",
+              "x": 24,
+              "y": 21,
+              "width": 750,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 40.0,
+              "y": 70,
+              "width": 198.5,
+              "height": 1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 26.0,
+              "y": 64,
+              "width": 12,
+              "height": 12,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#8C492B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "01",
+              "content": "01",
+              "x": 26.0,
+              "y": 98,
+              "width": 50,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Understand",
+              "content": "Understand",
+              "x": 26.0,
+              "y": 122,
+              "width": 200.5,
+              "height": 38.36,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Find the real problem.",
+              "content": "Find the real problem.",
+              "x": 26.0,
+              "y": 158,
+              "width": 196.5,
+              "height": 27.32,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 252.5,
+              "y": 70,
+              "width": 198.5,
+              "height": 1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 238.5,
+              "y": 64,
+              "width": 12,
+              "height": 12,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#F6F2E9"
+                }
+              ],
+              "stroke": {
+                "thickness": 2,
+                "fill": [
+                  {
+                    "type": "solid",
+                    "color": "#8C492B"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "02",
+              "content": "02",
+              "x": 238.5,
+              "y": 98,
+              "width": 50,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Choose",
+              "content": "Choose",
+              "x": 238.5,
+              "y": 122,
+              "width": 200.5,
+              "height": 38.36,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Pick a useful change.",
+              "content": "Pick a useful change.",
+              "x": 238.5,
+              "y": 158,
+              "width": 196.5,
+              "height": 27.32,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "name": "Rule",
+              "x": 465.0,
+              "y": 70,
+              "width": 198.5,
+              "height": 1,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#D8D0C2"
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 451.0,
+              "y": 64,
+              "width": 12,
+              "height": 12,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#F6F2E9"
+                }
+              ],
+              "stroke": {
+                "thickness": 2,
+                "fill": [
+                  {
+                    "type": "solid",
+                    "color": "#8C492B"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "03",
+              "content": "03",
+              "x": 451.0,
+              "y": 98,
+              "width": 50,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Build",
+              "content": "Build",
+              "x": 451.0,
+              "y": 122,
+              "width": 200.5,
+              "height": 38.36,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Make the solution.",
+              "content": "Make the solution.",
+              "x": 451.0,
+              "y": 158,
+              "width": 196.5,
+              "height": 27.32,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "ellipse",
+              "name": "Process node",
+              "x": 663.5,
+              "y": 64,
+              "width": 12,
+              "height": 12,
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#F6F2E9"
+                }
+              ],
+              "stroke": {
+                "thickness": 2,
+                "fill": [
+                  {
+                    "type": "solid",
+                    "color": "#526B49"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "04",
+              "content": "04",
+              "x": 663.5,
+              "y": 98,
+              "width": 50,
+              "height": 24.56,
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": 12,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Run",
+              "content": "Run",
+              "x": 663.5,
+              "y": 122,
+              "width": 200.5,
+              "height": 38.36,
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": 500,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#29251F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Keep it working.",
+              "content": "Keep it working.",
+              "x": 663.5,
+              "y": 158,
+              "width": 196.5,
+              "height": 27.32,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": 1.28,
+              "textGrowth": "fixed-width-height",
+              "fill": [
+                {
+                  "type": "solid",
+                  "color": "#686259"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "INSIDE THE LIBRARY",
+          "content": "INSIDE THE LIBRARY",
+          "x": 104,
+          "y": 758,
+          "width": 750,
+          "height": 24.56,
+          "fontFamily": "IBM Plex Mono",
+          "fontSize": 12,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 104,
+          "y": 796,
+          "width": 908,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "Explore",
+          "content": "Explore",
+          "x": 104,
+          "y": 814,
+          "width": 210,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Start Here · Fundamentals · What’s New",
+          "content": "Start Here · Fundamentals · What’s New",
+          "x": 334,
+          "y": 816,
+          "width": 638,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "↗",
+          "content": "↗",
+          "x": 994,
+          "y": 814,
+          "width": 25,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 104,
+          "y": 854,
+          "width": 908,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "The Method",
+          "content": "The Method",
+          "x": 104,
+          "y": 872,
+          "width": 210,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Understand · Choose · Build · Launch and run",
+          "content": "Understand · Choose · Build · Launch and run",
+          "x": 334,
+          "y": 874,
+          "width": 638,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "↗",
+          "content": "↗",
+          "x": 994,
+          "y": 872,
+          "width": 25,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 104,
+          "y": 912,
+          "width": 908,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "Open Source",
+          "content": "Open Source",
+          "x": 104,
+          "y": 930,
+          "width": 210,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "AIOS Template · Solution Template · Skills",
+          "content": "AIOS Template · Solution Template · Skills",
+          "x": 334,
+          "y": 932,
+          "width": 638,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "↗",
+          "content": "↗",
+          "x": 994,
+          "y": 930,
+          "width": 25,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 104,
+          "y": 970,
+          "width": 908,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "In Practice",
+          "content": "In Practice",
+          "x": 104,
+          "y": 988,
+          "width": 210,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Arc’IT AI · AIOS Desktop · Power BI Template",
+          "content": "Arc’IT AI · AIOS Desktop · Power BI Template",
+          "x": 334,
+          "y": 990,
+          "width": 638,
+          "height": 27.32,
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#686259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "↗",
+          "content": "↗",
+          "x": 994,
+          "y": 988,
+          "width": 25,
+          "height": 32.839999999999996,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "name": "Rule",
+          "x": 104,
+          "y": 1093,
+          "width": 908,
+          "height": 1,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#D8D0C2"
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "text",
+          "name": "Work through it with Gustav",
+          "content": "Work through it with Gustav",
+          "x": 104,
+          "y": 1122,
+          "width": 728,
+          "height": 42.5,
+          "fontFamily": "Inter",
+          "fontSize": 25,
+          "fontWeight": 500,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#29251F"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "See the ways to get help ↗",
+          "content": "See the ways to get help ↗",
+          "x": 104,
+          "y": 1167,
+          "width": 830,
+          "height": 28.7,
+          "fontFamily": "Inter",
+          "fontSize": 15,
+          "fontWeight": 400,
+          "lineHeight": 1.28,
+          "textGrowth": "fixed-width-height",
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#8C492B"
+            }
+          ]
+        }
+      ],
+      "stroke": {
+        "thickness": 1,
+        "fill": [
+          {
+            "type": "solid",
+            "color": "#D8D0C2"
+          }
+        ],
+        "align": "inside"
+      }
+    },
+    {
+      "type": "text",
+      "name": "Mit startpunkt: B giver mere plads til tilbuddene. Rådgivning og works",
+      "content": "Mit startpunkt: B giver mere plads til tilbuddene. Rådgivning og workshop er forslag under DWY; pakker, omfang og pris skal afklares af dig.",
+      "x": 64,
+      "y": 1514,
+      "width": 2300,
+      "height": 32.839999999999996,
+      "fontFamily": "Inter",
+      "fontSize": 18,
+      "fontWeight": 400,
+      "lineHeight": 1.28,
+      "textGrowth": "fixed-width-height",
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#8C492B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Runtime metadata is owned by route components and applied by React. These are static fallbacks. -->
+    <title>Build the business you want to run. | onlinesourdough</title>
+    <meta
+      name="description"
+      content="onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f8f2e8" />
+    <link rel="canonical" href="https://onlinesourdough.com/" />
+    <meta property="og:title" content="Build the business you want to run. | onlinesourdough" />
+    <meta
+      property="og:description"
+      content="onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onlinesourdough.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Build the business you want to run. | onlinesourdough" />
+    <meta
+      name="twitter:description"
+      content="onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/onlinesourdough-mark-large-pixel-v3.svg" />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("onlinesourdough-theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            document.documentElement.dataset.theme = savedTheme;
+          }
+        } catch {}
+
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+        const navigation = performance.getEntriesByType("navigation")[0];
+        const isReload = navigation?.type === "reload" || performance.navigation?.type === 1;
+        if (!isReload) return;
+
+        try {
+          const cleanUrl = new URL(window.location.href);
+          cleanUrl.hash = "";
+          history.replaceState(history.state, "", cleanUrl.href);
+        } catch {}
+
+        const resetScroll = () => window.scrollTo(0, 0);
+        resetScroll();
+        window.addEventListener("DOMContentLoaded", resetScroll, { once: true });
+        window.addEventListener("load", resetScroll, { once: true });
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-DwawKc4j.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-dHLMpSZk.css">
+  <script>
+      const q = new URLSearchParams(location.search);
+      if (q.has("capture")) {
+        const s = document.createElement("style");
+        s.textContent =
+          "html{scroll-behavior:auto!important}.site-header,.sidebar{position:relative!important}::-webkit-scrollbar{display:none}";
+        document.head.append(s);
+      }
+      if (q.has("proofpanel"))
+        addEventListener("load", () =>
+          setTimeout(
+            () => document.getElementById("about")?.scrollIntoView(),
+            500,
+          ),
+        );
+    </script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

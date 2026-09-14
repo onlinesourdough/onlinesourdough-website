@@ -1,0 +1,59 @@
+{
+  "closed": [
+    {
+      "id": "4",
+      "closed": true
+    },
+    {
+      "id": "5",
+      "closed": true
+    },
+    {
+      "id": "6",
+      "closed": true
+    },
+    {
+      "id": "7",
+      "closed": false,
+      "error": "Browser Use URL policy prevents acquiring a handle to this old file/error tab; close was not executed."
+    },
+    {
+      "id": "15",
+      "closed": true
+    },
+    {
+      "id": "16",
+      "closed": true
+    },
+    {
+      "id": "17",
+      "closed": true
+    },
+    {
+      "id": "18",
+      "closed": false,
+      "error": "Browser Use URL policy prevents acquiring a handle to this old file/error tab; close was not executed."
+    },
+    {
+      "id": "19",
+      "closed": true
+    },
+    {
+      "id": "20",
+      "closed": true
+    },
+    {
+      "id": "21",
+      "closed": true
+    }
+  ],
+  "retained": [
+    "https://agentic-engineer.ai/",
+    "http://127.0.0.1:50356/"
+  ],
+  "remaining_unclosed": [
+    "7: old local file guide",
+    "18: stale connection error"
+  ],
+  "native_app_cleanup": "Codex native app control is disallowed by the computer-use tool."
+}

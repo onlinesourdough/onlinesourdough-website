@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "children": [
+    {
+      "id": "seed",
+      "type": "frame",
+      "name": "Source-based website comparison",
+      "x": 0,
+      "y": 0,
+      "width": 1000,
+      "height": 180,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": [
+        {
+          "id": "seed-label",
+          "type": "text",
+          "name": "Setup",
+          "content": "onlinesourdough / source-based exploration",
+          "x": 35,
+          "y": 55,
+          "width": 930,
+          "height": 65,
+          "fontFamily": "Inter",
+          "fontSize": 30,
+          "fill": [
+            {
+              "type": "solid",
+              "color": "#2b1b12"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

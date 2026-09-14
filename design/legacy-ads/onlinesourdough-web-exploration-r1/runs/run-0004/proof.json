@@ -1,0 +1,78 @@
+{
+  "run_id": "run-0004",
+  "revision": "r4",
+  "review": "waiting-owner",
+  "preferred_character": "mark",
+  "source": "openpencil/onlinesourdough-design-map-r4c-final.op",
+  "native_exports": "runs/run-0004/native-exports.json",
+  "audio": "runs/run-0004/audio-proof.json",
+  "motion": "runs/run-0004/motion-proof.json",
+  "mobile": "runs/run-0004/mobile-proof.json",
+  "checks": "runs/run-0004/checks.json",
+  "source_sha256": "b53d376c8784258b43fc2200a51d29e4f489d01de213303c45cc14603175b55c",
+  "layout": "runs/run-0004/final-layout-proof.json",
+  "files": [
+    {
+      "path": "DESIGN.md",
+      "sha256": "8071cd18ebad4ac3782e02083dbe6174e9dd5ad15114ba03c7148c82df894c95"
+    },
+    {
+      "path": "BRIEF.md",
+      "sha256": "a6657477636ce992af542362bec3a5cf22cfd637027442af0ddbca28444de624"
+    },
+    {
+      "path": "index.html",
+      "sha256": "02552618c42975f94bb35f24761b239c32c18368757f1c11fc515e3435b13009"
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "5971a31a8a91d0628ed9174a6e12cb0f62ad7cea82d40bf9147ab57523fd341d"
+    },
+    {
+      "path": "prototype/source/App.tsx",
+      "sha256": "76ead93dad86698ea749b1f71fbb297d6c78e991986c24703ccec4c87e8ab131"
+    },
+    {
+      "path": "prototype/source/DesignAddition.tsx",
+      "sha256": "4b6916f806da5ce5f6141a2f3ab1fdeacf964981346a081e5b647c21569a5064"
+    },
+    {
+      "path": "prototype/source/FounderSignature.tsx",
+      "sha256": "3ac247d4d9dd294368ac7a9e16f303e953a0d8b672c3bf0d2434106724d90243"
+    },
+    {
+      "path": "prototype/source/HeroField.tsx",
+      "sha256": "6ed665c8c885b7e17bdba7f5ee2dcf5648587ff9f81ba4329deb833c617998ed"
+    },
+    {
+      "path": "prototype/source/HomePage.tsx",
+      "sha256": "56152cf9761b5ec13d0a3a13c64fc5eb77c48822c9ad348dfa3df05a5ee7f586"
+    },
+    {
+      "path": "prototype/source/LandingPage.tsx",
+      "sha256": "dce8081c18354a838c6e3085c0a5e96d173237dd2cd3c4ed97f2e608d02fbac3"
+    },
+    {
+      "path": "prototype/source/ParticleFlow.tsx",
+      "sha256": "02aff2c15f63e3b070142f37559389e6453738013175cb069d9ac1096af38532"
+    },
+    {
+      "path": "prototype/source/ResourcesGrowth.tsx",
+      "sha256": "b99fe66388005ef2be8b4c034d2a1671645a99b83edb8aad3843a41c4aa0b0b5"
+    },
+    {
+      "path": "prototype/source/SiteFooter.tsx",
+      "sha256": "1765010cb74226dbba6e090f1e92779cae8ec0015199ed78c61921aacda36b55"
+    },
+    {
+      "path": "prototype/source/SiteHeader.tsx",
+      "sha256": "0ca6c94ef96e9493b8d854e263f5f34174bcdd4ab93b347681d65ce00dc0feae"
+    },
+    {
+      "path": "prototype/source/design-addition.css",
+      "sha256": "17cc6fb9442fa32d9c11226b016f3a09fd339de0f02922ccd3d69d9dec15927e"
+    }
+  ],
+  "live_urls": "runs/run-0004/live-url-proof.json",
+  "browser_cleanup": "runs/run-0004/browser-cleanup.json"
+}

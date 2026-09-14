@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>onlinesourdough — metode, mennesker og lidt liv</title>
+    <style>
+      @font-face {
+        font-family: Geist;
+        src: url("prototype/main/assets/fonts/geist-sans-variable.woff2");
+      }
+      @font-face {
+        font-family: Pixel;
+        src: url("prototype/main/assets/fonts/geist-pixel-square.woff2");
+      }
+      @font-face {
+        font-family: Mono;
+        src: url("prototype/main/assets/fonts/geist-mono-variable.woff2");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: #f8f2e8;
+        color: #2b1b12;
+      }
+      body {
+        margin: 0;
+        font:
+          16px/1.55 Geist,
+          system-ui,
+          sans-serif;
+        background-image:
+          linear-gradient(#806c5c09 1px, transparent 1px),
+          linear-gradient(90deg, #806c5c09 1px, transparent 1px);
+        background-size: 52px 52px;
+      }
+      main {
+        max-width: 1440px;
+        margin: auto;
+        padding: 72px 40px;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 4px;
+      }
+      a:focus-visible {
+        outline: 3px solid #54765a;
+        outline-offset: 5px;
+      }
+      .skip-link {
+        position: absolute;
+        top: -80px;
+        left: 20px;
+        background: #fffdf7;
+        padding: 12px;
+      }
+      .skip-link:focus {
+        top: 16px;
+      }
+      .eyebrow,
+      .number {
+        font:
+          11px/1.5 Mono,
+          monospace;
+        letter-spacing: 0.08em;
+        color: #806c5c;
+      }
+      h1 {
+        font:
+          clamp(38px, 5vw, 64px) / 1.08 Pixel,
+          Geist,
+          sans-serif;
+        font-weight: 400;
+        max-width: 930px;
+        margin: 20px 0;
+      }
+      header > p {
+        max-width: 740px;
+        color: #806c5c;
+        font-size: 18px;
+      }
+      .actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+      .actions a,
+      .live {
+        display: inline-block;
+        background: #2b1b12;
+        color: #fffdf7;
+        padding: 10px 16px;
+        text-decoration: none;
+        border: 1px solid #2b1b12;
+      }
+      .actions a.secondary {
+        background: transparent;
+        color: #2b1b12;
+      }
+      section {
+        margin-top: 80px;
+      }
+      .section-head {
+        margin-bottom: 24px;
+      }
+      h2 {
+        font:
+          clamp(23px, 2.8vw, 34px) / 1.3 Pixel,
+          Geist,
+          sans-serif;
+        overflow-wrap: anywhere;
+        margin: 10px 0;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+      article {
+        background: #fffdf7;
+        border: 1px solid #e5d7c6;
+      }
+      .image-link {
+        display: block;
+        height: 340px;
+        overflow: hidden;
+        border-bottom: 1px solid #e5d7c6;
+        background: #f8f2e8;
+      }
+      .image-link img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .card-body {
+        padding: 24px;
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 7px 0 10px;
+      }
+      .card-body p {
+        color: #806c5c;
+        min-height: 100px;
+      }
+      .live {
+        font-size: 14px;
+      }
+      .still {
+        display: inline-block;
+        font-size: 14px;
+        margin: 12px 0 0 16px;
+      }
+      .note {
+        max-width: 920px;
+        margin-top: 64px;
+        padding-top: 28px;
+        border-top: 1px solid #e5d7c6;
+        color: #806c5c;
+      }
+      .note p {
+        margin: 10px 0;
+      }
+      .note a {
+        color: #2b1b12;
+      }
+      footer {
+        margin-top: 38px;
+        font:
+          11px Mono,
+          monospace;
+        color: #806c5c;
+      }
+      @media (max-width: 850px) {
+        main {
+          padding: 48px 22px;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .image-link {
+          height: 370px;
+        }
+        .card-body p {
+          min-height: 0;
+        }
+        .section-head {
+          margin-top: 60px;
+        }
+        section {
+          margin-top: 50px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+        }
+      }
+
+      .cards.two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .subheading {
+        font:
+          22px Pixel,
+          Geist,
+          sans-serif;
+        margin: 36px 0 22px;
+      }
+      .cards.two .image-link {
+        height: 370px;
+      }
+      .cards .card-body p {
+        min-height: 80px;
+      }
+      .cards.two .card-body p {
+        min-height: 60px;
+      }
+      @media (max-width: 850px) {
+        .cards.two {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#collections">Spring til variationerne</a>
+    <main>
+      <header>
+        <span class="eyebrow">ONLINESOURDOUGH · DESIGNEXPLORATION · R4</span>
+        <h1>Samme websites.<br />Mere liv.</h1>
+        <p>
+          Originalen, metoden og tre små surdejsfigurer. Sammenlign retningerne
+          i de rigtige sidelayouts, eller prøv figurerne side om side med blink,
+          hover, klik og valgfri lyd.
+        </p>
+        <div class="actions">
+          <a
+            href="http://localhost:53671/?variant=hero-lab"
+            target="_blank"
+            rel="noopener"
+            >Prøv de tre figurer ↗</a
+          ><a
+            class="secondary"
+            href="http://127.0.0.1:50356/"
+            target="_blank"
+            rel="noopener"
+            >Åbn begge collections i OpenPencil ↗</a
+          >
+        </div>
+      </header>
+      <div id="collections">
+        <section aria-labelledby="site-main">
+          <div class="section-head">
+            <span class="number">COLLECTION 01</span>
+            <h2 id="site-main">onlinesourdough.com</h2>
+          </div>
+          <div class="cards two">
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/02-Main - 00 Original.png"
+                aria-label="Se hele Originalen for onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/02-Main - 00 Original.png"
+                  alt="Originalen for onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">00</span>
+                <h3>Originalen</h3>
+                <p>
+                  Det eksisterende design fra sidens egen kodebase, med de
+                  rigtige skrifter, billeder og indgange.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53671/?variant=baseline"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/02-Main - 00 Original.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/03-Main - 01 Metode.png"
+                aria-label="Se hele Metoden i bevægelse for onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/03-Main - 01 Metode.png"
+                  alt="Metoden i bevægelse for onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">01</span>
+                <h3>Metoden i bevægelse</h3>
+                <p>
+                  Den eksisterende metode og tube samlet i én sektion, med dit
+                  portræt og navn i footeren.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53671/?variant=flow"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/03-Main - 01 Metode.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+          </div>
+          <h3 class="subheading">Tre figurer til heroen</h3>
+          <div class="cards">
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/04-Main - 02 Logo.png"
+                aria-label="Se hele Det levende logo for onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/04-Main - 02 Logo.png"
+                  alt="Det levende logo for onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">02</span>
+                <h3>Det levende logo</h3>
+                <p>
+                  Den foretrukne figur. Øjnene er åbninger i tegnene, med blink
+                  og et nysgerrigt blik.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53671/?variant=hero&amp;character=mark"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/04-Main - 02 Logo.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/05-Main - 03 Dej.png"
+                aria-label="Se hele En lille dej for onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/05-Main - 03 Dej.png"
+                  alt="En lille dej for onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">03</span>
+                <h3>En lille dej</h3>
+                <p>
+                  En blød dejklump med et nysgerrigt blik og en blid, fjedrende
+                  bevægelse.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53671/?variant=hero&amp;character=dough"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/05-Main - 03 Dej.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/06-Main - 04 Starter.png"
+                aria-label="Se hele Starteren for onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/06-Main - 04 Starter.png"
+                  alt="Starteren for onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">04</span>
+                <h3>Starteren</h3>
+                <p>Et lille glas med levende surdej, bobler og øjne.</p>
+                <a
+                  class="live"
+                  href="http://localhost:53671/?variant=hero&amp;character=starter"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/06-Main - 04 Starter.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <section aria-labelledby="site-resources">
+          <div class="section-head">
+            <span class="number">COLLECTION 02</span>
+            <h2 id="site-resources">resources.onlinesourdough.com</h2>
+          </div>
+          <div class="cards two">
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/08-Resources - 00 Original.png"
+                aria-label="Se hele Originalen for resources.onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/08-Resources - 00 Original.png"
+                  alt="Originalen for resources.onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">00</span>
+                <h3>Originalen</h3>
+                <p>
+                  Det eksisterende design fra sidens egen kodebase, med de
+                  rigtige skrifter, billeder og indgange.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53672/?variant=baseline"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/08-Resources - 00 Original.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/09-Resources - 01 Metode.png"
+                aria-label="Se hele Metoden i bevægelse for resources.onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/09-Resources - 01 Metode.png"
+                  alt="Metoden i bevægelse for resources.onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">01</span>
+                <h3>Metoden i bevægelse</h3>
+                <p>
+                  Under mapperne. Hover på grafen eller vælg et felt; kurven
+                  vokser og valget bliver stående.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53672/?variant=flow"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/09-Resources - 01 Metode.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+          </div>
+          <h3 class="subheading">Tre figurer til heroen</h3>
+          <div class="cards">
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/10-Resources - 02 Logo.png"
+                aria-label="Se hele Det levende logo for resources.onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/10-Resources - 02 Logo.png"
+                  alt="Det levende logo for resources.onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">02</span>
+                <h3>Det levende logo</h3>
+                <p>
+                  Den foretrukne figur. Øjnene er åbninger i tegnene, med blink
+                  og et nysgerrigt blik.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53672/?variant=hero&amp;character=mark"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/10-Resources - 02 Logo.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/11-Resources - 03 Dej.png"
+                aria-label="Se hele En lille dej for resources.onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/11-Resources - 03 Dej.png"
+                  alt="En lille dej for resources.onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">03</span>
+                <h3>En lille dej</h3>
+                <p>
+                  En blød dejklump med et nysgerrigt blik og en blid, fjedrende
+                  bevægelse.
+                </p>
+                <a
+                  class="live"
+                  href="http://localhost:53672/?variant=hero&amp;character=dough"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/11-Resources - 03 Dej.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+            <article>
+              <a
+                class="image-link"
+                href="openpencil/exports-r4c-final/12-Resources - 04 Starter.png"
+                aria-label="Se hele Starteren for resources.onlinesourdough.com"
+                ><img
+                  src="openpencil/exports-r4c-final/12-Resources - 04 Starter.png"
+                  alt="Starteren for resources.onlinesourdough.com"
+                  loading="lazy"
+              /></a>
+              <div class="card-body">
+                <span class="number">04</span>
+                <h3>Starteren</h3>
+                <p>Et lille glas med levende surdej, bobler og øjne.</p>
+                <a
+                  class="live"
+                  href="http://localhost:53672/?variant=hero&amp;character=starter"
+                  target="_blank"
+                  rel="noopener"
+                  >Åbn live ↗</a
+                ><a
+                  class="still"
+                  href="openpencil/exports-r4c-final/12-Resources - 04 Starter.png"
+                  >Se hele siden</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <aside class="note">
+        <p>
+          Brug <strong>Åbn live</strong> til bevægelse og interaktion. Lyd
+          starter slukket. Alle figurer kan pauses, og de bliver stille ved
+          reduceret bevægelse.
+        </p>
+        <p>
+          På hovedsidens forslag står dit GitHub-portræt og navn i footeren. I
+          figur-varianterne har headeren kun navnet. Den grønne “Work with
+          me”-markering fører til menukortet; et konkret antal ledige pladser er
+          ikke fastlagt.
+        </p>
+        <p>
+          OpenPencil viser fem sider ved siden af hinanden i hver
+          website-collection. Rammer og noter er redigerbare; siderne er
+          browsergengivelser. Tekst og animation ligger i de gemte
+          frontend-komponenter. Videoen vises med sit oprindelige posterbillede
+          i de statiske sammenligninger.
+        </p>
+        <p>
+          <a href="openpencil/onlinesourdough-design-map-r4c-final.op"
+            >Hent OpenPencil-filen</a
+          >
+          · <a href="DESIGN.md">Læs designretningen</a> ·
+          <a href="README.md">Start previews igen</a>
+        </p>
+      </aside>
+      <footer>
+        Lokale designpreviews · 11. september 2026 · Retning til valg hos Gustav
+      </footer>
+    </main>
+  </body>
+</html>

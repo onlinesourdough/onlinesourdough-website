@@ -1,0 +1,152 @@
+[
+  {
+    "site": "main",
+    "kind": "mark",
+    "metrics": {
+      "character": {
+        "bottom": 377,
+        "height": 280,
+        "left": 490,
+        "right": 910,
+        "top": 97,
+        "width": 420,
+        "x": 490,
+        "y": 97
+      },
+      "height": 900,
+      "total": 2552,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  },
+  {
+    "site": "main",
+    "kind": "dough",
+    "metrics": {
+      "character": {
+        "bottom": 377,
+        "height": 280,
+        "left": 490,
+        "right": 910,
+        "top": 97,
+        "width": 420,
+        "x": 490,
+        "y": 97
+      },
+      "height": 900,
+      "total": 2552,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  },
+  {
+    "site": "main",
+    "kind": "starter",
+    "metrics": {
+      "character": {
+        "bottom": 377,
+        "height": 280,
+        "left": 490,
+        "right": 910,
+        "top": 97,
+        "width": 420,
+        "x": 490,
+        "y": 97
+      },
+      "height": 900,
+      "total": 2552,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  },
+  {
+    "site": "resources",
+    "kind": "mark",
+    "metrics": {
+      "character": {
+        "bottom": 356,
+        "height": 260,
+        "left": 490,
+        "right": 910,
+        "top": 96,
+        "width": 420,
+        "x": 490,
+        "y": 96
+      },
+      "height": 900,
+      "total": 2017,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  },
+  {
+    "site": "resources",
+    "kind": "dough",
+    "metrics": {
+      "character": {
+        "bottom": 356,
+        "height": 260,
+        "left": 490,
+        "right": 910,
+        "top": 96,
+        "width": 420,
+        "x": 490,
+        "y": 96
+      },
+      "height": 900,
+      "total": 2017,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  },
+  {
+    "site": "resources",
+    "kind": "starter",
+    "metrics": {
+      "character": {
+        "bottom": 356,
+        "height": 260,
+        "left": 490,
+        "right": 910,
+        "top": 96,
+        "width": 420,
+        "x": 490,
+        "y": 96
+      },
+      "height": 900,
+      "total": 2017,
+      "width": 1400,
+      "y": 0
+    },
+    "updatedTiles": [
+      0,
+      1
+    ],
+    "unchangedTilesReusedFrom": "run-0003"
+  }
+]

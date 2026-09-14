@@ -1,0 +1,103 @@
+{
+  "route": "Pinned native CLI export-frames; shared helper hit its 2000ms cap. Bounded CLI export completed with 16 written and 0 failures. PNG headers and dimensions checked.",
+  "exports": [
+    {
+      "file": "01-COLLECTION 1 - onlinesourdough.com.png",
+      "width": 15280,
+      "height": 340,
+      "sha256": "7f6700391b3896493182c1d2dd7fc0241a21741743053f7e729eb771ea692764"
+    },
+    {
+      "file": "02-Main - 00 Original.png",
+      "width": 2800,
+      "height": 4646,
+      "sha256": "d81eae0dc3823c21d926ef0eed89063eecdf27a0355029cfad1d47a365048f20"
+    },
+    {
+      "file": "03-Main - 01 Metode.png",
+      "width": 2800,
+      "height": 4842,
+      "sha256": "1896e6c660f53be880e2586572388867056e8e030726dec9b9441cf899ee28c3"
+    },
+    {
+      "file": "04-Main - 02 Logo.png",
+      "width": 2800,
+      "height": 5154,
+      "sha256": "11630f86eecdc2b55095edb431339877a88f5faee70adfa0bdaf81e3e9576120"
+    },
+    {
+      "file": "05-Main - 03 Dej.png",
+      "width": 2800,
+      "height": 5154,
+      "sha256": "f2820a8c1a5a38b8eea68ac7d5c417de2dca3dc46ca72994a1e40d83f0c449c7"
+    },
+    {
+      "file": "06-Main - 04 Starter.png",
+      "width": 2800,
+      "height": 5154,
+      "sha256": "2312400123c54db7bef45ba51832116d0325bfe847cbd9cd94fce411370ab2bd"
+    },
+    {
+      "file": "07-COLLECTION 2 - resources.onlinesourdough.com.png",
+      "width": 15280,
+      "height": 340,
+      "sha256": "1ffbfc31cbdabfb5459630e9edd0acc1108cba5d79ebcdb36da2b1bf35702af5"
+    },
+    {
+      "file": "08-Resources - 00 Original.png",
+      "width": 2800,
+      "height": 3750,
+      "sha256": "68b0df878a59f229ebf8c4fab49c447386ff18559d9720f732ea164f148b77fd"
+    },
+    {
+      "file": "09-Resources - 01 Metode.png",
+      "width": 2800,
+      "height": 4994,
+      "sha256": "d2d77ccbd23cb7e3a0caadaacde6bff43cd5db5434cec6d721d0a3f9403052e4"
+    },
+    {
+      "file": "10-Resources - 02 Logo.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "6dd2362bcbfdf4607d83b70c6a55f5c00859d502400da170d86495f2870afa95"
+    },
+    {
+      "file": "11-Resources - 03 Dej.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "94aace08ade0a557ae508f149380887c1273cb93d0291f9eb1fd4bc1c8c70cf7"
+    },
+    {
+      "file": "12-Resources - 04 Starter.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "57ab11e79ce957af903a4461dd28dfcdea3395f0cdf28d17ab6e7e0672a9bfb6"
+    },
+    {
+      "file": "13-REVISION 5 - De samlede sider.png",
+      "width": 9040,
+      "height": 340,
+      "sha256": "497912be8d0a5714acf9f715098b9b56bea73d8ffd6a9fa6886f4b078a16d996"
+    },
+    {
+      "file": "14-Main - 05 Logo + Metode.png",
+      "width": 2800,
+      "height": 5318,
+      "sha256": "da866ee4b4f076958aa9cf0bb3fc374bdb46209b43dd5a561307f4fe9f4ba7af"
+    },
+    {
+      "file": "15-Resources - 05 Metode.png",
+      "width": 2800,
+      "height": 4994,
+      "sha256": "d2d73e44f721b8b77fd7dec40da6db233162726c4d7112453aa8ef9846ef2603"
+    },
+    {
+      "file": "16-Resources - 06 Video f\u00f8rst.png",
+      "width": 2800,
+      "height": 4462,
+      "sha256": "a48e1684feb70c86c8ad5475c92cadbe6ac88a9c44d8f8577bd4f5731fc70489"
+    }
+  ],
+  "candidate_sha256": "fb301525d76845ba9f0cefabdfb471998183fdc40c27194f5779d8b37e4f307e",
+  "working_sha256": "fb301525d76845ba9f0cefabdfb471998183fdc40c27194f5779d8b37e4f307e"
+}

@@ -1,0 +1,7 @@
+{
+  "code": "NATIVE_LAYER_RENDERING",
+  "status": "failed",
+  "observed": "Text overlays on separate filled rectangles were hidden in the live canvas and native PNG export. The first keyboard save did not persist the working file.",
+  "evidence_ref": "openpencil/exports-pass2/03-B · Gør tilbuddene lettere at vælge.png",
+  "recovery": "Explicitly parent content inside background frames; verified native save_document; restore intended top-level heights after refine; regenerate, inspect and reopen final candidate."
+}

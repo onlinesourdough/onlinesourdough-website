@@ -1,0 +1,82 @@
+{
+  "method": "verified-native-cli:export_frames",
+  "source": "openpencil/onlinesourdough-design-map-r3.op",
+  "sha256": "7ea53dde44d57daca4bed7070a8b2c63b9c4a31ab51cf0a0136ec171e3c60bfe",
+  "nodes": 144,
+  "roots": 12,
+  "exports": [
+    {
+      "path": "openpencil/exports-r3/01-COLLECTION 1 - onlinesourdough.com.png",
+      "width": 15280,
+      "height": 340,
+      "sha256": "7f6700391b3896493182c1d2dd7fc0241a21741743053f7e729eb771ea692764"
+    },
+    {
+      "path": "openpencil/exports-r3/02-Main - 00 Original.png",
+      "width": 2800,
+      "height": 4646,
+      "sha256": "d81eae0dc3823c21d926ef0eed89063eecdf27a0355029cfad1d47a365048f20"
+    },
+    {
+      "path": "openpencil/exports-r3/03-Main - 01 Metode.png",
+      "width": 2800,
+      "height": 5098,
+      "sha256": "959c477627608a6447f6cd31d74eabb9038a89cc3e32e1ea684fd5de3339304d"
+    },
+    {
+      "path": "openpencil/exports-r3/04-Main - 02 Logo.png",
+      "width": 2800,
+      "height": 5304,
+      "sha256": "e119dee446670f6debde8099c0af545fd7365bb73ad32f1b85fbde797444223b"
+    },
+    {
+      "path": "openpencil/exports-r3/05-Main - 03 Dej.png",
+      "width": 2800,
+      "height": 5304,
+      "sha256": "34106139706b23912900e438a2235a730fddea467e9ec9e59da242cf94ef321e"
+    },
+    {
+      "path": "openpencil/exports-r3/06-Main - 04 Starter.png",
+      "width": 2800,
+      "height": 5304,
+      "sha256": "809a356775986c604311c3812c1024f2167271581b7c0d335905f5f89c684e85"
+    },
+    {
+      "path": "openpencil/exports-r3/07-COLLECTION 2 - resources.onlinesourdough.com.png",
+      "width": 15280,
+      "height": 340,
+      "sha256": "1ffbfc31cbdabfb5459630e9edd0acc1108cba5d79ebcdb36da2b1bf35702af5"
+    },
+    {
+      "path": "openpencil/exports-r3/08-Resources - 00 Original.png",
+      "width": 2800,
+      "height": 3750,
+      "sha256": "be5a7fee54d3539389c0c8faa1ca21082395988d296d881837cac07e22dc8e49"
+    },
+    {
+      "path": "openpencil/exports-r3/09-Resources - 01 Metode.png",
+      "width": 2800,
+      "height": 4994,
+      "sha256": "4c3fcb415111a9e06a8434fdda20971e2a1c66df572b7200a253b12b6b5bd8a0"
+    },
+    {
+      "path": "openpencil/exports-r3/10-Resources - 02 Logo.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "77aead8072f2f04b51619221939cdaf1697bec4fa544e3648c410bf42bc6b03c"
+    },
+    {
+      "path": "openpencil/exports-r3/11-Resources - 03 Dej.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "17554de8d747f8e326602a5efd8d9d046f0002bed52f49c160f4b2ec79afbfc3"
+    },
+    {
+      "path": "openpencil/exports-r3/12-Resources - 04 Starter.png",
+      "width": 2800,
+      "height": 4234,
+      "sha256": "465e093c6da1a1e772ba4edaee0e5299cae64b64af826d9422cabf4f236972df"
+    }
+  ],
+  "source_unchanged_after_export": true
+}

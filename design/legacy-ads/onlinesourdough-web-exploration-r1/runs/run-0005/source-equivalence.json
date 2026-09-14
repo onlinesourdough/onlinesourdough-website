@@ -1,0 +1,18 @@
+{
+  "original_native_roots_unchanged": true,
+  "original_native_images_unchanged": true,
+  "retained_matches_built_source_after_formatting": {
+    "App.tsx": true,
+    "HomePage.tsx": true,
+    "LandingPage.tsx": true,
+    "SiteHeader.tsx": true,
+    "SiteFooter.tsx": true,
+    "DesignAddition.tsx": true,
+    "FounderSignature.tsx": true,
+    "HeroField.tsx": true,
+    "ParticleFlow.tsx": true,
+    "ResourcesGrowth.tsx": true,
+    "design-addition.css": true,
+    "design-refinement.css": true
+  }
+}

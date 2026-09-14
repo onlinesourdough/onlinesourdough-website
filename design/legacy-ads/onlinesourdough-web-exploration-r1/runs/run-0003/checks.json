@@ -1,0 +1,81 @@
+{
+  "selected_format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "workspace/designs/onlinesourdough-web-exploration-r1/BRIEF.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/DESIGN.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/REVIEW.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/README.md",
+      "workspace/designs/onlinesourdough-web-exploration-r1/index.html",
+      "workspace/designs/onlinesourdough-web-exploration-r1/state/active.json",
+      "workspace/designs/onlinesourdough-web-exploration-r1/state/workbench.json",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/FounderSignature.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/DesignAddition.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/App.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/ParticleFlow.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/SiteHeader.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/LandingPage.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/HeroField.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/ResourcesGrowth.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/design-addition.css",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/source/HomePage.tsx",
+      "workspace/designs/onlinesourdough-web-exploration-r1/prototype/serve.mjs",
+      "workspace/designs/README.md",
+      "workspace/designs/index.html"
+    ],
+    "exit_code": 0,
+    "output": "Checking formatting...\nAll matched files use Prettier code style!\n"
+  },
+  "design_lint": {
+    "command": [
+      "node",
+      "node_modules/@google/design.md/dist/index.js",
+      "lint",
+      "workspace/designs/onlinesourdough-web-exploration-r1/DESIGN.md"
+    ],
+    "exit_code": 0,
+    "output": "{\n  \"findings\": [\n    {\n      \"severity\": \"info\",\n      \"message\": \"Design system defines 7 colors, 3 typography scales, 2 rounding levels, 5 spacing tokens.\"\n    }\n  ],\n  \"summary\": {\n    \"errors\": 0,\n    \"warnings\": 0,\n    \"infos\": 1\n  }\n}\n"
+  },
+  "repository_contract": {
+    "command": [
+      "node",
+      "workspace/engine/checks.mjs"
+    ],
+    "exit_code": 1,
+    "output": "FAIL: ADS checks\n- workspace/designs/pixelroute-r1/index.html is missing\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Receiving outcome\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Source/reference rights, provenance, and licensing\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Ownership boundary\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Review owner\n- workspace/designs/pixelroute-r1/BRIEF.md lacks inspectable Receiver acceptance\n- workspace/designs/pixelroute-r1/BRIEF.md lacks an exact independent or owner Review mode\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker ## Portable direction and ownership\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker This `DESIGN.md` is the canonical\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Scope and non-goals:**\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Review, revision, and acceptance:**\n- workspace/designs/pixelroute-r1/DESIGN.md lacks portable direction marker **Known limitations:**\n- cannot read workspace/designs/pixelroute-r1/index.html: ENOENT: no such file or directory, open '/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/pixelroute-r1/index.html'\n- workspace/designs/pixelroute-r1/index.html lacks <main\n- workspace/designs/pixelroute-r1/index.html lacks viewport\n- workspace/designs/pixelroute-r1/index.html lacks skip-link\n- workspace/designs/pixelroute-r1/index.html lacks :focus-visible\n- workspace/designs/pixelroute-r1/index.html lacks reduced-motion behavior\n- cannot read workspace/designs/pixelroute-r1/index.html: ENOENT: no such file or directory, open '/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/pixelroute-r1/index.html'\n- workspace/designs/index.html does not list pixelroute-r1\n- workspace/designs/README.md does not mention pixelroute-r1\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks previous_run_relation\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks failure\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 lacks recovery\n- workspace/designs/pixelroute-r1/history/runs.jsonl line 1 has a relation without a predecessor\n"
+  },
+  "native_workbench": {
+    "command": [
+      "node",
+      "workspace/engine/openpencil-workbench.mjs",
+      "check",
+      "--state-dir",
+      "/tmp/ads-web-exploration-workbench-r3-final",
+      "--document",
+      "workspace/designs/onlinesourdough-web-exploration-r1/openpencil/onlinesourdough-design-map-r3-final.op",
+      "--expected-nodes",
+      "144",
+      "--export",
+      "workspace/designs/onlinesourdough-web-exploration-r1/openpencil/exports-r3-final/09-Resources - 01 Metode.png"
+    ],
+    "exit_code": 0,
+    "output": "{\n  \"schema\": \"ADS-OPENPENCIL-WORKBENCH/1\",\n  \"status\": \"PASS\",\n  \"version\": \"0.8.4\",\n  \"origin\": \"http://127.0.0.1:60891\",\n  \"url\": \"http://127.0.0.1:60891/\",\n  \"document\": {\n    \"path\": \"/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/onlinesourdough-design-map-r3-final.op\",\n    \"nodes\": 144,\n    \"sha256\": \"e93b08f272cb18fb44211c714d1a489b253c730cf3ff33edee0be8b3e9d40546\"\n  },\n  \"export\": {\n    \"path\": \"/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/exports-r3-final/09-Resources - 01 Metode.png\",\n    \"sha256\": \"d2d77ccbd23cb7e3a0caadaacde6bff43cd5db5434cec6d721d0a3f9403052e4\"\n  },\n  \"canvasKit\": {\n    \"canonical\": \"/canvaskit/*\",\n    \"compatibility\": \"/pkg/canvaskit/*\",\n    \"identical\": true\n  },\n  \"browser_opening\": \"harness-owned\",\n  \"locale\": {\n    \"value\": \"en-US\",\n    \"mechanism\": \"upstream browser settings seed on a fresh loopback origin\",\n    \"served\": true\n  },\n  \"language\": {\n    \"default\": \"en-US\",\n    \"preference\": \"openpencil-rust-web-settings::<profile>\",\n    \"policy\": \"seed-when-absent\"\n  }\n}\n"
+  },
+  "checked_at": "2026-09-10T20:49:47.774942+00:00",
+  "selected_contract": {
+    "findings": [],
+    "repository_block": "Unrelated unfinished pixelroute-r1 collection",
+    "all_reported_findings_unrelated": true
+  },
+  "receiving_repositories": {
+    "onlinesourdough": {
+      "clean": true,
+      "head": "4fceeebee9decd524b6b940ad55129d4c0ef5d08"
+    },
+    "resources": {
+      "clean": true,
+      "head": "8bec6ce9aee7492841d6cc4f2a41718b14475949"
+    }
+  }
+}

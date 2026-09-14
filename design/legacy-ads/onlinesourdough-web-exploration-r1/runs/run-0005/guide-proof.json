@@ -1,0 +1,19 @@
+{
+  "allImagesLoaded": true,
+  "imageCount": 13,
+  "localPrototypeLinks": [
+    "http://127.0.0.1:53671/?variant=combined",
+    "http://127.0.0.1:53672/?variant=flow",
+    "http://127.0.0.1:53672/?variant=vsl",
+    "http://127.0.0.1:53671/?variant=baseline",
+    "http://127.0.0.1:53671/?variant=flow",
+    "http://127.0.0.1:53671/?variant=hero&character=mark",
+    "http://127.0.0.1:53671/?variant=hero&character=dough",
+    "http://127.0.0.1:53671/?variant=hero&character=starter",
+    "http://127.0.0.1:53672/?variant=baseline",
+    "http://127.0.0.1:53672/?variant=flow",
+    "http://127.0.0.1:53672/?variant=hero&character=mark",
+    "http://127.0.0.1:53672/?variant=hero&character=dough",
+    "http://127.0.0.1:53672/?variant=hero&character=starter"
+  ]
+}

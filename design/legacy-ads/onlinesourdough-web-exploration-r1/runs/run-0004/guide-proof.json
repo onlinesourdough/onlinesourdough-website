@@ -1,0 +1,69 @@
+{
+  "canvas": "http://127.0.0.1:50356/",
+  "images": [
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/02-Main - 00 Original.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/03-Main - 01 Metode.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/04-Main - 02 Logo.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/05-Main - 03 Dej.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/06-Main - 04 Starter.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/08-Resources - 00 Original.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/09-Resources - 01 Metode.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/10-Resources - 02 Logo.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/11-Resources - 03 Dej.png",
+      "width": 2800
+    },
+    {
+      "complete": true,
+      "src": "openpencil/exports-r4c-final/12-Resources - 04 Starter.png",
+      "width": 2800
+    }
+  ],
+  "liveLinks": [
+    "http://localhost:53671/?variant=hero-lab",
+    "http://localhost:53671/?variant=baseline",
+    "http://localhost:53671/?variant=flow",
+    "http://localhost:53671/?variant=hero&character=mark",
+    "http://localhost:53671/?variant=hero&character=dough",
+    "http://localhost:53671/?variant=hero&character=starter",
+    "http://localhost:53672/?variant=baseline",
+    "http://localhost:53672/?variant=flow",
+    "http://localhost:53672/?variant=hero&character=mark",
+    "http://localhost:53672/?variant=hero&character=dough",
+    "http://localhost:53672/?variant=hero&character=starter"
+  ],
+  "title": "onlinesourdough — metode, mennesker og lidt liv"
+}

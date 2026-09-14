@@ -1,0 +1,50 @@
+{
+  "mobile": {
+    "body": "unscored",
+    "eyes": "41",
+    "founders": [
+      {
+        "href": "https://gustavonline.com",
+        "inFooter": true
+      }
+    ],
+    "h": 844,
+    "scrollWidth": 390,
+    "w": 390
+  },
+  "footer": {
+    "footerLinks": [
+      {
+        "href": "#top",
+        "label": "onlinesourdough"
+      },
+      {
+        "href": "https://gustavonline.com",
+        "label": "Built byGustav Anderson ↗"
+      },
+      {
+        "href": "https://arcitai.com",
+        "label": "Arc'IT AI ↗"
+      },
+      {
+        "href": "https://github.com/onlinesourdough",
+        "label": "GitHub"
+      }
+    ],
+    "founder": {
+      "bottom": 768.1796875,
+      "height": 44,
+      "left": 18,
+      "right": 198.9765625,
+      "top": 724.1796875,
+      "width": 180.9765625,
+      "x": 18,
+      "y": 724.1796875
+    },
+    "scrollWidth": 390,
+    "w": 390,
+    "y": 1725
+  },
+  "eyeDesign": "Continuous unscored glyph body; 16×21px negative eye openings; static website logo unchanged.",
+  "methodLink": "Inside manifesto-copy immediately after paragraphs; verified at desktop."
+}

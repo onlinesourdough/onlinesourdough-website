@@ -1,0 +1,16 @@
+{
+  "offscreen": {
+    "particle": "paused",
+    "paused": true,
+    "rect": 1894.9765625
+  },
+  "onscreen": {
+    "particle": "running",
+    "paused": false,
+    "rect": 280.9765625
+  },
+  "reduced": {
+    "animation": "none",
+    "matches": true
+  }
+}

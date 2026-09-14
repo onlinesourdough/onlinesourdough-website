@@ -1,0 +1,50 @@
+[
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 0,
+    "file": "resources-flow-part0.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 360,
+    "file": "resources-flow-part1.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 720,
+    "file": "resources-flow-part2.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 1080,
+    "file": "resources-flow-part3.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 1440,
+    "file": "resources-flow-part4.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2397,
+    "width": 1400,
+    "y": 1496,
+    "file": "resources-flow-part5.jpg"
+  }
+]

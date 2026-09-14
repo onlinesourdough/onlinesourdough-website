@@ -1,0 +1,236 @@
+{
+  "design_slug": "onlinesourdough-web-exploration-r1",
+  "run_id": "run-0003",
+  "revision": "r3",
+  "status": "waiting-review",
+  "owner_review": "waiting-owner",
+  "review_owner": "Gustav Anderson",
+  "receiver_acceptance": "not-requested",
+  "source": "openpencil/onlinesourdough-design-map-r3-final.op",
+  "canonical": "DESIGN.md",
+  "guide": "index.html",
+  "checks_ref": "runs/run-0003/checks.json",
+  "recovery_ref": "runs/run-0003/recovery.json",
+  "current_evidence": [
+    "runs/run-0003/native-exports.json",
+    "runs/run-0003/canvas-layout.json",
+    "runs/run-0003/workbench-proof.json",
+    "runs/run-0003/particle-flow-proof.json",
+    "runs/run-0003/growth-interaction-proof.json",
+    "runs/run-0003/character-motion-proof.json",
+    "runs/run-0003/guide-proof.json",
+    "runs/run-0003/reopened-canvas.jpg",
+    "runs/run-0003/hero-studies.jpg",
+    "runs/run-0003/mobile-character.jpg"
+  ],
+  "superseded_evidence": [
+    "runs/run-0003/hero-motion-proof.json",
+    "runs/run-0003/hero-desktop.jpg",
+    "runs/run-0003/motion-proof.json",
+    "runs/run-0003/mobile-proof.json",
+    "runs/run-0003/native-exports-r2-candidate.json",
+    "runs/run-0003/native-exports-r2b-superseded.json",
+    "runs/run-0003/native-exports-r2c-superseded.json",
+    "runs/run-0003/native-exports-r3-interim.json"
+  ],
+  "limitations": [
+    "Static .op page content is raster within editable native frames; retained frontend components own editable text and behavior.",
+    "Capture mode freezes motion and uses the original video poster at the native video dimensions.",
+    "Sound control was tested; audio audibility was not independently heard.",
+    "Repository-wide checks are blocked by unrelated unfinished pixelroute-r1 files.",
+    "No owner approval, receiver acceptance, backend workflow, or production deployment."
+  ],
+  "files": [
+    {
+      "path": "BRIEF.md",
+      "sha256": "df584fe98ebe16743ccb8205c8703714a8d12e82a36e2350c5c979c7a8a02553"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "66f4c130bc3c9fa80a6c7609d1b1d4e4e866341133763dfddbd230780604c97f"
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "7708029621c21af8d6fc50b95c5b980be7ee7c6aac1a4aa0ddf50359320f0edc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "241424030adae7070d2e565945be523148996c550bd2a18a5fcc32b01ec2d3c7"
+    },
+    {
+      "path": "index.html",
+      "sha256": "760490258b67c75bafff81eaa16bb0b9dca73af07557a7d414c391e1174d4cd1"
+    },
+    {
+      "path": "state/active.json",
+      "sha256": "4a889e664de87d7cf0918e1bf0a99d2749add8d0497c6558352659ec9a961908"
+    },
+    {
+      "path": "state/workbench.json",
+      "sha256": "467b9a48fba4866d47a9fa3580b6d0e90801b63b7bcb79368f435f20aebc3b87"
+    },
+    {
+      "path": "openpencil/onlinesourdough-design-map-r3-final.op",
+      "sha256": "e93b08f272cb18fb44211c714d1a489b253c730cf3ff33edee0be8b3e9d40546"
+    },
+    {
+      "path": "runs/run-0003/source-manifest.json",
+      "sha256": "f360d306945ab1d575d555df328f93be14431061df0d0b3aa28912431843180c"
+    },
+    {
+      "path": "runs/run-0003/checks.json",
+      "sha256": "adc1b5037ac73a6dbe18cd464de57ce4988ae256425524ee03b3407bdb74f10f"
+    },
+    {
+      "path": "runs/run-0003/recovery.json",
+      "sha256": "0a5a5887264375c028007bbb76fb346100b9b468a87a5bcc83b061e0d4cb7831"
+    },
+    {
+      "path": "runs/run-0003/native-exports.json",
+      "sha256": "d55a398de224d0877a83e8987fdbc936ff43126248b8f213217e63d70a55321d"
+    },
+    {
+      "path": "runs/run-0003/canvas-layout.json",
+      "sha256": "2cf72bbb392b9449ab9f0cd73a0d3289a0920e85bf1a82413fc2ceb21265af91"
+    },
+    {
+      "path": "runs/run-0003/workbench-proof.json",
+      "sha256": "d8b3a7af3f7b2a52220a1cd02fb7a759c4bac480eee6b581c0651fd124b36a5a"
+    },
+    {
+      "path": "runs/run-0003/particle-flow-proof.json",
+      "sha256": "444f863adf7ac11c4562441fd441429051c2a6e9424067fe2d32aa5b055fa44a"
+    },
+    {
+      "path": "runs/run-0003/growth-interaction-proof.json",
+      "sha256": "f62685ae9dc3aa0021fa90b8c4774cb201013c53d24df5b18e1fc301fc7e8526"
+    },
+    {
+      "path": "runs/run-0003/character-motion-proof.json",
+      "sha256": "21c09b65ce38f9f60c8dcadf0c53104d84b127891e1f041a52df55e0e2f734e7"
+    },
+    {
+      "path": "runs/run-0003/guide-proof.json",
+      "sha256": "fb55e71c745f9a2749d511a8edb60d3e5507fec650d86b3cdd31a598beeb80fb"
+    },
+    {
+      "path": "runs/run-0003/reopened-canvas.jpg",
+      "sha256": "167fd382112bcec38b1645bcf34f27679c59b5f859aa0f0a93fdc0143dc006e8"
+    },
+    {
+      "path": "runs/run-0003/hero-studies.jpg",
+      "sha256": "a8bc9fce018b11c63e9ac2c18c92a6bc3c5bc287ddd89a3633df71ef4a7dc6b9"
+    },
+    {
+      "path": "runs/run-0003/mobile-character.jpg",
+      "sha256": "83cfbf488f92429140768fbcadf589767c49315256f371a95632e24e386ff13a"
+    },
+    {
+      "path": "openpencil/exports-r3-final/01-COLLECTION 1 - onlinesourdough.com.png",
+      "sha256": "7f6700391b3896493182c1d2dd7fc0241a21741743053f7e729eb771ea692764"
+    },
+    {
+      "path": "openpencil/exports-r3-final/02-Main - 00 Original.png",
+      "sha256": "d81eae0dc3823c21d926ef0eed89063eecdf27a0355029cfad1d47a365048f20"
+    },
+    {
+      "path": "openpencil/exports-r3-final/03-Main - 01 Metode.png",
+      "sha256": "959c477627608a6447f6cd31d74eabb9038a89cc3e32e1ea684fd5de3339304d"
+    },
+    {
+      "path": "openpencil/exports-r3-final/04-Main - 02 Logo.png",
+      "sha256": "e119dee446670f6debde8099c0af545fd7365bb73ad32f1b85fbde797444223b"
+    },
+    {
+      "path": "openpencil/exports-r3-final/05-Main - 03 Dej.png",
+      "sha256": "34106139706b23912900e438a2235a730fddea467e9ec9e59da242cf94ef321e"
+    },
+    {
+      "path": "openpencil/exports-r3-final/06-Main - 04 Starter.png",
+      "sha256": "809a356775986c604311c3812c1024f2167271581b7c0d335905f5f89c684e85"
+    },
+    {
+      "path": "openpencil/exports-r3-final/07-COLLECTION 2 - resources.onlinesourdough.com.png",
+      "sha256": "1ffbfc31cbdabfb5459630e9edd0acc1108cba5d79ebcdb36da2b1bf35702af5"
+    },
+    {
+      "path": "openpencil/exports-r3-final/08-Resources - 00 Original.png",
+      "sha256": "68b0df878a59f229ebf8c4fab49c447386ff18559d9720f732ea164f148b77fd"
+    },
+    {
+      "path": "openpencil/exports-r3-final/09-Resources - 01 Metode.png",
+      "sha256": "d2d77ccbd23cb7e3a0caadaacde6bff43cd5db5434cec6d721d0a3f9403052e4"
+    },
+    {
+      "path": "openpencil/exports-r3-final/10-Resources - 02 Logo.png",
+      "sha256": "e363558819d9cd22245f58a8f2e303d61aa27d99eea5eeaf560b2ef779ee7c18"
+    },
+    {
+      "path": "openpencil/exports-r3-final/11-Resources - 03 Dej.png",
+      "sha256": "7769874f76c5c647beb72b787937e3cd3c8054b60096175bd5f07a786f2925b2"
+    },
+    {
+      "path": "openpencil/exports-r3-final/12-Resources - 04 Starter.png",
+      "sha256": "68864be5ae57688e61cd9eda89411fca63d2396acb766b9a18558286712098a8"
+    },
+    {
+      "path": "prototype/source/FounderSignature.tsx",
+      "sha256": "90d624d1ee2667e777bf6bfc5f39cb5b8f685b80d7f2090654cb1c69b1dc9e66"
+    },
+    {
+      "path": "prototype/source/DesignAddition.tsx",
+      "sha256": "4b6916f806da5ce5f6141a2f3ab1fdeacf964981346a081e5b647c21569a5064"
+    },
+    {
+      "path": "prototype/source/App.tsx",
+      "sha256": "76ead93dad86698ea749b1f71fbb297d6c78e991986c24703ccec4c87e8ab131"
+    },
+    {
+      "path": "prototype/source/ParticleFlow.tsx",
+      "sha256": "02aff2c15f63e3b070142f37559389e6453738013175cb069d9ac1096af38532"
+    },
+    {
+      "path": "prototype/source/SiteHeader.tsx",
+      "sha256": "0ca6c94ef96e9493b8d854e263f5f34174bcdd4ab93b347681d65ce00dc0feae"
+    },
+    {
+      "path": "prototype/source/LandingPage.tsx",
+      "sha256": "8b81f10e752dd5846da0deb715880ee48f8c573699ab9cbe0fee60f66ec374b8"
+    },
+    {
+      "path": "prototype/source/HeroField.tsx",
+      "sha256": "609ded01268841b5ab738464a2f160ce76068e84a4ad1cb44225ef3aa7edcf82"
+    },
+    {
+      "path": "prototype/source/ResourcesGrowth.tsx",
+      "sha256": "b99fe66388005ef2be8b4c034d2a1671645a99b83edb8aad3843a41c4aa0b0b5"
+    },
+    {
+      "path": "prototype/source/design-addition.css",
+      "sha256": "595d58e300e8310c00aac978398c1ffae1b3eea71a9c2f087982f192280d465a"
+    },
+    {
+      "path": "prototype/source/HomePage.tsx",
+      "sha256": "56152cf9761b5ec13d0a3a13c64fc5eb77c48822c9ad348dfa3df05a5ee7f586"
+    },
+    {
+      "path": "prototype/resources/assets/index-DLg0HDzA.js",
+      "sha256": "15c5d93a735cb32b9cbc49395caec24ddc59f4ff6cb4a5ad8a19c2d771e749ab"
+    },
+    {
+      "path": "prototype/main/assets/index-C7lwhj9D.js",
+      "sha256": "698f3d0b6d5382d098262862f3d5836f17f5bd9b8019176d49a55436b07b668a"
+    },
+    {
+      "path": "prototype/serve.mjs",
+      "sha256": "2d234f39a77abdeb9b8a5b96e3e7e4bcad6c5f20ab790215603dfc8555837548"
+    },
+    {
+      "path": "prototype/main/assets/gustav-github.png",
+      "sha256": "0b1f1dbb971c76b507a8aee6d843807a256184b1fd7fc8099c6bd3df312de876"
+    }
+  ],
+  "export_integrity": true,
+  "native_source_integrity": true,
+  "checked_at": "2026-09-10T20:49:47.774942+00:00"
+}

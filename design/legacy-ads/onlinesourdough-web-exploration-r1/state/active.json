@@ -1,0 +1,12 @@
+{
+  "design_slug": "onlinesourdough-web-exploration-r1",
+  "latest_run_id": "run-0005",
+  "revision": "r5",
+  "status": "waiting-review",
+  "review": "waiting-owner",
+  "review_owner": "Gustav Anderson",
+  "preferred_character": "mark",
+  "receiver_acceptance": "not-requested",
+  "updated_at": "2026-09-13T19:57:42.710471+00:00",
+  "local_revision": "complete"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2321,
+    "width": 1400,
+    "y": 0,
+    "file": "main-flow-part0.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2321,
+    "width": 1400,
+    "y": 360,
+    "file": "main-flow-part1.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2321,
+    "width": 1400,
+    "y": 720,
+    "file": "main-flow-part2.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2321,
+    "width": 1400,
+    "y": 1080,
+    "file": "main-flow-part3.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2321,
+    "width": 1400,
+    "y": 1421,
+    "file": "main-flow-part4.jpg"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "schema": "ADS-OPENPENCIL-WORKBENCH/1",
+  "status": "PASS",
+  "version": "0.8.4",
+  "origin": "http://127.0.0.1:50356",
+  "url": "http://127.0.0.1:50356/",
+  "document": {
+    "path": "/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/onlinesourdough-design-map-r4c-final.op",
+    "nodes": 142,
+    "sha256": "b53d376c8784258b43fc2200a51d29e4f489d01de213303c45cc14603175b55c"
+  },
+  "export": {
+    "path": "/Users/gustavanderson/.AIOS/systems/agentic-design-system/workspace/designs/onlinesourdough-web-exploration-r1/openpencil/exports-r4c-final/04-Main - 02 Logo.png",
+    "sha256": "11630f86eecdc2b55095edb431339877a88f5faee70adfa0bdaf81e3e9576120"
+  },
+  "canvasKit": {
+    "canonical": "/canvaskit/*",
+    "compatibility": "/pkg/canvaskit/*",
+    "identical": true
+  },
+  "browser_opening": "harness-owned",
+  "locale": {
+    "value": "en-US",
+    "mechanism": "upstream browser settings seed on a fresh loopback origin",
+    "served": true
+  },
+  "language": {
+    "default": "en-US",
+    "preference": "openpencil-rust-web-settings::<profile>",
+    "policy": "seed-when-absent"
+  }
+}

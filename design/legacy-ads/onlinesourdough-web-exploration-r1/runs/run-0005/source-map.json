@@ -1,0 +1,50 @@
+{
+  "App.tsx": [
+    "resources",
+    "src/App.tsx"
+  ],
+  "HomePage.tsx": [
+    "resources",
+    "src/pages/HomePage.tsx"
+  ],
+  "LandingPage.tsx": [
+    "main",
+    "src/features/landing/components/LandingPage.tsx"
+  ],
+  "SiteHeader.tsx": [
+    "main",
+    "src/components/layout/SiteHeader.tsx"
+  ],
+  "SiteFooter.tsx": [
+    "main",
+    "src/components/layout/SiteFooter.tsx"
+  ],
+  "DesignAddition.tsx": [
+    "main",
+    "src/DesignAddition.tsx"
+  ],
+  "FounderSignature.tsx": [
+    "main",
+    "src/FounderSignature.tsx"
+  ],
+  "HeroField.tsx": [
+    "main",
+    "src/HeroField.tsx"
+  ],
+  "ParticleFlow.tsx": [
+    "main",
+    "src/ParticleFlow.tsx"
+  ],
+  "ResourcesGrowth.tsx": [
+    "main",
+    "src/ResourcesGrowth.tsx"
+  ],
+  "design-addition.css": [
+    "main",
+    "src/design-addition.css"
+  ],
+  "design-refinement.css": [
+    "main",
+    "src/design-refinement.css"
+  ]
+}

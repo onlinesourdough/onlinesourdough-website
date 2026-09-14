@@ -1,0 +1,94 @@
+{
+  "desktop": {
+    "headingFont": "Pixel, Geist, sans-serif",
+    "height": 1406,
+    "images": [
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/02-Main - 00 Original.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/03-Main - 01 Metode.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/04-Main - 02 Logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/05-Main - 03 Dej.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/06-Main - 04 Starter.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/08-Resources - 00 Original.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/09-Resources - 01 Metode.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/10-Resources - 02 Logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/11-Resources - 03 Dej.png"
+      },
+      {
+        "loaded": true,
+        "src": "openpencil/exports-r3-final/12-Resources - 04 Starter.png"
+      }
+    ],
+    "overflow": false,
+    "scrollY": 2460.15625,
+    "width": 2187
+  },
+  "narrow": {
+    "cardColumns": "565.381px",
+    "h1": {
+      "bottom": 174.8779296875,
+      "height": 82.080078125,
+      "left": 21.9970703125,
+      "right": 587.3779296875,
+      "top": 92.7978515625,
+      "width": 565.380859375,
+      "x": 21.9970703125,
+      "y": 92.7978515625
+    },
+    "height": 1319,
+    "overflow": false,
+    "width": 609
+  },
+  "phone": {
+    "cardColumns": "346.631px",
+    "h1": {
+      "bottom": 174.8779296875,
+      "height": 82.080078125,
+      "left": 21.9970703125,
+      "right": 368.6279296875,
+      "top": 92.7978515625,
+      "width": 346.630859375,
+      "x": 21.9970703125,
+      "y": 92.7978515625
+    },
+    "height": 844,
+    "overflow": false,
+    "width": 391
+  },
+  "keyboard": {
+    "skipLink": "Spring til variationerne",
+    "visibleFocus": true,
+    "outline": "green solid",
+    "activationTarget": "#collections"
+  },
+  "summary": {
+    "allTenImagesLoaded": true,
+    "desktopOverflow": false,
+    "phoneOverflow": false
+  }
+}

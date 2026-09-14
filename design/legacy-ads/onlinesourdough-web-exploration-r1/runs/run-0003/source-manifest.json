@@ -1,0 +1,39 @@
+{
+  "main": {
+    "root": "/Users/gustavanderson/.AIOS/projects/onlinesourdough",
+    "revision": "4fceeebee9decd524b6b940ad55129d4c0ef5d08",
+    "baseline": "Unmodified src/public frontend rendered by the pinned project toolchain",
+    "scope": "Local design prototype only; no backend, credentials, deployment, or production edits"
+  },
+  "resources": {
+    "root": "/Users/gustavanderson/.AIOS/projects/resources",
+    "revision": "8bec6ce9aee7492841d6cc4f2a41718b14475949",
+    "baseline": "Unmodified src/public frontend rendered by the pinned project toolchain",
+    "scope": "Local design prototype only; no backend, credentials, deployment, or production edits"
+  },
+  "additional_reference": {
+    "url": "https://github.com/ky-zo/agentic-engineer",
+    "revision": "de21f8edc86838f9055b2fade91c10419bab3a50",
+    "license_signal": "No license declared by GitHub repository metadata. Read for interaction understanding; no third-party source or sound files copied.",
+    "inspected": [
+      "src/components/ascii-cloud.tsx",
+      "src/components/ascii-cloud-sounds.ts",
+      "src/components/hero-section.tsx"
+    ],
+    "observations": [
+      "idle drift",
+      "eye gaze and blink",
+      "pointer response",
+      "optional click/hover sounds",
+      "founder portrait and contextual links"
+    ]
+  },
+  "owner_avatar": {
+    "profile": "https://github.com/gustavonline",
+    "url": "https://avatars.githubusercontent.com/u/8681157?v=4",
+    "path": "prototype/main/assets/gustav-github.png",
+    "sha256": "0b1f1dbb971c76b507a8aee6d843807a256184b1fd7fc8099c6bd3df312de876",
+    "authority": "Owner explicitly requested their GitHub profile picture for this local design exploration.",
+    "note": "Personal profile verified via authenticated GitHub public-profile fields. Organization-style onlinesourdough account uses a bread mark and was not used as a portrait."
+  }
+}

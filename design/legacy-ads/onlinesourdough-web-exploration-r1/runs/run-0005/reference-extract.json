@@ -1,0 +1,23 @@
+{
+  "url": "https://agentic-engineer.ai/",
+  "date": "2026-09-13",
+  "files": {
+    "styles.css": {
+      "path": "/tmp/ads-web-redesign-r5/reference/styles.css",
+      "bytes": 44987,
+      "sha256": "975f4db604d28eed5fea522c49e2b4796666e78027d4f032dd7548f0e607d3da"
+    },
+    "rendered.html": {
+      "path": "/tmp/ads-web-redesign-r5/reference/rendered.html",
+      "bytes": 200059,
+      "sha256": "2120e8c1baa4a4abc9202bc6761e9160cc09f5b3d3c8be41c472438eb85e67c1"
+    }
+  },
+  "scope": "Rendered HTML and complete observed stylesheet, local analysis only; no media or code adopted.",
+  "findings": [
+    "768px section width at 1280px viewport",
+    "56px section padding at desktop",
+    "Tools sit in the empty upper-left of a single curve composition",
+    "Reference curve changes while scrolling; task retains pointer, focus and tap controls."
+  ]
+}

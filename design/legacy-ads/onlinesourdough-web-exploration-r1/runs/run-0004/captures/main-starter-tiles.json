@@ -1,0 +1,50 @@
+[
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 0,
+    "file": "main-starter-part0.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 360,
+    "file": "main-starter-part1.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 720,
+    "file": "main-starter-part2.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1080,
+    "file": "main-starter-part3.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1440,
+    "file": "main-starter-part4.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2477,
+    "width": 1400,
+    "y": 1577,
+    "file": "main-starter-part5.jpg"
+  }
+]

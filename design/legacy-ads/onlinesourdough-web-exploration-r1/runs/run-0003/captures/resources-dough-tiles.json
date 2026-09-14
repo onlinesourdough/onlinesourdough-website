@@ -1,0 +1,42 @@
+[
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2017,
+    "width": 1400,
+    "y": 0,
+    "file": "resources-dough-part0.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2017,
+    "width": 1400,
+    "y": 360,
+    "file": "resources-dough-part1.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2017,
+    "width": 1400,
+    "y": 720,
+    "file": "resources-dough-part2.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2017,
+    "width": 1400,
+    "y": 1080,
+    "file": "resources-dough-part3.jpg"
+  },
+  {
+    "header": "relative",
+    "height": 900,
+    "total": 2017,
+    "width": 1400,
+    "y": 1116,
+    "file": "resources-dough-part4.jpg"
+  }
+]

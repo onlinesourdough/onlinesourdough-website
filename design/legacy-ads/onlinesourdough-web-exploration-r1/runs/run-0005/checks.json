@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-13T20:00:59.798531+00:00",
+  "vite_main": {
+    "result": "PASS",
+    "modules": 120,
+    "js": "index-DwawKc4j.js",
+    "css": "index-dHLMpSZk.css"
+  },
+  "vite_resources": {
+    "result": "PASS",
+    "modules": 76,
+    "js": "index-BqvnPSeH.js",
+    "css": "index-CzcefOLB.css"
+  },
+  "design_md_lint": {
+    "version": "0.3.0",
+    "errors": 0,
+    "warnings": 0
+  },
+  "prettier": "PASS for selected canonical docs, guide and retained source",
+  "unchanged_interaction_components_from_r4": {
+    "HeroField.tsx": true,
+    "ParticleFlow.tsx": true
+  },
+  "native_reopen": {
+    "result": "PASS",
+    "nodes": 157,
+    "roots": 16,
+    "source_sha256": "fb301525d76845ba9f0cefabdfb471998183fdc40c27194f5779d8b37e4f307e"
+  },
+  "native_exports": {
+    "written": 16,
+    "failed": 0
+  },
+  "scope": "Selected existing design only. Legacy engine and receiving repositories were not changed."
+}

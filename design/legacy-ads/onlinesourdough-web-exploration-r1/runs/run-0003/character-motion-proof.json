@@ -1,0 +1,79 @@
+{
+  "movingA": "cd82e8ca9d0642d697ebb996a93236cf5240af8ca3d6a1531c31fe178183a7eb",
+  "initial": [
+    {
+      "blink": "open",
+      "kind": "mark",
+      "motion": "running"
+    },
+    {
+      "blink": "open",
+      "kind": "dough",
+      "motion": "running"
+    },
+    {
+      "blink": "open",
+      "kind": "starter",
+      "motion": "running"
+    }
+  ],
+  "movingB": "e1042685c9b4120365e393a12767a6ede5763713d91157b8053e8ad8eb053c99",
+  "pausedA": "646a76f31ea897084a9843381b775de05b77ec74103710b6a881e1507cbf2c67",
+  "paused": [
+    {
+      "kind": "mark",
+      "motion": "still"
+    },
+    {
+      "kind": "dough",
+      "motion": "still"
+    },
+    {
+      "kind": "starter",
+      "motion": "still"
+    }
+  ],
+  "pausedB": "646a76f31ea897084a9843381b775de05b77ec74103710b6a881e1507cbf2c67",
+  "soundControl": [
+    {
+      "label": "Play",
+      "pressed": "true"
+    },
+    {
+      "label": "Sound on",
+      "pressed": "true"
+    },
+    {
+      "label": "Play",
+      "pressed": "true"
+    },
+    {
+      "label": "Sound off",
+      "pressed": "false"
+    },
+    {
+      "label": "Play",
+      "pressed": "true"
+    },
+    {
+      "label": "Sound off",
+      "pressed": "false"
+    }
+  ],
+  "reduced": {
+    "requested": true,
+    "states": [
+      "still",
+      "still",
+      "still"
+    ]
+  },
+  "summary": {
+    "motionFramesDiffer": true,
+    "pausedFramesMatch": true,
+    "allThreePause": true,
+    "reducedMotion": true,
+    "soundToggleObserved": true,
+    "soundAudibility": "Synthesized audio implemented; audibility not independently listened to by the agent."
+  }
+}

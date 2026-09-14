@@ -1,0 +1,32 @@
+[
+  {
+    "url": "http://localhost:53671/?variant=hero&character=mark",
+    "status": 200,
+    "bytes": 3358
+  },
+  {
+    "url": "http://localhost:53671/?variant=flow",
+    "status": 200,
+    "bytes": 3358
+  },
+  {
+    "url": "http://localhost:53671/about",
+    "status": 200,
+    "bytes": 3358
+  },
+  {
+    "url": "http://localhost:53672/?variant=flow",
+    "status": 200,
+    "bytes": 1951
+  },
+  {
+    "url": "http://localhost:53671/?variant=hero-lab",
+    "status": 200,
+    "bytes": 3358
+  },
+  {
+    "url": "http://127.0.0.1:50356/",
+    "status": 200,
+    "bytes": 814
+  }
+]

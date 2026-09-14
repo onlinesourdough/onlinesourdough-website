@@ -1,0 +1,293 @@
+{
+  "overlap": false,
+  "roots": [
+    {
+      "type": "frame",
+      "id": "n1",
+      "name": "COLLECTION 1 / onlinesourdough.com",
+      "x": 0.0,
+      "y": -240.0,
+      "width": 7640.0,
+      "height": 170.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n4",
+      "name": "Main / 00 Original",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1400.0,
+      "height": 2323.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n17",
+      "name": "Main / 01 Metode",
+      "x": 1560.0,
+      "y": 0.0,
+      "width": 1400.0,
+      "height": 2421.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n30",
+      "name": "Main / 02 Logo",
+      "x": 3120.0,
+      "y": 0.0,
+      "width": 1400.0,
+      "height": 2577.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n45",
+      "name": "Main / 03 Dej",
+      "x": 4680.0,
+      "y": 0.0,
+      "width": 1400.0,
+      "height": 2577.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n60",
+      "name": "Main / 04 Starter",
+      "x": 6240.0,
+      "y": 0.0,
+      "width": 1400.0,
+      "height": 2577.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n75",
+      "name": "COLLECTION 2 / resources.onlinesourdough.com",
+      "x": 0.0,
+      "y": 3260.0,
+      "width": 7640.0,
+      "height": 170.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n78",
+      "name": "Resources / 00 Original",
+      "x": 0.0,
+      "y": 3500.0,
+      "width": 1400.0,
+      "height": 1875.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n89",
+      "name": "Resources / 01 Metode",
+      "x": 1560.0,
+      "y": 3500.0,
+      "width": 1400.0,
+      "height": 2497.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n104",
+      "name": "Resources / 02 Logo",
+      "x": 3120.0,
+      "y": 3500.0,
+      "width": 1400.0,
+      "height": 2117.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n117",
+      "name": "Resources / 03 Dej",
+      "x": 4680.0,
+      "y": 3500.0,
+      "width": 1400.0,
+      "height": 2117.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n130",
+      "name": "Resources / 04 Starter",
+      "x": 6240.0,
+      "y": 3500.0,
+      "width": 1400.0,
+      "height": 2117.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n143",
+      "name": "REVISION 5 / De samlede sider",
+      "x": 0.0,
+      "y": -3540.0,
+      "width": 4520.0,
+      "height": 170.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n146",
+      "name": "Main / 05 Logo + Metode",
+      "x": 0.0,
+      "y": -3300.0,
+      "width": 1400.0,
+      "height": 2659.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n150",
+      "name": "Resources / 05 Metode",
+      "x": 1560.0,
+      "y": -3300.0,
+      "width": 1400.0,
+      "height": 2497.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    },
+    {
+      "type": "frame",
+      "id": "n154",
+      "name": "Resources / 06 Video f\u00f8rst",
+      "x": 3120.0,
+      "y": -3300.0,
+      "width": 1400.0,
+      "height": 2231.0,
+      "layout": "none",
+      "clipContent": true,
+      "fill": [
+        {
+          "type": "solid",
+          "color": "#f8f2e8"
+        }
+      ],
+      "children": "..."
+    }
+  ]
+}

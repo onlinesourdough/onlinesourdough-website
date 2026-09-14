@@ -1,0 +1,21 @@
+# onlinesourdough — website exploration
+
+- Selected slug: `onlinesourdough-web-exploration-r1`.
+- Outcome: editable OpenPencil design mindmap of the current two websites, the supplied reference, and three bounded paired variations; no receiving-site implementation.
+- Audience/job: business owners seeking a useful business change, and people using the method and resources themselves. Help Gustav compare the entry experience and clarity of the existing offer paths.
+- Receiving owner/reuse scope: ADS-local exploration for the onlinesourdough web projects. No cross-owner delivery selected.
+- **Review mode:** owner
+- **Review owner:** Gustav Anderson
+- **Receiver acceptance:** not requested; no implementation snapshot is being delivered.
+- **Receiving outcome:** editable comparison board and original design variations for Gustav to review within ADS.
+- **Source/reference rights, provenance, and licensing:** owner-site references remain live pointers; original diagrams and native reconstructions are authored here. The third-party reference supplies general visual principles only. No external asset, code, price, or testimonial is copied.
+- **Ownership boundary:** ADS owns these exploratory visual artifacts. The receiving website projects retain implementation. Offer packaging and final direction selection belong to Gustav.
+- Evidence inputs: https://onlinesourdough.com/, https://resources.onlinesourdough.com/, https://agentic-engineer.ai/ inspected in the browser on 2026-09-10.
+- Preserve: warm paper/ink identity; onlinesourdough name; business-problem-first method; public content, DIY Resources, DWY The Fermentary, DFY Complete Bake / Arc’IT AI.
+- Requested changes to explore: minimalist expression, more expressive hero and scroll diagrams, clearer offers, Resources sidebar collapsed on arrival, distinct CTAs for the two sites.
+- Bounded comparison: three directions are useful here to compare minimal change, stronger service presentation, and stronger system/process storytelling across the same two sites. A: levende menukort; B: tydeligere tilbud; C: visuelt system. These remain alternatives, not three accepted directions.
+- Copy boundary: retain existing English promises where suitable. Additional labels are design draft wording only. Consultation/workshop structures are proposals requiring owner decisions; no invented prices, guarantees, proof, or product commitments.
+- Companions selected: editable `.op`, native PNG exports, source-construction data, review evidence, and a static local artifact index linking the boards. No HTML website prototype selected. Motion is conveyed in storyboard states and written timing/interaction notes, not claimed to play in OpenPencil.
+- Rights: existing owner sites are inspected in place; third-party site is inspiration only, with no copied code, portraits, logos, testimonials, prices, or animation assets. Reconstructed current-state wireframes and all variation graphics are newly authored editable vectors/text.
+- Proof: verified OpenPencil v0.8.4, actual supervised canvas, saved and reopened candidate, native exports and hashes. Final design selection remains Gustav's decision.
+- Status: exploration ready, `waiting-review`; selection and owner approval remain pending.

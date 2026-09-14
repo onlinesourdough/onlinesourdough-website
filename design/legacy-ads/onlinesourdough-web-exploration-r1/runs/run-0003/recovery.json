@@ -1,0 +1,22 @@
+{
+  "from_run_id": "run-0002",
+  "reason": "Owner rejected reconstructed baseline fidelity and requested actual source layouts, separate website collections, working motion, and subsequent character studies.",
+  "corrections": [
+    "Rendered both original frontend revisions with their actual fonts, public assets, navigation, cards, folders, and video.",
+    "Placed five alternatives side by side in each of two distinct website collections.",
+    "Merged the original main manifesto and persistent-particle tube; placed the interactive Resources curve below all folders.",
+    "Replaced the rejected torus with original living mark, dough, and starter characters.",
+    "Added the requested personal GitHub portrait and a contact cue without an invented capacity number.",
+    "Corrected capture assembly by disabling sticky positioning only in capture mode and using the original video poster at unchanged dimensions."
+  ],
+  "preserved": [
+    "runs/run-0003/previous-BRIEF.md",
+    "runs/run-0003/previous-DESIGN.md",
+    "runs/run-0003/previous-REVIEW.md",
+    "openpencil/onlinesourdough-design-map-r1.op",
+    "runs/run-0003/HeroField-torus.superseded.tsx"
+  ],
+  "current_source": "openpencil/onlinesourdough-design-map-r3-final.op",
+  "owner_decision": "waiting-owner",
+  "receiver_acceptance": "not-requested"
+}

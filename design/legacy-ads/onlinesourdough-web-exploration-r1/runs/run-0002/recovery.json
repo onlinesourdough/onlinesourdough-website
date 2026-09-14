@@ -1,0 +1,6 @@
+{
+  "from_run_id": "run-0001",
+  "regression": "Buttons, site navigation, method card, DIY panel and current-state card labels now visible in native exports and reopened canvas.",
+  "final_source_sha256": "e28c79d2acaa2d55729a7f17c9fdb645bbd6cc0a4fca304adc1842ee892b50ac",
+  "source_seed_unchanged": true
+}
