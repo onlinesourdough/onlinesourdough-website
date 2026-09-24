@@ -1,0 +1,26 @@
+.da-character {
+  position: relative;
+  width: min(420px, 100%);
+  height: 244px;
+  margin: 0 auto 22px;
+}
+.da-character canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.da-character-surface {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.da-character-surface:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -6px;
+}
