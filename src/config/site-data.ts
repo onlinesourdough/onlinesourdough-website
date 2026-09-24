@@ -37,6 +37,7 @@ export const siteData = {
   themeStorageKey: "onlinesourdough-theme",
   assets: {
     logo: "/assets/onlinesourdough-mark-large-pixel-v3.svg",
+    founderPortrait: "/assets/gustav-github.png",
   },
   seo: {
     siteUrl: "https://onlinesourdough.com",
@@ -91,14 +92,13 @@ export const siteData = {
     hero: {
       title: "Build the business you want to run.",
       description:
-        "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. Start with free resources and AIOS, or work with me to put it all to use.",
+        "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. I've shaped the same approach into different offers: free resources and AIOS to get started, The Fermentary to build alongside me, and Complete Bake for a solution delivered for you.",
     },
     menu: {
-      label: "SAME BAKE / DIFFERENT DELIVERIES",
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      "title": "A practical starting point for an AI-native business.",
+      "title": "From one useful change towards more business freedom",
       "cta": "About the method",
       "paragraphs": [
         "I'm Gustav. With so many AI tools, agents, and ways to set things up, I've been missing a clear path to follow. That's the idea behind onlinesourdough.",

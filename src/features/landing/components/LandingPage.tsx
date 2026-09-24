@@ -1,3 +1,5 @@
+import { LivingMark } from "./LivingMark";
+import "./landing-refinement.css";
 import { Link } from "@tanstack/react-router";
 import { siteData } from "../../../config/site-data";
 import { OfferCard } from "./OfferCard";
@@ -8,9 +10,10 @@ export function LandingPage() {
   const secondaryOffers = offers.slice(2);
 
   return (
-    <>
+    <div className="da-combined-page">
       <section className="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">{page.hero.title}</h1>
+        <LivingMark />
         <div className="hero-copy">
           <p>{page.hero.description}</p>
         </div>
@@ -18,7 +21,6 @@ export function LandingPage() {
 
       <section className="menu-grid" id="menu" aria-label={page.menu.ariaLabel}>
         <div className="menu-stage menu-stage-primary">
-          <div className="menu-label">{page.menu.label}</div>
           <div className="menu-row menu-row-primary">
             {primaryOffers.map((offer) => (
               <OfferCard key={offer.number} offer={offer} />
@@ -35,7 +37,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="manifesto" id="about" aria-labelledby="manifesto-title">
+      <section className="manifesto da-merged-method" id="about" aria-labelledby="manifesto-title">
         <h2 id="manifesto-title">{page.manifesto.title}</h2>
         <div className="manifesto-copy">
           {page.manifesto.paragraphs.map((paragraph) => (
@@ -46,6 +48,6 @@ export function LandingPage() {
           </Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }

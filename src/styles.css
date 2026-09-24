@@ -437,18 +437,6 @@ html[data-theme="dark"] .site-header .os-mark,
   margin-top: 30px;
 }
 
-.menu-label {
-  grid-column: 1 / -1;
-  margin-bottom: 18px;
-  padding: 0;
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 650;
-  letter-spacing: 0.08em;
-  text-align: center;
-}
-
 .offer-card {
   position: relative;
   min-width: 0;
@@ -857,6 +845,18 @@ html[data-theme="dark"] .site-header .os-mark,
   padding-bottom: 5px;
 }
 
+.footer-founder-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-founder-link img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 .site-footer {
   min-height: 310px;
   display: flex;
@@ -894,6 +894,13 @@ html[data-theme="dark"] .site-header .os-mark,
 .footer-brand .os-mark {
   width: 44px;
   height: 34px;
+}
+
+@media (max-width: 380px) {
+  .footer-brand {
+    gap: 12px;
+    font-size: 30px;
+  }
 }
 
 .footer-bottom {
@@ -996,11 +1003,6 @@ html[data-theme="dark"] .site-header .os-mark,
 
   .menu-row-secondary {
     margin-top: 28px;
-  }
-
-  .menu-label {
-    margin-bottom: 14px;
-    font-size: 11px;
   }
 
   .offer-card {

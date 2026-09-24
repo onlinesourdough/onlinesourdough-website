@@ -17,8 +17,9 @@ export function SiteFooter() {
         <div className="footer-bottom">
           <span>{footer.copyright}</span>
           <nav className="footer-links" aria-label="Ecosystem links">
-            {footer.links.map((link) => (
-              <a href={link.href} {...getExternalLinkAttributes(link.href)} key={link.href}>
+            {footer.links.map((link, index) => (
+              <a className={index === 0 ? "footer-founder-link" : undefined} href={link.href} {...getExternalLinkAttributes(link.href)} key={link.href}>
+                {index === 0 && <img src={assets.founderPortrait} alt="" width="44" height="44" />}
                 {link.label}
               </a>
             ))}

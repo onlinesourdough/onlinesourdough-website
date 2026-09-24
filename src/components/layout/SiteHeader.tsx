@@ -51,7 +51,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <a className="brand-name" href={isHome ? "#top" : "/"} aria-label={`${brand}, ${isHome ? "top" : "menu"}`}>
-        <img className="os-mark" src={assets.logo} alt="" aria-hidden="true" />
+        {!isHome && <img className="os-mark" src={assets.logo} alt="" aria-hidden="true" />}
         <span>{brand}</span>
       </a>
       <nav className="header-actions" aria-label="Primary navigation">
