@@ -6,8 +6,10 @@ method behind them through a compact low-fi book menu.
 
 ## Current product
 
-- `/` contains the promise, four-offer menu, and inline method statement.
-- `/about` contains the editorial explanation of the method.
+- `/` contains the promise, four-offer menu, and a short introduction to the
+  AI-native way of working and AIOS as a starter.
+- `/about` contains Gustav's story, the sourdough analogy, AIOS, offers, the
+  method, Arc’IT AI's factory direction, key facts, and frequently asked questions.
 - `/agent-work-review` is a compatibility redirect to the canonical Resources
   page.
 - `/agent-work-review.md` is a small compatibility pointer to the canonical
