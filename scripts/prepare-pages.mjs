@@ -9,9 +9,9 @@ const noJekyllPath = fileURLToPath(new URL(".nojekyll", distUrl));
 const directPages = [
   {
     directory: "about",
-    title: "The onlinesourdough Method | onlinesourdough",
+    title: "About onlinesourdough | Our story and method",
     description:
-      "The onlinesourdough Method helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
+      "Meet Gustav Anderson and explore onlinesourdough: free resources, AIOS, and hands-on guidance for an AI-native way of working.",
     url: "https://onlinesourdough.com/about/",
   },
   {
