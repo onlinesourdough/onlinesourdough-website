@@ -9,8 +9,9 @@ type SiteLayoutProps = {
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <div className="site-shell">
+      <a className="family-skip" href="#page-content">Skip to content</a>
       <SiteHeader />
-      {children}
+      <div id="page-content" tabIndex={-1}>{children}</div>
       <SiteFooter />
     </div>
   );

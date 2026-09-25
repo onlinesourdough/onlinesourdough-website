@@ -8,6 +8,19 @@ const noJekyllPath = fileURLToPath(new URL(".nojekyll", distUrl));
 
 const directPages = [
   {
+    directory: "newsletter",
+    title: "Newsletter | onlinesourdough",
+    description: "Notes from the work. A newsletter by Gustav Anderson.",
+    url: "https://onlinesourdough.com/newsletter/",
+  },
+  {
+    directory: "newsletter/thank-you",
+    title: "Newsletter signup | onlinesourdough",
+    description: "Your newsletter signup with onlinesourdough.",
+    url: "https://onlinesourdough.com/newsletter/thank-you/",
+    noindex: true,
+  },
+  {
     directory: "about",
     title: "About onlinesourdough | Our story and method",
     description:
@@ -27,7 +40,10 @@ const indexHtml = await readFile(indexPath, "utf8");
 for (const page of directPages) {
   const directoryUrl = new URL(`${page.directory}/`, distUrl);
   await mkdir(fileURLToPath(directoryUrl), { recursive: true });
-  const pageHtml = withPageMetadata(indexHtml, page);
+  const pageHtml = withPageMetadata(indexHtml, page).replace(
+    /<head>/,
+    page.noindex ? '<head>\n<meta name="robots" content="noindex, follow">' : '<head>',
+  );
   await writeFile(
     new URL("index.html", directoryUrl),
     page.redirect ? withExternalRedirect(pageHtml, page.redirect) : pageHtml,

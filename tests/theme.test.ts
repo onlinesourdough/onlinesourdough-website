@@ -9,7 +9,7 @@ function ThemeProbe() {
   return createElement("output", null, useTheme(storageKey).theme);
 }
 
-function renderInitialTheme(savedTheme: string | null, prefersDark: boolean) {
+function renderInitialTheme(savedTheme: string | null, prefersDark: boolean, search = "") {
   const previousWindow = (globalThis as typeof globalThis & { window?: Window }).window;
   const matchMedia = vi.fn(
     (query: string) => ({ matches: prefersDark, media: query }) as MediaQueryList,
@@ -17,7 +17,7 @@ function renderInitialTheme(savedTheme: string | null, prefersDark: boolean) {
   const localStorage = {
     getItem: vi.fn(() => savedTheme),
   } as unknown as Storage;
-  const browserWindow = { localStorage, matchMedia } as unknown as Window;
+  const browserWindow = { localStorage, matchMedia, location: { search } } as unknown as Window;
 
   Object.defineProperty(globalThis, "window", {
     configurable: true,
@@ -36,6 +36,11 @@ function renderInitialTheme(savedTheme: string | null, prefersDark: boolean) {
 }
 
 describe("initial theme contract", () => {
+  it("supports an explicit review theme without accepting arbitrary values", () => {
+    expect(renderInitialTheme("dark", true, "?theme=light").markup).toBe("<output>light</output>");
+    expect(renderInitialTheme("light", false, "?theme=dark").markup).toBe("<output>dark</output>");
+    expect(renderInitialTheme("light", true, "?theme=other").markup).toBe("<output>light</output>");
+  });
   it("prioritizes an explicit saved theme over the system preference", () => {
     expect(renderInitialTheme("light", true).markup).toBe("<output>light</output>");
     expect(renderInitialTheme("dark", false).markup).toBe("<output>dark</output>");

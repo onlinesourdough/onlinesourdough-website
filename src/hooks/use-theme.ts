@@ -23,6 +23,8 @@ export function useTheme(storageKey: string) {
 function getInitialTheme(storageKey: string): Theme {
   if (typeof window === "undefined") return "light";
 
+  const requested = new URLSearchParams(window.location.search).get("theme");
+  if (requested === "light" || requested === "dark") return requested;
   let savedTheme: string | null = null;
   try {
     savedTheme = window.localStorage.getItem(storageKey);

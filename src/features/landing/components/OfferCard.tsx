@@ -1,11 +1,7 @@
 import { type Offer } from "../../../config/site-data";
 import { getExternalLinkAttributes } from "../../../components/link-attributes";
 
-type OfferCardProps = {
-  offer: Offer;
-};
-
-export function OfferCard({ offer }: OfferCardProps) {
+export function OfferCard({ offer }: { offer: Offer }) {
   return (
     <a className="offer-card" href={offer.href} {...getExternalLinkAttributes(offer.href)}>
       <span className="book-stage">
@@ -24,10 +20,7 @@ export function OfferCard({ offer }: OfferCardProps) {
         <span className="book-sleeve" aria-hidden="true" />
       </span>
       <span className="offer-cta">
-        {offer.cta}
-        <span className="offer-arrow" aria-hidden="true">
-          →
-        </span>
+        {offer.cta}<span className="offer-arrow" aria-hidden="true">→</span>
       </span>
     </a>
   );

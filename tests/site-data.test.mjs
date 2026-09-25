@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { getExternalLinkAttributes } from "../src/components/link-attributes";
 import { siteData } from "../src/config/site-data";
 
-describe("approved public site data", () => {
+describe("production copy and approved local family navigation", () => {
   it("keeps the four approved deliveries in their canonical order", () => {
     expect(
       siteData.offers.map(({ number, title, cta, status }) => ({ number, title, cta, status })),
@@ -22,7 +22,7 @@ describe("approved public site data", () => {
 
   it("keeps the homepage metadata consistent with visible copy and the static fallback", () => {
     const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
-    expect(siteData.seo.title).toBe(`${siteData.page.hero.title} | onlinesourdough`);
+    expect(siteData.seo.title).toBe(`${siteData.page.hero.title}. | onlinesourdough`);
     expect(siteData.page.hero.description).toContain(siteData.seo.description);
     expect(siteData.seo.ogTitle).toBe(siteData.seo.title);
     expect(siteData.seo.ogDescription).toBe(siteData.seo.description);
@@ -103,7 +103,7 @@ describe("approved public site data", () => {
   it("configures the accessible GitHub footer destination safely", () => {
     expect(siteData.footer.github).toEqual({
       label: "GitHub",
-      href: "https://github.com/onlinesourdough",
+      href: "https://github.com/gustavonline",
     });
     expect(getExternalLinkAttributes(siteData.footer.github.href)).toEqual({
       target: "_blank",

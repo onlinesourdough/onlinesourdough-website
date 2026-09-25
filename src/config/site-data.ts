@@ -1,3 +1,5 @@
+import { familyHref } from "../family/preview";
+
 export type Offer = {
   number: string;
   title: string;
@@ -37,7 +39,6 @@ export const siteData = {
   themeStorageKey: "onlinesourdough-theme",
   assets: {
     logo: "/assets/onlinesourdough-mark-large-pixel-v3.svg",
-    founderPortrait: "/assets/gustav-github.png",
   },
   seo: {
     siteUrl: "https://onlinesourdough.com",
@@ -75,7 +76,7 @@ export const siteData = {
       title: "Arc'IT AI",
       description: "Software, security, and agreed delivery and operational responsibility.",
       action: "Explore offer ↗",
-      href: "https://arcitai.com",
+      href: familyHref("arcitai"),
       current: false,
     },
     {
@@ -90,7 +91,7 @@ export const siteData = {
   ] satisfies StudioOffer[],
   page: {
     hero: {
-      title: "Build the business you want to run.",
+      title: "Build the business you want to run",
       description:
         "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. I've shaped the same approach into different offers: free resources and AIOS to get started, The Fermentary to build alongside me, and Complete Bake for a solution delivered for you.",
     },
@@ -144,8 +145,8 @@ export const siteData = {
               "type": "links",
               "links": [
                 {
-                  "label": "Gustav Online",
-                  "href": "https://gustavonline.com/"
+                  "label": "gustavonline",
+                  "href": familyHref("gustavonline")
                 },
                 {
                   "label": "YouTube",
@@ -310,7 +311,7 @@ export const siteData = {
               "links": [
                 {
                   "label": "Explore Complete Bake",
-                  "href": "https://arcitai.com/"
+                  "href": familyHref("arcitai")
                 }
               ]
             }
@@ -434,7 +435,7 @@ export const siteData = {
                 },
                 {
                   "label": "Public writing and learning",
-                  "value": "Gustav Online"
+                  "value": "gustavonline"
                 },
                 {
                   "label": "Website",
@@ -475,11 +476,11 @@ export const siteData = {
             },
             {
               "type": "heading",
-              "text": "How are onlinesourdough, Gustav Online, and Arc’IT AI connected?"
+              "text": "How are onlinesourdough, gustavonline, and Arc’IT AI connected?"
             },
             {
               "type": "paragraph",
-              "text": "Gustav Anderson is behind all three. Gustav Online is where I share what I’m working on and learning. onlinesourdough brings together free resources and practical guidance, while Arc’IT AI focuses on more involved organisational delivery and agreed responsibility."
+              "text": "Gustav Anderson is behind all three. gustavonline is where I share what I’m working on and learning. onlinesourdough brings together free resources and practical guidance, while Arc’IT AI focuses on more involved organisational delivery and agreed responsibility."
             }
           ]
         },
@@ -553,7 +554,7 @@ export const siteData = {
         "Let Gustav take agreed work off your plate, alongside guidance or through a larger delivery with Arc’IT AI.",
       cta: "Start a project",
       status: "DFY",
-      href: "https://arcitai.com",
+      href: familyHref("arcitai"),
       image: {
         src: "/assets/complete-bake-lofi-v3-transparent.png",
         alt: "Pixel-art computer, server, and oven with bread",
@@ -561,10 +562,9 @@ export const siteData = {
     },
   ] satisfies Offer[],
   footer: {
-    copyright: "© 2026 onlinesourdough",
     github: {
       label: "GitHub",
-      href: "https://github.com/onlinesourdough",
+      href: "https://github.com/gustavonline",
     },
     links: [
       {
@@ -573,7 +573,7 @@ export const siteData = {
       },
       {
         label: "Arc'IT AI ↗",
-        href: "https://arcitai.com",
+        href: familyHref("arcitai"),
       },
     ],
   },

@@ -5,6 +5,8 @@ const distUrl = new URL("../dist/", import.meta.url);
 const expectedFiles = [
   "index.html",
   "about/index.html",
+  "newsletter/index.html",
+  "newsletter/thank-you/index.html",
   "agent-work-review/index.html",
   "agent-work-review.md",
   "404.html",
