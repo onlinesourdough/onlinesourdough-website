@@ -7,3 +7,6 @@ vite.config.js
 vite.config.d.ts
 output/playwright
 .playwright-cli
+
+# Local owner-review build, never a release artifact
+output/family-preview/

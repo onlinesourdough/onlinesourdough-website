@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import { siteData } from "../../config/site-data";
 import { useTheme } from "../../hooks/use-theme";
 import { OfferSwitcher } from "./OfferSwitcher";
+import { FamilyMark } from "../../family/FamilyMark";
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
   const isHome = pathname === "/";
   const isAbout = pathname === "/about" || pathname === "/about/";
   const [activeSection, setActiveSection] = useState("");
-  const { brand, assets, navigation, themeStorageKey } = siteData;
+  const { brand, navigation, themeStorageKey } = siteData;
   const { theme, toggleTheme } = useTheme(themeStorageKey);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <a className="brand-name" href={isHome ? "#top" : "/"} aria-label={`${brand}, ${isHome ? "top" : "menu"}`}>
-        <img className="os-mark" src={assets.logo} alt="" aria-hidden="true" />
+        <FamilyMark brand="onlinesourdough" />
         <span>{brand}</span>
       </a>
       <nav className="header-actions" aria-label="Primary navigation">
@@ -79,6 +80,8 @@ export function SiteHeader() {
           {navigation.about}
         </a>
       </nav>
+      <div className="header-utilities">
+      <a className="newsletter-link" href="/newsletter">Newsletter</a>
       <button
         className="theme-toggle"
         type="button"
@@ -87,6 +90,7 @@ export function SiteHeader() {
       >
         <span className="theme-toggle-icon" aria-hidden="true" />
       </button>
+      </div>
     </header>
   );
 }

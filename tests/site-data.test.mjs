@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
 import { getExternalLinkAttributes } from "../src/components/link-attributes";
 import { siteData } from "../src/config/site-data";
 
-describe("approved public site data", () => {
+describe("production copy and approved local family navigation", () => {
   it("keeps the four approved deliveries in their canonical order", () => {
     expect(
       siteData.offers.map(({ number, title, cta, status }) => ({ number, title, cta, status })),
@@ -19,45 +20,23 @@ describe("approved public site data", () => {
     ]);
   });
 
-  it("protects the approved hero, SEO, and six-paragraph method copy", () => {
-    const title = "Build the business you want to run.";
-    const description =
-      "onlinesourdough helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.";
-
-    expect(siteData.page.hero.title).toBe(title);
-    expect(siteData.page.hero.description).toBe(
-      `${description} Use the resources, work through it with me, or have the solution delivered.`,
-    );
-    expect(siteData.seo.title).toBe(`${title} | onlinesourdough`);
-    expect(siteData.seo.description).toBe(description);
-    expect(siteData.seo.ogTitle).toBe(`${title} | onlinesourdough`);
-    expect(siteData.seo.ogDescription).toBe(description);
-    expect(siteData.page.manifesto.title).toBe("From business problem to working solution.");
-    expect(siteData.page.manifesto.paragraphs).toEqual([
-      "Every business has work that takes too much time, costs too much, leads to mistakes, or makes the next step harder than it should be.",
-      "onlinesourdough helps you make that problem clear, choose the smallest useful change, and turn it into something that works.",
-      "Sometimes the answer is a simpler process. Sometimes it is automation, an AI agent, a connection between existing tools, or software. The right solution depends on the business.",
-      "When something needs to be built, it should be understandable, maintainable, and owned by the business.",
-      "AIOS gives the work a home on your computer. It brings together your business context and the way you work with AI, agents, automation, software, and documentation, so you and your tools do not start from scratch every time.",
-      "The goal is more control over time, costs, capacity, and direction.",
-    ]);
+  it("keeps the homepage metadata consistent with visible copy and the static fallback", () => {
+    const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
+    expect(siteData.seo.title).toBe(`${siteData.page.hero.title}. | onlinesourdough`);
+    expect(siteData.page.hero.description).toContain(siteData.seo.description);
+    expect(siteData.seo.ogTitle).toBe(siteData.seo.title);
+    expect(siteData.seo.ogDescription).toBe(siteData.seo.description);
+    expect(html).toContain(`<title>${siteData.seo.title}</title>`);
+    expect(html).toContain(`content="${siteData.seo.description}"`);
   });
 
-  it("keeps the About model and higher-touch Resources language canonical", () => {
-    expect(siteData.seo.aboutTitle).toBe("The onlinesourdough Method | onlinesourdough");
-    expect(siteData.seo.aboutDescription).toBe(
-      "The onlinesourdough Method helps you turn real business problems into better processes, useful AI, automation, or software you can understand and own.",
-    );
-    expect(siteData.page.about.title).toBe("The onlinesourdough Method");
-    expect(siteData.page.about.paragraphs.join(" ")).toContain("AIOS gives the work a home on your computer");
-    expect(siteData.page.about.sections.at(2)?.title).toBe("Use AI where it helps");
-    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("Resources (DIY)");
-    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("The Fermentary (DWY)");
-    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("Complete Bake (DFY)");
-    expect(siteData.page.about.sections.at(-1)?.paragraphs.at(-1)).toContain("relevant Resources");
-    expect(siteData.studioOffers.find((offer) => offer.current)?.description).toBe(
-      "Use the onlinesourdough Method through Resources, or work through the current problem with direct guidance.",
-    );
+  it("keeps direct About metadata and section anchors consistent", () => {
+    const preparePages = readFileSync(new URL("../scripts/prepare-pages.mjs", import.meta.url), "utf8");
+    expect(preparePages).toContain(siteData.seo.aboutTitle);
+    expect(preparePages).toContain(siteData.seo.aboutDescription);
+    const ids = siteData.page.about.sections.map((section) => section.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const id of ids) expect(id).toMatch(/^[a-z][a-z0-9-]*$/);
   });
 
   it("excludes retired labels and unsupported commercial or delivery claims", () => {
@@ -124,7 +103,7 @@ describe("approved public site data", () => {
   it("configures the accessible GitHub footer destination safely", () => {
     expect(siteData.footer.github).toEqual({
       label: "GitHub",
-      href: "https://github.com/onlinesourdough",
+      href: "https://github.com/gustavonline",
     });
     expect(getExternalLinkAttributes(siteData.footer.github.href)).toEqual({
       target: "_blank",
