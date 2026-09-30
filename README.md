@@ -107,3 +107,10 @@ migration paths, navigation and theme behavior, asset responses, console
 errors, and horizontal overflow on the custom domain. The practical rollback
 is to revert the release commit on `main`; the resulting workflow rebuilds and
 redeploys the previous repository state.
+
+## License
+
+Original code and documentation are available under the [MIT License](LICENSE).
+Third-party code, fonts, copied reference material, and other third-party assets
+retain their own licenses and attribution. Brand names, logos, portraits, and
+editorial media are not licensed for reuse by this software license.
