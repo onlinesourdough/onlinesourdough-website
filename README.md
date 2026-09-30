@@ -16,7 +16,8 @@ method behind them through a compact low-fi book menu.
   Resources runbook.
 - A shared header provides offer switching, page navigation, and light/dark
   theme control.
-- A shared ecosystem footer links to gustavonline and Arc'IT AI.
+- A shared ecosystem footer links to gustavonline and Arc'IT AI, with matching
+  family mark/icon sizing and “Part of Gustav Online” below the social profiles.
 - GitHub Pages serves the static build at `https://onlinesourdough.com`.
 
 The approved design source is the latest
