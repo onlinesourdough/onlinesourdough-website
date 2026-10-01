@@ -1,8 +1,8 @@
 # onlinesourdough
 
-Public landing page for the point where business development, software, and
-responsible AI-first work meet. The site presents four delivery paths and the
-method behind them through a compact low-fi book menu.
+Source for [onlinesourdough.com](https://onlinesourdough.com), where Gustav
+Anderson shares practical ways to develop a business and work with AI. The site
+is a React application built with Vite and published through GitHub Pages.
 
 ## Current product
 
