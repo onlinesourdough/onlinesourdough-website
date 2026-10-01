@@ -43,15 +43,15 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Build the business you want to run. | onlinesourdough",
+    title: "Build better ways to work | onlinesourdough",
     description:
-      "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
-    aboutTitle: "About onlinesourdough | Our story and method",
+      "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
+    aboutTitle: "About onlinesourdough | My story and method",
     aboutDescription:
-      "Meet Gustav Anderson and explore onlinesourdough: free resources, AIOS, and hands-on guidance for an AI-native way of working.",
-    ogTitle: "Build the business you want to run. | onlinesourdough",
+      "My approach to business architecture and agentic engineering, with AIOS as a starter and one-to-one pair engineering to develop what fits your business.",
+    ogTitle: "Build better ways to work | onlinesourdough",
     ogDescription:
-      "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
+      "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
   },
   navigation: {
     offers: "Offers",
@@ -74,7 +74,7 @@ export const siteData = {
     {
       label: "DONE FOR YOU",
       title: "Arc'IT AI",
-      description: "Software, security, and agreed delivery and operational responsibility.",
+      description: "I handle agreed architecture, software delivery, and ongoing care, with security checks and clear responsibility.",
       action: "Explore offer ↗",
       href: familyHref("arcitai"),
       current: false,
@@ -83,7 +83,7 @@ export const siteData = {
       label: "DIY + DONE WITH YOU",
       title: "onlinesourdough",
       description:
-        "Free resources, AIOS, and hands-on guidance for an AI-native way of working.",
+        "My free resources, AIOS as a starter, and one-to-one pair engineering to develop what fits your business.",
       action: "Current offer",
       href: "/",
       current: true,
@@ -91,9 +91,9 @@ export const siteData = {
   ] satisfies StudioOffer[],
   page: {
     hero: {
-      title: "Build the business you want to run",
+      title: "Build better ways to work",
       description:
-        "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. I've shaped the same approach into different offers: free resources and AIOS to get started, The Fermentary to build alongside me, and Complete Bake for a solution delivered for you.",
+        "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. AIOS is my starter: business context and working practices you make your own and keep improving, like a sourdough starter.",
     },
     menu: {
       ariaLabel: "onlinesourdough menu",
@@ -102,19 +102,19 @@ export const siteData = {
       "title": "From one useful change towards more business freedom",
       "cta": "About the method",
       "paragraphs": [
-        "I'm Gustav. With so many AI tools, agents, and ways to set things up, I've been missing a clear path to follow. That's the idea behind onlinesourdough.",
-        "AIOS is our starter, yours to build on. It brings your business context and reusable ways of working together, so you can spend less time starting from scratch.",
-        "Through free resources and hands-on guidance, we work on making AI useful in your everyday business. That can mean content, research, software, or another part of your work.",
-        "Like sourdough, it needs care. You try things, check the results, and keep improving the setup. The goal is more control over your time and where you take the business."
+        "I'm Gustav, a business and software architect. I bring business architecture and agentic engineering together to help you improve how your business works.",
+        "AIOS is my starter, yours to build on. Like a sourdough starter, it gives you a foundation to care for: your business context, useful decisions, and working practices that you develop over time.",
+        "I start with work worth improving. I help you apply agentic engineering practices: give agents useful context, set clear responsibilities, and review the results. Work one-to-one with me through pair engineering to plan, build, and review a useful change.",
+        "Like sourdough, it needs care. You try things, check the quality, time and effort involved, and keep improving the setup. The goal is more control over your time and where you take the business."
       ]
     },
     about: {
-      "eyebrow": "ABOUT / OUR STORY & METHOD",
+      "eyebrow": "ABOUT / MY STORY & METHOD",
       "title": "About onlinesourdough",
-      "tagline": "A practical starting point for an AI-native business.",
+      "tagline": "Business architecture and agentic engineering, put into practice.",
       "paragraphs": [
-        "onlinesourdough helps solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
-        "Here you'll find free resources, AIOS, and the option to work with me on putting it all to use. A place to start, and something you can keep building on."
+        "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
+        "I use AIOS as a starter and help you develop what fits your business. Explore the free resources yourself, work one-to-one with me through pair engineering, or ask me to take responsibility for agreed delivery through Arc’IT AI."
       ],
       "sections": [
         {
@@ -174,15 +174,15 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I see something similar in working with AI. You can play around and try things, but you also need to look after what you're working with. A starter needs feeding and attention. An AI setup needs useful context, clear instructions, and someone checking how it's doing."
+              "text": "A sourdough starter becomes useful through care and practice. I take the same approach to AIOS: start with a foundation, adapt it to your work, and look after it as you use it. Useful context, clear instructions, and review help you keep improving what comes out of it."
             },
             {
               "type": "paragraph",
-              "text": "Some of that care has technical names. **Context engineering** means giving the AI the information it actually needs. **Prompt engineering** means making the task and expectations clear. **Harness engineering** is about the tools, permissions, and working environment around the agent."
+              "text": "I use **agentic engineering practices** to give that care a structure. **Context engineering** means giving an agent the information it needs. **Prompt engineering** means making the task and expectations clear. **Harness engineering** is about the tools, permissions, and working environment around the agent."
             },
             {
               "type": "paragraph",
-              "text": "Then there's the loop: do the work, check what happened, adjust, and know when to stop. That's what I mean by **loop engineering**. **Evals** help us check whether the results meet the requirements and whether a change actually made things better."
+              "text": "Then there's the loop: do the work, check what happened, adjust, and know when to stop. That's what I mean by **loop engineering**. **Evals** are repeatable checks that help you judge whether results meet your requirements and whether a change made things better."
             },
             {
               "type": "paragraph",
@@ -192,25 +192,25 @@ export const siteData = {
         },
         {
           "id": "what-i-mean-by-ai-native",
-          "title": "What I mean by AI-native",
+          "title": "How I approach working with AI",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "For me, becoming AI-native means making AI a useful part of how your business works day to day. The people and agents involved need the right context, clear responsibilities, and a way to check the work."
+              "text": "I start with how your business works day to day. Business architecture helps me understand the people, processes, information, and software involved. I use agentic engineering to decide how agents can contribute to that work, with clear responsibilities and a way to check the result."
             },
             {
               "type": "paragraph",
-              "text": "Research, planning, content, administration, software development. You name it. As the tools and models change, we can revisit what they can help with. You decide what to delegate, what needs review, and where your own judgment matters."
+              "text": "Research, planning, content, administration, software development. You name it. As the tools and models change, I revisit what they can help with. You decide what to delegate, what needs review, and where your own judgment matters."
             }
           ]
         },
         {
           "id": "aios-our-starter-yours-to-build-on",
-          "title": "AIOS: our starter, yours to build on",
+          "title": "AIOS: my starter, yours to build on",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "AIOS is the starter I use for bringing business context and ways of working with AI together. We take that starting point and make it yours."
+              "text": "AIOS is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
             },
             {
               "type": "paragraph",
@@ -258,7 +258,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Start with the free explanations, guides, and examples. They're there to help you understand AI, get set up, and find ways to use it in your own work. Take what you need and come back as you build on it."
+              "text": "I share free guides and examples for business, software, and everyday work. AIOS and reusable skills are part of the collection, alongside other ideas and methods you can try for yourself. Choose what helps with the work in front of you."
             },
             {
               "type": "links",
@@ -271,19 +271,19 @@ export const siteData = {
             },
             {
               "type": "heading",
-              "text": "The Fermentary: done with you"
+              "text": "The Fermentary: one-to-one pair engineering"
             },
             {
               "type": "paragraph",
-              "text": "This is where we work on becoming AI-native together. We start with your business and build a setup and working habits that fit the work you actually do."
+              "text": "I work one-to-one with you through pair engineering: planning, building, and reviewing together. I help you work through a business decision, develop a workflow, or build software. For software, that can include pair programming."
             },
             {
               "type": "paragraph",
-              "text": "That often includes AIOS. It can also mean a content workflow, reusable skills, research, or another area where you want AI to help. I work with you on the setup, the decisions, and the difficult parts, and we review how it works in practice."
+              "text": "I use AIOS as a starter and help you adapt it to the work, tools, and responsibilities in your business. I agree with you on what a useful result looks like, then work alongside you on the setup, decisions, and difficult parts. The aim is to develop something that works for your business and that you understand how to use."
             },
             {
               "type": "paragraph",
-              "text": "Relevant factory resources can be included when your work calls for them. We agree on the guidance, implementation, and ongoing responsibility involved as your needs develop."
+              "text": "Factory resources can be useful when your work involves software development. I agree the guidance, implementation, and ongoing responsibility with you before taking on that work."
             },
             {
               "type": "links",
@@ -300,11 +300,11 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Sometimes you'd like me to take a piece of work off your plate. We can agree on that as part of working together, or through a larger delivery with Arc’IT AI."
+              "text": "I take agreed work off your plate through Arc’IT AI. I handle the architecture, software development, or review the project needs, with security checks built into delivery and clear scope and responsibility."
             },
             {
               "type": "paragraph",
-              "text": "We agree on what I take over, how the result will be accepted, and any ongoing operation or support. Done-for-you describes that responsibility."
+              "text": "I agree with you on the work I take over, the access I need, how you will accept the result, and who looks after it afterwards. Ongoing operation or support needs its own agreed scope."
             },
             {
               "type": "links",
@@ -319,7 +319,7 @@ export const siteData = {
         },
         {
           "id": "how-we-build-an-ai-native-way-of-working",
-          "title": "How we build an AI-native way of working",
+          "title": "How I help you develop a way of working that fits",
           "blocks": [
             {
               "type": "heading",
@@ -327,7 +327,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We look at what you offer, how you deliver it, and how customers find and choose you. Where does information live? Who makes the decisions? What keeps landing back on your plate? The setup needs to make sense for that business."
+              "text": "I use business architecture to understand what you offer, how you deliver it, and how the people, processes, information, and software fit together. I help you choose work worth improving and decide how to evaluate the result: quality, time, cost, or another measure that matters to your business."
             },
             {
               "type": "heading",
@@ -335,7 +335,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We start with enough to do useful work, with room to grow. AIOS helps organise the context and working methods. We choose the tools and set up access and permissions around the work they'll do."
+              "text": "I use AIOS as a starter for the context and working practices. I help you adapt it to your business and choose enough tools, instructions, and access for the first useful task. I make the permissions and approval points clear."
             },
             {
               "type": "heading",
@@ -343,7 +343,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We apply the setup to real work and decide how people and agents should share it. Clear instructions, relevant context, and review help turn experiments into repeatable practice. Sometimes that also reveals a process we should simplify before adding more technology."
+              "text": "Through pair engineering, I help you plan, build, and review a change in real work. I use agentic engineering practices where agents can help, and keep human judgment and responsibility clear. Tests and review check the result. Sometimes the useful change is to simplify a process."
             },
             {
               "type": "heading",
@@ -351,7 +351,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We look at what worked, what it cost in time and effort, and what needs changing. Then we put that learning back into the setup. That's the ongoing care again. The point is to give you more control over your time and where you take the business."
+              "text": "I review the result with you against the starting point and the agreed criteria, including the effort spent checking and fixing it. I put useful learning back into the setup. The aim is progress you can assess in practice and more control over how you work."
             }
           ]
         },
@@ -361,26 +361,26 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Arc’IT AI focuses on larger organisations and more involved delivery, where software engineering, security, team access, and ongoing operation need a tailored approach. It is also where I take responsibility for agreed implementation and operational work."
+              "text": "Through Arc’IT AI, I help teams design, build, and maintain software around the way their business works. I handle agreed architecture, integrations, delivery, and security work, with clear responsibilities for access, acceptance, and ongoing care."
             },
             {
               "type": "paragraph",
-              "text": "The factory work I'm developing through Arc’IT AI has two connected areas:"
+              "text": "I’m developing **Factory — Software & Defence** through Arc’IT AI. It combines a method, a CLI, and a project Inbox for native agentic development. Its connected areas are:"
             },
             {
               "type": "list",
               "items": [
-                "**Agent Software Factory:** a structured development process where agents work from requirements through implementation, tests, review, and controlled release. Security and code quality are built into the intended workflow.",
-                "**Agent Defense Factory:** the follow-on work of protecting software in operation, including monitoring, assessing vulnerabilities, handling patches, and preparing for incidents and recovery."
+                "**Software:** scoped tasks, implementation, tests, independent review, and an approved handoff through your project’s existing development tools.",
+                "**Defence:** security evaluation, assessment of findings, and agreed fixes within the project’s scope and access. Ongoing security work needs a separate agreement."
               ]
             },
             {
               "type": "paragraph",
-              "text": "This factory work is in development, with more demanding organisational needs in mind. Relevant factory resources can also be used through onlinesourdough and The Fermentary. Access to a resource and responsibility for operating it are agreed separately."
+              "text": "Factory is in active development. Its current native integration uses Codex on Linux with GitHub; other environments need a qualified integration. Relevant method resources can also be used through The Fermentary. Using a resource and asking me to operate it are separate decisions."
             },
             {
               "type": "paragraph",
-              "text": "AIOS supports the broader daily way of working. The factory is designed to operate independently, and the two can complement each other where useful."
+              "text": "AIOS supports your broader daily way of working. Factory can be used independently, and buying an Arc’IT AI delivery does not require you to adopt AIOS."
             }
           ]
         },
@@ -390,11 +390,11 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "We start with your business and how you'd like to work. Bring the thing that's slowing you down, the setup you're already using, or simply the feeling that you need a clearer place to start."
+              "text": "I start with your business and how you'd like to work. Bring the thing that's slowing you down, the setup you're already using, or simply the feeling that you need a clearer place to start."
             },
             {
               "type": "paragraph",
-              "text": "We agree on the scope, responsibilities, and what useful progress looks like. We also agree on communication, timing, and any ongoing support. You work directly with me."
+              "text": "You work directly with me. In The Fermentary, that means one-to-one pair engineering: I help you plan, build, and review while you stay involved in the work and decisions. I agree scope, responsibilities, timing, and what useful progress looks like with you before starting."
             }
           ]
         },
@@ -414,8 +414,8 @@ export const siteData = {
                   "value": "A practical way to establish and improve how a business works with AI"
                 },
                 {
-                  "label": "Created by",
-                  "value": "Gustav Anderson, business and software architect"
+                  "label": "Who you work with",
+                  "value": "Me, Gustav Anderson, business and software architect"
                 },
                 {
                   "label": "Audience",
@@ -464,11 +464,11 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "The approach starts with your business and working methods. We choose tools for the work and aim to keep your context and methods portable, so the setup can evolve as your needs and the available tools change."
+              "text": "The approach starts with your business and working methods. I choose tools with you for the work and aim to keep your context and methods portable, so the setup can evolve as your needs and the available tools change."
             },
             {
               "type": "heading",
-              "text": "Does AI-native mean automating everything?"
+              "text": "Should I automate everything?"
             },
             {
               "type": "paragraph",
@@ -480,7 +480,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Gustav Anderson is behind all three. gustavonline is where I share what I’m working on and learning. onlinesourdough brings together free resources and practical guidance, while Arc’IT AI focuses on more involved organisational delivery and agreed responsibility."
+              "text": "I’m behind all three. Through gustavonline, I share what I’m working on and learning. Through onlinesourdough, I offer free resources and practical DIY or done-with-you guidance. Through Arc’IT AI, I take responsibility for more involved, agreed delivery."
             }
           ]
         },
@@ -512,7 +512,7 @@ export const siteData = {
     {
       number: "01",
       title: "Content",
-      description: "Ideas, experiments, and real examples for connecting business, software, and AI.",
+      description: "I write my newsletter and record videos on business architecture, software, and agentic engineering, sharing lessons and real examples.",
       cta: "Explore content",
       status: "Public",
       href: "https://www.youtube.com/@gustavonline",
@@ -525,7 +525,7 @@ export const siteData = {
       number: "02",
       title: "Resources",
       description:
-        "Free guides and examples to help you understand AI, get set up, and put it to use in your own work.",
+        "I share my guides and examples for business, software, and everyday work, including AIOS and reusable skills you can adapt.",
       cta: "Open library",
       status: "DIY",
       href: "https://resources.onlinesourdough.com",
@@ -538,8 +538,8 @@ export const siteData = {
       number: "03",
       title: "The Fermentary",
       description:
-        "Build an AI-native way of working with Gustav, from AIOS to content workflows, skills, and the setup your business needs.",
-      cta: "Work together",
+        "I work 1:1 with you on business decisions, workflows, and software. I use pair engineering and AIOS as a starter to develop what fits your business.",
+      cta: "Work with me",
       status: "DWY",
       href: "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
       image: {
@@ -551,7 +551,7 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "Let Gustav take agreed work off your plate, alongside guidance or through a larger delivery with Arc’IT AI.",
+        "I take agreed work off your plate through Arc’IT AI, with security checks built into delivery and clear scope and responsibility.",
       cta: "Start a project",
       status: "DFY",
       href: familyHref("arcitai"),

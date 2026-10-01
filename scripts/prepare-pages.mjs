@@ -10,7 +10,7 @@ const directPages = [
   {
     directory: "newsletter",
     title: "Newsletter | onlinesourdough",
-    description: "Notes from the work. A newsletter by Gustav Anderson.",
+    description: "My notes on business architecture, software, and agentic engineering.",
     url: "https://onlinesourdough.com/newsletter/",
   },
   {
@@ -22,9 +22,9 @@ const directPages = [
   },
   {
     directory: "about",
-    title: "About onlinesourdough | Our story and method",
+    title: "About onlinesourdough | My story and method",
     description:
-      "Meet Gustav Anderson and explore onlinesourdough: free resources, AIOS, and hands-on guidance for an AI-native way of working.",
+      "My approach to business architecture and agentic engineering, with AIOS as a starter and one-to-one pair engineering to develop what fits your business.",
     url: "https://onlinesourdough.com/about/",
   },
   {
