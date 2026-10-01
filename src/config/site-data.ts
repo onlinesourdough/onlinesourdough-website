@@ -154,7 +154,7 @@ export const siteData = {
                 },
                 {
                   "label": "LinkedIn",
-                  "href": "https://www.linkedin.com/in/gustavonline/"
+                  "href": "https://www.linkedin.com/in/gustavandersonn/"
                 },
                 {
                   "label": "Open-source projects",
