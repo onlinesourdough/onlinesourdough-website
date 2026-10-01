@@ -38,7 +38,7 @@ const [indexHtml, aboutHtml, reviewHtml, reviewPointer, sitemap, cname] = await 
 assertIncludes(indexHtml, '<link rel="canonical" href="https://onlinesourdough.com/"');
 assertIncludes(indexHtml, 'href="/assets/onlinesourdough-mark-large-pixel-v3.svg"');
 assertIncludes(aboutHtml, '<link rel="canonical" href="https://onlinesourdough.com/about/"');
-assertIncludes(aboutHtml, "<title>About onlinesourdough | Our story and method</title>");
+assertIncludes(aboutHtml, "<title>About onlinesourdough | My story and method</title>");
 assertIncludes(
   reviewHtml,
   '<link rel="canonical" href="https://resources.onlinesourdough.com/agent-work-review"',

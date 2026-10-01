@@ -16,7 +16,7 @@ const social = [
 export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
   return (
     <div className="family-footer">
-      <nav className="family-sites" aria-label="Other sites by Gustav">
+      <nav className="family-sites" aria-label="My other sites">
         {(Object.keys(labels) as FamilyBrand[])
           .filter((key) => key !== brand)
           .map((key) => (
@@ -65,7 +65,7 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
   };
   if (thanks) return <section className="family-newsletter family-thanks">
     <h1>{subscribed ? "You’re on the list" : "Notes from the work"}</h1>
-    <p>{subscribed ? "You’ll hear from Gustav when the next note is ready." : "Sign up to receive the next note from Gustav."}</p>
+    <p>{subscribed ? "You’ll hear from me when the next note is ready." : "Sign up to receive my next note."}</p>
     <a className="family-button" href={subscribed ? "/" : "/newsletter"}>
       {subscribed ? (brand === "onlinesourdough" ? "Explore the menu" : `Back to ${labels[brand]}`) : "Subscribe"} <span aria-hidden="true">↗</span>
     </a>
@@ -74,8 +74,8 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
   return <>
     <section className="family-newsletter" aria-labelledby="newsletter-title">
       <h1 id="newsletter-title">Notes from<br />the work</h1>
-      <p className="newsletter-byline">A newsletter by Gustav Anderson.</p>
-      <p>Experiments, workflows and lessons from using AI in a real business.</p>
+      <p className="newsletter-byline">My newsletter. I’m Gustav Anderson.</p>
+      <p>I share ideas, experiments, and lessons from business architecture, software, and agentic engineering.</p>
       <form className="family-signup" onSubmit={submit} aria-busy={pending}>
         <label htmlFor="newsletter-email">Email address</label>
         <div className="family-form-row">

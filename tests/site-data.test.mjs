@@ -13,7 +13,7 @@ describe("production copy and approved local family navigation", () => {
       {
         number: "03",
         title: "The Fermentary",
-        cta: "Work together",
+        cta: "Work with me",
         status: "DWY",
       },
       { number: "04", title: "Complete Bake", cta: "Start a project", status: "DFY" },
@@ -22,7 +22,7 @@ describe("production copy and approved local family navigation", () => {
 
   it("keeps the homepage metadata consistent with visible copy and the static fallback", () => {
     const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
-    expect(siteData.seo.title).toBe(`${siteData.page.hero.title}. | onlinesourdough`);
+    expect(siteData.seo.title).toBe(`${siteData.page.hero.title} | onlinesourdough`);
     expect(siteData.page.hero.description).toContain(siteData.seo.description);
     expect(siteData.seo.ogTitle).toBe(siteData.seo.title);
     expect(siteData.seo.ogDescription).toBe(siteData.seo.description);
@@ -132,10 +132,10 @@ describe("production copy and approved local family navigation", () => {
     }
   });
 
-  it("contains no machine-local paths or customer-facing em dashes", () => {
+  it("contains no machine-local paths or decorative em dashes", () => {
     const publicData = JSON.stringify(siteData);
 
     expect(publicData).not.toMatch(/\/Users\/|Downloads|saas-template/);
-    expect(publicData).not.toContain("—");
+    expect(publicData.replaceAll("Factory — Software & Defence", "Factory")).not.toContain("—");
   });
 });
