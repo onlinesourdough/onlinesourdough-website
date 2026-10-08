@@ -1,0 +1,459 @@
+{
+  "date": "2026-09-14T08:03:03.132216+00:00",
+  "action": "Restart the unchanged r5 previews after the owner moved the selected artifacts into Downloads/onlinesourdough",
+  "design_root": "/Users/gustavanderson/Downloads/onlinesourdough/design/legacy-ads/onlinesourdough-web-exploration-r1",
+  "source_files_verified_before_link_update": 41,
+  "original_manifest_differences": [
+    "index.html"
+  ],
+  "change": "Only the guide canvas URL and current workbench state were updated; original index and state copied here.",
+  "index_sha256": "347cb0e811de5167d043794379aa8e5f469078d3e2109c1d6c7e89805d96fa18",
+  "http_checks": [
+    {
+      "base": "http://127.0.0.1:53671/",
+      "assets": [
+        {
+          "url": "http://127.0.0.1:53671/assets/onlinesourdough-mark-large-pixel-v3.svg",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/svg+xml"
+        },
+        {
+          "url": "http://127.0.0.1:53671/assets/index-DwawKc4j.js",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "url": "http://127.0.0.1:53671/assets/index-dHLMpSZk.css",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/css"
+        }
+      ],
+      "links": []
+    },
+    {
+      "base": "http://127.0.0.1:53672/",
+      "assets": [
+        {
+          "url": "http://127.0.0.1:53672/assets/resources-folder-transparent.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/assets/index-BqvnPSeH.js",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/javascript"
+        },
+        {
+          "url": "http://127.0.0.1:53672/assets/index-CzcefOLB.css",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/css"
+        }
+      ],
+      "links": []
+    },
+    {
+      "base": "http://127.0.0.1:53567/",
+      "assets": [
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/main-combined-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-flow-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-vsl-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/02-Main%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/03-Main%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/04-Main%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/05-Main%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/06-Main%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/08-Resources%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/09-Resources%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/10-Resources%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/11-Resources%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/12-Resources%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        }
+      ],
+      "links": [
+        {
+          "url": "http://127.0.0.1:53567/",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=hero-lab",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:60726/",
+          "method": "GET",
+          "status": 200,
+          "type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "http://127.0.0.1:53567/screenshots-r5.zip",
+          "method": "HEAD",
+          "status": 200,
+          "type": "application/zip"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/main-combined-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=combined",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/main-combined-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-flow-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=flow",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-flow-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-vsl-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=vsl",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/runs/run-0005/captures/resources-vsl-full.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/02-Main%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=baseline",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/02-Main%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/03-Main%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=flow",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/03-Main%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/04-Main%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=hero&character=mark",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/04-Main%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/05-Main%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=hero&character=dough",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/05-Main%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/06-Main%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53671/?variant=hero&character=starter",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/06-Main%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/08-Resources%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=baseline",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/08-Resources%20-%2000%20Original.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/09-Resources%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=flow",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/09-Resources%20-%2001%20Metode.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/10-Resources%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=hero&character=mark",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/10-Resources%20-%2002%20Logo.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/11-Resources%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=hero&character=dough",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/11-Resources%20-%2003%20Dej.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/12-Resources%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53672/?variant=hero&character=starter",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/html"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/exports-r4c-final/12-Resources%20-%2004%20Starter.png",
+          "method": "HEAD",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:53567/openpencil/onlinesourdough-design-map-r5-final.op",
+          "method": "HEAD",
+          "status": 200,
+          "type": "application/octet-stream"
+        },
+        {
+          "url": "http://127.0.0.1:53567/DESIGN.md",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/markdown"
+        },
+        {
+          "url": "http://127.0.0.1:53567/README.md",
+          "method": "HEAD",
+          "status": 200,
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ],
+  "native_check": {
+    "schema": "ADS-OPENPENCIL-WORKBENCH/1",
+    "status": "PASS",
+    "version": "0.8.4",
+    "origin": "http://127.0.0.1:60726",
+    "url": "http://127.0.0.1:60726/",
+    "document": {
+      "path": "/Users/gustavanderson/Downloads/onlinesourdough/design/legacy-ads/onlinesourdough-web-exploration-r1/openpencil/onlinesourdough-design-map-r5-final.op",
+      "nodes": 157,
+      "sha256": "fb301525d76845ba9f0cefabdfb471998183fdc40c27194f5779d8b37e4f307e"
+    },
+    "export": null,
+    "canvasKit": {
+      "canonical": "/canvaskit/*",
+      "compatibility": "/pkg/canvaskit/*",
+      "identical": true
+    },
+    "browser_opening": "harness-owned",
+    "locale": {
+      "value": "en-US",
+      "mechanism": "upstream browser settings seed on a fresh loopback origin",
+      "served": true
+    },
+    "language": {
+      "default": "en-US",
+      "preference": "openpencil-rust-web-settings::<profile>",
+      "policy": "seed-when-absent"
+    }
+  },
+  "runtime_release": "https://github.com/ZSeven-W/openpencil/releases/tag/v0.8.4",
+  "runtime_sha256": "7ce6cde22f7e8584de2faca0279f6d74438675291c2547a7d99230fc0e629342",
+  "browser_open_requests": {
+    "reference": "queued",
+    "canvas": "queued"
+  },
+  "browser_limitations": "Browser interaction tools unavailable in this session. No new visual or tab-cleanup claim; unchanged r5 rendered proof remains applicable.",
+  "archive_images": 13
+}
