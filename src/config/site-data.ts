@@ -45,13 +45,13 @@ export const siteData = {
     themeColor: "#f8f2e8",
     title: "Build better ways to work | onlinesourdough",
     description:
-      "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
+      "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
     aboutTitle: "About onlinesourdough | My story and method",
     aboutDescription:
-      "My approach to business architecture and agentic engineering, with AIOS as a starter and one-to-one pair engineering to develop what fits your business.",
+      "Methods, templates, courses, and workshops for improving your offer, operations, and demand, with AI where it helps.",
     ogTitle: "Build better ways to work | onlinesourdough",
     ogDescription:
-      "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
+      "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
   },
   navigation: {
     offers: "Offers",
@@ -74,7 +74,7 @@ export const siteData = {
     {
       label: "DONE FOR YOU",
       title: "Arc'IT AI",
-      description: "I handle agreed architecture, software delivery, and ongoing care, with security checks and clear responsibility.",
+      description: "IT consulting, architecture, custom software, and ongoing care, from one-off advice to an agreed delivery.",
       action: "Explore offer ↗",
       href: familyHref("arcitai"),
       current: false,
@@ -83,7 +83,7 @@ export const siteData = {
       label: "DIY + DONE WITH YOU",
       title: "onlinesourdough",
       description:
-        "My free resources, AIOS as a starter, and one-to-one pair engineering to develop what fits your business.",
+        "Methods, templates, resources, and guided learning for digital business and practical use of AI.",
       action: "Current offer",
       href: "/",
       current: true,
@@ -93,7 +93,7 @@ export const siteData = {
     hero: {
       title: "Build better ways to work",
       description:
-        "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business. AIOS is my starter: business context and working practices you make your own and keep improving, like a sourdough starter.",
+        "I help founders and small teams improve their digital business through practical methods, resources, and guided learning. Start with the work that needs improving, then choose the methods and tools that help.",
     },
     menu: {
       ariaLabel: "onlinesourdough menu",
@@ -102,19 +102,19 @@ export const siteData = {
       "title": "From one useful change towards more business freedom",
       "cta": "About the method",
       "paragraphs": [
-        "I'm Gustav, a business and software architect. I bring business architecture and agentic engineering together to help you improve how your business works.",
-        "AIOS is my starter, yours to build on. Like a sourdough starter, it gives you a foundation to care for: your business context, useful decisions, and working practices that you develop over time.",
-        "I start with work worth improving. I help you apply agentic engineering practices: give agents useful context, set clear responsibilities, and review the results. Work one-to-one with me through pair engineering to plan, build, and review a useful change.",
+        "I'm Gustav. Through onlinesourdough, I share methods and resources for building better ways to work in a digital business.",
+        "The method starts with your offer, operations, and demand. Find the current constraint, choose one useful change, and check what it improves.",
+        "Resources supports learning and doing the work yourself. In The Fermentary, you remain the primary builder while I help with decisions, reviews, and difficult parts. AIOS can support the context and working practices.",
         "Like sourdough, it needs care. You try things, check the quality, time and effort involved, and keep improving the setup. The goal is more control over your time and where you take the business."
       ]
     },
     about: {
       "eyebrow": "ABOUT / MY STORY & METHOD",
       "title": "About onlinesourdough",
-      "tagline": "Business architecture and agentic engineering, put into practice.",
+      "tagline": "Practical methods and learning for digital business.",
       "paragraphs": [
-        "I help solo founders, business leaders, and small teams find a way of working with AI that makes sense for their business.",
-        "I use AIOS as a starter and help you develop what fits your business. Explore the free resources yourself, work one-to-one with me through pair engineering, or ask me to take responsibility for agreed delivery through Arc’IT AI."
+        "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
+        "Use Resources to learn and build yourself, or work with me in The Fermentary. For IT consulting, architecture, or a custom software delivery, visit Arc’IT AI."
       ],
       "sections": [
         {
@@ -258,7 +258,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I share free guides and examples for business, software, and everyday work. AIOS and reusable skills are part of the collection, alongside other ideas and methods you can try for yourself. Choose what helps with the work in front of you."
+              "text": "Resources is a growing library of guides, templates, examples, and course material for improving a digital business, with AIOS and reusable skills where they help. You choose and carry out the work."
             },
             {
               "type": "links",
@@ -271,19 +271,19 @@ export const siteData = {
             },
             {
               "type": "heading",
-              "text": "The Fermentary: one-to-one pair engineering"
+              "text": "The Fermentary: done with you"
             },
             {
               "type": "paragraph",
-              "text": "I work one-to-one with you through pair engineering: planning, building, and reviewing together. I help you work through a business decision, develop a workflow, or build software. For software, that can include pair programming."
+              "text": "You work on one meaningful business improvement with my guidance. We choose the problem and a useful result, then work through the decisions, practical work, and review together. You remain the primary builder and owner."
             },
             {
               "type": "paragraph",
-              "text": "I use AIOS as a starter and help you adapt it to the work, tools, and responsibilities in your business. I agree with you on what a useful result looks like, then work alongside you on the setup, decisions, and difficult parts. The aim is to develop something that works for your business and that you understand how to use."
+              "text": "The work can include a personal starting plan, private working sessions, help with difficult technical parts, and relevant Resources or workshops. We use AIOS when it helps keep your context and decisions useful."
             },
             {
               "type": "paragraph",
-              "text": "Factory resources can be useful when your work involves software development. I agree the guidance, implementation, and ongoing responsibility with you before taking on that work."
+              "text": "The programme format and commercial terms are still being finalised. Price, duration, meeting cadence, access, and support boundaries must be clear before a commitment."
             },
             {
               "type": "links",
@@ -300,7 +300,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I take agreed work off your plate through Arc’IT AI. I handle the architecture, software development, or review the project needs, with security checks built into delivery and clear scope and responsibility."
+              "text": "Arc’IT AI is where I deliver IT consulting, architecture, and custom software. Complete Bake is the done-for-you path: I take responsibility for an agreed technical delivery."
             },
             {
               "type": "paragraph",
@@ -361,26 +361,15 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Through Arc’IT AI, I help teams design, build, and maintain software around the way their business works. I handle agreed architecture, integrations, delivery, and security work, with clear responsibilities for access, acceptance, and ongoing care."
+              "text": "Arc’IT AI handles deeper IT work: one-off consultation, architecture, custom apps, integrations, and ongoing care. You can ask for technical advice or an agreed software delivery."
             },
             {
               "type": "paragraph",
-              "text": "I’m developing **Factory — Software & Defence** through Arc’IT AI. It combines a method, a CLI, and a project Inbox for native agentic development. Its connected areas are:"
+              "text": "Factory is a separate set of engineering methods behind that delivery. It supports how software is built and reviewed. You do not need to adopt AIOS to work with Arc’IT AI."
             },
             {
-              "type": "list",
-              "items": [
-                "**Software:** scoped tasks, implementation, tests, independent review, and an approved handoff through your project’s existing development tools.",
-                "**Defence:** security evaluation, assessment of findings, and agreed fixes within the project’s scope and access. Ongoing security work needs a separate agreement."
-              ]
-            },
-            {
-              "type": "paragraph",
-              "text": "Factory is in active development. Its current native integration uses Codex on Linux with GitHub; other environments need a qualified integration. Relevant method resources can also be used through The Fermentary. Using a resource and asking me to operate it are separate decisions."
-            },
-            {
-              "type": "paragraph",
-              "text": "AIOS supports your broader daily way of working. Factory can be used independently, and buying an Arc’IT AI delivery does not require you to adopt AIOS."
+              "type": "links",
+              "links": [{ "label": "Explore Arc’IT AI", "href": familyHref("arcitai") }]
             }
           ]
         },
@@ -394,7 +383,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "You work directly with me. In The Fermentary, that means one-to-one pair engineering: I help you plan, build, and review while you stay involved in the work and decisions. I agree scope, responsibilities, timing, and what useful progress looks like with you before starting."
+              "text": "You work directly with me. In The Fermentary, you do the work with help on decisions, reviews, and difficult parts. I agree scope, responsibilities, timing, and what useful progress looks like with you before starting."
             }
           ]
         },
@@ -411,7 +400,7 @@ export const siteData = {
                 },
                 {
                   "label": "What it is",
-                  "value": "A practical way to establish and improve how a business works with AI"
+                  "value": "Methods, resources, and learning for digital business"
                 },
                 {
                   "label": "Who you work with",
@@ -423,11 +412,11 @@ export const siteData = {
                 },
                 {
                   "label": "Starting point",
-                  "value": "AIOS, adapted to the business and its working environment"
+                  "value": "One business constraint and a useful improvement"
                 },
                 {
                   "label": "Ways to work",
-                  "value": "Free Resources, The Fermentary for done-with-you guidance, and Complete Bake for agreed done-for-you responsibility"
+                  "value": "Resources for self-directed learning, The Fermentary for guided work, and Arc’IT AI for done-for-you delivery"
                 },
                 {
                   "label": "Larger organisational delivery",
@@ -480,7 +469,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I’m behind all three. Through gustavonline, I share what I’m working on and learning. Through onlinesourdough, I offer free resources and practical DIY or done-with-you guidance. Through Arc’IT AI, I take responsibility for more involved, agreed delivery."
+              "text": "I’m behind all three. Gustav Online is my personal record of work and learning. onlinesourdough offers methods, resources, and guided learning. Arc’IT AI delivers IT consulting, architecture, and custom software."
             }
           ]
         },
@@ -525,7 +514,7 @@ export const siteData = {
       number: "02",
       title: "Resources",
       description:
-        "I share my guides and examples for business, software, and everyday work, including AIOS and reusable skills you can adapt.",
+        "Guides, templates, examples, and course material to help you improve your digital business and do the work yourself.",
       cta: "Open library",
       status: "DIY",
       href: "https://resources.onlinesourdough.com",
@@ -551,7 +540,7 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "I take agreed work off your plate through Arc’IT AI, with security checks built into delivery and clear scope and responsibility.",
+        "Custom software, apps, and integrations delivered through Arc’IT AI, with an agreed scope and clear responsibility.",
       cta: "Start a project",
       status: "DFY",
       href: familyHref("arcitai"),

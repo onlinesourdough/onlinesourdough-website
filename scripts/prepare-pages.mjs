@@ -24,7 +24,7 @@ const directPages = [
     directory: "about",
     title: "About onlinesourdough | My story and method",
     description:
-      "My approach to business architecture and agentic engineering, with AIOS as a starter and one-to-one pair engineering to develop what fits your business.",
+      "Methods, templates, courses, and workshops for improving your offer, operations, and demand, with AI where it helps.",
     url: "https://onlinesourdough.com/about/",
   },
   {

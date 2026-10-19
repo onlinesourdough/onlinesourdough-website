@@ -8,7 +8,7 @@ const boule = [
 
 export function FamilyMark({ brand }: { brand: FamilyBrand }) {
   if (brand === "gustavonline")
-    return <img className="family-portrait" src="/assets/gustav-portrait.jpg" width="28" height="28" alt="" />;
+    return <img className="family-portrait" src="/assets/gustav-linkedin-portrait.jpg" width="28" height="28" alt="" />;
   if (brand === "onlinesourdough")
     return <svg className="family-mark family-mark-bread" viewBox="0 0 10 7" aria-hidden="true">
       {boule.flatMap((row, y) => [...row].map((cell, x) =>
