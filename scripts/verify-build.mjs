@@ -14,6 +14,7 @@ const expectedFiles = [
   "CNAME",
   "favicon.ico",
   "assets/onlinesourdough-mark-large-pixel-v3.svg",
+  "assets/gustav-linkedin-portrait.jpg",
   "assets/content-lofi-v3-transparent.png",
   "assets/resources-lofi-v3-transparent.png",
   "assets/inner-circle-lofi-v3-transparent.png",

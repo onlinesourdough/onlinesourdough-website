@@ -60,7 +60,7 @@ describe("production copy and approved local family navigation", () => {
       "ai workspace",
       "blueprint",
       "guided bake",
-      "course",
+      "complete course", // Courses are part of the accepted positioning; completion is not claimed.
       "classroom",
       "ebook",
       "template library",
