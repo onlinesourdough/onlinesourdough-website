@@ -7,8 +7,8 @@ is a React application built with Vite and published through GitHub Pages.
 ## Current product
 
 - `/` contains the promise, four-offer menu, and a short introduction to the
-  AI-native way of working and AIOS as a starter.
-- `/about` contains Gustav's story, the sourdough analogy, AIOS, offers, the
+  AI-native way of working and The Onlinesourdough Method as a starter.
+- `/about` contains Gustav's story, the sourdough analogy, The Onlinesourdough Method, offers, the
   method, Arc’IT AI's factory direction, key facts, and frequently asked questions.
 - `/agent-work-review` is a compatibility redirect to the canonical Resources
   page.
