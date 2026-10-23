@@ -6,6 +6,12 @@ is a React application built with Vite and published through GitHub Pages.
 
 ## Current product
 
+- The October 23 refinement restores a compact homepage: a maximum 800px
+  two-column menu, 352px book stages and readable 15px descriptions. The menu
+  becomes one column at 700px. The manifesto's sourdough is built from warm
+  tiles using Gustav Online's travelling crest, with a restrained mouse response
+  and a keyboard/touch wake ripple. It stops offscreen and when the tab is hidden;
+  reduced-motion preferences show a still version.
 - The October 20 local review removes the experimental project directory and
   separates Geist Pixel brand names from Geist Sans ordinary text. See `DESIGN.md`.
   This revision is not published.
