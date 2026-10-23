@@ -13,10 +13,20 @@ const rows = [
 ];
 const step = 13;
 const tileSize = 10;
+// The onlinesourdough ramp from Gustav Online, with a few warm accent tiles.
 const palettes = {
-  light: ["#f3dcc0", "#e6b98a", "#c98d55", "#9c5f2e"],
-  dark: ["#785536", "#a37348", "#c99a69", "#e0b07c"],
+  light: ["#ece6dc", "#efe4d3", "#e3cfb0", "#c3ad90", "#a98a6b", "#f8d3b2", "#f5aa70"],
+  dark: ["#3a332b", "#5f5141", "#89765e", "#a08a6d", "#e8d9c3", "#7a4524", "#b85c26"],
 };
+function mix(from: string, to: string, amount: number) {
+  return `rgb(${[1, 3, 5].map(start => Math.round(
+    parseInt(from.slice(start, start + 2), 16) * (1 - amount)
+      + parseInt(to.slice(start, start + 2), 16) * amount,
+  )).join(",")})`;
+}
+const finishes = Object.fromEntries(Object.entries(palettes).map(([theme, colors]) => [theme,
+  colors.map(color => ({ face: color, side: mix(color, "#2b1b12", 0.18), rim: mix(color, "#fffaf1", 0.3) })),
+]));
 const inside = (col: number, row: number) =>
   rows[Math.floor(row / 2)]?.[Math.floor(col / 2)] === "1";
 
@@ -39,13 +49,21 @@ export function LivingMark() {
     let previousPointer: { x: number; y: number } | null = null;
     let pointerMoved = false;
     let dark = document.documentElement.dataset.theme === "dark";
+    let seedState = 0x9e3779b9;
+    const random = () => {
+      seedState = (seedState + 0x6d2b79f5) | 0;
+      let mixed = Math.imul(seedState ^ (seedState >>> 15), 1 | seedState);
+      mixed = (mixed + Math.imul(mixed ^ (mixed >>> 7), 61 | mixed)) ^ mixed;
+      return ((mixed ^ (mixed >>> 14)) >>> 0) / 4294967296;
+    };
     const cells = Array.from({ length: 20 * 14 }, (_, index) => {
       const col = index % 20, row = Math.floor(index / 20);
-      const seed = ((col * 71 + row * 43) % 97) / 97;
-      const edge = !inside(col - 1, row) || !inside(col + 1, row)
-        || !inside(col, row - 1) || !inside(col, row + 1);
+      const seed = random(), tone = random();
+      const level = tone < 0.9 ? Math.floor(tone / 0.18) : tone < 0.97 ? 5 : 6;
       return { col, row, x: (col - 9.5) * step, y: (row - 6.5) * step,
-        seed, level: edge ? 3 : Math.floor(seed * 3), energy: 0, pushX: 0, pushY: 0 };
+        seed, level, size: tileSize * (seed < 0.18 ? 0.84 : 0.94 + seed * 0.1),
+        offsetX: (random() - 0.5) * 0.8, offsetY: (random() - 0.5) * 0.8,
+        energy: 0, pushX: 0, pushY: 0 };
     }).filter(cell => inside(cell.col, cell.row));
 
     function render(now: number) {
@@ -61,7 +79,7 @@ export function LivingMark() {
         : 0.4;
       const look = !still && pointer ? Math.max(-1, Math.min(1, Math.round(pointer.x / 95))) : 0;
       const blink = !still && phase % 5.7 > 5.56;
-      const colors = palettes[dark ? "dark" : "light"];
+      const colors = finishes[dark ? "dark" : "light"];
       ctx.clearRect(0, 0, width, height);
       ctx.save();
       ctx.translate(width / 2, height * 0.47);
@@ -99,15 +117,19 @@ export function LivingMark() {
         const ripple = Math.sin(phase * 0.9 - cell.col * 0.19 + cell.row * 0.42);
         const bob = still ? 0 : (Math.sin(phase * 2.1 + cell.seed * 40) * 0.55 + ripple * 0.45) * 0.4;
         const lift = crest * 0.65 + cell.energy;
-        const size = tileSize + lift * 0.8;
-        const x = cell.x - size / 2 + cell.pushX;
-        const y = cell.y - size / 2 - lift * 1.6 + bob + cell.pushY;
-        ctx.fillStyle = dark ? "#3f2a1b" : "#85552f";
-        ctx.beginPath(); ctx.roundRect(x, y + 1.4, size, size, 1.4); ctx.fill();
-        ctx.fillStyle = colors[cell.level];
+        const size = cell.size + lift * 0.8;
+        const x = cell.x - size / 2 + cell.pushX + cell.offsetX;
+        const y = cell.y - size / 2 - lift * 1.6 + bob + cell.pushY + cell.offsetY;
+        const finish = colors[cell.level];
+        // Arc'IT's shallow tile edge, shaded from each face rather than a brown outline.
+        ctx.fillStyle = finish.side;
+        ctx.beginPath(); ctx.roundRect(x + 0.35, y + 1.2, size, size, 1.4); ctx.fill();
+        ctx.fillStyle = finish.face;
         ctx.beginPath(); ctx.roundRect(x, y, size, size, 1.4); ctx.fill();
         ctx.fillStyle = `rgba(255,246,226,${0.05 + crest * 0.12 + cell.energy * 0.12})`;
         ctx.fill();
+        ctx.strokeStyle = finish.rim; ctx.lineWidth = 0.55;
+        ctx.beginPath(); ctx.moveTo(x + 1.5, y + 0.5); ctx.lineTo(x + size - 1.5, y + 0.5); ctx.stroke();
       }
       ctx.restore();
       if (pointerMoved) previousPointer = pointer;

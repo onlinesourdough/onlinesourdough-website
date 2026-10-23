@@ -53,6 +53,7 @@
 .main-panel {
   width: min(100% - 80px, 1040px);
   padding: 40px 0 64px;
+  scroll-margin-top: 72px;
 }
 .hero {
   display: block;
