@@ -104,7 +104,7 @@ export const siteData = {
       "paragraphs": [
         "I'm Gustav. Through onlinesourdough, I share methods and resources for building better ways to work in a digital business.",
         "The method starts with your offer, operations, and demand. Find the current constraint, choose one useful change, and check what it improves.",
-        "Resources supports learning and doing the work yourself. In The Fermentary, you remain the primary builder while I help with decisions, reviews, and difficult parts. AIOS can support the context and working practices.",
+        "Resources supports learning and doing the work yourself. In The Fermentary, you remain the primary builder while I help with decisions, reviews, and difficult parts. The Onlinesourdough Method can support the context and working practices.",
         "Like sourdough, it needs care. You try things, check the quality, time and effort involved, and keep improving the setup. The goal is more control over your time and where you take the business."
       ]
     },
@@ -174,7 +174,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "A sourdough starter becomes useful through care and practice. I take the same approach to AIOS: start with a foundation, adapt it to your work, and look after it as you use it. Useful context, clear instructions, and review help you keep improving what comes out of it."
+              "text": "A sourdough starter becomes useful through care and practice. I take the same approach to The Onlinesourdough Method: start with a foundation, adapt it to your work, and look after it as you use it. Useful context, clear instructions, and review help you keep improving what comes out of it."
             },
             {
               "type": "paragraph",
@@ -206,11 +206,11 @@ export const siteData = {
         },
         {
           "id": "aios-our-starter-yours-to-build-on",
-          "title": "AIOS: my starter, yours to build on",
+          "title": "The Onlinesourdough Method",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "AIOS is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
+              "text": "The Onlinesourdough Method is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
             },
             {
               "type": "paragraph",
@@ -258,7 +258,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Resources is a growing library of guides, templates, examples, and course material for improving a digital business, with AIOS and reusable skills where they help. You choose and carry out the work."
+              "text": "Resources is a growing library of guides, templates, examples, and course material for improving a digital business, with The Onlinesourdough Method and reusable skills where they help. You choose and carry out the work."
             },
             {
               "type": "links",
@@ -279,7 +279,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "The work can include a personal starting plan, private working sessions, help with difficult technical parts, and relevant Resources or workshops. We use AIOS when it helps keep your context and decisions useful."
+              "text": "The work can include a personal starting plan, private working sessions, help with difficult technical parts, and relevant Resources or workshops. We use The Onlinesourdough Method when it helps keep your context and decisions useful."
             },
             {
               "type": "paragraph",
@@ -335,7 +335,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I use AIOS as a starter for the context and working practices. I help you adapt it to your business and choose enough tools, instructions, and access for the first useful task. I make the permissions and approval points clear."
+              "text": "I use The Onlinesourdough Method as a starter for the context and working practices. I help you adapt it to your business and choose enough tools, instructions, and access for the first useful task. I make the permissions and approval points clear."
             },
             {
               "type": "heading",
@@ -365,7 +365,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Factory is a separate set of engineering methods behind that delivery. It supports how software is built and reviewed. You do not need to adopt AIOS to work with Arc’IT AI."
+              "text": "Factory is a separate set of engineering methods behind that delivery. It supports how software is built and reviewed. You do not need to adopt The Onlinesourdough Method to work with Arc’IT AI."
             },
             {
               "type": "links",
@@ -527,7 +527,7 @@ export const siteData = {
       number: "03",
       title: "The Fermentary",
       description:
-        "I work 1:1 with you on business decisions, workflows, and software. I use pair engineering and AIOS as a starter to develop what fits your business.",
+        "I work 1:1 with you on business decisions, workflows, and software. I use pair engineering and The Onlinesourdough Method as a starter to develop what fits your business.",
       cta: "Work with me",
       status: "DWY",
       href: "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
