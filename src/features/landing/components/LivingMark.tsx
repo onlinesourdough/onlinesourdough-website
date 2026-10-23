@@ -1,22 +1,12 @@
 import { useEffect, useRef } from "react";
 import "./living-mark.css";
 
-// Keep the original pixel boule, subdivided into the family's 10/13 tile grid.
-const rows = [
-  "0001111000",
-  "0111111110",
-  "1111111110",
-  "1111111111",
-  "1111111111",
-  "1111111111",
-  "0111111110",
-];
-const step = 13;
-const tileSize = 10;
-// The onlinesourdough ramp from Gustav Online, with a few warm accent tiles.
+const step = 11.5;
+const tileSize = 10.3;
+// Crust, toasted grain and flour from the sourdough illustrations in the menu.
 const palettes = {
-  light: ["#ece6dc", "#efe4d3", "#e3cfb0", "#c3ad90", "#a98a6b", "#f8d3b2", "#f5aa70"],
-  dark: ["#3a332b", "#5f5141", "#89765e", "#a08a6d", "#e8d9c3", "#7a4524", "#b85c26"],
+  light: ["#79502f", "#925b34", "#a66b3d", "#b8804d", "#ca945c", "#d9ac76", "#e6c28d", "#efdab8"],
+  dark: ["#815230", "#995f37", "#ad7243", "#c18a53", "#d29e64", "#dfb57e", "#e9c997", "#f0d9b5"],
 };
 function mix(from: string, to: string, amount: number) {
   return `rgb(${[1, 3, 5].map(start => Math.round(
@@ -27,8 +17,10 @@ function mix(from: string, to: string, amount: number) {
 const finishes = Object.fromEntries(Object.entries(palettes).map(([theme, colors]) => [theme,
   colors.map(color => ({ face: color, side: mix(color, "#2b1b12", 0.18), rim: mix(color, "#fffaf1", 0.3) })),
 ]));
-const inside = (col: number, row: number) =>
-  rows[Math.floor(row / 2)]?.[Math.floor(col / 2)] === "1";
+const smooth = (value: number) => {
+  const x = Math.max(0, Math.min(1, value));
+  return x * x * (3 - 2 * x);
+};
 
 /** A warm tile boule with the same travelling crest as Gustav Online's field. */
 export function LivingMark() {
@@ -36,6 +28,7 @@ export function LivingMark() {
   const canvas = useRef<HTMLCanvasElement>(null);
   const wake = useRef<() => void>(() => {});
   const clock = useRef(1.5);
+  const formed = useRef(0);
 
   useEffect(() => {
     const host = element.current, surface = canvas.current;
@@ -48,6 +41,7 @@ export function LivingMark() {
     let pointer: { x: number; y: number } | null = null;
     let previousPointer: { x: number; y: number } | null = null;
     let pointerMoved = false;
+    let gazeX = 0, gazeY = 0;
     let dark = document.documentElement.dataset.theme === "dark";
     let seedState = 0x9e3779b9;
     const random = () => {
@@ -56,15 +50,27 @@ export function LivingMark() {
       mixed = (mixed + Math.imul(mixed ^ (mixed >>> 7), 61 | mixed)) ^ mixed;
       return ((mixed ^ (mixed >>> 14)) >>> 0) / 4294967296;
     };
-    const cells = Array.from({ length: 20 * 14 }, (_, index) => {
-      const col = index % 20, row = Math.floor(index / 20);
+    const cells = Array.from({ length: 25 * 21 }, (_, index) => {
+      const col = index % 25, row = Math.floor(index / 25);
+      const x = (col - 12) * step, y = (row - 10) * step;
+      const nx = (x - 3 * Math.sin(y / 44)) / 136;
+      const ny = y / (y < 0 ? 111 : 101);
+      const angle = Math.atan2(ny, nx);
+      const radius = Math.hypot(nx, ny);
+      const edge = 1 + 0.025 * Math.sin(3 * angle + 1.2) + 0.018 * Math.cos(5 * angle);
       const seed = random(), tone = random();
-      const level = tone < 0.9 ? Math.floor(tone / 0.18) : tone < 0.97 ? 5 : 6;
-      return { col, row, x: (col - 9.5) * step, y: (row - 6.5) * step,
-        seed, level, size: tileSize * (seed < 0.18 ? 0.84 : 0.94 + seed * 0.1),
-        offsetX: (random() - 0.5) * 0.8, offsetY: (random() - 0.5) * 0.8,
+      // Broad warm shading, mixed through the loaf rather than a dark perimeter.
+      const light = 0.52 - ny * 0.14 - nx * 0.09 + (tone - 0.5) * 0.48;
+      const scoreY = -57 - 14 * (1 - (x / 80) ** 2) + x * 0.12;
+      const score = Math.abs(x) < 83 && Math.abs(y - scoreY) < 5.8;
+      const flour = y < -48 && tone > 0.95;
+      const level = score || flour ? 7 : Math.max(0, Math.min(6, Math.round(light * 6)));
+      return { col, row, x, y, inside: radius < edge && y < 98,
+        seed, level, size: tileSize * (0.96 + seed * 0.07),
+        delay: ((x + 0.55 * y + 200) / 400) * 1.05 + seed * 0.12,
+        offsetX: (random() - 0.5) * 0.65, offsetY: (random() - 0.5) * 0.65,
         energy: 0, pushX: 0, pushY: 0 };
-    }).filter(cell => inside(cell.col, cell.row));
+    }).filter(cell => cell.inside);
 
     function render(now: number) {
       if (!ctx || !host) return;
@@ -72,21 +78,26 @@ export function LivingMark() {
       const dt = Math.min((now - (last || now - 16)) / 1000, 0.04);
       last = now;
       if (!still) { t += dt; clock.current = t; }
+      if (still) formed.current = 2;
+      else if (visible) formed.current = Math.min(2, formed.current + dt);
       const phase = still ? 1.5 : t;
       const age = t - wakeAt;
       const speed = pointer && previousPointer
         ? Math.min(1, Math.hypot(pointer.x - previousPointer.x, pointer.y - previousPointer.y) / 14)
         : 0.4;
-      const look = !still && pointer ? Math.max(-1, Math.min(1, Math.round(pointer.x / 95))) : 0;
-      const blink = !still && phase % 5.7 > 5.56;
+      const gazeEase = still ? 1 : 1 - Math.exp(-dt * 9);
+      gazeX += ((!still && pointer ? Math.max(-2.8, Math.min(2.8, pointer.x / 40)) : 0) - gazeX) * gazeEase;
+      gazeY += ((!still && pointer ? Math.max(-2, Math.min(2, pointer.y / 50)) : 0) - gazeY) * gazeEase;
+      const blinkPhase = phase % 6.4;
+      const eyeOpen = still || blinkPhase < 6.22 ? 1 : 1 - Math.sin((blinkPhase - 6.22) / 0.18 * Math.PI) * 0.94;
       const colors = finishes[dark ? "dark" : "light"];
       ctx.clearRect(0, 0, width, height);
       ctx.save();
-      ctx.translate(width / 2, height * 0.47);
+      ctx.translate(width / 2, height * 0.49);
       ctx.scale(scale, scale);
-      ctx.fillStyle = dark ? "#e0b07c0a" : "#6040260a";
+      ctx.fillStyle = dark ? "#e0b07c0d" : "#60402610";
       ctx.beginPath();
-      ctx.ellipse(0, 104, 111, 4, 0, 0, Math.PI * 2);
+      ctx.ellipse(0, 111, 105, 5, 0, 0, Math.PI * 2);
       ctx.fill();
       for (const cell of cells) {
         if (still) cell.energy = cell.pushX = cell.pushY = 0;
@@ -109,32 +120,46 @@ export function LivingMark() {
             cell.energy = Math.max(cell.energy, ring * 0.8);
           }
         }
-        // Whole missing tiles form eyes; the silhouette remains legible while stirred.
-        const eyeColumn = cell.col === 6 + look || cell.col === 7 + look
-          || cell.col === 12 + look || cell.col === 13 + look;
-        if (eyeColumn && (blink ? cell.row === 7 : cell.row >= 6 && cell.row <= 8)) continue;
+        const reveal = still ? 1 : smooth((formed.current - cell.delay) / 0.55);
+        if (!reveal) continue;
         const crest = still ? 0 : Math.max(0, Math.sin(phase * 1.2 - cell.col * 0.33 - cell.row * 0.21)) ** 3;
         const ripple = Math.sin(phase * 0.9 - cell.col * 0.19 + cell.row * 0.42);
         const bob = still ? 0 : (Math.sin(phase * 2.1 + cell.seed * 40) * 0.55 + ripple * 0.45) * 0.4;
         const lift = crest * 0.65 + cell.energy;
-        const size = cell.size + lift * 0.8;
+        const size = (cell.size + lift * 0.8) * (0.82 + reveal * 0.18);
         const x = cell.x - size / 2 + cell.pushX + cell.offsetX;
-        const y = cell.y - size / 2 - lift * 1.6 + bob + cell.pushY + cell.offsetY;
+        const y = cell.y - size / 2 - lift * 1.6 + bob + cell.pushY + cell.offsetY + (1 - reveal) * 5;
         const finish = colors[cell.level];
+        ctx.globalAlpha = reveal;
         // Arc'IT's shallow tile edge, shaded from each face rather than a brown outline.
         ctx.fillStyle = finish.side;
-        ctx.beginPath(); ctx.roundRect(x + 0.35, y + 1.2, size, size, 1.4); ctx.fill();
+        ctx.beginPath(); ctx.roundRect(x + 0.3, y + 1, size, size, 1.8); ctx.fill();
         ctx.fillStyle = finish.face;
-        ctx.beginPath(); ctx.roundRect(x, y, size, size, 1.4); ctx.fill();
+        ctx.beginPath(); ctx.roundRect(x, y, size, size, 1.8); ctx.fill();
         ctx.fillStyle = `rgba(255,246,226,${0.05 + crest * 0.12 + cell.energy * 0.12})`;
         ctx.fill();
         ctx.strokeStyle = finish.rim; ctx.lineWidth = 0.55;
         ctx.beginPath(); ctx.moveTo(x + 1.5, y + 0.5); ctx.lineTo(x + size - 1.5, y + 0.5); ctx.stroke();
       }
+      // Eyes sit on a complete tile surface: warm whites, pupils and a small glint.
+      ctx.globalAlpha = still ? 1 : smooth((formed.current - 1.2) / 0.4);
+      for (const x of [-32, 32]) {
+        ctx.save(); ctx.translate(x, 12); ctx.scale(1, eyeOpen);
+        ctx.fillStyle = "#6b4227";
+        ctx.beginPath(); ctx.ellipse(0, 0.8, 10, 13, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#fff0d2";
+        ctx.beginPath(); ctx.ellipse(0, 0, 9, 12, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#382619";
+        ctx.beginPath(); ctx.ellipse(gazeX, gazeY + 1, 4.8, 7.4, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#fff9ec";
+        ctx.beginPath(); ctx.ellipse(gazeX - 1.5, gazeY - 2, 1.7, 2, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.restore();
+      }
       ctx.restore();
       if (pointerMoved) previousPointer = pointer;
       pointerMoved = false;
       host.dataset.motion = still ? "still" : visible ? "running" : "offscreen";
+      host.dataset.formation = formed.current >= 1.8 ? "complete" : "forming";
       if (visible && !still && document.visibilityState === "visible") raf = requestAnimationFrame(render);
     }
     function restart() {
@@ -146,7 +171,7 @@ export function LivingMark() {
       if (event.pointerType === "touch" || reduced.matches) return;
       const rect = surface!.getBoundingClientRect();
       pointer = { x: (event.clientX - rect.left - width / 2) / scale,
-        y: (event.clientY - rect.top - height * 0.47) / scale };
+        y: (event.clientY - rect.top - height * 0.49) / scale };
       pointerMoved = true;
     }
     function leave() { pointer = previousPointer = null; pointerMoved = false; }
@@ -161,7 +186,7 @@ export function LivingMark() {
       const rect = surface!.getBoundingClientRect();
       if (!rect.width || !rect.height) return;
       width = rect.width; height = rect.height;
-      scale = Math.min(width / 290, height / 230);
+      scale = Math.min(width / 304, height / 248);
       const ratio = Math.min(devicePixelRatio || 1, 2);
       surface!.width = Math.round(width * ratio);
       surface!.height = Math.round(height * ratio);

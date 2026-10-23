@@ -12,6 +12,9 @@ is a React application built with Vite and published through GitHub Pages.
   tiles using Gustav Online's travelling crest, with a restrained mouse response
   and a keyboard/touch wake ripple. It stops offscreen and when the tab is hidden;
   reduced-motion preferences show a still version.
+- The sourdough refinement uses a fuller, gently irregular boule, warm crust
+  shades and a flour score. It forms once on entering view, with eyes drawn
+  over the complete tile surface. The compact menu and page copy are unchanged.
 - The October 20 local review removes the experimental project directory and
   separates Geist Pixel brand names from Geist Sans ordinary text. See `DESIGN.md`.
   This revision is not published.
