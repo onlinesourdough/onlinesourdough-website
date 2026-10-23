@@ -61,6 +61,20 @@ smoke tests are proportionate operational evidence for this static site.
 
 ## Routing and assets
 
+`/fermentary` is registered in the production route tree and has direct-route
+HTML and canonical metadata. The menu and About page lead through this page
+to the hosted Kit signup and Notion brochure.
+The configured YouTube ID is empty until the owner's video is filmed. An honest
+still appears meanwhile; an approved ID enables a titled, lazy iframe without
+autoplay or watch gating. Commercial terms stay in the brochure. The
+page has two ordinary links to the hosted Kit form 10082012 at
+`https://gustavonline.kit.com/50fdf0f981`. Kit owns the email field, consent,
+subscriptions, errors and immediate Notion redirect. Its confirmation email
+opens the same brochure and confirms newsletter consent. The Fermentary page
+loads no Kit script or embedded form. No credentials or new backend are
+introduced. The hosted form differs from the simulated general newsletter
+form in the review build; submitting it creates a real Kit subscription.
+
 TanStack Router owns `/`, `/about`, and the `/agent-work-review` compatibility
 route. The build script copies the SPA shell to `dist/about/index.html`, writes
 the Resources canonical metadata and meta refresh into

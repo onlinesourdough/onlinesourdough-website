@@ -5,6 +5,7 @@ const distUrl = new URL("../dist/", import.meta.url);
 const expectedFiles = [
   "index.html",
   "about/index.html",
+  "fermentary/index.html",
   "newsletter/index.html",
   "newsletter/thank-you/index.html",
   "agent-work-review/index.html",
@@ -39,7 +40,7 @@ const [indexHtml, aboutHtml, reviewHtml, reviewPointer, sitemap, cname] = await 
 assertIncludes(indexHtml, '<link rel="canonical" href="https://onlinesourdough.com/"');
 assertIncludes(indexHtml, 'href="/assets/onlinesourdough-mark-large-pixel-v3.svg"');
 assertIncludes(aboutHtml, '<link rel="canonical" href="https://onlinesourdough.com/about/"');
-assertIncludes(aboutHtml, "<title>About onlinesourdough | My story and method</title>");
+assertIncludes(aboutHtml, "<title>Useful foundations for working with data and AI | onlinesourdough</title>");
 assertIncludes(
   reviewHtml,
   '<link rel="canonical" href="https://resources.onlinesourdough.com/agent-work-review"',
@@ -61,6 +62,11 @@ if (indexHtml.includes("/src/main.tsx")) {
 if (cname.trim() !== "onlinesourdough.com") {
   throw new Error(`Unexpected CNAME: ${JSON.stringify(cname.trim())}`);
 }
+
+const fermentaryHtml = await readFile(new URL("fermentary/index.html", distUrl), "utf8");
+assertIncludes(fermentaryHtml, '<link rel="canonical" href="https://onlinesourdough.com/fermentary/"');
+assertIncludes(fermentaryHtml, '<title>The Fermentary | onlinesourdough</title>');
+assertExcludes(fermentaryHtml, 'noindex');
 
 console.log(`Verified ${expectedFiles.length} GitHub Pages build artifacts.`);
 

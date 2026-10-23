@@ -10,3 +10,6 @@ output/playwright
 
 # Local owner-review build, never a release artifact
 output/family-preview/
+
+# Local verification logs and private design review artifacts
+output/

@@ -1,16 +1,23 @@
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
-const distUrl = new URL("../dist/", import.meta.url);
+const isReview = process.argv.includes("--review");
+const distUrl = new URL(isReview ? "../output/family-preview/" : "../dist/", import.meta.url);
 const indexPath = fileURLToPath(new URL("index.html", distUrl));
 const notFoundPath = fileURLToPath(new URL("404.html", distUrl));
 const noJekyllPath = fileURLToPath(new URL(".nojekyll", distUrl));
 
 const directPages = [
   {
+    directory: "fermentary",
+    title: "The Fermentary | onlinesourdough",
+    description: "The Fermentary is an ongoing 1:1 collaboration for solo founders and small teams. Together we map your business, bring its data and context together, and build a foundation in the environment you already use.",
+    url: "https://onlinesourdough.com/fermentary/",
+  },
+  {
     directory: "newsletter",
     title: "Newsletter | onlinesourdough",
-    description: "My notes on business architecture, software, and agentic engineering.",
+    description: "Ideas, experiments and lessons from putting AI to work with useful business context.",
     url: "https://onlinesourdough.com/newsletter/",
   },
   {
@@ -22,9 +29,9 @@ const directPages = [
   },
   {
     directory: "about",
-    title: "About onlinesourdough | My story and method",
+    title: "Useful foundations for working with data and AI | onlinesourdough",
     description:
-      "Methods, templates, courses, and workshops for improving your offer, operations, and demand, with AI where it helps.",
+      "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
     url: "https://onlinesourdough.com/about/",
   },
   {
@@ -40,10 +47,13 @@ const indexHtml = await readFile(indexPath, "utf8");
 for (const page of directPages) {
   const directoryUrl = new URL(`${page.directory}/`, distUrl);
   await mkdir(fileURLToPath(directoryUrl), { recursive: true });
-  const pageHtml = withPageMetadata(indexHtml, page).replace(
+  let pageHtml = withPageMetadata(indexHtml, page).replace(
     /<head>/,
     page.noindex ? '<head>\n<meta name="robots" content="noindex, follow">' : '<head>',
   );
+  if (page.noCanonical) {
+    pageHtml = pageHtml.replace(/\s*<link\s+rel="canonical"[^>]*>/, "");
+  }
   await writeFile(
     new URL("index.html", directoryUrl),
     page.redirect ? withExternalRedirect(pageHtml, page.redirect) : pageHtml,

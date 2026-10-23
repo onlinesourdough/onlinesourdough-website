@@ -1,14 +1,26 @@
 # onlinesourdough
 
 Source for [onlinesourdough.com](https://onlinesourdough.com), where Gustav
-Anderson shares practical ways to develop a business and work with AI. The site
+Anderson shares practical ways to make data and AI useful in everyday work. The site
 is a React application built with Vite and published through GitHub Pages.
 
 ## Current product
 
-- `/` contains the promise, four-offer menu, and a short introduction to the
-  AI-native way of working and AIOS as a starter.
-- `/about` contains Gustav's story, the sourdough analogy, AIOS, offers, the
+- The October 20 local review removes the experimental project directory and
+  separates Geist Pixel brand names from Geist Sans ordinary text. See `DESIGN.md`.
+  This revision is not published.
+- The October 22 local revision widens the menu, animates the existing scenes,
+  adds three hero-copy comparisons and carries the data/context perspective through
+  the homepage, About, offer navigation and newsletter. It is ready for review,
+  not published. See `DESIGN.md`.
+- `/` introduces AI grounded in the customer's business context and the four-book
+  menu. Resources and ongoing 1:1 collaboration are the two core paths;
+  Content introduces the work and Complete Bake refers to Arc’IT.
+- `/fermentary` is the public programme introduction. The video is not filmed yet; an honest still and a button to the
+  hosted Kit brochure signup are shown. Set the approved YouTube ID in
+  `src/config/site-data.ts` when it exists. Both programme CTAs open the existing hosted Kit signup, which leads to the Notion brochure.
+
+- `/about` contains Gustav's story, the sourdough analogy, The Onlinesourdough Method, offers, the
   method, Arc’IT AI's factory direction, key facts, and frequently asked questions.
 - `/agent-work-review` is a compatibility redirect to the canonical Resources
   page.
@@ -19,6 +31,18 @@ is a React application built with Vite and published through GitHub Pages.
 - A shared ecosystem footer links to gustavonline and Arc'IT AI, with matching
   family mark/icon sizing and “Part of gustavonline” below the social profiles.
 - GitHub Pages serves the static build at `https://onlinesourdough.com`.
+
+The review page links to the existing [Kit brochure signup](https://gustavonline.kit.com/50fdf0f981)
+with “More info, terms & pricing” buttons below the video and after the FAQ.
+Both open in the same tab. The email form and newsletter consent live on Kit;
+no Kit script or embedded form is loaded on the Fermentary page. Signup opens
+the public Notion brochure immediately. Kit sends a confirmation email whose
+button confirms the newsletter subscription and opens the brochure again.
+The form (10082012) uses the existing gustavonline Kit account.
+The video remains pending. On 22 October 2026, one owner-authorised test of the
+hosted Kit form verified the immediate brochure redirect, receipt of the email,
+the confirmation button's brochure destination and Confirmed status in Kit.
+The local page is source/build-verified only; local browser rendering is blocked.
 
 The approved design source is the latest
 `onlinesourdough-menu-freedom-lofi` artifact set from design task

@@ -1,5 +1,86 @@
 import { familyHref } from "../family/preview";
 
+export const fermentaryBrochureUrl = "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181";
+export const fermentarySignupUrl = "https://gustavonline.kit.com/50fdf0f981";
+const fermentaryHref = "/fermentary";
+
+export const methodFaqs = [
+  {
+    "question": "Do I need to know how to code?",
+    "answer": "No. AI agents can write much of the code involved. Your knowledge of the business gives that work direction. We focus on the data and context AI needs, and you choose how much of the technical work to take on yourself."
+  },
+  {
+    "question": "Will I need to change my tools?",
+    "answer": "We start with the systems and data you already use. Where something is missing, we work out how to connect or extend your setup. The foundation stays in your environment, with access you control."
+  },
+  {
+    "question": "Should I automate everything?",
+    "answer": "No. Some work benefits from AI assistance, some can be automated, and some needs a person. The important decisions are who does the work, how it is checked, and whether the overall result is useful."
+  },
+  {
+    "question": "How are onlinesourdough, gustavonline, and Arc’IT AI connected?",
+    "answer": "I’m behind all three. gustavonline is where I share my work and learning. onlinesourdough offers Resources and ongoing 1:1 collaboration for solo founders and small teams. Arc’IT AI is where I take care of custom data and AI projects. All three start with the same idea: AI needs data and context about the business it is helping."
+  },
+  {
+    "question": "What does The Fermentary cost?",
+    "answer": "The brochure sets out the current proposal. Prices and practical terms are still being developed and will be clear before you commit."
+  }
+];
+
+export const fermentaryPage = {
+  title: "The Fermentary | onlinesourdough",
+  heading: "Build a foundation AI can work with",
+  introduction: "The Fermentary is an ongoing 1:1 collaboration for solo founders and small teams. Together we map your business, bring its data and context together, and build a foundation in the environment you already use.",
+  video: {
+    youtubeId: "",
+    title: "The Fermentary: making data and AI useful in your business",
+    poster: "/assets/inner-circle-lofi-v3-transparent.png",
+    pendingTitle: "Video coming soon",
+    pendingDescription: "A walkthrough of the approach and how we work together.",
+  },
+  cta: "More info, terms & pricing",
+  closing: "See what’s included, how we work together, and the proposed pricing and terms.",
+  whyTitle: "From scattered data to shared context",
+  why: "You know how your business runs. That knowledge is often spread across people, documents and systems. We map it, connect the relevant data and make the gaps visible, so AI has a reliable foundation to work from.",
+  steps: [
+    {
+      title: "Map your business",
+      description: "You bring your knowledge of the business. Together we map how it works, where its data lives, how things connect and what is missing.",
+    },
+    {
+      title: "Build the foundation",
+      description: "We bring the relevant data and context together in your existing environment, organised so AI can use it and you stay in control of it.",
+    },
+    {
+      title: "Keep it useful",
+      description: "Your business changes, and the foundation changes with it. We keep it current, manage what AI can access and build on it as new needs emerge.",
+    },
+  ],
+  founder: "I'm Gustav, the founder of onlinesourdough. I work with you to map your business, connect its data and build a foundation AI can use.",
+  portrait: "/assets/gustav-linkedin-portrait.jpg",
+  included: ["Personal onboarding and a shared roadmap", "Ongoing 1:1 working sessions", "Written advice and feedback between sessions", "Hands-on help with your own tools and software", "Full Resources access during our collaboration"],
+  fit: "For solo founders and small teams who know their business well and want AI to understand it too. You bring that knowledge and some time between sessions. I help map it, build the foundation and keep it useful as the business changes.",
+  faqTitle: "Questions before you start",
+  faqs: [
+    {
+      question: "How do we get started?",
+      answer: "Start with the programme details, including the proposed pricing and terms. If it looks like a fit, we begin with personal onboarding: mapping your current setup and agreeing a shared roadmap for the foundation.",
+    },
+    {
+      question: "What happens between sessions?",
+      answer: "You get written advice and feedback from me, and full access to Resources.",
+    },
+    ...methodFaqs.filter(({ question }) => [
+      "Do I need to know how to code?",
+      "Will I need to change my tools?",
+    ].includes(question)),
+    {
+      question: "Who owns the foundation?",
+      answer: "You do. It lives in your own environment, and you decide what AI can access.",
+    },
+  ],
+};
+
 export type Offer = {
   number: string;
   title: string;
@@ -34,6 +115,25 @@ export type AboutSection = {
   blocks: AboutBlock[];
 };
 
+export const heroVariations = [
+  {
+    "title": "Make data and AI work with you",
+    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+  },
+  {
+    "title": "Start with what you know. Let AI help with the work.",
+    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+  },
+  {
+    "title": "Teach AI how your business works",
+    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+  },
+  {
+    "title": "Useful AI, shaped around how you work",
+    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+  }
+];
+
 export const siteData = {
   brand: "onlinesourdough",
   themeStorageKey: "onlinesourdough-theme",
@@ -43,15 +143,15 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Build better ways to work | onlinesourdough",
+    title: "Make data and AI work with you | onlinesourdough",
     description:
-      "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
-    aboutTitle: "About onlinesourdough | My story and method",
+      "I help solo founders and small teams make data and AI useful in everyday work.",
+    aboutTitle: "Useful foundations for working with data and AI | onlinesourdough",
     aboutDescription:
-      "Methods, templates, courses, and workshops for improving your offer, operations, and demand, with AI where it helps.",
-    ogTitle: "Build better ways to work | onlinesourdough",
+      "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
+    ogTitle: "Make data and AI work with you | onlinesourdough",
     ogDescription:
-      "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
+      "I help solo founders and small teams make data and AI useful in everyday work.",
   },
   navigation: {
     offers: "Offers",
@@ -72,49 +172,43 @@ export const siteData = {
   },
   studioOffers: [
     {
-      label: "DONE FOR YOU",
+      label: "CONSULTANCY & PROJECTS",
       title: "Arc'IT AI",
-      description: "IT consulting, architecture, custom software, and ongoing care, from one-off advice to an agreed delivery.",
+      description: "Data and AI consultancy, with advice and custom projects shaped around your business.",
       action: "Explore offer ↗",
       href: familyHref("arcitai"),
       current: false,
     },
     {
-      label: "DIY + DONE WITH YOU",
+      label: "RESOURCES & 1:1 COLLABORATION",
       title: "onlinesourdough",
       description:
-        "Methods, templates, resources, and guided learning for digital business and practical use of AI.",
+        "Practical resources and ongoing 1:1 collaboration for solo founders and small teams who want AI to understand and help with their work.",
       action: "Current offer",
       href: "/",
       current: true,
     },
   ] satisfies StudioOffer[],
   page: {
-    hero: {
-      title: "Build better ways to work",
-      description:
-        "I help founders and small teams improve their digital business through practical methods, resources, and guided learning. Start with the work that needs improving, then choose the methods and tools that help.",
-    },
+    hero: heroVariations[0],
     menu: {
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      "title": "From one useful change towards more business freedom",
+      "title": "Useful AI starts with your business",
       "cta": "About the method",
       "paragraphs": [
-        "I'm Gustav. Through onlinesourdough, I share methods and resources for building better ways to work in a digital business.",
-        "The method starts with your offer, operations, and demand. Find the current constraint, choose one useful change, and check what it improves.",
-        "Resources supports learning and doing the work yourself. In The Fermentary, you remain the primary builder while I help with decisions, reviews, and difficult parts. AIOS can support the context and working practices.",
-        "Like sourdough, it needs care. You try things, check the quality, time and effort involved, and keep improving the setup. The goal is more control over your time and where you take the business."
+        "I'm Gustav. I help solo founders and small teams turn their business data and context into a foundation AI can work with. Your knowledge of the business, its data and how things connect is where we begin.",
+        "Knowing your business gives you a useful place to start. We map your data and context, organise them into a foundation AI can use and keep it current as your work changes. Useful ways to apply AI follow from there.",
+        "Learn at your own pace through Resources, or work with me in The Fermentary. Together we develop the foundation, make decisions and build useful solutions, with a shared roadmap and advice between sessions.",
+        "Like a sourdough starter, the foundation needs care. Keep it current, learn from the work and adapt it to your business. The aim is useful help today and a better starting point for what comes next."
       ]
     },
     about: {
-      "eyebrow": "ABOUT / MY STORY & METHOD",
-      "title": "About onlinesourdough",
-      "tagline": "Practical methods and learning for digital business.",
+      "title": "Useful foundations for working with data and AI.",
       "paragraphs": [
-        "I help founders and small teams improve their digital business through practical methods, resources, and guided learning.",
-        "Use Resources to learn and build yourself, or work with me in The Fermentary. For IT consulting, architecture, or a custom software delivery, visit Arc’IT AI."
+        "I help solo founders and small teams make data and AI useful in everyday work.",
+        "Learn the foundations through Resources, or work with me in The Fermentary. We develop the data and context behind your business and use AI to build useful ways of working."
       ],
       "sections": [
         {
@@ -123,11 +217,11 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "I'm Gustav Anderson, a business and software architect. There's a lot of noise around AI."
+              "text": "I'm Gustav, the founder of onlinesourdough. I share practical ways to make data and AI useful in your business."
             },
             {
               "type": "paragraph",
-              "text": "So many tools, agents, new models, and ways to set everything up. Every opportunity seems to lead to another choice. It can be hard to tell what actually moves your work forward. What I've been missing is a clear path to follow."
+              "text": "New tools and models arrive all the time. But useful help depends on what AI knows about the work in front of it: your customers, your priorities and how things connect. That is the starting point I want to make clearer."
             },
             {
               "type": "paragraph",
@@ -135,11 +229,11 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "That's the idea behind onlinesourdough. I want to make the starting point as plug-and-play as possible, with a clear way to make it fit your business. Get something useful working, understand how it works, and build from there."
+              "text": "That's the idea behind onlinesourdough. Bring what you already know about your business into the work, make it useful to AI and build from there. Your setup should become easier to use and better suited to you as you learn."
             },
             {
               "type": "paragraph",
-              "text": "I share what I'm trying and learning through gustavonline, my personal brand. And if you'd like my help applying it to your own business, that's what the guidance and implementation are here for."
+              "text": "I share what I'm trying and learning through gustavonline. onlinesourdough is where you can use the resources yourself or work with me to apply the approach to your own business."
             },
             {
               "type": "links",
@@ -174,19 +268,19 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "A sourdough starter becomes useful through care and practice. I take the same approach to AIOS: start with a foundation, adapt it to your work, and look after it as you use it. Useful context, clear instructions, and review help you keep improving what comes out of it."
+              "text": "A sourdough starter becomes useful through care and practice. I take the same approach to working with AI: start with a useful foundation, adapt it to your work and keep it current as the business changes."
             },
             {
               "type": "paragraph",
-              "text": "I use **agentic engineering practices** to give that care a structure. **Context engineering** means giving an agent the information it needs. **Prompt engineering** means making the task and expectations clear. **Harness engineering** is about the tools, permissions, and working environment around the agent."
+              "text": "Your business data becomes more useful when its meaning is clear. Context tells AI how the business works, what matters and what you expect from a result. We bring those things together around the work you want help with."
             },
             {
               "type": "paragraph",
-              "text": "Then there's the loop: do the work, check what happened, adjust, and know when to stop. That's what I mean by **loop engineering**. **Evals** are repeatable checks that help you judge whether results meet your requirements and whether a change made things better."
+              "text": "Then we put it to use, review what comes back and improve what was missing. A useful correction becomes part of the next task, so you spend less time explaining the same things again."
             },
             {
               "type": "paragraph",
-              "text": "You don't need to know all those terms to get started. They're part of the thinking behind the resources and the way I work with you. The care matters, and it continues after the first setup."
+              "text": "That is the role of **agentic engineering** here: a practical way to organise the work, give agents the information and access they need, and check the result. The care continues after the first setup."
             }
           ]
         },
@@ -196,25 +290,25 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "I start with how your business works day to day. Business architecture helps me understand the people, processes, information, and software involved. I use agentic engineering to decide how agents can contribute to that work, with clear responsibilities and a way to check the result."
+              "text": "We start with how your business works and what AI needs to know to help. That means understanding your business data, the context around it and the decisions that still belong to you. The relevant information matters more than how much you have."
             },
             {
               "type": "paragraph",
-              "text": "Research, planning, content, administration, software development. You name it. As the tools and models change, I revisit what they can help with. You decide what to delegate, what needs review, and where your own judgment matters."
+              "text": "That foundation can support research, planning, content, administration or building your own software. We decide what to delegate, what needs review and how to tell whether the result is useful. AI can help you organise the information as you go."
             }
           ]
         },
         {
           "id": "aios-our-starter-yours-to-build-on",
-          "title": "AIOS: my starter, yours to build on",
+          "title": "The Onlinesourdough Method",
           "blocks": [
             {
               "type": "paragraph",
-              "text": "AIOS is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
+              "text": "The Onlinesourdough Method is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
             },
             {
               "type": "paragraph",
-              "text": "You add what matters about your business, keep useful decisions, and build up instructions and skills you can use again. A skill is a reusable set of instructions for a particular kind of work. Over time, your setup should reflect how you actually want to work."
+              "text": "You keep business context and working methods together so the next task has a clearer starting point. As you review the work, you update that foundation to reflect how your business actually operates."
             },
             {
               "type": "paragraph",
@@ -237,9 +331,9 @@ export const siteData = {
             {
               "type": "list",
               "items": [
-                "Solo founders building a digital business or software product.",
-                "Founders and business leaders working with technology, software, or online services.",
-                "Small teams with room to choose and adapt their tools and working practices."
+                "Solo founders who want help with the work they currently carry themselves.",
+                "Independent professionals turning their experience and working methods into useful AI assistance.",
+                "Small teams who want shared context, clearer working methods and tools they can adapt."
               ]
             },
             {
@@ -258,7 +352,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Resources is a growing library of guides, templates, examples, and course material for improving a digital business, with AIOS and reusable skills where they help. You choose and carry out the work."
+              "text": "Resources covers what I think is worth understanding to work well with data and AI. Practical guides and methods help you build useful business context, make informed decisions and apply the approach yourself. Personal guidance and review are part of The Fermentary."
             },
             {
               "type": "links",
@@ -271,40 +365,40 @@ export const siteData = {
             },
             {
               "type": "heading",
-              "text": "The Fermentary: done with you"
+              "text": "The Fermentary: an ongoing 1:1 collaboration"
             },
             {
               "type": "paragraph",
-              "text": "You work on one meaningful business improvement with my guidance. We choose the problem and a useful result, then work through the decisions, practical work, and review together. You remain the primary builder and owner."
+              "text": "We work together to make data and AI useful in your business. We get to know the work, develop the data and context it needs and build a shared roadmap. Ongoing 1:1 sessions give us time to make decisions and develop useful solutions, with written advice and feedback between them."
             },
             {
               "type": "paragraph",
-              "text": "The work can include a personal starting plan, private working sessions, help with difficult technical parts, and relevant Resources or workshops. We use AIOS when it helps keep your context and decisions useful."
+              "text": "The collaboration starts with personal onboarding and a shared understanding of your business. You also have full Resources access, including new material during our work together. We put what you learn into practice, build and review together, and agree the next steps for your work between sessions."
             },
             {
               "type": "paragraph",
-              "text": "The programme format and commercial terms are still being finalised. Price, duration, meeting cadence, access, and support boundaries must be clear before a commitment."
+              "text": "We agree how often to meet, the work we take on and the support between sessions. The brochure sets out the current proposal; prices and practical terms are still being developed and will be clear before you commit."
             },
             {
               "type": "links",
               "links": [
                 {
                   "label": "Explore The Fermentary",
-                  "href": "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181"
+                  "href": fermentaryHref
                 }
               ]
             },
             {
               "type": "heading",
-              "text": "Complete Bake: agreed work taken off your plate"
+              "text": "Complete Bake: done for you"
             },
             {
               "type": "paragraph",
-              "text": "Arc’IT AI is where I deliver IT consulting, architecture, and custom software. Complete Bake is the done-for-you path: I take responsibility for an agreed technical delivery."
+              "text": "For work you would like me to take care of, Arc’IT AI offers custom data and AI projects. We agree the brief and the outcome, then I bring the work from idea to a solution you can use. The scope follows your business and what the project needs."
             },
             {
               "type": "paragraph",
-              "text": "I agree with you on the work I take over, the access I need, how you will accept the result, and who looks after it afterwards. Ongoing operation or support needs its own agreed scope."
+              "text": "Explore one-off consultation and custom projects on Arc’IT AI. Each project has an agreed scope, review and handover, with further support when it is useful."
             },
             {
               "type": "links",
@@ -327,7 +421,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I use business architecture to understand what you offer, how you deliver it, and how the people, processes, information, and software fit together. I help you choose work worth improving and decide how to evaluate the result: quality, time, cost, or another measure that matters to your business."
+              "text": "We look at what you offer, who you serve and how the work gets done. Together we choose something worth improving and a way to judge the result, whether that is time, quality, cost or a decision you can make with more confidence."
             },
             {
               "type": "heading",
@@ -335,7 +429,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I use AIOS as a starter for the context and working practices. I help you adapt it to your business and choose enough tools, instructions, and access for the first useful task. I make the permissions and approval points clear."
+              "text": "We gather the information the task needs from your existing notes, documents and systems. We make its meaning and your expectations clear, then decide what AI can access and do. The Onlinesourdough Method can help keep that context and the working methods together."
             },
             {
               "type": "heading",
@@ -343,7 +437,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Through pair engineering, I help you plan, build, and review a change in real work. I use agentic engineering practices where agents can help, and keep human judgment and responsibility clear. Tests and review check the result. Sometimes the useful change is to simplify a process."
+              "text": "We work on the actual task together. That may mean preparing a client handover, connecting two tools or developing your own software. Pair engineering gives us shared time to make decisions, build, test and review, with a clear next step for the work between sessions."
             },
             {
               "type": "heading",
@@ -361,11 +455,11 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Arc’IT AI handles deeper IT work: one-off consultation, architecture, custom apps, integrations, and ongoing care. You can ask for technical advice or an agreed software delivery."
+              "text": "Arc’IT AI is where I take on custom data and AI projects. The starting point is the same: understand the business, bring the relevant data and context together, then put AI to useful work. You can start with a free 15-minute consultation or discuss a project."
             },
             {
               "type": "paragraph",
-              "text": "Factory is a separate set of engineering methods behind that delivery. It supports how software is built and reviewed. You do not need to adopt AIOS to work with Arc’IT AI."
+              "text": "Factory is an open-source framework for agentic engineering across different kinds of project. onlinesourdough brings the same attention to context and review into Resources and ongoing work with solo founders and small teams. The setup follows what the work needs."
             },
             {
               "type": "links",
@@ -383,7 +477,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "You work directly with me. In The Fermentary, you do the work with help on decisions, reviews, and difficult parts. I agree scope, responsibilities, timing, and what useful progress looks like with you before starting."
+              "text": "You work directly with me. We build an understanding of your business over time and use each session for the decisions, practical work and review that matter now. Between sessions, you continue with the resources, roadmap and written support we agree."
             }
           ]
         },
@@ -400,26 +494,26 @@ export const siteData = {
                 },
                 {
                   "label": "What it is",
-                  "value": "Methods, resources, and learning for digital business"
+                  "value": "Resources and ongoing collaboration to put AI to work in your business"
                 },
                 {
                   "label": "Who you work with",
-                  "value": "Me, Gustav Anderson, business and software architect"
+                  "value": "Me, Gustav Anderson, founder of onlinesourdough"
                 },
                 {
                   "label": "Audience",
-                  "value": "Solo founders, business leaders, and small teams, especially those working with technology or online business"
+                  "value": "Solo founders, independent professionals and small teams"
                 },
                 {
                   "label": "Starting point",
-                  "value": "One business constraint and a useful improvement"
+                  "value": "Your business knowledge, data and context"
                 },
                 {
                   "label": "Ways to work",
-                  "value": "Resources for self-directed learning, The Fermentary for guided work, and Arc’IT AI for done-for-you delivery"
+                  "value": "Resources for independent work; The Fermentary for ongoing 1:1 collaboration"
                 },
                 {
-                  "label": "Larger organisational delivery",
+                  "label": "Custom projects, done for you",
                   "value": "Arc’IT AI"
                 },
                 {
@@ -438,40 +532,10 @@ export const siteData = {
         {
           "id": "frequently-asked-questions",
           "title": "Frequently asked questions",
-          "blocks": [
-            {
-              "type": "heading",
-              "text": "Do I need to know how to code?"
-            },
-            {
-              "type": "paragraph",
-              "text": "You can start by explaining your business and the work you want help with. The technical knowledge needed depends on the tasks and how much of the setup or implementation you want to do yourself."
-            },
-            {
-              "type": "heading",
-              "text": "Is this tied to one AI tool?"
-            },
-            {
-              "type": "paragraph",
-              "text": "The approach starts with your business and working methods. I choose tools with you for the work and aim to keep your context and methods portable, so the setup can evolve as your needs and the available tools change."
-            },
-            {
-              "type": "heading",
-              "text": "Should I automate everything?"
-            },
-            {
-              "type": "paragraph",
-              "text": "No. Some work benefits from AI assistance, some can be automated, and some needs a person. The important decisions are who does the work, how it is checked, and whether the overall result is useful."
-            },
-            {
-              "type": "heading",
-              "text": "How are onlinesourdough, gustavonline, and Arc’IT AI connected?"
-            },
-            {
-              "type": "paragraph",
-              "text": "I’m behind all three. Gustav Online is my personal record of work and learning. onlinesourdough offers methods, resources, and guided learning. Arc’IT AI delivers IT consulting, architecture, and custom software."
-            }
-          ]
+          "blocks": methodFaqs.flatMap(({ question, answer }) => [
+            { type: "heading" as const, text: question },
+            { type: "paragraph" as const, text: answer },
+          ])
         },
         {
           "id": "find-your-starting-point",
@@ -479,16 +543,7 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Explore the free resources, or work with me to establish a setup and way of working that fits your business."
-            },
-            {
-              "type": "links",
-              "links": [
-                {
-                  "label": "Explore the ways to work",
-                  "href": "/#menu"
-                }
-              ]
+              "text": "Explore Resources to get started yourself, or read the brochure for an ongoing 1:1 collaboration. Bring what you know about your business and the work you already have."
             }
           ]
         }
@@ -501,52 +556,52 @@ export const siteData = {
     {
       number: "01",
       title: "Content",
-      description: "I write my newsletter and record videos on business architecture, software, and agentic engineering, sharing lessons and real examples.",
-      cta: "Explore content",
-      status: "Public",
+      description: "I share what I’m learning from using data and AI in my own business. Ideas, experiments and lessons you can bring into your work.",
+      cta: "Watch on YouTube",
+      status: "Follow along",
       href: "https://www.youtube.com/@gustavonline",
       image: {
         src: "/assets/content-lofi-v3-transparent.png",
-        alt: "Pixel-art publishing desk with a sourdough starter jar",
+        alt: "Codex and Claude Code working with orange data tiles on a publishing desk",
       },
     },
     {
       number: "02",
       title: "Resources",
       description:
-        "Guides, templates, examples, and course material to help you improve your digital business and do the work yourself.",
-      cta: "Open library",
-      status: "DIY",
+        "Understand the foundations of useful AI. Guides and methods to organise your business data and context, and start putting them to work yourself.",
+      cta: "Explore Resources",
+      status: "Do it yourself",
       href: "https://resources.onlinesourdough.com",
       image: {
         src: "/assets/resources-lofi-v3-transparent.png",
-        alt: "Pixel-art archive folder with bread lame and dough scraper",
+        alt: "Codex and Claude Code peeking from a folder of resources",
       },
     },
     {
       number: "03",
       title: "The Fermentary",
       description:
-        "I work 1:1 with you on business decisions, workflows, and software. I use pair engineering and AIOS as a starter to develop what fits your business.",
-      cta: "Work with me",
-      status: "DWY",
-      href: "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
+        "An ongoing 1:1 collaboration to make data and AI useful in your business. We build the foundation, work through decisions and develop useful solutions together.",
+      cta: "Explore The Fermentary",
+      status: "Done with you",
+      href: fermentaryHref,
       image: {
         src: "/assets/inner-circle-lofi-v3-transparent.png",
-        alt: "Pixel-art shared worktable with coffee and a slice of sourdough",
+        alt: "Codex and Claude Code tending a sourdough starter and arranging data tiles around a shared worktable",
       },
     },
     {
       number: "04",
       title: "Complete Bake",
       description:
-        "Custom software, apps, and integrations delivered through Arc’IT AI, with an agreed scope and clear responsibility.",
-      cta: "Start a project",
-      status: "DFY",
+        "Custom data and AI projects, taken care of for you. Through Arc’IT AI, I bring your ideas from a clear brief to a working solution.",
+      cta: "Explore custom projects",
+      status: "Done for you",
       href: familyHref("arcitai"),
       image: {
         src: "/assets/complete-bake-lofi-v3-transparent.png",
-        alt: "Pixel-art computer, server, and oven with bread",
+        alt: "Workshop with a warm oven, Codex on the computer and Claude Code working on the server",
       },
     },
   ] satisfies Offer[],

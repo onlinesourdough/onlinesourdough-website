@@ -8,15 +8,15 @@ describe("production copy and approved local family navigation", () => {
     expect(
       siteData.offers.map(({ number, title, cta, status }) => ({ number, title, cta, status })),
     ).toEqual([
-      { number: "01", title: "Content", cta: "Explore content", status: "Public" },
-      { number: "02", title: "Resources", cta: "Open library", status: "DIY" },
+      { number: "01", title: "Content", cta: "Watch on YouTube", status: "Follow along" },
+      { number: "02", title: "Resources", cta: "Explore Resources", status: "Do it yourself" },
       {
         number: "03",
         title: "The Fermentary",
-        cta: "Work with me",
-        status: "DWY",
+        cta: "Explore The Fermentary",
+        status: "Done with you",
       },
-      { number: "04", title: "Complete Bake", cta: "Start a project", status: "DFY" },
+      { number: "04", title: "Complete Bake", cta: "Explore custom projects", status: "Done for you" },
     ]);
   });
 
@@ -95,7 +95,7 @@ describe("production copy and approved local family navigation", () => {
     expect(siteData.studioOffers.map((offer) => offer.title)).toEqual(["Arc'IT AI", "onlinesourdough"]);
     expect(siteData.studioOffers.find((offer) => offer.current)?.href).toBe("/");
     expect(siteData.offers.find((offer) => offer.title === "The Fermentary")?.href).toBe(
-      "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181",
+      "/fermentary",
     );
     expect(siteData.offers.at(-1)?.href).toBe("https://arcitai.com");
   });
@@ -113,7 +113,7 @@ describe("production copy and approved local family navigation", () => {
 
   it("opens every configured external HTTP(S) destination safely", () => {
     const externalHrefs = [
-      ...siteData.offers.map((offer) => offer.href),
+      ...siteData.offers.map((offer) => offer.href).filter((href) => /^https?:/.test(href)),
       ...siteData.studioOffers.filter((offer) => !offer.current).map((offer) => offer.href),
       ...siteData.footer.links.map((link) => link.href),
       siteData.footer.github.href,
@@ -127,7 +127,7 @@ describe("production copy and approved local family navigation", () => {
       });
     }
 
-    for (const href of ["#menu", "/about", "/#menu", "/"]) {
+    for (const href of ["#menu", "/about", "/fermentary", "/#menu", "/"]) {
       expect(getExternalLinkAttributes(href)).toEqual({});
     }
   });

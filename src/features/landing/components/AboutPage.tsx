@@ -61,10 +61,8 @@ export function AboutPage() {
   return (
     <>
       <section className="about-hero" aria-labelledby="about-title">
-        <p>{about.eyebrow}</p>
         <h1 id="about-title">{about.title}</h1>
         <div className="about-intro">
-          <p className="about-tagline">{about.tagline}</p>
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
@@ -87,14 +85,15 @@ export function AboutPage() {
               {section.blocks.map((block, blockIndex) => (
                 <AboutContent key={blockIndex} block={block} headingId={`${section.id}-title`} />
               ))}
+              {index === about.sections.length - 1 && (
+                <a className="back-link" href="/#menu">
+                  {about.backLabel} <span aria-hidden="true">→</span>
+                </a>
+              )}
             </div>
           </section>
         ))}
       </div>
-
-      <a className="back-link" href="/#menu">
-        {about.backLabel} <span aria-hidden="true">→</span>
-      </a>
     </>
   );
 }
