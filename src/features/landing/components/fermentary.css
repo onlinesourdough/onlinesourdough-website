@@ -1,0 +1,282 @@
+.fermentary-page {
+  width: min(100% - 80px, 880px);
+  margin: 0 auto;
+  padding: clamp(48px, 5vw, 80px) 0 88px;
+}
+.fermentary-intro {
+  text-align: center;
+}
+.fermentary-intro h1 {
+  max-width: 20ch;
+  margin: 0 auto;
+  font-size: clamp(40px, 4.6vw, 60px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.fermentary-description {
+  max-width: 60ch;
+  margin: 22px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.fermentary-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin: 40px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel);
+}
+.fermentary-video > img {
+  position: absolute;
+  inset: 0 0 22%;
+  margin: auto;
+  width: 80%;
+  height: 78%;
+  object-fit: contain;
+}
+.fermentary-video figcaption {
+  position: absolute;
+  inset: auto 24px 20px;
+  display: grid;
+  gap: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.fermentary-video figcaption strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.fermentary-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.fermentary-next {
+  margin-top: 28px;
+  text-align: center;
+}
+.fermentary-next .family-button,
+.fermentary-bottom-cta .family-button {
+  font-size: 16px;
+  min-height: 52px;
+  padding: 14px 24px;
+}
+.fermentary-method {
+  max-width: 640px;
+  margin: 56px auto 0;
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+.fermentary-method h2 {
+  margin: 0 0 20px;
+  font-size: clamp(28px, 3.5vw, 34px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.fermentary-method p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.fermentary-method ol {
+  list-style: none;
+  margin: 34px 0;
+  padding: 0;
+  display: grid;
+  gap: 26px;
+}
+.fermentary-method li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 16px;
+}
+.fermentary-step-number {
+  color: var(--accent);
+  font-size: 13px;
+  line-height: 27px;
+  font-variant-numeric: tabular-nums;
+}
+.fermentary-method h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.fermentary-method li p {
+  font-size: 16px;
+}
+.fermentary-page a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 5px;
+}
+@media (max-width: 700px) {
+  .fermentary-page {
+    width: calc(100% - 40px);
+    padding: 40px 0 64px;
+  }
+  .fermentary-intro h1 {
+    font-size: clamp(34px, 8vw, 42px);
+  }
+  .fermentary-description {
+    font-size: 17px;
+  }
+  .fermentary-video {
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+  .fermentary-video > img {
+    height: 68%;
+    bottom: 30%;
+  }
+  .fermentary-video figcaption {
+    inset: auto 12px 12px;
+    font-size: 13px;
+    gap: 2px;
+  }
+  .fermentary-next .family-button,
+  .fermentary-bottom-cta .family-button {
+    width: 100%;
+    max-width: 360px;
+  }
+  .fermentary-method {
+    margin-top: 56px;
+    padding-top: 32px;
+  }
+  .fermentary-method li {
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .fermentary-video-pending {
+    aspect-ratio: auto;
+  }
+  .fermentary-video-pending > img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 120px;
+  }
+  .fermentary-video-pending figcaption {
+    position: static;
+    padding: 8px 14px 16px;
+  }
+}
+
+/* Programme details stay here; the two links use the existing hosted signup. */
+.fermentary-founder,
+.fermentary-details,
+.fermentary-faq,
+.fermentary-bottom-cta {
+  max-width: 640px;
+  margin: 56px auto 0;
+}
+.fermentary-founder {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.fermentary-founder img {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.fermentary-founder p,
+.fermentary-details p,
+.fermentary-details li,
+.fermentary-faq p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.fermentary-founder p {
+  margin: 0;
+}
+.fermentary-details,
+.fermentary-faq {
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.fermentary-details h2,
+.fermentary-faq h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.fermentary-details ul {
+  padding-left: 20px;
+  margin: 0 0 40px;
+}
+.fermentary-details li + li {
+  margin-top: 8px;
+}
+.fermentary-details p {
+  margin: 0;
+}
+.fermentary-faq details {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.fermentary-faq summary {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.fermentary-faq summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+}
+.fermentary-faq details p {
+  margin: 14px 0 0;
+  font-size: 16px;
+}
+.fermentary-bottom-cta {
+  text-align: center;
+}
+.fermentary-bottom-cta > p {
+  max-width: 52ch;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+@media (max-width: 620px) {
+  .fermentary-founder {
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .fermentary-founder img {
+    width: 72px;
+    height: 72px;
+  }
+  .fermentary-founder p {
+    font-size: 16px;
+  }
+  .fermentary-details h2,
+  .fermentary-faq h2 {
+    font-size: 27px;
+  }
+}

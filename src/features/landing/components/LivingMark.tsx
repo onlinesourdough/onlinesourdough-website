@@ -114,7 +114,7 @@ export function LivingMark() {
       ctx.fill();
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.font = '5.7px "Geist Mono",monospace';
+      ctx.font = '5.7px "Geist Sans",sans-serif';
       const cycle = t % 5.7,
         blink =
           !stopped && cycle > 5.43 ? Math.abs((cycle - 5.565) / 0.135) : 1;

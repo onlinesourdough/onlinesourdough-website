@@ -80,7 +80,7 @@ export function OfferSwitcher({ currentHref }: OfferSwitcherProps) {
                 onClick={() => setIsOpen(false)}
               >
                 <span className="path-number">{offer.label}</span>
-                <strong>{offer.title}</strong>
+                <strong className="brand-name-token" data-brand-name={offer.current ? "onlinesourdough" : "arcitai"}>{offer.title}</strong>
                 <small>{offer.description}</small>
                 <span className="path-action">{offer.action}</span>
               </a>

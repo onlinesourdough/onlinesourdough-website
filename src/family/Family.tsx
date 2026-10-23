@@ -22,7 +22,7 @@ export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
           .map((key) => (
             <a key={key} href={familyHref(key)} target="_blank" rel="noopener noreferrer">
               <span className="family-site-mark"><FamilyMark brand={key} /></span>
-              {labels[key]} <span aria-hidden="true">↗</span>
+              <span className="brand-name-token" data-brand-name={key}>{labels[key]}</span> <span aria-hidden="true">↗</span>
             </a>
           ))}
       </nav>
@@ -36,7 +36,7 @@ export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
         </nav>
         <p className="family-footer-meta">
           {brand === "gustavonline" ? "VAT: DK46128435" : (
-            <>Part of <a href={familyHref("gustavonline")} target="_blank" rel="noopener noreferrer">gustavonline</a></>
+            <>Part of <a href={familyHref("gustavonline")} target="_blank" rel="noopener noreferrer"><span className="brand-name-token" data-brand-name="gustavonline">gustavonline</span></a></>
           )}
         </p>
       </div>
@@ -75,7 +75,7 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
     <section className="family-newsletter" aria-labelledby="newsletter-title">
       <h1 id="newsletter-title">Notes from<br />the work</h1>
       <p className="newsletter-byline">My newsletter. I’m Gustav Anderson.</p>
-      <p>I share ideas, experiments, and lessons from business architecture, software, and agentic engineering.</p>
+      <p>I share ideas, experiments and lessons from my own work with data, AI and agentic engineering, including what helps AI understand the business it is working in.</p>
       <form className="family-signup" onSubmit={submit} aria-busy={pending}>
         <label htmlFor="newsletter-email">Email address</label>
         <div className="family-form-row">

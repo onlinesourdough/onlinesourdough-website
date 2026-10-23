@@ -1,0 +1,247 @@
+.offer-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  overflow: hidden;
+}
+.offer-scene * {
+  animation-play-state: paused !important;
+}
+.offer-scene[data-running="true"] * {
+  animation-play-state: running !important;
+}
+.scene-codex-idle {
+  animation: scene-idle 6.6s step-end infinite;
+  animation-delay: var(--codex-delay);
+}
+.scene-codex-work {
+  animation: scene-work 1.64s step-end infinite;
+  animation-delay: var(--codex-delay);
+}
+/* Every card has its own visit phase. Bodies move behind scene objects, never dissolve. */
+.scene-peek {
+  animation: peek-codex var(--peek-duration) cubic-bezier(0.45, 0, 0.25, 1)
+    infinite;
+  animation-delay: var(--peek-offset);
+  transform: translate(var(--peek-x, 0px), var(--peek-y, 0px));
+}
+.peek-claude {
+  animation-name: peek-claude;
+}
+.resource-peek {
+  --hide-y: 128px;
+}
+.resource-claude-peek {
+  --hide-y: 100px;
+}
+.content-codex-peek {
+  --peek-y: -46px;
+}
+.content-claude-peek {
+  --peek-x: 40px;
+}
+.fermentary-codex-peek {
+  --peek-y: -44px;
+}
+.fermentary-claude-peek {
+  --peek-y: -46px;
+}
+.bake-claude-peek {
+  --hide-y: 56px;
+}
+.bake-codex-peek {
+  --hide-x: -90px;
+}
+@keyframes peek-codex {
+  0%,
+  46%,
+  100% {
+    transform: translate(var(--hide-x, 0px), var(--hide-y, 0px));
+  }
+  12%,
+  36% {
+    transform: translate(var(--peek-x, 0px), var(--peek-y, 0px));
+  }
+  40% {
+    transform: translate(var(--peek-x, 0px), calc(var(--peek-y, 0px) + 3px));
+  }
+}
+@keyframes peek-claude {
+  0%,
+  52%,
+  98%,
+  100% {
+    transform: translate(var(--hide-x, 0px), var(--hide-y, 0px));
+  }
+  64%,
+  86% {
+    transform: translate(var(--peek-x, 0px), var(--peek-y, 0px));
+  }
+  90% {
+    transform: translate(var(--peek-x, 0px), calc(var(--peek-y, 0px) + 3px));
+  }
+}
+.desk-tile {
+  animation: desk-tile var(--tile-duration) ease-in-out infinite;
+  animation-delay: var(--tile-delay);
+}
+.desk-tile-1 {
+  animation-delay: calc(var(--tile-delay) - 4.3s);
+}
+.desk-tile-2 {
+  animation-delay: calc(var(--tile-delay) - 8.7s);
+}
+.desk-tile-3 {
+  animation: none;
+}
+.scene-claude-arm {
+  transform-origin: 21px 12px;
+  animation: starter-stir 13s ease-in-out infinite;
+  animation-delay: var(--claude-delay);
+}
+.starter-bubbles {
+  animation: starter-bubbles 13s ease-in-out infinite;
+}
+.scene-claude-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scene-blink 5.7s ease-in-out infinite;
+  animation-delay: var(--claude-delay);
+}
+.oven-glow {
+  opacity: 0.18;
+  animation: oven-glow 17s ease-in-out infinite;
+}
+.oven-flame {
+  opacity: 0.35;
+  transform-origin: 517px 366px;
+  animation: oven-fire 3.7s ease-in-out infinite;
+}
+@keyframes scene-idle {
+  0% {
+    transform: translateX(0);
+  }
+  25.45% {
+    transform: translateX(-192px);
+  }
+  35.45% {
+    transform: translateX(-384px);
+  }
+  45.45% {
+    transform: translateX(-576px);
+  }
+  58.18% {
+    transform: translateX(-768px);
+  }
+  70.91% {
+    transform: translateX(-960px);
+  }
+}
+@keyframes scene-work {
+  0% {
+    transform: translateX(0);
+  }
+  14.63% {
+    transform: translateX(-192px);
+  }
+  29.27% {
+    transform: translateX(-384px);
+  }
+  43.9% {
+    transform: translateX(-576px);
+  }
+  58.54% {
+    transform: translateX(-768px);
+  }
+  73.17% {
+    transform: translateX(-960px);
+  }
+}
+@keyframes desk-tile {
+  0%,
+  14%,
+  82%,
+  100% {
+    transform: translate(0, 0);
+  }
+  24%,
+  56% {
+    transform: translate(4px, -12px);
+  }
+  67% {
+    transform: translate(0, -4px);
+  }
+}
+@keyframes starter-stir {
+  0%,
+  20%,
+  70%,
+  100% {
+    transform: rotate(0);
+  }
+  30%,
+  48% {
+    transform: rotate(-14deg);
+  }
+  39%,
+  57% {
+    transform: rotate(9deg);
+  }
+}
+@keyframes starter-bubbles {
+  0%,
+  35%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  62% {
+    transform: translateY(-3px);
+    opacity: 0.9;
+  }
+}
+@keyframes scene-blink {
+  0%,
+  79%,
+  83%,
+  100% {
+    transform: scaleY(1);
+  }
+  81% {
+    transform: scaleY(0.1);
+  }
+}
+@keyframes oven-glow {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  28%,
+  72% {
+    opacity: 0.26;
+  }
+  47% {
+    opacity: 0.19;
+  }
+}
+@keyframes oven-fire {
+  0%,
+  100% {
+    transform: scaleY(0.82);
+    opacity: 0.28;
+  }
+  34% {
+    transform: scaleY(1);
+    opacity: 0.45;
+  }
+  72% {
+    transform: scaleY(0.9);
+    opacity: 0.32;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .offer-scene * {
+    animation: none !important;
+  }
+}

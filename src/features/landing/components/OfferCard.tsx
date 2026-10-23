@@ -1,5 +1,6 @@
 import { type Offer } from "../../../config/site-data";
 import { getExternalLinkAttributes } from "../../../components/link-attributes";
+import { OfferScene } from "./OfferScene";
 
 export function OfferCard({ offer }: { offer: Offer }) {
   return (
@@ -14,7 +15,7 @@ export function OfferCard({ offer }: { offer: Offer }) {
           <span className="offer-description">{offer.description}</span>
           <span className="book-rule" />
           <span className="book-image">
-            <img src={offer.image.src} alt={offer.image.alt} />
+            <OfferScene offer={offer} />
           </span>
         </span>
         <span className="book-sleeve" aria-hidden="true" />
