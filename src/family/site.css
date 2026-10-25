@@ -158,8 +158,8 @@
   min-width: 0;
 }
 .manifesto-heading .da-character {
-  width: min(100%, 320px);
-  height: 256px;
+  width: min(100%, 360px);
+  height: 250px;
   margin: 20px 0 0;
 }
 .manifesto-copy p {
@@ -400,4 +400,107 @@
   .about-heading h2 {
     font-size: 23px;
   }
+}
+
+/* Small screens have their own reading and navigation rhythm. */
+.navigation-overlay { display: contents; }
+.mobile-menu-trigger,
+.mobile-navigation { display: none; }
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0 8px;
+    min-height: 64px;
+    padding-inline: 20px;
+  }
+  .site-header .header-actions,
+  .site-header .newsletter-link { display: none; }
+  .site-header .brand-name { min-height: 64px; min-width: 0; font-size: 16px; gap: 6px; }
+  .site-header .brand-name > span {
+    position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: nowrap;
+  }
+  .site-header .brand-name .family-mark-bread { width: 30px; height: 24px; }
+  .site-header .header-utilities { gap: 4px; }
+  .mobile-menu-trigger {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent;
+    color: var(--text); font: inherit; font-size: 14px; cursor: pointer;
+  }
+  .mobile-menu-lines { position: relative; width: 16px; height: 12px; }
+  .mobile-menu-lines::before,.mobile-menu-lines::after {
+    content: ""; position: absolute; left: 0; top: 3px; width: 16px; height: 1px;
+    background: currentColor; transition: transform 160ms ease;
+  }
+  .mobile-menu-lines::after { top: 9px; }
+  .mobile-menu-trigger[aria-expanded="true"] .mobile-menu-lines::before { transform: translateY(3px) rotate(45deg); }
+  .mobile-menu-trigger[aria-expanded="true"] .mobile-menu-lines::after { transform: translateY(-3px) rotate(-45deg); }
+  .mobile-navigation:not([hidden]) {
+    display: block; position: fixed; inset: var(--navigation-top, 64px) 0 0; width: 100%;
+    overflow-y: auto; overscroll-behavior: contain; padding: 8px 20px max(28px, env(safe-area-inset-bottom));
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+  }
+  .mobile-navigation a {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    min-height: 48px; font-size: 17px; text-decoration: none;
+  }
+  .mobile-navigation a > span { color: var(--muted); font-size: 14px; }
+  .mobile-offers { margin-top: 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .mobile-offers p { margin: 0 0 4px; font-size: 12px; color: var(--muted); }
+  .mobile-offers a { font-size: 16px; }
+  .manifesto { grid-template-columns: 1fr; row-gap: 28px; }
+  .manifesto-heading { max-width: 600px; }
+  .manifesto-copy { max-width: 62ch; }
+  .about-section { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .site-header { padding-inline: 32px; }
+  .mobile-navigation:not([hidden]) { padding-inline: 32px; }
+  .family-footer { width: calc(100% - 64px); }
+  .main-panel { width: calc(100% - 64px); }
+  .menu-grid { gap: 40px 28px; }
+  .book { padding: 18px 16px 24px 24px; }
+  .book-title { font-size: 24px; }
+  .offer-description { min-height: 112px; font-size: 16px; }
+  .book-image { height: 180px; min-height: 180px; flex-basis: 180px; }
+  .manifesto-heading { width: 100%; }
+}
+@media (max-width: 700px) {
+  .main-panel { padding-top: 40px; padding-bottom: 56px; }
+  .hero h1 { font-size: clamp(32px, 8.5vw, 40px); line-height: 1.12; }
+  .hero-copy { margin-top: 22px; max-width: 40ch; }
+  .hero-copy p { font-size: 17px; line-height: 1.65; }
+  .menu-grid { gap: 36px; margin-top: 36px; }
+  .offer-card { width: 100%; max-width: 400px; margin-inline: auto; padding: 0; min-height: 0; }
+  .book-stage { max-width: 100%; height: auto; }
+  .book {
+    min-height: 0; height: auto; margin-inline: 6px;
+    padding: 20px 20px 28px 28px;
+  }
+  .book-head { gap: 12px; font-size: 11px; }
+  .book-title { font-size: 26px; margin-top: 14px; }
+  .offer-description { font-size: 16px; line-height: 1.55; margin-top: 12px; min-height: 0; }
+  .book-rule { margin: 18px 0 12px; }
+  .book-image { height: clamp(170px, 52vw, 220px); min-height: 170px; flex: 0 0 auto; }
+  .offer-cta { margin-top: 8px; min-height: 48px; font-size: 15px; }
+  .offer-card:hover .book,.offer-card:focus-visible .book { transform: none; }
+  .manifesto { margin-top: 56px; padding-top: 40px; gap: 24px; scroll-margin-top: 64px; }
+  .manifesto h2 { max-width: 20ch; font-size: 30px; line-height: 1.15; }
+  .manifesto-copy p { font-size: 17px; line-height: 1.7; margin-bottom: 20px; }
+  .manifesto-link { min-height: 44px; font-size: 16px; }
+  .about-section { padding-block: 32px; }
+  .family-footer { width: calc(100% - 40px); }
+  .family-signup input { font-size: 16px; }
+}
+@media (max-width: 360px) {
+  .site-header { padding-inline: 16px; gap: 4px; }
+  .site-header .brand-name { font-size: 14px; gap: 5px; }
+  .site-header .brand-name .family-mark-bread { width: 26px; }
+  .site-header .header-utilities { gap: 0; }
+  .mobile-menu-trigger { padding: 0; }
+  .main-panel { width: calc(100% - 32px); }
+  .book { padding-inline: 24px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-lines::before,.mobile-menu-lines::after { transition: none; }
 }

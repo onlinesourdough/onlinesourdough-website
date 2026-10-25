@@ -7,7 +7,7 @@ import {
 import { fermentarySignupUrl } from "../src/config/site-data";
 
 describe("Fermentary video and brochure path", () => {
-  it("offers the hosted signup before and after the details, even without a video", () => {
+  it("offers the native signup before and after the details, even without a video", () => {
     const html = renderToStaticMarkup(<FermentaryPage />);
     const links = html.match(/<a\b[^>]*>[\s\S]*?<\/a>/g) ?? [];
     expect(links).toHaveLength(2);

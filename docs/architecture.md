@@ -61,19 +61,19 @@ smoke tests are proportionate operational evidence for this static site.
 
 ## Routing and assets
 
-`/fermentary` is registered in the production route tree and has direct-route
-HTML and canonical metadata. The menu and About page lead through this page
-to the hosted Kit signup and Notion brochure.
-The configured YouTube ID is empty until the owner's video is filmed. An honest
-still appears meanwhile; an approved ID enables a titled, lazy iframe without
-autoplay or watch gating. Commercial terms stay in the brochure. The
-page has two ordinary links to the hosted Kit form 10082012 at
-`https://gustavonline.kit.com/50fdf0f981`. Kit owns the email field, consent,
-subscriptions, errors and immediate Notion redirect. Its confirmation email
-opens the same brochure and confirms newsletter consent. The Fermentary page
-loads no Kit script or embedded form. No credentials or new backend are
-introduced. The hosted form differs from the simulated general newsletter
-form in the review build; submitting it creates a real Kit subscription.
+`/fermentary` and `/fermentary/details` are registered in the production route
+tree with direct-route HTML and canonical metadata. The menu and About page lead
+to the programme introduction, whose two CTAs open the native details signup.
+The configured YouTube ID stays empty until the owner’s video exists.
+
+The signup feature owns its form and thank-you state. Its small adapter submits
+the account’s existing public Kit form10082012 using FormData and an explicit
+JSON acknowledgement. Public form CORS was checked against the own-site origin.
+There is no new backend, API key, Kit-hosted navigation or vendor CSS/script in
+the page. Errors retain the email; only acknowledged success starts the short
+thank-you state and a fixed Notion redirect. A server-required consent/challenge
+is never treated as success. Email confirmation and its brochure link remain
+owned by the existing Kit form. The details route is noindex.
 
 TanStack Router owns `/`, `/about`, and the `/agent-work-review` compatibility
 route. The build script copies the SPA shell to `dist/about/index.html`, writes

@@ -9,6 +9,13 @@ const noJekyllPath = fileURLToPath(new URL(".nojekyll", distUrl));
 
 const directPages = [
   {
+    directory: "fermentary/details",
+    title: "The Fermentary — info, terms & pricing | onlinesourdough",
+    description: "Get the Fermentary programme details, terms and proposed pricing, and join Gustav’s newsletter.",
+    url: "https://onlinesourdough.com/fermentary/details/",
+    noindex: true,
+  },
+  {
     directory: "fermentary",
     title: "The Fermentary | onlinesourdough",
     description: "The Fermentary is an ongoing 1:1 collaboration for solo founders and small teams. Together we map your business, bring its data and context together, and build a foundation in the environment you already use.",

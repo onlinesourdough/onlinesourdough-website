@@ -279,4 +279,11 @@
   .fermentary-faq h2 {
     font-size: 27px;
   }
+  .fermentary-founder { flex-direction: column; gap: 20px; }
+  .fermentary-founder,
+  .fermentary-details,
+  .fermentary-faq,
+  .fermentary-bottom-cta { margin-top: 48px; }
+  .fermentary-faq summary { min-height: 44px; padding-block: 8px; }
+  .fermentary-faq details { padding-block: 10px; }
 }

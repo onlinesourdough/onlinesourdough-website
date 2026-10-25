@@ -1,7 +1,8 @@
 import { familyHref } from "../family/preview";
 
 export const fermentaryBrochureUrl = "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181";
-export const fermentarySignupUrl = "https://gustavonline.kit.com/50fdf0f981";
+export const fermentarySignupUrl = "/fermentary/details";
+export const fermentaryFormAction = "https://app.kit.com/forms/10082012/subscriptions";
 const fermentaryHref = "/fermentary";
 
 export const methodFaqs = [
@@ -29,7 +30,7 @@ export const methodFaqs = [
 
 export const fermentaryPage = {
   title: "The Fermentary | onlinesourdough",
-  heading: "Build a foundation AI can work with",
+  heading: "A data and context foundation AI can actually use",
   introduction: "The Fermentary is an ongoing 1:1 collaboration for solo founders and small teams. Together we map your business, bring its data and context together, and build a foundation in the environment you already use.",
   video: {
     youtubeId: "",
@@ -117,7 +118,7 @@ export type AboutSection = {
 
 export const heroVariations = [
   {
-    "title": "Make data and AI work with you",
+    "title": "Valuable AI starts with your data and business context",
     "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
   },
   {
@@ -143,13 +144,13 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Make data and AI work with you | onlinesourdough",
+    title: "Valuable AI starts with your data and business context | onlinesourdough",
     description:
       "I help solo founders and small teams make data and AI useful in everyday work.",
     aboutTitle: "Useful foundations for working with data and AI | onlinesourdough",
     aboutDescription:
       "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
-    ogTitle: "Make data and AI work with you | onlinesourdough",
+    ogTitle: "Valuable AI starts with your data and business context | onlinesourdough",
     ogDescription:
       "I help solo founders and small teams make data and AI useful in everyday work.",
   },
@@ -195,7 +196,7 @@ export const siteData = {
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      "title": "Useful AI starts with your business",
+      "title": "Make data and AI work with you",
       "cta": "About the method",
       "paragraphs": [
         "I'm Gustav. I help solo founders and small teams turn their business data and context into a foundation AI can work with. Your knowledge of the business, its data and how things connect is where we begin.",
