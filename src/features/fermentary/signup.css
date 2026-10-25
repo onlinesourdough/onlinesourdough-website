@@ -1,0 +1,49 @@
+.fermentary-signup {
+  width: min(100% - 40px, 540px);
+  margin: 0 auto;
+  padding: 48px 0 80px;
+}
+.fermentary-signup-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.fermentary-signup-art {
+  display: block;
+  object-fit: contain;
+  margin: 0 auto 30px;
+  image-rendering: pixelated;
+}
+.fermentary-signup h1 {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  margin: 0 0 24px;
+}
+.fermentary-signup > p { color: var(--muted); font-size: 17px; line-height: 1.7; }
+.fermentary-signup .family-signup { padding-top: 28px; border-top: 1px solid var(--line); }
+.fermentary-signup input {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface, var(--bg));
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.fermentary-signup .family-button { min-height: 52px; margin-top: 24px; }
+.fermentary-signup .family-signup p { font-size: 14px; }
+.fermentary-signup #fermentary-status { color: var(--ink); }
+.fermentary-signup h1:focus { outline: none; }
+@media (max-width: 700px) {
+  .fermentary-signup { padding: 24px 0 56px; }
+  .fermentary-signup-back { margin-bottom: 14px; }
+  .fermentary-signup-art { width: 150px; height: 115px; margin-bottom: 24px; }
+  .fermentary-signup .family-button { width: 100%; justify-content: space-between; }
+}

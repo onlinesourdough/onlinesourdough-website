@@ -6,6 +6,7 @@ const expectedFiles = [
   "index.html",
   "about/index.html",
   "fermentary/index.html",
+  "fermentary/details/index.html",
   "newsletter/index.html",
   "newsletter/thank-you/index.html",
   "agent-work-review/index.html",

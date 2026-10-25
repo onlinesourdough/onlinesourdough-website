@@ -6,15 +6,28 @@ is a React application built with Vite and published through GitHub Pages.
 
 ## Current product
 
+- The October 24 local preview places the selected bread-and-helpers animation
+  directly beneath the manifesto heading. The 236 matte tiles, squared eyes,
+  stronger travelling wave and Codex/Claude assembly match the selected study.
+  Only the upper-right shoulder is unfinished; both helpers collect from sources
+  on both sides. A fresh seed varies each visit/replay. Assembly starts when the
+  illustration enters view, pauses offscreen/hidden, and leaves the completed loaf
+  gently moving. Theme changes and reduced motion are supported. The comparison
+  canvas remains available through its explicit development query. This is local
+  review work; nothing has been pushed or deployed.
 - The October 23 refinement restores a compact homepage: a maximum 800px
   two-column menu, 352px book stages and readable 15px descriptions. The menu
   becomes one column at 700px. The manifesto's sourdough is built from warm
   tiles using Gustav Online's travelling crest, with a restrained mouse response
   and a keyboard/touch wake ripple. It stops offscreen and when the tab is hidden;
   reduced-motion preferences show a still version.
-- The sourdough refinement uses a fuller, gently irregular boule, warm crust
-  shades and a flour score. It forms once on entering view, with eyes drawn
-  over the complete tile surface. The compact menu and page copy are unchanged.
+- The current local sourdough preview restores the original production figure
+  from `1380149`: its silhouette, eye openings, shading and motion are retained;
+  only the small glyphs are replaced with 236 larger tiles. A local comparison
+  canvas at `/?bread=compare` shows 531, 236 and 59 tiles with the same silhouette.
+  The comparison and size controls are dev-only. The owner rejected the rounded
+  loaf in PR 23. This preview is not published. Further deployments require
+  explicit owner approval of the concrete preview.
 - The October 20 local review removes the experimental project directory and
   separates Geist Pixel brand names from Geist Sans ordinary text. See `DESIGN.md`.
   This revision is not published.
@@ -26,8 +39,8 @@ is a React application built with Vite and published through GitHub Pages.
   menu. Resources and ongoing 1:1 collaboration are the two core paths;
   Content introduces the work and Complete Bake refers to Arc’IT.
 - `/fermentary` is the public programme introduction. The video is not filmed yet; an honest still and a button to the
-  hosted Kit brochure signup are shown. Set the approved YouTube ID in
-  `src/config/site-data.ts` when it exists. Both programme CTAs open the existing hosted Kit signup, which leads to the Notion brochure.
+  native programme-details signup are shown. Set the approved YouTube ID in
+  `src/config/site-data.ts` when it exists. Both programme CTAs open `/fermentary/details`, in the same site shell.
 
 - `/about` contains Gustav's story, the sourdough analogy, The Onlinesourdough Method, offers, the
   method, Arc’IT AI's factory direction, key facts, and frequently asked questions.
@@ -41,17 +54,19 @@ is a React application built with Vite and published through GitHub Pages.
   family mark/icon sizing and “Part of gustavonline” below the social profiles.
 - GitHub Pages serves the static build at `https://onlinesourdough.com`.
 
-The review page links to the existing [Kit brochure signup](https://gustavonline.kit.com/50fdf0f981)
-with “More info, terms & pricing” buttons below the video and after the FAQ.
-Both open in the same tab. The email form and newsletter consent live on Kit;
-no Kit script or embedded form is loaded on the Fermentary page. Signup opens
-the public Notion brochure immediately. Kit sends a confirmation email whose
-button confirms the newsletter subscription and opens the brochure again.
-The form (10082012) uses the existing gustavonline Kit account.
-The video remains pending. On 22 October 2026, one owner-authorised test of the
-hosted Kit form verified the immediate brochure redirect, receipt of the email,
-the confirmation button's brochure destination and Confirmed status in Kit.
-The local page is source/build-verified only; local browser rendering is blocked.
+The programme’s “More info, terms & pricing” buttons open the native
+`/fermentary/details` page. It retains the site’s header, footer, typography,
+colours and illustration. Kit is the submission and confirmation-mail provider,
+not a hosted customer-facing page. The existing form10082012 receives a public
+HTML-form request without an API key or additional backend. Only its explicit
+`status: success` acknowledgement shows thanks and redirects to the fixed Notion
+brochure after3.5seconds. HTTP failures, invalid responses, consent requirements
+and anti-abuse challenges keep the visitor on the form with their email intact.
+
+The existing Kit confirmation email confirms the newsletter subscription and
+opens the same brochure. Its owner-authorised live test was verified on22October;
+this release’s browser success/error tests use intercepted responses and create
+no subscribers or emails. The original programme video remains pending.
 
 The approved design source is the latest
 `onlinesourdough-menu-freedom-lofi` artifact set from design task
