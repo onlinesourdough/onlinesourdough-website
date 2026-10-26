@@ -60,7 +60,7 @@ export const fermentaryPage = {
   founder: "I'm Gustav, the founder of onlinesourdough. I work with you to map your business, connect its data and build a foundation AI can use.",
   portrait: "/assets/gustav-linkedin-portrait.jpg",
   included: ["Personal onboarding and a shared roadmap", "Ongoing 1:1 working sessions", "Written advice and feedback between sessions", "Hands-on help with your own tools and software", "Full Resources access during our collaboration"],
-  fit: "For solo founders and small teams who know their business well and want AI to understand it too. You bring that knowledge and some time between sessions. I help map it, build the foundation and keep it useful as the business changes.",
+  fit: "For solo founders and small teams who know their business well and want AI to understand it too. You bring that knowledge and some time between sessions. We build and review together so you can use the foundation yourself and keep improving it as your business changes.",
   faqTitle: "Questions before you start",
   faqs: [
     {
@@ -69,7 +69,7 @@ export const fermentaryPage = {
     },
     {
       question: "What happens between sessions?",
-      answer: "You get written advice and feedback from me, and full access to Resources.",
+      answer: "You work on the agreed next steps, with written advice and feedback from me and full access to Resources.",
     },
     ...methodFaqs.filter(({ question }) => [
       "Do I need to know how to code?",
@@ -201,7 +201,7 @@ export const siteData = {
       "paragraphs": [
         "I'm Gustav. I help solo founders and small teams turn their business data and context into a foundation AI can work with. Your knowledge of the business, its data and how things connect is where we begin.",
         "Knowing your business gives you a useful place to start. We map your data and context, organise them into a foundation AI can use and keep it current as your work changes. Useful ways to apply AI follow from there.",
-        "Learn at your own pace through Resources, or work with me in The Fermentary. Together we develop the foundation, make decisions and build useful solutions, with a shared roadmap and advice between sessions.",
+        "Learn at your own pace through Resources, or work with me in The Fermentary. We build and review the foundation together so you learn to use AI in your own work. A shared roadmap and advice support your next steps between sessions.",
         "Like a sourdough starter, the foundation needs care. Keep it current, learn from the work and adapt it to your business. The aim is useful help today and a better starting point for what comes next."
       ]
     },
@@ -399,7 +399,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Explore one-off consultation and custom projects on Arc’IT AI. Each project has an agreed scope, review and handover, with further support when it is useful."
+              "text": "Explore one-off consultation and custom projects on Arc’IT AI. Each project has an agreed scope, review and handover so you can use and build on the result, with further support when it is useful."
             },
             {
               "type": "links",
@@ -456,7 +456,7 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "Arc’IT AI is where I take on custom data and AI projects. The starting point is the same: understand the business, bring the relevant data and context together, then put AI to useful work. You can start with a free 15-minute consultation or discuss a project."
+              "text": "Arc’IT AI is where I take on custom data and AI projects. The starting point is the same: understand the business, bring the relevant data and context together, then put AI to useful work. You can start with a free 20-minute consultation or discuss a project."
             },
             {
               "type": "paragraph",
@@ -596,7 +596,7 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "Custom data and AI projects, taken care of for you. Through Arc’IT AI, I bring your ideas from a clear brief to a working solution.",
+        "Custom data and AI projects, taken care of for you. Through Arc’IT AI, I bring your ideas from a clear brief to a working solution you can use and build on.",
       cta: "Explore custom projects",
       status: "Done for you",
       href: familyHref("arcitai"),
