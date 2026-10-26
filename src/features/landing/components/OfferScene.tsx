@@ -147,9 +147,9 @@ export function OfferScene({ offer }: { offer: Offer }) {
     const node = element.current;
     if (!node) return;
     let visible = false;
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+
     const update = () =>
-      setRunning(visible && !document.hidden && !reduced.matches);
+      setRunning(visible && !document.hidden);
     const observer = new IntersectionObserver(
       ([entry]) => {
         visible = entry.isIntersecting;
@@ -158,11 +158,11 @@ export function OfferScene({ offer }: { offer: Offer }) {
       { threshold: 0.1 },
     );
     observer.observe(node);
-    reduced.addEventListener("change", update);
+
     document.addEventListener("visibilitychange", update);
     return () => {
       observer.disconnect();
-      reduced.removeEventListener("change", update);
+
       document.removeEventListener("visibilitychange", update);
     };
   }, []);

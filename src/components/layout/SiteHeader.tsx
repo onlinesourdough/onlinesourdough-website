@@ -129,10 +129,10 @@ export function SiteHeader() {
         <span className="theme-toggle-icon" aria-hidden="true" />
       </button>
       <button ref={mobileTrigger} className="mobile-menu-trigger" type="button" aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen} aria-controls="mobile-navigation" onClick={() => setMobileOpen((open) => !open)}>
-        <span className="mobile-menu-lines" aria-hidden="true" />
+        <span className="mobile-menu-lines" aria-hidden="true"><span /></span>
       </button>
       </div>
-      <nav id="mobile-navigation" className="mobile-navigation" aria-label="Mobile navigation" hidden={!mobileOpen} onClick={(event) => {
+      <nav id="mobile-navigation" className="mobile-navigation" aria-label="Site menu" hidden={!mobileOpen} onClick={(event) => {
         const link = event.target instanceof Element ? event.target.closest("a") : null;
         if (!link) return;
         setMobileOpen(false);
@@ -146,14 +146,20 @@ export function SiteHeader() {
           }
         }
       }}>
-        <a href={isHome ? "#menu" : "/#menu"}>Explore the menu <span aria-hidden="true">↓</span></a>
-        <a href={isHome ? "#about" : "/about"}>About the method <span aria-hidden="true">{isHome ? "↓" : "→"}</span></a>
-        <a href="/newsletter">Newsletter <span aria-hidden="true">→</span></a>
         <div className="mobile-offers">
-          <p>Work together</p>
-          <a href="/fermentary">The Fermentary <span aria-hidden="true">→</span></a>
-          <a href={siteData.studioOffers.find((offer) => !offer.current)!.href}>Custom projects <span aria-hidden="true">↗</span></a>
+          <p>Offers</p>
+          {siteData.studioOffers.map((offer) => (
+            <a key={offer.title} href={offer.current ? "/" : offer.href}>
+              <span className="brand-name-token" data-brand-name={offer.current ? "onlinesourdough" : "arcitai"}>{offer.title}</span>
+              <small>{offer.description}</small>
+            </a>
+          ))}
         </div>
+        <a href="/" aria-current={isHome && !activeSection ? "page" : undefined}>Home</a>
+        <a href={isHome ? "#menu" : "/#menu"} aria-current={isHome && activeSection === "menu" ? "location" : undefined}>Menu</a>
+        <a href={isHome ? "#about" : "/about"} aria-current={isAbout ? "page" : isHome && activeSection === "about" ? "location" : undefined}>About the method</a>
+        <a href="/fermentary" aria-current={pathname.startsWith("/fermentary") ? "page" : undefined}>The Fermentary</a>
+        <a href="/newsletter" aria-current={pathname.startsWith("/newsletter") ? "page" : undefined}>Newsletter</a>
       </nav>
       </div>
     </header>
