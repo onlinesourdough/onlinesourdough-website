@@ -86,3 +86,13 @@ root.
 Root-relative public paths are required by the production custom-domain
 context. Development and production preview checks must therefore confirm
 `/assets/...` responses rather than depending on a local filesystem path.
+
+
+## Current animation policy · 26 October 2026
+
+The owner explicitly chose to keep the public brand animations running even when
+`prefers-reduced-motion: reduce` is enabled. This supersedes earlier reduced-motion
+fallback descriptions for the current public UI. Offscreen and hidden-tab suspension,
+explicit player controls, playback-error fallbacks and data-saving behaviour remain.
+OS settings are not changed. Verify the running animation with the media preference
+set to `reduce`, as well as with the default preference.

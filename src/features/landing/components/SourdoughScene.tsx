@@ -52,7 +52,7 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
     const context = canvas.getContext("2d");
     if (!context) return;
     const ctx = context;
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+
     const seed = () => crypto.getRandomValues(new Uint32Array(1))[0];
     let visit = createVisit(seed(), sourceVariant), time = 0, ambient = 0;
     let started = false, ratio = 0, visible = false, raf = 0, previous = 0;
@@ -109,7 +109,8 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
     }
 
     function render(dt = 0) {
-      const animate = !reduced.matches && started && visible;
+      // Owner choice: brand animation remains enabled with OS reduced motion.
+      const animate = started && visible;
       const state = frame(visit, time);
       ctx.save();
       ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -147,7 +148,6 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
         gazeY += (eye.y - gazeY) * amount;
       } else { gazeX = eye.x; gazeY = eye.y; }
       eye.x = gazeX; eye.y = gazeY;
-      if (reduced.matches) { eye.thanks = 0; eye.ry = 16; eye.x = 0; eye.y = 0; }
       ctx.save();
       ctx.translate(0, animate ? Math.sin(ambient * 0.67 + visit.drift) * 0.65 : 0);
       const face = new Path2D();
@@ -182,7 +182,7 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
     }
 
     function tick(now: number) {
-      if (!visible || document.hidden || reduced.matches) return;
+      if (!visible || document.hidden) return;
       raf = requestAnimationFrame(tick);
       if (previous && now - previous < 1000 / 30) return;
       const dt = previous ? Math.min((now - previous) / 1000, 0.08) : 0;
@@ -196,9 +196,8 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
       previous = 0;
       visible = ratio > 0.08 && !document.hidden;
       if (!started && ratio >= 0.45 && !document.hidden) started = true;
-      if (reduced.matches) { started = true; time = visit.duration; }
       render();
-      if (visible && started && !reduced.matches) raf = requestAnimationFrame(tick);
+      if (visible && started) raf = requestAnimationFrame(tick);
     }
     replay.current = () => {
       if (time < visit.duration) return;
@@ -207,7 +206,6 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
       sync();
     };
     function move(event: PointerEvent) {
-      if (reduced.matches) return;
       const rect = canvas!.getBoundingClientRect();
       const x = sceneView.x + (event.clientX - rect.left) / scale;
       const y = sceneView.y + (event.clientY - rect.top) / scale;
@@ -241,7 +239,7 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
     canvas.addEventListener("pointerleave", leave);
     canvas.addEventListener("pointercancel", leave);
     document.addEventListener("visibilitychange", sync);
-    reduced.addEventListener("change", sync);
+
     sprite.onload = () => render();
     notion.onload = () => render();
     resize();
@@ -253,7 +251,7 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
       canvas.removeEventListener("pointerleave", leave);
       canvas.removeEventListener("pointercancel", leave);
       document.removeEventListener("visibilitychange", sync);
-      reduced.removeEventListener("change", sync);
+
       sprite.onload = null;
       notion.onload = null;
       replay.current = () => {};
