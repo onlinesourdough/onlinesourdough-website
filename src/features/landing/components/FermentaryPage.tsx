@@ -71,6 +71,7 @@ export function FermentaryPage() {
       >
         <h2 id="fermentary-method-title">{page.whyTitle}</h2>
         <p>{page.why}</p>
+        <p>{page.example}</p>
         <ol>
           {page.steps.map((step, index) => (
             <li key={step.title}>

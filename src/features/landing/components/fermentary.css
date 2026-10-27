@@ -79,6 +79,7 @@
 }
 .fermentary-method h2 {
   margin: 0 0 20px;
+  scroll-margin-top: 96px;
   font-size: clamp(28px, 3.5vw, 34px);
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -90,6 +91,9 @@
   color: var(--muted);
   font-size: 17px;
   line-height: 1.7;
+}
+.fermentary-method > p + p {
+  margin-top: 14px;
 }
 .fermentary-method ol {
   list-style: none;

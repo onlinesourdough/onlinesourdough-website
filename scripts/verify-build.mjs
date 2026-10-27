@@ -17,6 +17,8 @@ const expectedFiles = [
   "favicon.ico",
   "assets/onlinesourdough-mark-large-pixel-v3.svg",
   "assets/fermentary-mark-v2.svg",
+  "assets/fermentary-table-icon-v4.png",
+  "assets/fermentary-table-icon-dark-v4.png",
   "assets/fermentary-cover-v3.png",
   "assets/gustav-linkedin-portrait.jpg",
   "assets/content-lofi-v3-transparent.png",
