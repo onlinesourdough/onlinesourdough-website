@@ -60,7 +60,7 @@ export const fermentaryPage = {
   ],
   founder: "I'm Gustav, the founder of onlinesourdough. I work with you on the data and context behind your business, so AI has a foundation it can use.",
   portrait: "/assets/gustav-linkedin-portrait.jpg",
-  included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access during our collaboration"],
+  included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access, including after our collaboration"],
   fit: "For solo founders and small teams, including those without a technical background. You bring your knowledge of the business and time between sessions. AI can help with the technical work, and we build and review together so you can learn to use the foundation yourself.",
   faqTitle: "Questions before you start",
   faqs: [
@@ -82,7 +82,7 @@ export const fermentaryPage = {
     },
     {
       question: "Will I need to keep working with you?",
-      answer: "The aim is for you to take the work forward without depending on me. We build in your environment, explain the setup and document our work so you or someone you choose can continue it. We agree what you can manage yourself and where further help is useful.",
+      answer: "The setup and notes stay with you. We build in your environment and document the work so you, your team or someone you choose can continue it. Further help is your choice.",
     },
   ],
 };
