@@ -576,7 +576,7 @@ export const siteData = {
       number: "02",
       title: "Resources",
       description:
-        "Understand the foundations of useful AI. Guides and methods to organise your business data and context, and start putting them to work yourself.",
+        "Guides, methods and tools for data and context. I share what I learn through my own work and with clients, so we can learn from each other.",
       cta: "Explore Resources",
       status: "Do it yourself",
       href: "https://resources.onlinesourdough.com",
