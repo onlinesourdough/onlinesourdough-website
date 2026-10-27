@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ambientTile, cells, clawdParts, clamp, createVisit, eyePath, eyeState,
   frame, missingIds, mixColor, palette, sceneView, tileLight, type Cell, type Placement,
@@ -40,7 +40,6 @@ const tileFinish = new Map(cells.map((cell) => {
 
 /** The selected tile loaf and helpers, sized for the manifesto's illustration column. */
 export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: BreadContextVariant }) {
-  const captionId = useId();
   const hostRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const replay = useRef<() => void>(() => {});
@@ -260,10 +259,9 @@ export function SourdoughScene({ sourceVariant = "records" }: { sourceVariant?: 
 
   return (
     <div ref={hostRef} className="sourdough-scene" data-source={sourceVariant}>
-      <button type="button" aria-label="Replay the tile sourdough and its helpers" aria-disabled={!complete} title={complete ? "Replay the animation" : "The helpers are gathering context"} aria-describedby={captionId} onClick={() => replay.current()}>
+      <button type="button" aria-label="Replay the tile sourdough and its helpers" aria-disabled={!complete} title={complete ? "Replay the animation" : "The helpers are gathering context"} onClick={() => replay.current()}>
         <canvas ref={canvasRef} aria-hidden="true" />
       </button>
-      <p id={captionId} className="sourdough-caption"><span>OSM · Data &amp; context</span><span aria-hidden="true">→</span><span>Your business ↔ Notion</span></p>
     </div>
   );
 }

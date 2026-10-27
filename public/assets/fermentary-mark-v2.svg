@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280" role="img" aria-labelledby="title" shape-rendering="crispEdges">
+  <title id="title">The Fermentary</title>
+  <path fill="#9B704D" d="M64 28h160v32H96v64h96v32H96v96H64z"/>
+  <g fill="#B58B63">
+    <path d="M76 40h6v6h-6zM188 44h8v4h-8zM76 136h6v6h-6zM80 220h4v8h-4z"/>
+  </g>
+</svg>
