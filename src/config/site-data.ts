@@ -12,7 +12,7 @@ export const methodFaqs = [
   },
   {
     "question": "Will I need to change my tools?",
-    "answer": "We start with the tools and environment you already use. If you replace a system later, its connections and any affected workflows need adapting and testing. Clear business definitions and context give you something to reuse through that change. The foundation stays in your environment, with access you control."
+    "answer": "We start with the tools and environment you already use. If you replace a system later, the setup and any affected workflows need adapting and testing. Your data and context give you something to build on through that change. The foundation stays in your environment, with access you control."
   },
   {
     "question": "Should I automate everything?",
@@ -42,12 +42,12 @@ export const fermentaryPage = {
   cta: "More info, terms & pricing",
   closing: "See what’s included, how we work together, and the proposed pricing and terms.",
   whyTitle: "From scattered data to shared context",
-  why: "Data is the information in your records and systems. Context explains how your business runs, what the information means and which rules matter. We map both, connect the relevant parts and make the gaps visible.",
+  why: "Data is the information in your records and systems. Context explains how your business runs, what the information means and which rules matter. We map both, make them useful to AI and identify what is missing.",
   example: "For a shop, orders and stock counts are data. How you handle returns or supplier delays is context. Together they could support customer updates, purchasing decisions and reporting, using the same business knowledge across different parts of the work.",
   steps: [
     {
       title: "Map your business",
-      description: "You show me your current setup. We map the relevant data, context, connections and gaps.",
+      description: "You show me your current setup. We map your data and context and identify what is missing.",
     },
     {
       title: "Build the foundation",
@@ -58,10 +58,10 @@ export const fermentaryPage = {
       description: "We review the work, keep context current and document the setup so you can use and develop it yourself. When a system changes, you can see what depends on it and what needs testing.",
     },
   ],
-  founder: "I'm Gustav, the founder of onlinesourdough. I work with you to map your business, connect its data and build a foundation AI can use.",
+  founder: "I'm Gustav, the founder of onlinesourdough. I work with you on the data and context behind your business, so AI has a foundation it can use.",
   portrait: "/assets/gustav-linkedin-portrait.jpg",
-  included: ["Personal onboarding and a shared roadmap", "Ongoing 1:1 working sessions", "Written advice and feedback between sessions", "Hands-on help with your own tools and software", "Full Resources access during our collaboration"],
-  fit: "For solo founders and small teams who know their business well and want AI to understand it too. You bring that knowledge and some time between sessions. We build and review together so you can use the foundation yourself and keep improving it as your business changes.",
+  included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access during our collaboration"],
+  fit: "For solo founders and small teams, including those without a technical background. You bring your knowledge of the business and time between sessions. AI can help with the technical work, and we build and review together so you can learn to use the foundation yourself.",
   faqTitle: "Questions before you start",
   faqs: [
     {
@@ -128,15 +128,15 @@ export const heroVariations = [
   },
   {
     "title": "Start with what you know. Let AI help with the work.",
-    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   },
   {
     "title": "Teach AI how your business works",
-    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   },
   {
     "title": "Useful AI, shaped around how you work",
-    "description": "I help solo founders and small teams make data and AI useful in everyday work. It starts with the data and context of your business. With that foundation, we can improve tasks, connect tools and build your own software."
+    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   }
 ];
 
@@ -207,7 +207,7 @@ export const siteData = {
         "I'm Gustav. I help solo founders and small teams bring their business data and context together so AI has something useful to work from.",
         "Data is your customer records, documents and numbers. Context is what they mean: how your business runs, what was agreed and why a decision was made.",
         "Say you run a consultancy. The same project history and service definitions could help you prepare a proposal, see recurring client questions and review how you deliver your services. Different uses of the same business knowledge.",
-        "Like a sourdough starter, the foundation needs care. When a system changes, its connections need adapting and testing; clear business context gives you something to carry forward. Explanations and notes help you or someone you choose continue the work.",
+        "Like a sourdough starter, the foundation needs care. When a system changes, the setup may need adapting and testing. Clear data and context, with explanations and notes, help you or someone you choose continue the work.",
         "Learn at your own pace through Resources, or work with me in The Fermentary. We build and review together so you can use the foundation yourself and decide where further help is useful."
       ]
     },
@@ -228,7 +228,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "New tools and models arrive all the time. But useful help depends on what AI knows about the work in front of it: your customers, your priorities and how things connect. That is the starting point I want to make clearer."
+              "text": "New tools and models arrive all the time. Useful help depends on AI having data and context about your business: your customers, your priorities and how the work is done. That is the starting point I want to make clearer."
             },
             {
               "type": "paragraph",
@@ -436,7 +436,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We gather the information the task needs from your existing notes, documents and systems. We make its meaning and your expectations clear, then decide what AI can access and do. The Onlinesourdough Method can help keep that context and the working methods together."
+              "text": "We map the relevant data and context in your existing notes, documents and systems. We make their meaning clear, then agree what AI can access and do. The Onlinesourdough Method gives this work a structure."
             },
             {
               "type": "heading",
@@ -444,7 +444,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We work on the actual task together. That may mean preparing a client handover, connecting two tools or developing your own software. Pair engineering gives us shared time to make decisions, build, test and review, with a clear next step for the work between sessions."
+              "text": "We work with your data and context directly. That may mean preparing a client handover, reviewing what AI produces or developing your own software. In sessions, we make decisions, build, test and review together, then agree what you will work on between sessions."
             },
             {
               "type": "heading",
