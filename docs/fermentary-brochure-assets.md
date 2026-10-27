@@ -3,16 +3,23 @@
 These stable public assets are consumed by the owner's existing Notion brochure:
 https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181
 
+- `public/assets/fermentary-table-minimal-v5.svg` is the current brochure icon.
+  The owner requested a much simpler symbol, closer to the existing Tasks icon:
+  a table, two chairs and a laptop in one muted brown-grey stroke on a 32-unit
+  grid. It has no scenery, shading or filled colour areas. It is an original
+  editable SVG rather than a generated illustration. The medium stroke works
+  on either page theme; the `-light.svg` and `-dark.svg` companions are explicit
+  alternatives, not automatic Notion theme switching. These supersede v4.
 - `public/assets/fermentary-table-icon-v4.png` and
   `public/assets/fermentary-table-icon-dark-v4.png` are light/dark companion
   icons derived from the existing shared-table illustration using the built-in
   imagegen tool. The square transparent icons simplify the same table, two
   chairs, laptop, coffee and sourdough into pixel contours in the site's brown
-  and cream palette. The muted dark companion is selected for Notion: its
-  cream edge and brown shapes are readable against either page theme. Notion
+  and cream palette. The muted dark companion was used for Notion: its
+  cream edge and brown shapes were readable against either page theme. Notion
   keeps one custom page icon rather than switching these variants automatically.
   The final prompt set is retained in `fermentary-icon-prompts.txt`.
-  These replace the rejected F monogram; its old versioned file remains
+  These replaced the rejected F monogram; its old versioned file remains
   available for existing references. The rejected jar draft is not shipped.
 - `public/assets/fermentary-cover-v3.png` is the selected 3:1 cover. Its background
   was generated with the built-in imagegen tool on 27 October 2026. It uses the existing
