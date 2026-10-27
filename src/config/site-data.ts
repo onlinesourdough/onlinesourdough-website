@@ -42,8 +42,8 @@ export const fermentaryPage = {
   cta: "More info, terms & pricing",
   closing: "See what’s included, how we work together, and the proposed pricing and terms.",
   whyTitle: "From scattered data to shared context",
-  why: "Data is the information in your records and systems. Context explains how your business runs, what the information means and which rules matter. We map both, make them useful to AI and identify what is missing.",
-  example: "For a shop, orders and stock counts are data. How you handle returns or supplier delays is context. Together they could support customer updates, purchasing decisions and reporting, using the same business knowledge across different parts of the work.",
+  why: "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
+  example: "We map your data and context, bring them together and identify what is missing. That gives you a foundation to build on across your business, whether you want to develop your own tools, support decisions or automate parts of the work.",
   steps: [
     {
       title: "Map your business",
@@ -205,8 +205,8 @@ export const siteData = {
       "cta": "About the method",
       "paragraphs": [
         "I'm Gustav. I help solo founders and small teams bring their business data and context together so AI has something useful to work from.",
-        "Data is your customer records, documents and numbers. Context is what they mean: how your business runs, what was agreed and why a decision was made.",
-        "Say you run a consultancy. The same project history and service definitions could help you prepare a proposal, see recurring client questions and review how you deliver your services. Different uses of the same business knowledge.",
+        "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
+        "Making both available to AI gives it a foundation to work from. You can use that foundation across your business to develop your own tools, support decisions and automate parts of the work.",
         "Like a sourdough starter, the foundation needs care. When a system changes, the setup may need adapting and testing. Clear data and context, with explanations and notes, help you or someone you choose continue the work.",
         "Learn at your own pace through Resources, or work with me in The Fermentary. We build and review together so you can use the foundation yourself and decide where further help is useful."
       ]
