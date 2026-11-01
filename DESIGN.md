@@ -392,3 +392,10 @@ is a small matte wooden pixel stand with one original mark, a mutedblue tab and
 stable stepped texture. The static peer connection is unchanged in meaning.
 The other sites and their accepted copy are approved; this follow-up is confined
 to the bread scene and its local comparison. No publication was requested.
+
+
+## Brand touchpoints · 1 November 2026
+
+Public sharing uses the 1200×630 same-origin social-preview.png, with outlined
+brand fonts and the approved marks. Social links use YouTube, LinkedIn, X
+(@_gustavonline) and GitHub; Instagram is removed by the owner’s instruction.
