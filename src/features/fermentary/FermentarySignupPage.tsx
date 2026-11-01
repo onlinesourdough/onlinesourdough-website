@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../family/ArrowIcon";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { fermentaryBrochureUrl } from "../../config/site-data";
 import { postFermentarySignup } from "./subscribe";
@@ -35,11 +36,11 @@ export function FermentarySignupPage() {
   }
 
   return <section className="fermentary-signup" aria-labelledby="details-title">
-    <a className="fermentary-signup-back" href="/fermentary">← The Fermentary</a>
+    <a className="fermentary-signup-back" href="/fermentary"><ArrowIcon direction="left" /> The Fermentary</a>
     {done ? <>
       <h1 id="details-title" ref={confirmation} tabIndex={-1}>Thank you.<br />Your details are ready.</h1>
       <p role="status">Taking you to the programme details in Notion. Check your inbox for the confirmation email and a link back.</p>
-      <a className="family-button" href={fermentaryBrochureUrl}>Open the details in Notion <span aria-hidden="true">→</span></a>
+      <a className="family-button" href={fermentaryBrochureUrl}>Open the details in Notion <span aria-hidden="true"><ArrowIcon direction="right" /></span></a>
     </> : <>
       <img className="fermentary-signup-art" src="/assets/inner-circle-lofi-v3-transparent.png" alt="" width="180" height="140" />
       <h1 id="details-title">More info,<br />terms &amp; pricing</h1>
@@ -49,7 +50,7 @@ export function FermentarySignupPage() {
         <input id="fermentary-email" name="email" type="email" required autoComplete="email" maxLength={254}
           placeholder="you@example.com" readOnly={pending} aria-describedby="fermentary-consent fermentary-status" />
         <p id="fermentary-consent">Sign up for Gustav’s newsletter and receive the Fermentary details in Notion. Unsubscribe anytime.</p>
-        <button className="family-button" type="submit" disabled={pending}>{pending ? "Sending…" : "Send me the details"} <span aria-hidden="true">→</span></button>
+        <button className="family-button" type="submit" disabled={pending}>{pending ? "Sending…" : "Send me the details"} <span aria-hidden="true"><ArrowIcon direction="right" /></span></button>
         <p id="fermentary-status" role="status">{error}</p>
       </form>
     </>}

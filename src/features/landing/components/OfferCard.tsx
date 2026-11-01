@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../family/ArrowIcon";
 import { type Offer } from "../../../config/site-data";
 import { getExternalLinkAttributes } from "../../../components/link-attributes";
 import { OfferScene } from "./OfferScene";
@@ -21,7 +22,7 @@ export function OfferCard({ offer }: { offer: Offer }) {
         <span className="book-sleeve" aria-hidden="true" />
       </span>
       <span className="offer-cta">
-        {offer.cta}<span className="offer-arrow" aria-hidden="true">→</span>
+        {offer.cta}<span className="offer-arrow" aria-hidden="true"><ArrowIcon direction="right" /></span>
       </span>
     </a>
   );

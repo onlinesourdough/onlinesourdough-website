@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../family/ArrowIcon";
 import { Link } from "@tanstack/react-router";
 import { heroVariations, siteData } from "../../../config/site-data";
 import { localReview } from "../../../family/preview";
@@ -45,14 +46,14 @@ export function LandingPage() {
         <div className="manifesto-heading">
           <h2 id="manifesto-title">{page.manifesto.title}</h2>
           {breadPreview && query.has("breadSize") ? <LivingMark tilesPerBlock={tilesPerBlock} /> : <SourdoughScene sourceVariant={sourceVariant} />}
-          {breadPreview && query.has("breadSize") && <a className="bread-preview-back" href="/?bread=compare">Sammenlign tile-størrelser ↗</a>}
+          {breadPreview && query.has("breadSize") && <a className="bread-preview-back" href="/?bread=compare">Sammenlign tile-størrelser <ArrowIcon /></a>}
         </div>
         <div className="manifesto-copy">
           {page.manifesto.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
           <Link className="manifesto-link" to="/about">
-            {page.manifesto.cta} <span aria-hidden="true">→</span>
+            {page.manifesto.cta} <span aria-hidden="true"><ArrowIcon direction="right" /></span>
           </Link>
         </div>
       </section>

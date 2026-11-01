@@ -173,7 +173,7 @@ export const siteData = {
       eyebrow: "RESOURCE MOVED",
       heading: "Agent Work Review now lives in Resources.",
       body: "You should be redirected automatically. If not, continue to the canonical Resources page.",
-      linkLabel: "Continue to Agent Work Review ↗",
+      linkLabel: "Continue to Agent Work Review",
     },
   },
   studioOffers: [
@@ -181,7 +181,7 @@ export const siteData = {
       label: "CONSULTANCY & PROJECTS",
       title: "Arc'IT AI",
       description: "Data and AI consultancy, with advice and custom projects shaped around your business.",
-      action: "Explore offer ↗",
+      action: "Explore offer",
       href: familyHref("arcitai"),
       current: false,
     },
@@ -619,11 +619,11 @@ export const siteData = {
     },
     links: [
       {
-        label: "gustavonline ↗",
+        label: "gustavonline",
         href: "https://gustavonline.com",
       },
       {
-        label: "Arc'IT AI ↗",
+        label: "Arc'IT AI",
         href: familyHref("arcitai"),
       },
     ],

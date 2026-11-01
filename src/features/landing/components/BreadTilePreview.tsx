@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../family/ArrowIcon";
 import { LivingMark } from "./LivingMark";
 import "./bread-tile-preview.css";
 
@@ -22,7 +23,7 @@ export function BreadTilePreview() {
             <h2 id={`bread-${divisions}`}>{title}</h2>
             <p>{note} · {59 * divisions ** 2} tiles</p>
             <LivingMark tilesPerBlock={divisions} />
-            <a href={`/?breadSize=${divisions}#about`}>Se på siden <span aria-hidden="true">↗</span></a>
+            <a href={`/?breadSize=${divisions}#about`}>Se på siden <span aria-hidden="true"><ArrowIcon /></span></a>
           </section>
         ))}
       </div>

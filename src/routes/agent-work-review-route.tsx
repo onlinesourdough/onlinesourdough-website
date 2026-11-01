@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { siteData } from "../config/site-data";
 import { usePageMetadata } from "../hooks/use-page-metadata";
 import { rootRoute } from "./root-route";
+import { ArrowIcon } from "../family/ArrowIcon";
 
 export const agentWorkReviewRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -34,7 +35,7 @@ function AgentWorkReviewRoute() {
           className="back-link"
           href={agentWorkReview.destination}
         >
-          {agentWorkReview.linkLabel}
+          {agentWorkReview.linkLabel} <ArrowIcon />
         </a>
       </section>
     </main>
