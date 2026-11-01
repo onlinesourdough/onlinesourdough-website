@@ -1,3 +1,4 @@
+import { ArrowIcon } from "./ArrowIcon";
 import { useState, type FormEvent, type ReactNode } from "react";
 import { BrandIcon } from "./BrandIcon";
 import { FamilyMark } from "./FamilyMark";
@@ -22,7 +23,7 @@ export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
           .map((key) => (
             <a key={key} href={familyHref(key)} target="_blank" rel="noopener noreferrer">
               <span className="family-site-mark"><FamilyMark brand={key} /></span>
-              <span className="brand-name-token" data-brand-name={key}>{labels[key]}</span> <span aria-hidden="true">↗</span>
+              <span className="brand-name-token" data-brand-name={key}>{labels[key]}</span> <span aria-hidden="true"><ArrowIcon /></span>
             </a>
           ))}
       </nav>
@@ -67,7 +68,7 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
     <h1>{subscribed ? "You’re on the list" : "Notes from the work"}</h1>
     <p>{subscribed ? "You’ll hear from me when the next note is ready." : "Sign up to receive my next note."}</p>
     <a className="family-button" href={subscribed ? "/" : "/newsletter"}>
-      {subscribed ? (brand === "onlinesourdough" ? "Explore the menu" : `Back to ${labels[brand]}`) : "Subscribe"} <span aria-hidden="true">↗</span>
+      {subscribed ? (brand === "onlinesourdough" ? "Explore the menu" : `Back to ${labels[brand]}`) : "Subscribe"} <span aria-hidden="true"><ArrowIcon /></span>
     </a>
     {localReview && <p className="review-notice">Local preview — no email has been subscribed.</p>}
   </section>;

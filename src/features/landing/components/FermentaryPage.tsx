@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../family/ArrowIcon";
 import { fermentaryPage, fermentarySignupUrl } from "../../../config/site-data";
 import "./fermentary.css";
 
@@ -50,7 +51,7 @@ export function FermentaryPage() {
       <div className="fermentary-next">
         <a className="family-button" href={fermentarySignupUrl}>
           {page.cta}
-          <span aria-hidden="true"> →</span>
+          <span aria-hidden="true"><ArrowIcon direction="right" /></span>
         </a>
       </div>
 
@@ -116,7 +117,7 @@ export function FermentaryPage() {
       <div className="fermentary-bottom-cta">
         <a className="family-button" href={fermentarySignupUrl}>
           {page.cta}
-          <span aria-hidden="true"> →</span>
+          <span aria-hidden="true"><ArrowIcon direction="right" /></span>
         </a>
         <p>{page.closing}</p>
       </div>

@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../../family/ArrowIcon";
 import { getExternalLinkAttributes } from "../../../components/link-attributes";
 import { siteData, type AboutBlock } from "../../../config/site-data";
 
@@ -87,7 +88,7 @@ export function AboutPage() {
               ))}
               {index === about.sections.length - 1 && (
                 <a className="back-link" href="/#menu">
-                  {about.backLabel} <span aria-hidden="true">→</span>
+                  {about.backLabel} <span aria-hidden="true"><ArrowIcon direction="right" /></span>
                 </a>
               )}
             </div>

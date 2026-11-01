@@ -1,3 +1,4 @@
+import { ArrowIcon } from "../../family/ArrowIcon";
 import { useEffect, useRef, useState } from "react";
 import { siteData } from "../../config/site-data";
 import { getExternalLinkAttributes } from "../link-attributes";
@@ -82,7 +83,7 @@ export function OfferSwitcher({ currentHref }: OfferSwitcherProps) {
                 <span className="path-number">{offer.label}</span>
                 <strong className="brand-name-token" data-brand-name={offer.current ? "onlinesourdough" : "arcitai"}>{offer.title}</strong>
                 <small>{offer.description}</small>
-                <span className="path-action">{offer.action}</span>
+                <span className="path-action">{offer.action}{!offer.current && <> <ArrowIcon /></>}</span>
               </a>
             );
           })}
