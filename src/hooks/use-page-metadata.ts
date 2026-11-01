@@ -14,7 +14,7 @@ export function usePageMetadata({ title, description, url, themeColor, ogTitle, 
     document.title = title;
     setMetaContent("description", description);
     setMetaContent("theme-color", themeColor);
-    setMetaContent("twitter:card", "summary");
+    setMetaContent("twitter:card", "summary_large_image");
     setMetaContent("twitter:title", title);
     setMetaContent("twitter:description", description);
     setMetaProperty("og:title", ogTitle ?? title);
