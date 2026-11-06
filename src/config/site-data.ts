@@ -326,11 +326,11 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "The Onlinesourdough Method is a reusable starting point for how you work with AI: business context, instructions, and working practices that you can carry into your existing tools. Like a sourdough starter, you adapt it to your setting and look after it as you use it. You keep control of the setup."
+              "text": "The Onlinesourdough Method brings together the foundation your AI assistant needs: relevant data, business context and reusable ways of working. Data is the material in your documents, notes and systems. Context explains how your business works and what matters. Skills guide how the assistant plans, creates and checks its work."
             },
             {
               "type": "paragraph",
-              "text": "You keep business context and working methods together so the next task has a clearer starting point. As you review the work, you update that foundation to reflect how your business actually operates."
+              "text": "Your data stays in its existing systems. You keep useful context, decisions and personal methods in a home you choose, and give the assistant access to the sources each task needs. The OSM plugin adds shared skills in the AI app you already use. Installing it does not connect every account or grant access to all your data."
             },
             {
               "type": "paragraph",
