@@ -466,7 +466,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Factory is an open-source framework for agentic engineering across different kinds of project. onlinesourdough brings the same attention to context and review into Resources and ongoing work with solo founders and small teams. The setup follows what the work needs."
+              "text": "Agentic Systems is an open-source framework for building and operating agentic systems across software development, BI, security and research. onlinesourdough brings the same attention to context and review into Resources and ongoing work with solo founders and small teams. The setup follows what the work needs."
             },
             {
               "type": "links",

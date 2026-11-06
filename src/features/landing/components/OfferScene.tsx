@@ -38,7 +38,7 @@ function Starter() {
 function Claude({ task = "sort" }: { task?: "sort" | "stir" | "check" }) {
   return (
     <g fill="#D97757" shapeRendering="crispEdges">
-      {/* Same Lobe Icons silhouette and segmented animation as the Factory. */}
+      {/* Same Lobe Icons silhouette and segmented animation as the Agentic Systems. */}
       <path d="M3 5H20.998V17.079H3ZM0 10.949H3V14.051H0Z" />
       <g className="scene-claude-arm">
         <path d="M20.998 10.949H24V14.051H20.998Z" />

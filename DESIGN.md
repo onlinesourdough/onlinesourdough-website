@@ -209,7 +209,7 @@ This section supersedes the October 21 wording and the older tonal footer mark.
   framing. No claims, pricing, timelines or service promises are imported.
 - The LinkedIn r26 banner and Gustav Online’s existing palette/pixel field are
   the exact tile references. Arc’IT’s related local hero uses clean isometric
-  geometry and the same Factory pets. No Flow credits were spent in this round.
+  geometry and the same Agentic Systems pets. No Flow credits were spent in this round.
 
 This is an unpublished preview. Source, builds and HTTP/media checks do not
 prove rendering; the earlier automatic localhost-rendering rejection still
