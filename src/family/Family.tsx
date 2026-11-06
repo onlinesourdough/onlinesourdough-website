@@ -5,6 +5,7 @@ import { FamilyMark } from "./FamilyMark";
 import { familyHref, localReview, type FamilyBrand } from "./preview";
 
 import { newsletterReceipt, submitNewsletter } from "./newsletter";
+import { siteData } from "../config/site-data";
 
 const labels = { onlinesourdough: "onlinesourdough", arcitai: "Arc’IT AI", gustavonline: "gustavonline" };
 const social = [
@@ -40,6 +41,11 @@ export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
             <>Part of <a href={familyHref("gustavonline")} target="_blank" rel="noopener noreferrer"><span className="brand-name-token" data-brand-name="gustavonline">gustavonline</span></a></>
           )}
         </p>
+        {brand === "onlinesourdough" && (
+          <p className="family-footer-credit">
+            {siteData.footer.menuCredit.prefix}{" "}<a href={siteData.footer.menuCredit.href} target="_blank" rel="noopener noreferrer">{siteData.footer.menuCredit.name}</a>{" "}{siteData.footer.menuCredit.suffix}
+          </p>
+        )}
       </div>
     </div>
   );
