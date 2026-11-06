@@ -628,6 +628,12 @@ export const siteData = {
     },
   ] satisfies Offer[],
   footer: {
+    menuCredit: {
+      prefix: "My online menu is inspired by",
+      name: "Frederik Pahuus",
+      href: "https://frederikpahuus.com/posts/15-done-the-2m-year-plan",
+      suffix: "and his content.",
+    },
     github: {
       label: "GitHub",
       href: "https://github.com/gustavonline",
