@@ -43,7 +43,7 @@ is a React application built with Vite and published through GitHub Pages.
   `src/config/site-data.ts` when it exists. Both programme CTAs open `/fermentary/details`, in the same site shell.
 
 - `/about` contains Gustav's story, the sourdough analogy, The Onlinesourdough Method, offers, the
-  method, Arc’IT AI's factory direction, key facts, and frequently asked questions.
+  method, Arc’IT AI's agentic system direction, key facts, and frequently asked questions.
 - `/agent-work-review` is a compatibility redirect to the canonical Resources
   page.
 - `/agent-work-review.md` is a small compatibility pointer to the canonical

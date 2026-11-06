@@ -136,6 +136,6 @@ describe("production copy and approved local family navigation", () => {
     const publicData = JSON.stringify(siteData);
 
     expect(publicData).not.toMatch(/\/Users\/|Downloads|saas-template/);
-    expect(publicData.replaceAll("Factory — Software & Defence", "Factory")).not.toContain("—");
+    expect(publicData.replaceAll("Agentic Systems — Software & Defence", "Agentic Systems")).not.toContain("—");
   });
 });
