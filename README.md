@@ -63,6 +63,11 @@ HTML-form request without an API key or additional backend. Only its explicit
 brochure after3.5seconds. HTTP failures, invalid responses, consent requirements
 and anti-abuse challenges keep the visitor on the form with their email intact.
 
+After reading the brochure, visitors can start by email with three short topics:
+business/first goal, current tools, and the session level/start date they are considering.
+Arrangements are agreed in writing; onboarding is the first meeting. A short
+conversation can be arranged when useful. The contact link opens an email draft.
+
 The existing Kit confirmation email confirms the newsletter subscription and
 opens the same brochure. Its owner-authorised live test was verified on22October;
 this release’s browser success/error tests use intercepted responses and create

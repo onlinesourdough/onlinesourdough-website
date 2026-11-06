@@ -291,3 +291,5 @@
   .fermentary-faq summary { min-height: 44px; padding-block: 8px; }
   .fermentary-faq details { padding-block: 10px; }
 }
+
+.fermentary-email-link { display:inline-block; margin-top:14px; color:var(--text); text-decoration:underline; text-underline-offset:4px; }

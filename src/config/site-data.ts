@@ -3,9 +3,23 @@ import { familyHref } from "../family/preview";
 export const fermentaryBrochureUrl = "https://app.notion.com/p/3be6d2e17f5680d9958bcf322dcef181";
 export const fermentarySignupUrl = "/fermentary/details";
 export const fermentaryFormAction = "https://app.kit.com/forms/10082012/subscriptions";
+const fermentaryContactBody = [
+  "Hi Gustav,", "",
+  "I'd like to explore working together in The Fermentary.", "",
+  "1. My business and what I'd like help with first:", "",
+  "2. The tools I use today:", "",
+  "3. The session level and start date I'm considering:", "",
+].join("\r\n");
+export const fermentaryContactUrl = "mailto:hello@gustavonline.com?subject="
+  + encodeURIComponent("The Fermentary") + "&body=" + encodeURIComponent(fermentaryContactBody);
 const fermentaryHref = "/fermentary";
+const fermentaryGettingStartedAnswer = "Read the brochure, then email me a few lines about your business, what you would like help with, the tools you use and when you would like to start. We agree the session level and practical arrangements in writing. Our first meeting is your onboarding, where we map your business and agree a first roadmap. We can arrange a short conversation if it helps clarify something.";
 
 export const methodFaqs = [
+  {
+    "question": "How do we get started with The Fermentary?",
+    "answer": fermentaryGettingStartedAnswer
+  },
   {
     "question": "Do I need to know how to code?",
     "answer": "No. AI agents can write much of the code involved. Your knowledge of the business gives that work direction. We focus on the data and context AI needs, and you choose how much of the technical work to take on yourself."
@@ -40,7 +54,8 @@ export const fermentaryPage = {
     pendingDescription: "A walkthrough of the approach and how we work together.",
   },
   cta: "More info, terms & pricing",
-  closing: "See what’s included, how we work together, and the proposed pricing and terms.",
+  closing: "Read the brochure for proposed pricing and terms. We clarify your goals and agree the practical arrangements by email before your onboarding.",
+  contactLabel: "Email me about The Fermentary",
   whyTitle: "From scattered data to shared context",
   why: "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
   example: "We map your data and context, bring them together and identify what is missing. That gives you a foundation to build on across your business, whether you want to develop your own tools, support decisions or automate parts of the work.",
@@ -66,7 +81,7 @@ export const fermentaryPage = {
   faqs: [
     {
       question: "How do we get started?",
-      answer: "Start with the programme details, including the proposed pricing and terms. If it looks like a fit, we begin with personal onboarding: mapping your current setup and agreeing a shared roadmap for the foundation.",
+      answer: fermentaryGettingStartedAnswer,
     },
     {
       question: "What happens between sessions?",

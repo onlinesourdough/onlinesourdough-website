@@ -1,5 +1,5 @@
 import { ArrowIcon } from "../../../family/ArrowIcon";
-import { fermentaryPage, fermentarySignupUrl } from "../../../config/site-data";
+import { fermentaryPage, fermentarySignupUrl, fermentaryContactUrl } from "../../../config/site-data";
 import "./fermentary.css";
 
 /** Only a configured video can create a player; an unfilmed video stays a still. */
@@ -120,6 +120,7 @@ export function FermentaryPage() {
           <span aria-hidden="true"><ArrowIcon direction="right" /></span>
         </a>
         <p>{page.closing}</p>
+        <a className="fermentary-email-link" href={fermentaryContactUrl}>{page.contactLabel}</a>
       </div>
     </>
   );
