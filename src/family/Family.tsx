@@ -5,7 +5,6 @@ import { FamilyMark } from "./FamilyMark";
 import { familyHref, localReview, type FamilyBrand } from "./preview";
 
 import { newsletterReceipt, submitNewsletter } from "./newsletter";
-import { siteData } from "../config/site-data";
 
 const labels = { onlinesourdough: "onlinesourdough", arcitai: "Arc’IT AI", gustavonline: "gustavonline" };
 const social = [
@@ -15,7 +14,10 @@ const social = [
   ["GitHub", "https://github.com/gustavonline", "github"],
 ];
 
-export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
+type FooterCredit = { prefix: string; name: string; href: string; suffix?: string; italic?: boolean };
+
+export function FamilyFooter({ brand, credit }: { brand: FamilyBrand; credit?: FooterCredit }) {
+  const creditText = credit && <>{credit.prefix}{" "}<a href={credit.href} target="_blank" rel="noopener noreferrer">{credit.name}</a>{credit.suffix ? ` ${credit.suffix}` : ""}</>;
   return (
     <div className="family-footer">
       <nav className="family-sites" aria-label="My other sites">
@@ -41,11 +43,7 @@ export function FamilyFooter({ brand }: { brand: FamilyBrand }) {
             <>Part of <a href={familyHref("gustavonline")} target="_blank" rel="noopener noreferrer"><span className="brand-name-token" data-brand-name="gustavonline">gustavonline</span></a></>
           )}
         </p>
-        {brand === "onlinesourdough" && (
-          <p className="family-footer-credit">
-            {siteData.footer.menuCredit.prefix}{" "}<a href={siteData.footer.menuCredit.href} target="_blank" rel="noopener noreferrer">{siteData.footer.menuCredit.name}</a>{" "}{siteData.footer.menuCredit.suffix}
-          </p>
-        )}
+        {credit && <p className="family-footer-credit">{credit.italic ? <em>{creditText}</em> : creditText}</p>}
       </div>
     </div>
   );
