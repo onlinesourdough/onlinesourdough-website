@@ -22,6 +22,11 @@ npm run build
 npm run security:check
 ```
 
+The lockfile temporarily pins the build tools’ transitive `picomatch` to
+`@ryotsu/picomatch@4.0.7-a` for [CVE-2026-112366](https://github.com/advisories/GHSA-fc5q-39xc-vjpf).
+Return to the upstream package once a fixed npm release is available. Regenerate
+the lockfile and repeat the full release checks before removing the override.
+
 Use focused unit tests for deterministic configuration and route/build rules.
 Use the real browser for layout, navigation, hash scrolling, theme, keyboard,
 responsive, console, network, and overflow evidence.
