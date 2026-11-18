@@ -44,8 +44,8 @@ export const methodFaqs = [
 
 export const fermentaryPage = {
   title: "The Fermentary | onlinesourdough",
-  heading: "A data and context foundation AI can actually use",
-  introduction: "The Fermentary is an ongoing 1:1 collaboration for solo founders and small teams. Together we map your business, bring its data and context together, and build a foundation in the environment you already use.",
+  heading: "Build something useful with AI. Learn to keep it going.",
+  introduction: "Bring a piece of work you want to improve. In ongoing 1:1 sessions, we organise the data and context AI needs, put it to work in your environment and review the result together.",
   video: {
     youtubeId: "",
     title: "The Fermentary: making data and AI useful in your business",
@@ -58,7 +58,7 @@ export const fermentaryPage = {
   contactLabel: "Email me about The Fermentary",
   whyTitle: "From scattered data to shared context",
   why: "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
-  example: "We map your data and context, bring them together and identify what is missing. That gives you a foundation to build on across your business, whether you want to develop your own tools, support decisions or automate parts of the work.",
+  example: "Say you want a better way to follow up on customer enquiries. We can start with the messages, your priorities and the rules you use to decide who should reply. You can review what AI prepares, improve the setup and use the same foundation on the next piece of work.",
   steps: [
     {
       title: "Map your business",
@@ -75,7 +75,7 @@ export const fermentaryPage = {
   ],
   founder: "I'm Gustav, the founder of onlinesourdough. I work with you on the data and context behind your business, so AI has a foundation it can use.",
   portrait: "/assets/gustav-linkedin-portrait.jpg",
-  included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access, including after our collaboration"],
+  included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access during the collaboration and for 30 days after the agreed end date for new agreements"],
   fit: "For solo founders and small teams, including those without a technical background. You bring your knowledge of the business and time between sessions. AI can help with the technical work, and we build and review together so you can learn to use the foundation yourself.",
   faqTitle: "Questions before you start",
   faqs: [
@@ -155,6 +155,12 @@ export const heroVariations = [
   }
 ];
 
+const homeHero = {
+  title: "Build what your business needs with AI",
+  description:
+    "For solo founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.",
+};
+
 export const siteData = {
   brand: "onlinesourdough",
   themeStorageKey: "onlinesourdough-theme",
@@ -164,15 +170,13 @@ export const siteData = {
   seo: {
     siteUrl: "https://onlinesourdough.com",
     themeColor: "#f8f2e8",
-    title: "Valuable AI starts with your data and business context | onlinesourdough",
-    description:
-      "I help solo founders and small teams build a data and context foundation AI can use.",
+    title: `${homeHero.title} | onlinesourdough`,
+    description: homeHero.description,
     aboutTitle: "Useful foundations for working with data and AI | onlinesourdough",
     aboutDescription:
       "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
-    ogTitle: "Valuable AI starts with your data and business context | onlinesourdough",
-    ogDescription:
-      "I help solo founders and small teams build a data and context foundation AI can use.",
+    ogTitle: `${homeHero.title} | onlinesourdough`,
+    ogDescription: homeHero.description,
   },
   navigation: {
     offers: "Offers",
@@ -211,26 +215,24 @@ export const siteData = {
     },
   ] satisfies StudioOffer[],
   page: {
-    hero: heroVariations[0],
+    hero: homeHero,
     menu: {
       ariaLabel: "onlinesourdough menu",
     },
     manifesto: {
-      "title": "Make data and AI work with you",
+      "title": "Start with a piece of work you know well",
       "cta": "About the method",
       "paragraphs": [
-        "I'm Gustav. I help solo founders and small teams bring their business data and context together so AI has something useful to work from.",
-        "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
-        "Making both available to AI gives it a foundation to work from. You can use that foundation across your business to develop your own tools, support decisions and automate parts of the work.",
-        "Like a sourdough starter, the foundation needs care. When a system changes, the setup may need adapting and testing. Clear data and context, with explanations and notes, help you or someone you choose continue the work.",
-        "Learn at your own pace through Resources, or work with me in The Fermentary. We build and review together so you can use the foundation yourself and decide where further help is useful."
+        "Say you want to turn customer enquiries into a weekly list of follow-ups. The enquiries are your data. What counts as urgent, who should reply and what a good response looks like are your business context.",
+        "Give AI that context and it can help prepare a list you can review. As you notice what it gets right and where it needs more guidance, you can improve the setup and reuse what you've learned in other parts of the business.",
+        "I'm Gustav. Start on your own with Resources, or bring a piece of work to The Fermentary and we'll build the first version together."
       ]
     },
     about: {
       "title": "Useful foundations for working with data and AI.",
       "paragraphs": [
-        "I help solo founders and small teams make data and AI useful in everyday work.",
-        "Learn the foundations through Resources, or work with me in The Fermentary. We develop the data and context behind your business and use AI to build useful ways of working."
+        "Pick a piece of work you want to improve. Bring the data and what you know about how the work is done, then use AI to help build or improve something you can check yourself.",
+        "Start on your own with Resources, or bring the work to The Fermentary and we’ll build and review it together."
       ],
       "sections": [
         {
@@ -578,7 +580,7 @@ export const siteData = {
     {
       number: "01",
       title: "Content",
-      description: "I share what I’m learning from using data and AI in my own business. Ideas, experiments and lessons you can bring into your work.",
+      description: "Find an idea worth trying. See how I use data and AI in my own business and pick something you can adapt to yours.",
       cta: "Watch on YouTube",
       status: "Follow along",
       href: "https://www.youtube.com/@gustavonline",
@@ -591,7 +593,7 @@ export const siteData = {
       number: "02",
       title: "Resources",
       description:
-        "Guides, methods and tools for data and context. I share what I learn through my own work and with clients, so we can learn from each other.",
+        "Try AI on a real task yourself. Use guides, methods and tools to organise what it needs to know about your business.",
       cta: "Explore Resources",
       status: "Do it yourself",
       href: "https://resources.onlinesourdough.com",
@@ -604,7 +606,7 @@ export const siteData = {
       number: "03",
       title: "The Fermentary",
       description:
-        "An ongoing 1:1 collaboration to make data and AI useful in your business. We build the foundation, work through decisions and develop useful solutions together.",
+        "Build a setup you can keep improving. In ongoing 1:1 sessions, we organise your data and business context and put it to work together.",
       cta: "Explore The Fermentary",
       status: "Done with you",
       href: fermentaryHref,
@@ -617,7 +619,7 @@ export const siteData = {
       number: "04",
       title: "Complete Bake",
       description:
-        "Custom data and AI projects, taken care of for you. Through Arc’IT AI, I bring your ideas from a clear brief to a working solution you can use and build on.",
+        "Put a working solution into use. Bring the problem you want solved, and Arc’IT AI takes care of the agreed project from scoping to rollout.",
       cta: "Explore custom projects",
       status: "Done for you",
       href: familyHref("arcitai"),

@@ -80,7 +80,7 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
     <section className="family-newsletter" aria-labelledby="newsletter-title">
       <h1 id="newsletter-title">Notes from<br />the work</h1>
       <p className="newsletter-byline">My newsletter. I’m Gustav Anderson.</p>
-      <p>I share ideas, experiments and lessons from my own work with data, AI and agentic engineering, including what helps AI understand the business it is working in.</p>
+      <p>Get ideas and lessons from my projects with data, AI and software. Take what fits the work you’re doing.</p>
       <form className="family-signup" onSubmit={submit} aria-busy={pending}>
         <label htmlFor="newsletter-email">Email address</label>
         <div className="family-form-row">

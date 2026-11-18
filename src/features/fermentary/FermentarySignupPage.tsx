@@ -1,6 +1,7 @@
 import { ArrowIcon } from "../../family/ArrowIcon";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { fermentaryBrochureUrl } from "../../config/site-data";
+import { localReview, previewSubmission } from "../../family/preview";
 import { postFermentarySignup } from "./subscribe";
 import "./signup.css";
 
@@ -14,6 +15,7 @@ export function FermentarySignupPage() {
   useEffect(() => {
     if (!done) return;
     confirmation.current?.focus();
+    if (localReview) return;
     const timer = window.setTimeout(() => window.location.assign(fermentaryBrochureUrl), 3500);
     return () => window.clearTimeout(timer);
   }, [done]);
@@ -26,7 +28,8 @@ export function FermentarySignupPage() {
     setError("");
     const email = String(new FormData(event.currentTarget).get("email") ?? "");
     try {
-      await postFermentarySignup(email);
+      if (localReview) await previewSubmission();
+      else await postFermentarySignup(email);
       setDone(true);
     } catch {
       submitting.current = false;
@@ -39,7 +42,9 @@ export function FermentarySignupPage() {
     <a className="fermentary-signup-back" href="/fermentary"><ArrowIcon direction="left" /> The Fermentary</a>
     {done ? <>
       <h1 id="details-title" ref={confirmation} tabIndex={-1}>Thank you.<br />Your details are ready.</h1>
-      <p role="status">Taking you to the programme details in Notion. Check your inbox for the confirmation email and a link back.</p>
+      <p role="status">{localReview
+        ? "Preview complete. No email was sent."
+        : "Taking you to the programme details in Notion. Check your inbox for the confirmation email and a link back."}</p>
       <a className="family-button" href={fermentaryBrochureUrl}>Open the details in Notion <span aria-hidden="true"><ArrowIcon direction="right" /></span></a>
     </> : <>
       <img className="fermentary-signup-art" src="/assets/inner-circle-lofi-v3-transparent.png" alt="" width="180" height="140" />
@@ -49,7 +54,9 @@ export function FermentarySignupPage() {
         <label htmlFor="fermentary-email">Email address</label>
         <input id="fermentary-email" name="email" type="email" required autoComplete="email" maxLength={254}
           placeholder="you@example.com" readOnly={pending} aria-describedby="fermentary-consent fermentary-status" />
-        <p id="fermentary-consent">Sign up for Gustav’s newsletter and receive the Fermentary details in Notion. Unsubscribe anytime.</p>
+        <p id="fermentary-consent">{localReview
+          ? "This preview simulates the signup."
+          : "Sign up for Gustav’s newsletter and receive the Fermentary details in Notion. Unsubscribe anytime."}</p>
         <button className="family-button" type="submit" disabled={pending}>{pending ? "Sending…" : "Send me the details"} <span aria-hidden="true"><ArrowIcon direction="right" /></span></button>
         <p id="fermentary-status" role="status">{error}</p>
       </form>
