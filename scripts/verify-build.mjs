@@ -9,8 +9,6 @@ const expectedFiles = [
   "fermentary/details/index.html",
   "newsletter/index.html",
   "newsletter/thank-you/index.html",
-  "agent-work-review/index.html",
-  "agent-work-review.md",
   "404.html",
   ".nojekyll",
   "CNAME",
@@ -36,11 +34,9 @@ const expectedFiles = [
 
 await Promise.all(expectedFiles.map((path) => access(fileURLToPath(new URL(path, distUrl)))));
 
-const [indexHtml, aboutHtml, reviewHtml, reviewPointer, sitemap, cname] = await Promise.all([
+const [indexHtml, aboutHtml, sitemap, cname] = await Promise.all([
   readFile(new URL("index.html", distUrl), "utf8"),
   readFile(new URL("about/index.html", distUrl), "utf8"),
-  readFile(new URL("agent-work-review/index.html", distUrl), "utf8"),
-  readFile(new URL("agent-work-review.md", distUrl), "utf8"),
   readFile(new URL("sitemap.xml", distUrl), "utf8"),
   readFile(new URL("CNAME", distUrl), "utf8"),
 ]);
@@ -49,19 +45,12 @@ assertIncludes(indexHtml, '<link rel="canonical" href="https://onlinesourdough.c
 assertIncludes(indexHtml, 'href="/assets/onlinesourdough-mark-large-pixel-v3.svg"');
 assertIncludes(aboutHtml, '<link rel="canonical" href="https://onlinesourdough.com/about/"');
 assertIncludes(aboutHtml, "<title>Useful foundations for working with data and AI | onlinesourdough</title>");
-assertIncludes(
-  reviewHtml,
-  '<link rel="canonical" href="https://resources.onlinesourdough.com/agent-work-review"',
-);
-assertIncludes(reviewHtml, "<title>Agent Work Review has moved | onlinesourdough</title>");
-assertIncludes(
-  reviewHtml,
-  '<meta http-equiv="refresh" content="0;url=https://resources.onlinesourdough.com/agent-work-review">',
-);
-assertIncludes(reviewPointer, "https://resources.onlinesourdough.com/agent-work-review.md");
-assertExcludes(reviewPointer, "# Agent Work Review runbook");
 assertExcludes(sitemap, "https://onlinesourdough.com/agent-work-review/");
 assertExcludes(sitemap, "https://onlinesourdough.com/agent-work-review.md");
+for (const path of ["agent-work-review/index.html", "agent-work-review.md"]) {
+  const exists = await access(new URL(path, distUrl)).then(() => true, () => false);
+  if (exists) throw new Error(`Retired artifact is still published: ${path}`);
+}
 
 if (indexHtml.includes("/src/main.tsx")) {
   throw new Error("Production HTML still references the Vite source entrypoint.");
