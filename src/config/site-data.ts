@@ -183,18 +183,6 @@ export const siteData = {
     menu: "Menu",
     about: "About",
   },
-  redirects: {
-    agentWorkReview: {
-      destination: "https://resources.onlinesourdough.com/agent-work-review",
-      markdownDestination: "https://resources.onlinesourdough.com/agent-work-review.md",
-      title: "Agent Work Review has moved | onlinesourdough",
-      description: "Agent Work Review now lives in onlinesourdough Resources.",
-      eyebrow: "RESOURCE MOVED",
-      heading: "Agent Work Review now lives in Resources.",
-      body: "You should be redirected automatically. If not, continue to the canonical Resources page.",
-      linkLabel: "Continue to Agent Work Review",
-    },
-  },
   studioOffers: [
     {
       label: "CONSULTANCY & PROJECTS",

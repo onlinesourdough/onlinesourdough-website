@@ -23,12 +23,11 @@ src/
 └── styles.css               approved tokens and responsive presentation
 public/
 ├── assets/                  selected runtime art, logo, and fonts
-├── agent-work-review.md     compatibility pointer to Resources
 ├── CNAME                    custom-domain authority
 ├── robots.txt
 └── sitemap.xml
 scripts/
-└── prepare-pages.mjs         direct routes, external redirect, and fallback preparation
+└── prepare-pages.mjs         direct routes and fallback preparation
 ```
 
 `src/config/site-data.ts` is the one editable source for public copy, links,
@@ -46,11 +45,6 @@ route files own route metadata wiring only.
 
 External destinations own their content and availability. A failed external
 destination must not prevent this site from rendering.
-
-Resources owns the Agent Work Review public page and Markdown distribution.
-This site keeps only compatibility paths: a static HTML meta refresh with a
-client-side redirect fallback, and a small Markdown pointer. Neither path reads
-session history or reports, submits data, or duplicates the review method.
 
 ## Deliberate non-goals
 
@@ -75,13 +69,10 @@ thank-you state and a fixed Notion redirect. A server-required consent/challenge
 is never treated as success. Email confirmation and its brochure link remain
 owned by the existing Kit form. The details route is noindex.
 
-TanStack Router owns `/`, `/about`, and the `/agent-work-review` compatibility
-route. The build script copies the SPA shell to `dist/about/index.html`, writes
-the Resources canonical metadata and meta refresh into
-`dist/agent-work-review/index.html`, and copies the shell to `dist/404.html`
-for unknown-path fallback. Vite copies the small
-`public/agent-work-review.md` migration pointer directly to the production
-root.
+TanStack Router owns the active landing, About, newsletter and Fermentary routes.
+The build prepares direct-route HTML and copies the shell to `dist/404.html`
+for unknown-path fallback. Withdrawn review paths have no route, redirect or
+Markdown artifact and return GitHub Pages' HTTP 404.
 
 Root-relative public paths are required by the production custom-domain
 context. Development and production preview checks must therefore confirm

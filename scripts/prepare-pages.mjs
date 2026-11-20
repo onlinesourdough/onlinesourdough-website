@@ -41,13 +41,7 @@ const directPages = [
       "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
     url: "https://onlinesourdough.com/about/",
   },
-  {
-    directory: "agent-work-review",
-    title: "Agent Work Review has moved | onlinesourdough",
-    description: "Agent Work Review now lives in onlinesourdough Resources.",
-    url: "https://resources.onlinesourdough.com/agent-work-review",
-    redirect: "https://resources.onlinesourdough.com/agent-work-review",
-  },
+
 ];
 
 const indexHtml = await readFile(indexPath, "utf8");
@@ -63,7 +57,7 @@ for (const page of directPages) {
   }
   await writeFile(
     new URL("index.html", directoryUrl),
-    page.redirect ? withExternalRedirect(pageHtml, page.redirect) : pageHtml,
+    pageHtml,
   );
 }
 await copyFile(indexPath, notFoundPath);
@@ -79,11 +73,6 @@ function withPageMetadata(html, page) {
     .replace(/(<meta\s+property="og:url"\s+content=")[^"]*(")/, `$1${escapeAttribute(page.url)}$2`)
     .replace(/(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, `$1${escapeAttribute(page.title)}$2`)
     .replace(/(<meta\s+name="twitter:description"\s+content=")[^"]*(")/, `$1${escapeAttribute(page.description)}$2`);
-}
-
-function withExternalRedirect(html, destination) {
-  const refresh = `<meta http-equiv="refresh" content="0;url=${escapeAttribute(destination)}">`;
-  return html.replace("<head>", `<head>\n    ${refresh}`);
 }
 
 function escapeHtml(value) {

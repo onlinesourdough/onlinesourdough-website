@@ -42,13 +42,10 @@ Deployment succeeds only when the Pages job reports success. Then smoke-test:
 
 - `https://onlinesourdough.com/`
 - `https://onlinesourdough.com/about/`
-- `https://onlinesourdough.com/agent-work-review/` reaches the Resources page
-- `https://onlinesourdough.com/agent-work-review.md` is only the small Resources pointer
-- the Resources page and Markdown destinations return successfully
+- the withdrawn `/agent-work-review/` and `/agent-work-review.md` addresses return 404
 - the selected logo, font, and four menu-image responses
 - Menu/About hashes and back navigation
 - Offers open, outside-click, and Escape behavior
-- Agent Work Review redirect metadata, final destination, and Markdown pointer
 - no retained review page, canonical runbook copy, collection, or submission behavior
 - light/dark theme and mobile layout
 - console, failed requests, and horizontal overflow

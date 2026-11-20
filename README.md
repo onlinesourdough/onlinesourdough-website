@@ -44,10 +44,6 @@ is a React application built with Vite and published through GitHub Pages.
 
 - `/about` contains Gustav's story, the sourdough analogy, The Onlinesourdough Method, offers, the
   method, Arc’IT AI's agentic system direction, key facts, and frequently asked questions.
-- `/agent-work-review` is a compatibility redirect to the canonical Resources
-  page.
-- `/agent-work-review.md` is a small compatibility pointer to the canonical
-  Resources runbook.
 - A shared header provides offer switching, page navigation, and light/dark
   theme control.
 - A shared ecosystem footer links to gustavonline and Arc'IT AI, with matching
@@ -101,8 +97,7 @@ until a real product responsibility requires them.
 - `src/styles.css` maps the approved design tokens and responsive behavior.
 - `public/assets/` contains only the selected menu art, logo, fonts, and font
   license migrated from the approved design set.
-- `scripts/prepare-pages.mjs` creates direct Pages routes, the Agent Work Review
-  compatibility redirect, and fallback output.
+- `scripts/prepare-pages.mjs` creates direct Pages routes and fallback output.
 
 See [architecture](docs/architecture.md) for boundaries and
 [delivery](docs/delivery.md) for CI, deployment, verification, and rollback.
@@ -127,27 +122,14 @@ npm run build
 npm run security:check
 ```
 
-`npm run build` typechecks, builds the production bundle, and prepares
-`dist/about/index.html`, the compatibility redirect at
-`dist/agent-work-review/index.html`, `dist/404.html`, and `dist/.nojekyll` for
-GitHub Pages. Vite copies the small Markdown compatibility pointer to
-`dist/agent-work-review.md`. Root-relative `/assets/...` paths are intentional:
-the CNAME makes the custom domain the production root.
+`npm run build` typechecks, builds the production bundle, and prepares direct
+routes, `dist/404.html`, and `dist/.nojekyll` for GitHub Pages. Root-relative
+`/assets/...` paths are intentional: the CNAME makes the custom domain the
+production root.
 
-## Agent Work Review migration
-
-Agent Work Review is owned by its
-[canonical repository](https://github.com/onlinesourdough/Agent-Work-Review),
-while Resources owns its public
-[entry point](https://resources.onlinesourdough.com/agent-work-review) and
-[Markdown runbook](https://resources.onlinesourdough.com/agent-work-review.md).
-The main site no longer owns or duplicates that content.
-
-The old main-site URLs remain only as migration aids: the HTML route uses a
-static meta refresh plus a client-side fallback, and the old Markdown route
-contains a short pointer. GitHub Pages cannot emit an origin-level HTTP 301
-from this repository, so both compatibility artifacts must stay small and must
-name the Resources destinations explicitly.
+Agent Work Review was withdrawn at the owner's request on 20 November 2026.
+Its route, Markdown pointer and redirects are removed. The separate repository
+is private and archived; do not republish the feature.
 
 ## Deployment and recovery
 
@@ -155,8 +137,8 @@ name the Resources destinations explicitly.
 `.github/workflows/deploy.yml` builds and deploys `main` to GitHub Pages. The
 runtime configuration is public and contains no application secrets.
 
-After deployment, verify the landing and About routes, both Agent Work Review
-migration paths, navigation and theme behavior, asset responses, console
+After deployment, verify the landing and About routes, the withdrawn addresses
+returning 404, navigation and theme behavior, asset responses, console
 errors, and horizontal overflow on the custom domain. The practical rollback
 is to revert the release commit on `main`; the resulting workflow rebuilds and
 redeploys the previous repository state.
