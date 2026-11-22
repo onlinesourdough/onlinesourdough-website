@@ -22,6 +22,7 @@ export function usePageMetadata({ title, description, url, themeColor, ogTitle, 
     setMetaProperty("og:type", "website");
     setMetaProperty("og:url", url);
     setCanonicalUrl(url);
+    updateJsonLd(title, description, url);
   }, [description, ogDescription, ogTitle, themeColor, title, url]);
 }
 
@@ -55,4 +56,27 @@ function setCanonicalUrl(url: string) {
   }
 
   canonicalLink.setAttribute("href", url);
+}
+
+function updateJsonLd(title: string, description: string, url: string) {
+  const script = document.querySelector<HTMLScriptElement>('script#seo-jsonld[type="application/ld+json"]');
+  if (!script) return;
+
+  try {
+    const data = JSON.parse(script.textContent || "{}");
+    const webPage = Array.isArray(data["@graph"])
+      ? data["@graph"].find((item: Record<string, unknown>) => item["@type"] === "WebPage")
+      : undefined;
+    if (!webPage) return;
+    webPage["@id"] = `${url}#webpage`;
+    webPage.url = url;
+    webPage.name = title;
+    webPage.description = description;
+    script.textContent = JSON.stringify(data)
+      .replaceAll("<", "\\u003c")
+      .replaceAll(">", "\\u003e")
+      .replaceAll("&", "\\u0026");
+  } catch {
+    // Keep the existing structured data if it cannot be parsed at runtime.
+  }
 }
