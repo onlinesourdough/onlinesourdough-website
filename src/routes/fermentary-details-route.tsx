@@ -12,7 +12,7 @@ export const fermentaryDetailsRoute = createRoute({
 function FermentaryDetailsRoute() {
   usePageMetadata({
     title: "The Fermentary — info, terms & pricing | onlinesourdough",
-    description: "Get the Fermentary programme details, terms and proposed pricing, and join Gustav’s newsletter.",
+    description: "Get the Fermentary programme details, terms and pricing, and join Gustav’s newsletter.",
     url: "https://onlinesourdough.com/fermentary/details/",
     themeColor: "#f8f2e8",
   });

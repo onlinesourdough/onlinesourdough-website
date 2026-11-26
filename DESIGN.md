@@ -134,7 +134,7 @@ The homepage now says “Make data and AI work with you”, following Gustav’s
 explicit preference for collaboration. Local `?copy=2`, `?copy=3` and `?copy=4`
 show three original alternatives informed by Town's business-context angle.
 All retain the accepted first-person
-paragraph about solo founders and small teams. About begins with “Useful
+paragraph about founders and small teams. About begins with “Useful
 foundations for working with data and AI.”, without the old eyebrow or repeated
 tagline. Its final menu link sits in the closing text column. Keep personal
 positioning generic and grounded in the work; use founder if a role is needed,
@@ -192,7 +192,7 @@ The owner requested a thorough inventory and Opus 5.5 High review before edits.
 That review is recorded in the workspace outputs/family-design-plan-2026-10-22.
 This section supersedes the October 21 wording and the older tonal footer mark.
 
-- Address solo founders and small teams. Data and business context are the
+- Address founders and small teams. Data and business context are the
   foundation for useful AI in everyday work. Resources is do it yourself;
   The Fermentary is ongoing 1:1 collaboration, done with you; Complete Bake
   is custom project work through Arc’IT, done for you. Do not gate it by company
@@ -246,7 +246,7 @@ The two onlinesourdough paths are Resources for independent work and The Ferment
 for ongoing hybrid collaboration. Personal onboarding, reusable context, a shared
 roadmap, live working sessions, written advice and feedback, and Resources belong together.
 Do not revert to the superseded fixed six-week proposal or invent a meeting count,
-price, support promise or measured savings. The brochure retains proposed terms.
+price, support promise or measured savings. The brochure holds the current pricing and terms (USD, DKK for Danish companies, no minimum term).
 
 The approved four-book menu remains: Content introduces Gustav's work, Resources
 and The Fermentary are the two core paths, and Complete Bake points to Arc’IT for
@@ -411,4 +411,4 @@ to the bread scene and its local comparison. No publication was requested.
 
 Public sharing uses the 1200×630 same-origin social-preview.png, with outlined
 brand fonts and the approved marks. Social links use YouTube, LinkedIn, X
-(@_gustavonline) and GitHub; Instagram is removed by the owner’s instruction.
+(@gustavonline) and GitHub; Instagram is removed by the owner’s instruction.
