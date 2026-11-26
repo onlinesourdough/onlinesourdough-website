@@ -1,6 +1,6 @@
 # onlinesourdough
 
-> Practical ways for solo founders and small teams to make data and AI useful in everyday work.
+> Practical ways for founders and small teams to make data and AI useful in everyday work.
 
 The site shares The Onlinesourdough Method, free resources, and ongoing 1:1 collaboration through The Fermentary.
 
@@ -18,5 +18,5 @@ The site shares The Onlinesourdough Method, free resources, and ongoing 1:1 coll
 - [Gustav Anderson](https://gustavonline.com/)
 - [YouTube](https://www.youtube.com/@gustavonline)
 - [LinkedIn](https://www.linkedin.com/in/gustavandersonn/)
-- [X](https://x.com/_gustavonline)
+- [X](https://x.com/gustavonline)
 - [GitHub](https://github.com/onlinesourdough)

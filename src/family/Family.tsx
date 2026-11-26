@@ -9,7 +9,7 @@ import { newsletterReceipt, submitNewsletter } from "./newsletter";
 const labels = { onlinesourdough: "onlinesourdough", arcitai: "Arc’IT AI", gustavonline: "gustavonline" };
 const social = [
   ["YouTube", "https://www.youtube.com/@gustavonline", "youtube"],
-  ["X", "https://x.com/_gustavonline", "x"],
+  ["X", "https://x.com/gustavonline", "x"],
   ["LinkedIn", "https://www.linkedin.com/in/gustavandersonn/", "linkedin"],
   ["GitHub", "https://github.com/gustavonline", "github"],
 ];
@@ -69,8 +69,8 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
     }
   };
   if (thanks) return <section className="family-newsletter family-thanks">
-    <h1>{subscribed ? "You’re on the list" : "Notes from the work"}</h1>
-    <p>{subscribed ? "You’ll hear from me when the next note is ready." : "Sign up to receive my next note."}</p>
+    <h1>{subscribed ? "You are on the list" : "Notes from the work"}</h1>
+    <p>{subscribed ? "You will hear from me when the next note is ready." : "Sign up to receive my next note."}</p>
     <a className="family-button" href={subscribed ? "/" : "/newsletter"}>
       {subscribed ? (brand === "onlinesourdough" ? "Explore the menu" : `Back to ${labels[brand]}`) : "Subscribe"} <span aria-hidden="true"><ArrowIcon /></span>
     </a>
@@ -79,8 +79,8 @@ export function NewsletterContent({ brand, children }: { brand: FamilyBrand; chi
   return <>
     <section className="family-newsletter" aria-labelledby="newsletter-title">
       <h1 id="newsletter-title">Notes from<br />the work</h1>
-      <p className="newsletter-byline">My newsletter. I’m Gustav Anderson.</p>
-      <p>Get ideas and lessons from my projects with data, AI and software. Take what fits the work you’re doing.</p>
+      <p className="newsletter-byline">My newsletter. I am Gustav Anderson.</p>
+      <p>Get ideas and lessons from my projects with data, AI and software. Take what fits the work you are doing.</p>
       <form className="family-signup" onSubmit={submit} aria-busy={pending}>
         <label htmlFor="newsletter-email">Email address</label>
         <div className="family-form-row">

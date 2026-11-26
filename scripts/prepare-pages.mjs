@@ -11,17 +11,17 @@ const pages = [
   {
     directory: "",
     title: "Build what your business needs with AI | onlinesourdough",
-    description: "For solo founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.",
+    description: "For founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.",
     lastmod: "2026-11-22",
-    body: `<section><h1>Build what your business needs with AI</h1><p>For solo founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.</p><h2>Start with a piece of work you know well</h2><p>Use your business data and context to help AI prepare something useful that you can review, improve and reuse.</p><nav aria-label="Explore onlinesourdough"><ul><li><a href="https://resources.onlinesourdough.com/">Explore guides and resources</a></li><li><a href="/about/">About the method</a></li><li><a href="/fermentary/">Work together in The Fermentary</a></li><li><a href="https://arcitai.com/">Arc’IT AI custom projects</a></li></ul></nav></section>`,
+    body: `<section><h1>Build what your business needs with AI</h1><p>For founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.</p><h2>Start with a piece of work you know well</h2><p>Use your business data and context to help AI prepare something useful that you can review, improve and reuse.</p><nav aria-label="Explore onlinesourdough"><ul><li><a href="https://resources.onlinesourdough.com/">Explore guides and resources</a></li><li><a href="/about/">About the method</a></li><li><a href="/fermentary/">Work together in The Fermentary</a></li><li><a href="https://arcitai.com/">Arc’IT AI custom projects</a></li></ul></nav></section>`,
   },
   {
     directory: "fermentary/details",
     title: "The Fermentary — info, terms & pricing | onlinesourdough",
-    description: "Get the Fermentary programme details, terms and proposed pricing, and join Gustav’s newsletter.",
+    description: "Get the Fermentary programme details, terms and pricing, and join Gustav’s newsletter.",
     url: `${origin}/fermentary/details/`,
     noindex: true,
-    body: `<section><h1>More info, terms &amp; pricing</h1><p>The Fermentary is ongoing 1:1 collaboration for solo founders and small teams. Read the programme details, then email Gustav to agree the session level, start date and practical arrangements.</p><p><a href="/fermentary/">Learn about The Fermentary</a> or return to the <a href="/">onlinesourdough menu</a>.</p></section>`,
+    body: `<section><h1>More info, terms &amp; pricing</h1><p>The Fermentary is ongoing 1:1 collaboration for founders and small teams. Read the programme details, then email Gustav to agree the session level, start date and practical arrangements.</p><p><a href="/fermentary/">Learn about The Fermentary</a> or return to the <a href="/">onlinesourdough menu</a>.</p></section>`,
   },
   {
     directory: "fermentary",
@@ -50,10 +50,10 @@ const pages = [
   {
     directory: "about",
     title: "Useful foundations for working with data and AI | onlinesourdough",
-    description: "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
+    description: "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for founders and small teams.",
     lastmod: "2026-11-22",
     url: `${origin}/about/`,
-    body: `<section><h1>Useful foundations for working with data and AI.</h1><p>Pick a piece of work you want to improve. Bring the data and what you know about how the work is done, then use AI to help build or improve something you can check yourself.</p><p>Start on your own with <a href="https://resources.onlinesourdough.com/">Resources</a>, or bring the work to <a href="/fermentary/">The Fermentary</a> and we’ll build and review it together.</p><h2>The Onlinesourdough Method</h2><p>Map your business, gather your data, capture your context, build your foundation, put it to work and keep it current.</p><h2>Where Arc’IT AI fits</h2><p><a href="https://arcitai.com/">Arc’IT AI</a> handles custom projects for teams. <a href="/">Return to the onlinesourdough menu</a>.</p></section>`,
+    body: `<section><h1>Useful foundations for working with data and AI.</h1><p>Pick a piece of work you want to improve. Bring the data and what you know about how the work is done, then use AI to help build or improve something you can check yourself.</p><p>Start on your own with <a href="https://resources.onlinesourdough.com/">Resources</a>, or bring the work to <a href="/fermentary/">The Fermentary</a> and we will build and review it together.</p><h2>The Onlinesourdough Method</h2><p>Map your business, gather your data, capture your context, build your foundation, put it to work and keep it current.</p><h2>Where Arc’IT AI fits</h2><p><a href="https://arcitai.com/">Arc’IT AI</a> handles custom projects for teams. <a href="/">Return to the onlinesourdough menu</a>.</p></section>`,
   },
 ];
 
@@ -142,7 +142,7 @@ function jsonLd(url, page) {
       "@type": "Person", "@id": personId, name: "Gustav Anderson",
       alternateName: ["gustavonline", "Gustav Online"], url: "https://gustavonline.com/",
       email: "hello@gustavonline.com", jobTitle: "Founder",
-      sameAs: ["https://www.youtube.com/@gustavonline", "https://www.linkedin.com/in/gustavandersonn/", "https://x.com/_gustavonline", "https://github.com/gustavonline"],
+      sameAs: ["https://www.youtube.com/@gustavonline", "https://www.linkedin.com/in/gustavandersonn/", "https://x.com/gustavonline", "https://github.com/gustavonline"],
       worksFor: [{ "@id": organizationId }, { "@id": arcitId }],
     },
     {

@@ -5,15 +5,15 @@ export const fermentarySignupUrl = "/fermentary/details";
 export const fermentaryFormAction = "https://app.kit.com/forms/10082012/subscriptions";
 const fermentaryContactBody = [
   "Hi Gustav,", "",
-  "I'd like to explore working together in The Fermentary.", "",
-  "1. My business and what I'd like help with first:", "",
+  "I would like to explore working together in The Fermentary.", "",
+  "1. My business and what I would like help with first:", "",
   "2. The tools I use today:", "",
-  "3. The session level and start date I'm considering:", "",
+  "3. The session level and start date I am considering:", "",
 ].join("\r\n");
 export const fermentaryContactUrl = "mailto:hello@gustavonline.com?subject="
   + encodeURIComponent("The Fermentary") + "&body=" + encodeURIComponent(fermentaryContactBody);
 const fermentaryHref = "/fermentary";
-const fermentaryGettingStartedAnswer = "Read the brochure, then email me a few lines about your business, what you would like help with, the tools you use and when you would like to start. We agree the session level and practical arrangements in writing. Our first meeting is your onboarding, where we map your business and agree a first roadmap. We can arrange a short conversation if it helps clarify something.";
+const fermentaryGettingStartedAnswer = "Read the brochure, then send me a few lines by email, LinkedIn or X about your business, what you would like help with, the tools you use and when you would like to start. We agree the session level and practical arrangements in writing. There is no minimum term, so you can start with one month. Our first meeting is your onboarding, where we map your business and agree a first roadmap. We can arrange a short conversation if it helps clarify something.";
 
 export const methodFaqs = [
   {
@@ -34,11 +34,11 @@ export const methodFaqs = [
   },
   {
     "question": "How are onlinesourdough, gustavonline, and Arc’IT AI connected?",
-    "answer": "I’m behind all three. gustavonline is where I share my work and learning. onlinesourdough offers Resources and ongoing 1:1 collaboration for solo founders and small teams. Arc’IT AI is where I take care of custom data and AI projects. All three start with the same idea: AI needs data and context about the business it is helping."
+    "answer": "I am behind all three. gustavonline is where I share my work and learning. onlinesourdough offers Resources and ongoing 1:1 collaboration for founders and small teams. Arc’IT AI is where I take care of custom data and AI projects. All three start with the same idea: AI needs data and context about the business it is helping."
   },
   {
     "question": "What does The Fermentary cost?",
-    "answer": "The brochure sets out the current proposal. Prices and practical terms are still being developed and will be clear before you commit."
+    "answer": "The brochure sets out current USD and DKK pricing, session levels and practical terms, with no minimum term."
   }
 ];
 
@@ -54,7 +54,7 @@ export const fermentaryPage = {
     pendingDescription: "A walkthrough of the approach and how we work together.",
   },
   cta: "More info, terms & pricing",
-  closing: "Read the brochure for proposed pricing and terms. We clarify your goals and agree the practical arrangements by email before your onboarding.",
+  closing: "Read the brochure for pricing and terms. There is no minimum term, so you can start with one month and continue only if it is useful. We clarify your goals and agree the practical arrangements by email before your onboarding.",
   contactLabel: "Email me about The Fermentary",
   whyTitle: "From scattered data to shared context",
   why: "Data is the information in your documents, messages and systems. Context explains what it means in your business: how you work, what matters and why you do things a certain way.",
@@ -73,10 +73,10 @@ export const fermentaryPage = {
       description: "We review the work, keep context current and document the setup so you can use and develop it yourself. When a system changes, you can see what depends on it and what needs testing.",
     },
   ],
-  founder: "I'm Gustav, the founder of onlinesourdough. I work with you on the data and context behind your business, so AI has a foundation it can use.",
+  founder: "I am Gustav, the founder of onlinesourdough. I work with you on the data and context behind your business, so AI has a foundation it can use.",
   portrait: "/assets/gustav-linkedin-portrait.jpg",
   included: ["Personal onboarding and an agreed roadmap", "Ongoing 1:1 working sessions", "Direct 1:1 communication in a private channel for advice and feedback between sessions", "Hands-on help putting your data and context to use", "Full Resources access during the collaboration and for 30 days after the agreed end date for new agreements"],
-  fit: "For solo founders and small teams, including those without a technical background. You bring your knowledge of the business and time between sessions. AI can help with the technical work, and we build and review together so you can learn to use the foundation yourself.",
+  fit: "For founders and small teams, including those without a technical background. You bring your knowledge of the business and time between sessions. AI can help with the technical work, and we build and review together so you can learn to use the foundation yourself.",
   faqTitle: "Questions before you start",
   faqs: [
     {
@@ -139,26 +139,26 @@ export type AboutSection = {
 export const heroVariations = [
   {
     "title": "Valuable AI starts with your data and business context",
-    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
+    "description": "I help founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   },
   {
     "title": "Start with what you know. Let AI help with the work.",
-    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
+    "description": "I help founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   },
   {
     "title": "Teach AI how your business works",
-    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
+    "description": "I help founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   },
   {
     "title": "Useful AI, shaped around how you work",
-    "description": "I help solo founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
+    "description": "I help founders and small teams build a data and context foundation AI can use. We start with how your business runs and the tools and environment you already have, so you can use AI across more of your business."
   }
 ];
 
 const homeHero = {
   title: "Build what your business needs with AI",
   description:
-    "For solo founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.",
+    "For founders and small teams. Turn what you know about your business into tools and workflows you can keep improving.",
 };
 
 export const siteData = {
@@ -174,7 +174,7 @@ export const siteData = {
     description: homeHero.description,
     aboutTitle: "Useful foundations for working with data and AI | onlinesourdough",
     aboutDescription:
-      "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for solo founders and small teams.",
+      "The thinking behind onlinesourdough: business context, practical AI and ongoing collaboration for founders and small teams.",
     ogTitle: `${homeHero.title} | onlinesourdough`,
     ogDescription: homeHero.description,
   },
@@ -196,7 +196,7 @@ export const siteData = {
       label: "RESOURCES & 1:1 COLLABORATION",
       title: "onlinesourdough",
       description:
-        "Practical resources and ongoing 1:1 collaboration for solo founders and small teams who want AI to understand and help with their work.",
+        "Practical resources and ongoing 1:1 collaboration for founders and small teams who want AI to understand and help with their work.",
       action: "Current offer",
       href: "/",
       current: true,
@@ -212,15 +212,15 @@ export const siteData = {
       "cta": "About the method",
       "paragraphs": [
         "Say you want to turn customer enquiries into a weekly list of follow-ups. The enquiries are your data. What counts as urgent, who should reply and what a good response looks like are your business context.",
-        "Give AI that context and it can help prepare a list you can review. As you notice what it gets right and where it needs more guidance, you can improve the setup and reuse what you've learned in other parts of the business.",
-        "I'm Gustav. Start on your own with Resources, or bring a piece of work to The Fermentary and we'll build the first version together."
+        "Give AI that context and it can help prepare a list you can review. As you notice what it gets right and where it needs more guidance, you can improve the setup and reuse what you have learned in other parts of the business.",
+        "I am Gustav. Start on your own with Resources, or bring a piece of work to The Fermentary and we will build the first version together."
       ]
     },
     about: {
       "title": "Useful foundations for working with data and AI.",
       "paragraphs": [
         "Pick a piece of work you want to improve. Bring the data and what you know about how the work is done, then use AI to help build or improve something you can check yourself.",
-        "Start on your own with Resources, or bring the work to The Fermentary and we’ll build and review it together."
+        "Start on your own with Resources, or bring the work to The Fermentary and we will build and review it together."
       ],
       "sections": [
         {
@@ -229,7 +229,7 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "I'm Gustav, the founder of onlinesourdough. I share practical ways to make data and AI useful in your business."
+              "text": "I am Gustav, the founder of onlinesourdough. I share practical ways to make data and AI useful in your business."
             },
             {
               "type": "paragraph",
@@ -237,15 +237,15 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "For me, a setup can be worth choosing because it's easy to get started with and live with. It doesn't have to win every performance comparison. I want it to make useful work more affordable, once you count the tools, the setup, and the time you spend checking and fixing things."
+              "text": "For me, a setup can be worth choosing because it is easy to get started with and live with. It does not have to win every performance comparison. I want it to make useful work more affordable, once you count the tools, the setup, and the time you spend checking and fixing things."
             },
             {
               "type": "paragraph",
-              "text": "That's the idea behind onlinesourdough. Bring what you already know about your business into the work, make it useful to AI and build from there. Your setup should become easier to use and better suited to you as you learn."
+              "text": "That is the idea behind onlinesourdough. Bring what you already know about your business into the work, make it useful to AI and build from there. Your setup should become easier to use and better suited to you as you learn."
             },
             {
               "type": "paragraph",
-              "text": "I share what I'm trying and learning through gustavonline. onlinesourdough is where you can use the resources yourself or work with me to apply the approach to your own business."
+              "text": "I share what I am trying and learning through gustavonline. onlinesourdough is where you can use the resources yourself or work with me to apply the approach to your own business."
             },
             {
               "type": "links",
@@ -276,7 +276,7 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "I love sourdough. And my girlfriend bakes the best sourdough bread. So there's a bit of home in the name, too."
+              "text": "I love sourdough. And my girlfriend bakes the best sourdough bread. So there is a bit of home in the name, too."
             },
             {
               "type": "paragraph",
@@ -324,11 +324,11 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "I want you to spend less time explaining the same things from scratch. Keep what works, change what doesn't, and understand enough of the setup to stay in control of it."
+              "text": "I want you to spend less time explaining the same things from scratch. Keep what works, change what does not, and understand enough of the setup to stay in control of it."
             },
             {
               "type": "paragraph",
-              "text": "Setting it up includes choosing tools and configuring what agents can access and do. You should understand what you've connected and where your approval is needed."
+              "text": "Setting it up includes choosing tools and configuring what agents can access and do. You should understand what you have connected and where your approval is needed."
             }
           ]
         },
@@ -343,14 +343,14 @@ export const siteData = {
             {
               "type": "list",
               "items": [
-                "Solo founders who want help with the work they currently carry themselves.",
+                "Founders who want help with the work they currently carry themselves.",
                 "Independent professionals turning their experience and working methods into useful AI assistance.",
                 "Small teams who want shared context, clearer working methods and tools they can adapt."
               ]
             },
             {
               "type": "paragraph",
-              "text": "Maybe you're unsure which AI setup to choose. Maybe you're explaining your business all over again in every conversation. Or you've tried a few things that looked promising and now want to make them useful in your everyday work."
+              "text": "Maybe you are unsure which AI setup to choose. Maybe you are explaining your business all over again in every conversation. Or you have tried a few things that looked promising and now want to make them useful in your everyday work."
             }
           ]
         },
@@ -389,7 +389,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "We agree how often to meet, the work we take on and the support between sessions. The brochure sets out the current proposal; prices and practical terms are still being developed and will be clear before you commit."
+              "text": "We agree how often to meet, the work we take on and the support between sessions. The brochure sets out current USD and DKK pricing, session levels and practical terms, with no minimum term."
             },
             {
               "type": "links",
@@ -471,7 +471,7 @@ export const siteData = {
             },
             {
               "type": "paragraph",
-              "text": "Agentic Systems is an open-source framework for building and operating agentic systems across software development, BI, security and research. onlinesourdough brings the same attention to context and review into Resources and ongoing work with solo founders and small teams. The setup follows what the work needs."
+              "text": "Agentic Systems is an open-source framework for building and operating agentic systems across software development, BI, security and research. onlinesourdough brings the same attention to context and review into Resources and ongoing work with founders and small teams. The setup follows what the work needs."
             },
             {
               "type": "links",
@@ -485,7 +485,7 @@ export const siteData = {
           "blocks": [
             {
               "type": "paragraph",
-              "text": "I start with your business and how you'd like to work. Bring the thing that's slowing you down, the setup you're already using, or simply the feeling that you need a clearer place to start."
+              "text": "I start with your business and how you would like to work. Bring the thing that is slowing you down, the setup you are already using, or simply the feeling that you need a clearer place to start."
             },
             {
               "type": "paragraph",
@@ -514,7 +514,7 @@ export const siteData = {
                 },
                 {
                   "label": "Audience",
-                  "value": "Solo founders, independent professionals and small teams"
+                  "value": "Founders, independent professionals and small teams"
                 },
                 {
                   "label": "Starting point",

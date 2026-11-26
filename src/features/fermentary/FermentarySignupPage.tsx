@@ -49,7 +49,7 @@ export function FermentarySignupPage() {
     </> : <>
       <img className="fermentary-signup-art" src="/assets/inner-circle-lofi-v3-transparent.png" alt="" width="180" height="140" />
       <h1 id="details-title">More info,<br />terms &amp; pricing</h1>
-      <p>The approach, how we work together and the proposed pricing and terms — in one place.</p>
+      <p>The approach, how we work together and the pricing and terms — in one place.</p>
       <form className="family-signup" onSubmit={submit} aria-busy={pending}>
         <label htmlFor="fermentary-email">Email address</label>
         <input id="fermentary-email" name="email" type="email" required autoComplete="email" maxLength={254}
